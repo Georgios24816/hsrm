@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Volladdierer is
+
+generic (width : integer := 1);
+
+port(in1	: in	std_logic_vector(width - 1 downto 0);
+     in2	: in	std_logic_vector(width - 1 downto 0);
+     carry	: in 	std_logic;
+
+     result 	: out	std_logic_vector(width - 1 downto 0);
+     carryOver	: out	std_logic);
+
+end Volladdierer
+
+architecture VolladdiererArch of Volladdierer is
+begin
+	result <= ;
+	carryOver <= 
+end VolladdiererArch;
