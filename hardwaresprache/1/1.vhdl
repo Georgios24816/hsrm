@@ -1,21 +1,21 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Volladdierer is
+entity FullAdder is
 
 --generic (width : integer := 1);
 
-port(in1		: in	std_logic--std_logic_vector(width - 1 downto 0);
-     in2		: in	std_logic--std_logic_vector(width - 1 downto 0);
-     carryIn	: in 	std_logic--std_logic;
-						
-     result 	: out	std_logic--std_logic_vector(width - 1 downto 0);
-     carryOut	: out	std_logic--std_logic);
+port(a		: in	std_logic; --std_logic_vector(width - 1 downto 0);
+     b		: in	std_logic; --std_logic_vector(width - 1 downto 0);
+     cin		: in 	std_logic; --std_logic;
+					         
+     s 		: out	std_logic; --std_logic_vector(width - 1 downto 0);
+     cout		: out	std_logic); --std_logic);
 
-end Volladdierer
+end FullAdder;
 
-architecture VolladdiererArch of Volladdierer is
+architecture Behavioral of FullAdder is
 begin
-	result <= (not in1 and not in2 and carryIn) or (not in1 and in2 and not carryIn) or (in1 and not in2 and not carryIn) or (in1 and in2 and carryIn);
-	carryOver <= (in1 and in2) or (carryIn and not in1 and in2) or (carryIn and in1 and not in2);
-end VolladdiererArch;
+	s <= (not a and not b and cin) or (not a and b and not cin) or (a and not b and not cin) or (a and b and cin);
+	cout <= (a and b) or (cin and not a and b) or (cin and a and not b);
+end Behavioral;
