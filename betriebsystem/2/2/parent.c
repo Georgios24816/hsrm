@@ -9,16 +9,23 @@ int main(int argc, char *argv[], char *envp[])
 {
 	printf("Elternprozess ...\n");
 
-	pid_t children[2];
-	child[0] = fork();
+	pid_t child1 = fork();
 
-	if (child[0] < 0)
+	if (child1 < 0)
 	{
 		perror("Fehler bei Kind1");
 		exit(EXIT_FAILURE);
 	}
+	
+	pid_t child2 = fork();
 
-	printf("Elternprozess : %d\nKind1 : %d\nKind2 : %d\n", (int)getpid(), (int)children[0]);
+	if (child2 < 0)
+	{
+		perror("Fehler bei Kind2");
+		exit(EXIT_FAILURE);
+	}
+
+	printf("Elternprozess : %d\nKind1 : %d\nKind2 : %d\n", (int)getpid(), (int)child1, (int)child2);
 
 	return EXIT_SUCCESS;
 }
