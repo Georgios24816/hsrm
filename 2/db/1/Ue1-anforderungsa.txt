@@ -1,0 +1,14 @@
+DB: Datenbanken (SoSe2020)
+Praktikum 1
+1. Erläutern Sie die Unterschiede zwischen relationalen, objektrelationalen
+und NoSQL Datenbanken inkl. der drei vorgestellten Varianten. (abzugeben als plain Text) (15 Punkte)
+2. Für die erste Phase eines Datenbankentwurfs, die Anforderungsanalyse, sind
+bestimmte Aktivitäten durchzuführen. Überlegen Sie sich Fragen, die ein
+Designer einem Kunden stellen kann, mit welchen Benutzeranforderungen
+an eine einzurichtende Datenbank erhoben werden können. (abzugeben als
+plain Text) (9 Punkte)
+3. Führen Sie eine Anforderungsanalyse für eine Datenbank eines Supermarktes durch. Analysieren Sie sowohl die Waren als auch die Mitarbeiter. Schreiben Sie konkrete Anforderungen in Stichpunkten nieder. Es sind hier keine
+Tabellen anzugeben. (abzugeben als plain Text) (10 Punkte)
+Die Aufgaben dieses Praktikums abzugeben. Die Lösungen sind in elektronischer Form unter https://wba.cs.hs-rm.de/PraGA/ abzugeben. Bitte beachten Sie das dort angegebene Abgabedatum.
+
+

@@ -1,0 +1,9 @@
+1) 	Der Algorithmus ist deterministisch
+2) 	Er terminiert für alle reele Zahlen x
+3) 	algo(1.000.000) = 13
+	
+	algo: x: reele Zahl -> y: reele Zahl	
+
+	F_algo(x) = y
+	falls x kleiner-gleich 1 ist y = 0,
+	ansonsten ist y = 1 + algo(x/3)

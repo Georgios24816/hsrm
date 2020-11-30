@@ -1,0 +1,16 @@
+Firewall#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Firewall(config)#interface Ethernet1/0
+Firewall(config-if)#ip access-group 1 in
+Firewall(config-if)#access-list 1 permit 10.0.0.0
+Firewall(config)#interface Ethernet1/0
+Firewall(config-if)#ip access-group 1 in
+Firewall(config-if)#access-list 1 deny any
+
+
+Extern#ping 10.0.3.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.3.2, timeout is 2 seconds:
+UUUUU
+Success rate is 0 percent (0/5)
+

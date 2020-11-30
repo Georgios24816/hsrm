@@ -1,0 +1,11 @@
+Man kann sich bei allen Rechnern mit Telnet einloggen
+
+Firewall#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Firewall(config)#interface Ethernet1/0
+Firewall(config-if)#ip access-group 100 in
+Firewall(config-if)#access-list 100 permit tcp any any eq telnet
+Firewall(config)#interface Ethernet1/0
+Firewall(config-if)#ip access-group 100 in
+Firewall(config-if)#access-list 100 deny any
+

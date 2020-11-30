@@ -1,0 +1,91 @@
+1.1) 	a) Router: 	- Schicht 3 (Netzwerk)
+					- die 3. Schicht ist zuständig für Routing und Datenflusskontrolle
+					- leitet Netwerkpakete zwischen mehreren Rechnernetzen weiter, anhand
+				  	der IP-Adresse weiß der Router, wo er die Netzwerkpakete weiterleiten
+				 	muss. Er unterstützt mehrere Protokolle und Architekturen
+
+		b) FTP: 	- Schicht 7 (Anwendung) [vielleicht auch Schicht 5 und 6 ?]
+					- die 7. Schicht ist zuständig für Dienste, Anwendungen und Netzmanagment
+					- File-Transfer-Protocol: Protokoll zur Übertragung von Dateien zwischen 
+					unterschiedlichen Computersystemen. Es benutzt das Server-Client-Prinzip.
+					Der Client kann auf dem Server Dateien speichern, löschen und runterladen
+
+		c) DSL:		- Schicht 1 (DSL-Kabel)
+					- Digital-Subscriber-Line (dt: Digitale Teilnehmeranschlussleitung): ist 
+					eine Übertragungstechnik, für die die für Telefonie verlegten 
+					Kupferleitungen	verwendet werden. DSL benutzt ein sehr großes 
+					Frequenzspektrum (größer als POTS und DIN), weshalb sehr hohe 
+					Übertragungsraten möglich sind
+
+		d) Internet-Telefonie: 	- Schicht 7 (Anwendung), alles ab 3
+								- eine Kommunikationstechnik um Sprache zwischen 2 Personen
+								über das Internet zu übertragen. Dies geschieht z.B über einen
+								Computer mit Mikrofon (eingebaut oder extern angeschlossen)
+
+		e) HTTPS:	- Schicht wie FTP
+					- Hypertext-Transfer-Protocol-Secure: ist die Anwendung von HTTP in
+					Verbindung mit Verschlüsselung und Authentifizierung. In der Regel
+					muss sich der Webserver mit einem Zertifikat beim client
+					authentisieren
+
+		f)Security:	- ab Schicht 2 
+
+1.2)	a) WLAN:	- IEEE: Institute of Electrical and Electronics Engineers
+		b) 5G:		- ITU: International Telecommunication Union
+		c)Bluetooth:- IEEE
+		d) IMAP:	- Internet Society
+		e) CSS:		- W3C: World Wide Web Consortium
+
+1.3) 	a) Netzneutralität:
+		Das Internet wird als öffentliches Gut aufgefasst. Internet-Provider sollten
+		keine extra Gebühren verlangen für höhere Übertragungsraten verlangen,
+		Drosselungen sollten nicht erlaubt sein und das Datenvolumen für jeden 
+		Benutzer nicht limitiert sein. Die Bandbreite sollte für jeden Nutzer gleich sein
+		oder man bezahlt nur für die Bandbreite die man verwendet.Jeder kann das Internet 
+		für das verwenden was	er will z.B. Filme, Musik, Bücher. Das würde jedoch dazu 
+		führen, dass Kinderpornographie und der einfache Zugang zu Drogen und Waffen 
+		ebenfalls verfügbar ist. Für wichtigere Einrichtungen wie z.B. Krankenhäuser und
+		Schulen sollte die Bandbreite so groß sein wie möglich, dass wäre aber anderen
+		Benutzern gegenüber unfair und man müsste für gewisse Einrichtungen Prioritäten
+		setzen und andere benachteiligen.
+		Meiner Meinung nach, sollten die im Internet verfügbaren Inhalte reguliert werden,
+		um Illegales zu entfernen. Jeder Benutzer sollte für eine bestimmte Bandbreite
+		bezahlen und diese voll ausnutzen dürfen ohne Einschränkungen.
+
+		b) Datenschutz:
+		Datenschutz hängt mit der Netzneutralität zusammen. Der Provider hat Zugriff
+		auf die von Benutzern zugegriffen Webseiten, Zugriffszeiten, Menge der gesendeten
+		Bytes, verwendeten Browser, verwendetes Betriebssysttem und IP-Adresse. Es ist 
+		auch bekannt das diese Daten an Dritte verkauft werden. Dadurch (und mit Cookies)
+		werden den Benutzern z.B. passende Werbungen angezeigt. Aus diesen Daten sind 
+		auch der Name des Benutzers und vielleicht auch seine Telefonnummer und 	
+		Email-Adresse einfach herauszufinden. Diese Daten könnten für Festnahmen hilfreich
+		sein, falls Benutzer in der organisierten Kriminalität tätig sind.
+		Meiner Meinung nach, sollte jeder Benutzer individuell entscheiden was mit seinen
+		Daten passiert. Es ist nicht nur wichtig für Privatpersonen, sondern insbesondere
+		für staatliche und militärische Einrichtungen.
+
+		c) Internetzensur:
+		Bei der Internetzensur werden kriminelle Inhalte zensiert (versteckt), aber nicht
+		gelöscht. Inhalte im Internet können nicht einfach entfernt werden, wegen seinem
+		dezentralen Aufbau. Die Internet-Provider sollten eigentlich Netzneutralität
+		gewährleisten. Außerdem würde die Entscheidung welche Inhalte zensiert werden
+		nicht demoktatisch kontrolliert werden. Zumindest würde man so erfolgreich
+		Kinderpornographie verstecken. Es sollte aber nicht beim Verstecken enden,
+		es sollten die Urheber der illegalen Inhalten gefunden und verurteilt werden.
+		Meiner Meinung nach ist eine Zensur illegaler Inhalte nur für Minderjährige
+		sinnvoll. Erwachsene sollten in der Lage sein, entscheiden zu können welche
+		Inhalte sie legal konsumieren dürfen. Bei einer Zensur sollte die Europäische
+		Union über die zu-zensiereden Inhalte abstimmen und dabei das Recht auf freie
+		Meinungsäußerung beachten.
+		
+		d) Sharing-Kultur:
+		Jeder hat ein Grundrecht auf Kunst und Kultur. Bei Büchern gibt es Lizenzen,
+		die die Veröffentlichung von einem dritten untersagen. Es gibt jedoch auch 
+		Lizenzen, die die Weitergabe und Veröffentlichung fördern, solange der
+		Urheber/Autor erwähnt wird. Der freie Austausch von Ideen ist auch in Foren
+		möglich und jeder Nutzer kann entscheiden was er postet.
+		Meiner Meinung nach, ist die Sharing-Kultur ein sehr wichtiger Bestandteil
+		der heutigen Welt und der Austausch sollte uneingeschränkt möglich sein,
+		solange die Lizenzen und Wünsche der Urheber beachtet werden und dadurch
+		für den Urheber kein wirtschaftlicher Schaden entsteht.

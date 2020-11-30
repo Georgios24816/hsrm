@@ -1,0 +1,1 @@
+die Beziehung schreibt Prüfung bei sollte auch die Attribute Datum und Raum haben haben

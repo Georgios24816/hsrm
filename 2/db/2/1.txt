@@ -1,0 +1,15 @@
+Auto = ({Typ, Ausstatungsvariant, Fahrgestellnummer, Motornummer, Motorart, Humbraum, KW, Preis}, {Typ} )
+
+Kunde = ({Kundennummer, Name, Adresse, Telefonnummer, betreut seit}, {Kundennummer})
+
+fährt zur Zeit = ({Auto, Kunde }, {Kaufdatum})
+
+t1:
+	a1 = (Typ1, "Li", 1234, 4321, "Benziner", 2000, 100, 20000)
+	k1 = (12, "Max Musterman", "Adresse 1", 12345678, 1.1.2020)
+	r1 = (Typ1, 12, 1.1.2020)
+t2: (zusätzlich zu t1)
+	a2 = (Typ2, "X Li", 3456, 9786, "Benziner", 4000, 300, 80000)
+	k2 = (5, "Anna Musterfrau", "Adresse 2", 98723400, 10.10.2019)
+	r2 = (Typ1, 5, 10.3.2020)
+

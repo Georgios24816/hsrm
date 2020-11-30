@@ -1,0 +1,16 @@
+ACID steht für atomicity(Atomarität), consistency(Konsistenzerhaltung), isolation(Isolation, Abgrenzung), durability(Dauerhaftigkeit)
+
+ACID wird von InnoDB eingehalten.
+
+Atomarität: Unteilbarkeit von Transaktionen (Transaktionen werden entweder vollständig oder gar nicht ausgeführt).
+
+Konsistenzerhaltung: Am Ende einer Transaktion ist die Datenbank in konsistentem (fehlerfreien) Zustand. Falls eine Transaktion die Gültigkeitsregeln verletzt wird sie abgebrochen und die Datenbank wird im ursprünglichen Zustand zurückgesetzt.
+
+Isolation: Mehrere gleichzeitige Transaktionen dürfen sich gegenseitig nicht beeinflussen / stören.
+Transaktion sieht DB immer im Anfangszustand (außer Änderungen durch Transaktion).
+Isolierung geht auf Kosten der Geschwindigkeit.
+
+Dauerhaftigkeit: Wenn Transaktionen fertig sind, müssen die Daten gespeichert werden.
+Auch wenn es unmittelbar danach zum Absturz kommt.
+Schreiben von Protokolldateien, auch auf Kosten der Performance.
+

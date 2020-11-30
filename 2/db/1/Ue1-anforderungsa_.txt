@@ -1,0 +1,45 @@
+1) 	relational: 	- verwendet die Sprache "SQL" für Abfragen
+			- legt viel Wert auf Integrität und Transaktionen, dass führt zu 
+			Schwierigkeiten mit sehr großen Datenmengen
+			- einfache Datentypen wie in höheren Programmiersprachen
+
+	objektrational: - verwendet die Sprache "OQL" für Abfragen
+			- legt viel Wert auf aIntegrität und Transaktionen, dass führt zu
+			Schwierigkeiten mit sehr großen Datenmengen
+			- komplexe Datentypen vergleichbar mit Klassen in OOP-Programmiersprachen
+
+	NoSQL:		- besitzt keine SQL-Schnittstelle (Zugriff erfolgt über vorhandene API)
+			- für sehr große Datenmengen ( z.B. mehrere Petabytes) geeignet
+			- kein relationales Datenbankmodell
+			- unterteilt in Key-Value Stores, Document Stores oder auch XML-Datenbanken
+
+2) 	1) Wie wichtig ist Performance, wird die Datenbank auch im Online-Betrieb verwendet?
+	2) Wie viele Objekte/Records/Dateien müssen gespeichert werden?
+	3) Wie groß ist ein Datensatz?
+	4) Soll die Datenbank horizontal skalierbar sein?
+	5) Wie soll auf die Datenbank zugegriffen werden (Sprache/API)?
+	6) Müssen mehrere Benutzer gleichzeitig zugreifen können?
+	7) Gibt es Daten die häufiger gebraucht werden als andere?
+	8) In welcher Beziehung stehen die Daten zueinander und welche Daten werden überhaupt 
+	   gespeichert?
+	9) Gibt es schon vorhandene Dateien?
+	10) Wie wichtig ist die Integrität, wann ist ein Datensatz fehlerhaft(Integritätsbedingungen)?
+
+	11)Wie oft werden Daten hinzugefügt, entfernt oder bearbeitet?
+	12)Müssen grundlegen Typen gespeichert werden, oder gibt es auch komplexe Datentypen
+	   wie z.B. Bilder?
+
+	13)Darf jeder Benutzer Zugriff auf alle Daten haben?
+
+3) 	- Der Supermarkt hat 10000 Produkte
+	- Produkte werden selten entfernt oder hinzugefügt
+	- Der Preis eines Produkts kann sich oft ändern
+	- Da es wenig Produkte und wenig Änderungen steht die Geschwindigkeit,
+	  beim Hinzufügen oder entfernen nicht im Fokus, aber Abfragen für die
+	  Produkte sollten schnell erfolgen, denn sie werden oft gebraucht
+	- Der Supermarkt hat 10 Mitarbeiter
+	- Es werden selten neue Mitarbeiter angestellt oder alte entlassen
+	- Jeder Mitarbeiter hat einen Posten und sie wechseln sich nicht ab
+	- Geschwindigkeit ist irrelevant
+	- Es werden keine komplexe Datentypen, wie z.B. Bilder gebraucht, sondern
+	  nur grundlegende Datentypen

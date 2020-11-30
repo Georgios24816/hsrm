@@ -1,0 +1,94 @@
+Hochschule RheinMain
+Prof. Dr. Marc Zschiegner
+
+Lineare Algebra
+Sommersemester 2020
+
+1. Übungsblatt
+Beispielaufgaben. Versuchen Sie die folgenden Aufgaben möglichst selbstständig zu
+lösen. Helfen Sie sich gegenseitig im StudIP-Forum Ihrer Übungsgruppe. Diese
+Beispielaufgaben werden am 29. bzw. 30.04.2020 in den Übungsgruppen besprochen.
+Zu ausgewählten Aufgaben werden Lösungsvideos auf Amigo hochgeladen.
+A
+
+Kreuzen Sie die richtigen Aussagen an.
+ Jedes lineare Gleichungssystem hat eine Lösung.
+ Jedes homogene lineare Gleichungssystem hat eine Lösung.
+ Jedes lineare Gleichungssystem mit mehr Zeilen als Variablen ist unlösbar.
+ Es gibt ein lineares Gleichungssystem, das nur die Lösung (0, 0, 7) hat.
+ Es gibt ein lineares Gleichungssystem, das genau die Lösungen (0, 0, 7) und
+(0, 0, 0) hat.
+
+B
+
+C
+
+Lösen Sie folgende lineare Gleichungssysteme mit dem Gauß-Algorithmus.
+(a)
+
+x
+x
+5x
+
++ y
+ 3y
++ y
+
++ z
+– 2z
++ 4z
+
+=0
+=5
+=3
+
+(b)
+
+2x
+x
+3x
+
+ 2y
+ 2y
+ 4y
+
++ 3z
++ 4z
++ 7z
+
+= 0
+= 6
+= 6
+
+Lösen Sie das lineare Gleichungssystem, das sich bei den elektrischen Netzwerken (Kapitel 1, Folie 15) ergeben hat.
+I1 = I2 + I3
+4I1 + 6I3 + 3I1 – 20 = 0
+5I2 + I2 – 6I3 = 0
+
+Hausaufgaben. Berabeiten Sie die folgenden Aufgaben möglichst selbstständig.
+Helfen Sie sich gegenseitig im StudIP-Forum Ihrer Übungsgruppe. Abgabe der HA:
+- Schreiben Sie die Lösungen aller drei Aufgaben in eine einzige, max. 10 MB große
+pdf-Datei „Vorname_Nachname_ BlattNr.pdf“ (z .B. „Max_Mustermann_01.pdf“).
+- Laden Sie diese Datei bis zum 05.05.2020, 22:00 Uhr in den Ordner „Abgaben der
+Übungsblätter“ Ihrer StudIP-Übungsgruppe hoch.
+
+1
+
+Bestimmen Sie die Lösungsmenge folgender linearer Gleichungssysteme. [5 P]
+
+2
+
+Berechnen Sie die Stromstärken I1, I2 und I3 in der abgebildeten Schaltung. [5 P]
+
+3
+
+Lösen Sie folgendes lineares Gleichungssystem. [5 P]
+x + 3y + 2z + 8u + 5v = 95
+2x + 5y + 3z + 9u + 4v =112
+3x + 5y + 7z + 6u + 4v =116
+7x + 6y + 4z + 5u + 3v =128
+9x + 7y + 3z + 2u + 5v =140
+
+Worüber Mathematiker lachen
+
+

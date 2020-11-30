@@ -1,0 +1,110 @@
+Hochschule RheinMain, Prof. Dr. Martin Gergeleit
+
+Rechnernetze & Telekommunikation
+SoSe 2020
+LV 2142
+Übungsblatt 1
+Bearbeiten Sie diese Aufgaben bitte vor Beginn Ihrer Praktikumsgruppe schriftlich. Die
+nötigen Informationen erhalten Sie aus der Vorlesung (https://video.cs.hsrm.de/course/5/lecture/50/ , Rechnernetze und Telekommunikation > 1. Vorspann und
+Einleitung) und natürlich im Internet.
+Zu Beginn werden Einzelne vom Praktikumsleiter stichprobenartig gebeten elektronisch
+abzugeben. Die Bearbeitung der Fragen bildet mit eine Grundlage der Bewertung.
+Die Fragen werden anschließend in der Praktikumsgruppe interaktiv diskutiert.
+
+Aufgabe 1.1 (ISO OSI Schichtenmodell):
+Versuchen Sie, die folgenden Begriffe aus dem Netzwerkbereich kurz zu erklären (ggf.
+Internet-Recherche) und dann einer Schicht des ISO OSI Referenzmodells zuzuordnen.
+Begründen Sie Ihre Zuordnung kurz:
+a)
+
+Router
+
+b)
+
+FTP
+
+c)
+
+DSL
+
+d)
+
+Internet-Telefonie
+
+e)
+
+HTTPS
+
+f)
+
+Security
+
+Aufgabe 1.2 (Standards):
+Welche der in der Vorlesung genannten Organisationen, bzw. welches Gremium sind für die
+folgenden technologischen Standards jeweils verantwortlich?
+a)
+
+WLAN
+
+b)
+
+5G
+
+c)
+
+Bluetooth
+
+d)
+
+IMAP
+
+e)
+
+CSS
+
+1
+
+Aufgabe 1.3 (Standards):
+Bereiten Sie jeweils ein kurzes Statement vor zu den folgenden Themen der Netzpolitik vor
+(jeweils für und gegen die Regulierungen und Maßnahmen). Gehen Sie dabei ein auf ein
+möglichst vergleichbares Problem in der analogen Welt und suchen Sie aktuelle Bezüge
+zu den Themen der Nachrichten der letzten Jahre.
+a) Netzneutralität
+
+
+Pro: Warum möchte man ein neutrales Netz?
+
+
+
+Con: Welche Möglichkeiten bietet ein Netz mit unterschiedlichen Prioritäten?
+
+b) Datenschutz
+
+
+Pro: Was spricht für Anonymität im Netz?
+
+
+
+Con: Welche Interessen stehen dem entgegen?
+
+c) Internetzensur
+
+
+Pro: Warum möchte man eine völlig freie Meinungsäußerung im Netz
+
+
+
+Con: Welche Einschränkungen kann man sich hier wünschen
+
+d) Sharing-Kultur
+
+
+Pro: Argumente für den freien Austausch von Ideen, Kunst und Kultur
+
+
+
+Con: Was sind die Grenzen des freien Austauschs
+
+2
+
+

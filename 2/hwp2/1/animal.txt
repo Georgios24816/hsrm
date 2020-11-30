@@ -1,0 +1,11 @@
+@startuml
+
+class Turtle 
+{
+	-m_weight : float 
+	feed(float food) : void
+	getWeight() : float
+}
+
+hide circle
+@enduml
