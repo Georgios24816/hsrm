@@ -10,7 +10,6 @@
 /* Sie koennen "envp" als Environment-Pointer an Kind-Prozesse weiterreichen. */
 int main(int argc, char *argv[], char *envp[])
 {
-	/*
 	printf("mytime ...\n");
 
 	if (argc < 2)
@@ -38,7 +37,7 @@ int main(int argc, char *argv[], char *envp[])
 		}	
 	}
 	
-	else if (pid < 0) //error
+	else if (child < 0) //error
 	{
 		perror("Kindrozess nicht erstellt");
 		exit(EXIT_FAILURE);
@@ -54,6 +53,6 @@ int main(int argc, char *argv[], char *envp[])
 		perror("Fehler bei gettime(end)");
 		exit(EXIT_FAILURE);
 	}
-	*/
+
 	return EXIT_SUCCESS;
 }
