@@ -1,0 +1,57 @@
+initial pseudostate https://www.uml-diagrams.org/notation/pseudostate-initial.png
+An initial pseudostate represents a default vertex that is the source for a single 
+transition to the default state of a composite state. There can be at most one 
+initial vertex in a region. The outgoing transition from the initial vertex may 
+have a behavior, but not a trigger or guard.
+
+terminate pseudostate https://www.uml-diagrams.org/notation/pseudostate-terminate.png
+Terminate pseudostate implies that the execution of this state machine by means 
+of its context object is terminated. The state machine does not exit any states 
+nor does it perform any exit actions other than those associated with the 
+transition leading to the terminate pseudostate. Entering a terminate pseudostate 
+is equivalent to invoking a DestroyObjectAction.
+
+entry point https://www.uml-diagrams.org/notation/pseudostate-entry-point.png
+Entry point pseudostate is an entry point of a state machine or composite state.
+In each region of the state machine or composite state it has at most a single 
+transition to a vertex within the same region.
+
+exit point https://www.uml-diagrams.org/notation/pseudostate-exit-point.png
+Exit point pseudostate is an exit point of a state machine or composite state.
+Entering an exit point within any region of the composite state or state machine 
+referenced by a submachine state implies the exit of this composite state or 
+submachine state and the triggering of the transition that has this exit point 
+as source in the state machine enclosing the submachine or composite state.
+
+choice https://www.uml-diagrams.org/notation/pseudostate-choice-binary.png
+Choice pseudostate realizes a dynamic conditional branch. It evaluates the guards 
+of the triggers of its outgoing transitions to select only one outgoing transition. 
+The decision on which path to take may be a function of the results of prior actions 
+performed in the same run-to-completion step. Dynamic choices should be distinguished 
+from static junction branch points.
+
+join https://www.uml-diagrams.org/notation/pseudostate-join.png
+Join pseudostate merges several transitions originating from source vertices in 
+different orthogonal regions. The transitions entering a join vertex cannot have 
+guards or triggers.
+
+fork https://www.uml-diagrams.org/notation/pseudostate-fork.png
+Fork pseudostate vertices serve to split an incoming transition into two or more 
+transitions terminating on orthogonal target vertices 
+(i.e., vertices in different regions of a composite state). 
+The segments outgoing from a fork vertex must not have guards or triggers.
+
+junction 
+Junction pseudostate vertices are vertices that are used to chain together multiple 
+transitions. They are used to construct compound transition paths between states. 
+For example, a junction can be used to converge multiple incoming transitions into 
+a single outgoing transition representing a shared transition path (aka merge).
+
+shallow history pseudostate 
+Shallow history pseudostate represents the most recent active substate of its 
+containing state (but not the substates of that substate).
+
+deep history pseudostate 
+Deep history pseudostate represents the most recent active configuration of the 
+composite state that directly contains this pseudostate 
+(e.g. the state configuration that was active when the composite state was last exited)
