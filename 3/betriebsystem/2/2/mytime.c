@@ -3,11 +3,14 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <time.h>
+#include <sys/types.h>
+#include <unistd.h>
 
 /* Beachten Sie den geaenderten Prototypen von main(). Referenz: man 2 execve */
 /* Sie koennen "envp" als Environment-Pointer an Kind-Prozesse weiterreichen. */
 int main(int argc, char *argv[], char *envp[])
 {
+	/*
 	printf("mytime ...\n");
 
 	if (argc < 2)
@@ -51,6 +54,6 @@ int main(int argc, char *argv[], char *envp[])
 		perror("Fehler bei gettime(end)");
 		exit(EXIT_FAILURE);
 	}
-
+	*/
 	return EXIT_SUCCESS;
 }

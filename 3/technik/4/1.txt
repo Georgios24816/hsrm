@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 14.7)
 Man geht sofort in den Zustand "Start". 
 Wenn der Zustand "Start" aktiviert wird, wird eine Melodie abgespielt.
@@ -30,3 +31,37 @@ sofort das Ende.
 
 14.32)
 Der Startzustand ist "Idle"
+=======
+14.7)
+Man geht sofort in den Zustand "Start". 
+Wenn der Zustand "Start" aktiviert wird, wird eine Melodie abgespielt.
+Wenn man diesen Zustand verlässt wird die Melodie deaktiviert.
+
+Wenn eine Taste gedrückt wird, wechselt man in den Zustand "Partial Dial".
+Die gedrückte Nummber wird an die restlichen gedrückten Ziffern angehängt.
+Das passiert solange man Zahlen eingibt. 
+
+Wenn man mit der Zahleneingabe fertig ist und die Zahl gültig ist erreicht man den
+Endzustand.
+
+14.14)
+Man wechselt sofort in den Zustand "verifyCard". Wenn die Karte akzeptiert wird,
+geht man in den Zustand "readAmount" über, dabei bestimmt die Submaschine "ReadAmountSM"
+den nächsten Zustand. 
+
+Ist diese kaputt, wechselt man in den Zustand "outOfService".
+Wenn der Benutzer abbrechen will, bekommt er seine Karte zurück [Exit erreicht].
+Ansonsten wird die Transaktion verifiziert und der Kunde bekommt seine Karte zurück.
+
+14.13)
+Man geht sofort in den Zustand "selectAmount" über.
+Wenn man abbricht wird der Exit-Point "aborted" erreicht.
+Wenn man einen anderen Betrag eingeben will wechselt man in "enterAmount".
+Man kann wieder abbrechen und erreicht den selben Exit-Point.
+Ansonsten wird der Betrag gelesen und das Ende wird erreicht.
+Wenn man nach "selectAmount" sofort seinen Betrag eingibt, erreicht man auch
+sofort das Ende.
+
+14.32)
+Der Startzustand ist "Idle"
+>>>>>>> 2d634d70ddb9dae6a99402337eb5365b2ee807e5
