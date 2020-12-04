@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------
 --
 -- Titel:    
--- Autor:    
+-- Autor: Georgios 
 -- Datum:    
 --
 ---------------------------------------------------------------------------------------------------
@@ -9,8 +9,8 @@
 library ieee;
 	use ieee.std_logic_1164.all;
 	use ieee.numeric_std.all;
-library work;
-	use work.hadescomponents.all;
+--library work;
+--	use work.hadescomponents.all;
 	
 entity haregs is
 	port (
@@ -35,4 +35,15 @@ end haregs;
 
 architecture rtl of haregs is
 begin
+
+	PROCESS (clk)
+	begin
+	    if (rising_edge(clk)) then
+	        if (regwrite = '1') then
+	            regwrite <= '1';
+	        end if;
+	    end if;
+	
+	end PROCESS;
+	
 end rtl;
