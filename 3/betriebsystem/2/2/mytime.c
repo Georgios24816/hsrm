@@ -97,4 +97,7 @@ int main(int argc, char *argv[], char *envp[])
 3005713
 3005521
 3005956
+
+Die Zeiten schwanken, weil das Betriebssystem auch andere Prozesse schedulen muss und auf Anfragen von anderen Prozessen (die vielleicht höhere Prioritäten haben)
+schnell antworten muss.
 */

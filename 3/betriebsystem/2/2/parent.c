@@ -49,19 +49,35 @@ int main(int argc, char *argv[], char *envp[])
 		exitOnError("Fehler bei Kind1", 1);
 	}
 	
-	if (child1 != 0)
+	else if (child1 == 0)
 	{
-		printf("Elternprozess : %d | Kind1 : %d\n", (int)getpid(), (int)child1);
+		if (execve("./child1", argv, envp) == -1)
+		{
+			exitOnError("Fehler Kind1", 1); 
+		}
+	}
+	
+	else
+	{
+		//printf("Elternprozess : %d | Kind1 : %d\n", (int)getpid(), (int)child1);
 		pid_t child2 = fork();
 
 		if (child2 < 0)
 		{
 			exitOnError("Fehler bei Kind2", 1);
 		}
-
-		if (child2 != 0)
+		
+		else if (child2 == 0)
 		{
-			printf("Elternprozess : %d | Kind2 : %d\n", (int)getpid(), (int)child2);
+			if (execve("./child2", argv, envp) == -1)
+			{
+				exitOnError("Fehler Kind2", 1); 
+			}
+		}
+
+		else
+		{
+			//printf("Elternprozess : %d | Kind2 : %d\n", (int)getpid(), (int)child2);
 
 			for (size_t i = 0; i < 15; i++)
 			{
@@ -75,7 +91,7 @@ int main(int argc, char *argv[], char *envp[])
 					exitOnError("system(ps f)", 1);
 				}
 
-				while (sleep(1) != 0);
+				sleep(1);
 			}
 
 			size_t status = 0;
@@ -84,13 +100,13 @@ int main(int argc, char *argv[], char *envp[])
 			{
 				if (isChildFinished(child1) == true)
 				{
-					printf("child1 fetig\n");
+					printf("child1 fertig\n");
 					status++;
 				}
 
 				if (isChildFinished(child2) == true)
 				{
-					printf("child2 fetig\n");
+					printf("child2 fertig\n");
 					status++;
 				}
 			}

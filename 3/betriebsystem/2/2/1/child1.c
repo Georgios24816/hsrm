@@ -2,15 +2,16 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
+
+#include <sys/types.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 int main(int argc, char *argv[])
 {
-	printf("Kind_1 ...\n");
-	printf("Kind_1 : %d | Elternprozess : %d\n", (int)getpid(), (int)getppid());
-	
+	printf("Kind_1 Start: %d %d\n", getpid(), getppid());
 	sleep(10);
-	printf("Kind1 Ende\n");
 
 	return EXIT_SUCCESS;
 }

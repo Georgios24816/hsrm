@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
 	printf("Kind_2 ...\n");
 
-	printf("Kind_2 : %d | Elternprozess : %d\n", (int)getpid(), 1);
+	printf("Kind_2 : %d | Elternprozess : %d\n", (int)getpid(), (int)getppid());
 	
 	for (volatile size_t i = 0; i < 1000000; i++)
 	{
