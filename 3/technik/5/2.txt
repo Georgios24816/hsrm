@@ -1,0 +1,91 @@
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ echo "init" >> README.md
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git commit -m "init"
+[master 649244e] init
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git branch A
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git checkout A
+Switched to branch 'A'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ echo "A" >> a.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git add a.txt
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git commit -m "A"
+[A 54ac4b7] A
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git brach B
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git branch B
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git checkout B
+Switched to branch 'B'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ echo "B" >> b.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git add b.txt
+warning: LF will be replaced by CRLF in b.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git commit -m "B"
+[B e17fd50] B
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git branch C
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git checkout C
+Switched to branch 'C'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ echo "C" >> c.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git add c.txt
+warning: LF will be replaced by CRLF in c.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git commit -m "C"
+[C 65cbd07] C
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$
+
+
+
+
