@@ -34,16 +34,24 @@ entity haregs is
 end haregs;
 
 architecture rtl of haregs is
+
+type haregs_t is array (7 downto 0) of std_logic_vector(31 downto 0);
+signal haregsSig : haregs_t;
+
 begin
 
-	PROCESS (clk)
-	begin
+	PROCESS (clk, reset)
+	BEGIN
+		if (reset = '1') then
+			
+		end if;
+	
 	    if (rising_edge(clk)) then
 	        if (regwrite = '1') then
-	            regwrite <= '1';
+	            ;
 	        end if;
 	    end if;
 	
-	end PROCESS;
+	END PROCESS;
 	
 end rtl;
