@@ -1,0 +1,15 @@
+a) falsch, jedes A muss ein D haben
+
+b) falsch, B muss auch ein A haben
+
+c) falsch, jedes A darf nur ein D haben
+
+d) richtig, D kann zu A gehören, muss es aber nicht
+
+e) 
+
+f) falsch, C hat ein A und ein D
+
+g) richtig, A, B und C erben von D
+
+h) richtig, B erbt von A und A hat ein D
