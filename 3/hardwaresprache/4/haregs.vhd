@@ -47,7 +47,7 @@ begin
 	
 	    elsif (rising_edge(clk)) then
 	        if (regwrite = '1') then
-	            wop <= haregsSig(to_integer(unsigned(wopadr)));
+	            haregsSig(to_integer(unsigned(wopadr))) <= wop;
 	        end if;
 	    end if;
 	END PROCESS;
