@@ -43,15 +43,16 @@ begin
 	PROCESS (clk, reset)
 	BEGIN
 		if (reset = '1') then
-			
-		end if;
+			haregsSig <= (other => (others => '0'));
 	
-	    if (rising_edge(clk)) then
+	    elsif (rising_edge(clk)) then
 	        if (regwrite = '1') then
-	            ;
+	            wop <= haregsSig(to_integer(unsigned(wopadr)));
 	        end if;
 	    end if;
-	
 	END PROCESS;
+	
+	aop <= haregsSig(to_integer(unsigned(aopadr)));
+	bop <= haregsSig(to_integer(unsigned(bopadr)));
 	
 end rtl;
