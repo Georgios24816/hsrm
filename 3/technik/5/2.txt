@@ -88,4 +88,219 @@ $
 
 
 
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git branch D
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git checkout D
+Switched to branch 'D'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ echo "D" >> d.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git add d.txt
+warning: LF will be replaced by CRLF in d.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git commit -m "D"
+[D 504d9ee] D
+ 1 file changed, 1 insertion(+)
+ create mode 100644 d.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git push
+fatal: The current branch D has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin D
+
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git chechout C
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git checkout C
+Switched to branch 'C'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ echo "C2" >> c2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git add c2.txt
+warning: LF will be replaced by CRLF in c2.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git commit -m "C2"
+[C 33399c9] C2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git checkout D
+Switched to branch 'D'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git merge D
+Already up to date.
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git merge C
+Merge made by the 'recursive' strategy.
+ c2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 c2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (D)
+$ git checkout C
+Switched to branch 'C'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ echo "B2" >> b2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ rm b2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git checkout B
+Switched to branch 'B'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ echo "B2" >> b2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git add b2.txt
+warning: LF will be replaced by CRLF in b2.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git commit -m "B2"
+[B f073202] B2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git checkout C
+Switched to branch 'C'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git merge B
+Merge made by the 'recursive' strategy.
+ b2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 b2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (C)
+$ git checkout A
+Switched to branch 'A'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ echo "A2" >> a2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git add a2.txt
+warning: LF will be replaced by CRLF in a2.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git commit -m "A2"
+[A 00d59a6] A2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (A)
+$ git checkout B
+Switched to branch 'B'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git merge A
+Merge made by the 'recursive' strategy.
+ a2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git checkout master
+Switched to branch 'master'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ echo "master2" >> master2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git add master2.txt
+warning: LF will be replaced by CRLF in master2.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git commit -m "master2"
+[master 21c559a] master2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 master2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git checkout B
+Switched to branch 'B'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git merge master
+Merge made by the 'recursive' strategy.
+ master2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 master2.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git commit -m "Git Pyramide"
+On branch B
+nothing to commit, working tree clean
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (B)
+$ git checkout master
+Switched to branch 'master'
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git commit -m "Git Pyramide"
+On branch master
+nothing to commit, working tree clean
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ echo "git Pyramide" >> git.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git add git.txt
+warning: LF will be replaced by CRLF in git.txt.
+The file will have its original line endings in your working directory
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git commit -m "Git Pyramide"
+[master 60dad95] Git Pyramide
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git.txt
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$ git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 729 bytes | 364.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+To https://gitlab.cs.hs-rm.de/gmark001/swt5.git
+   40fdf75..60dad95  master -> master
+
+Georg@DESKTOP-UB73T73 MINGW64 ~/Desktop/SWT5 (master)
+$
 

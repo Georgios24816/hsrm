@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 --
--- Titel:    
--- Autor: Georgios 
--- Datum:    
+-- Titel: Haregs   
+-- Autor: Stefan & Georgius & Felix
+-- Datum: 06.12.2020   
 --
 ---------------------------------------------------------------------------------------------------
 
@@ -43,10 +43,10 @@ begin
 	PROCESS (clk, reset)
 	BEGIN
 		if (reset = '1') then
-			haregsSig <= (other => (others => '0'));
+			haregsSig <= (others => (others => '0')); -- Inzialisierung des Registers mit 0
 	
 	    elsif (rising_edge(clk)) then
-	        if (regwrite = '1') then
+	        if (regwrite = '1') and not(wopadr = "000") then
 	            haregsSig(to_integer(unsigned(wopadr))) <= wop;
 	        end if;
 	    end if;
