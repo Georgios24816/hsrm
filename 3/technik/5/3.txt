@@ -1,15 +1,15 @@
-a) richtig, Y erbt von X und auch ein oder mehrere A´s haben
+a) falsch
 
 b) falsch
 
 c) falsch
 
-d) 
+d) richtig
 
-e) 
+e) richtig
 
-f)
+f) richtig
 
-g)
+g) falsch
 
-h)
+h) falsch

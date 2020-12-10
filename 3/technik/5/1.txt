@@ -1,12 +1,12 @@
 a) falsch, jedes A muss ein D haben
 
-b) falsch, B muss auch ein A haben
+b) richtig
 
 c) falsch, jedes A darf nur ein D haben
 
 d) richtig, D kann zu A gehören, muss es aber nicht
 
-e) 
+e) falsch
 
 f) falsch, C hat ein A und ein D
 
