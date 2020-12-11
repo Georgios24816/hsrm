@@ -1,6 +1,7 @@
 a) falsch, jedes A muss ein D haben
+	richtig, wenn beide mit NULL initialisiert werden
 
-b) richtig
+b) richtig, B erbt von A, A selber muss nicht existieren, sondern nur definiert sein
 
 c) falsch, jedes A darf nur ein D haben
 
@@ -12,4 +13,4 @@ f) falsch, C hat ein A und ein D
 
 g) richtig, A, B und C erben von D
 
-h) richtig, B erbt von A und A hat ein D
+h) falsch
