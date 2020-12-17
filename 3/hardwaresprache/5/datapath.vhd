@@ -55,4 +55,7 @@ end datapath;
 
 architecture rtl of datapath is			
 begin
+	datapathP : PROCESS (clk, reset)
+	BEGIN
+	END PROCESS datapathP;
 end rtl;

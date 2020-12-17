@@ -1,0 +1,26 @@
+a) 
+Pins zeigen Objekflüsse an. Sie werden als Quadrate dargestellt.
+Es gibt Eingabe und Ausgabepins die der Aktion jeweils Werte zur Verfügung stellen
+oder entnehmen.
+Spezialfälle sind der Wertpin, der einer Aktion eine Konstante zur Verfügung stellt
+und der Aktionseingabepin, der er Aktion auswertet und die als Eingabeparameter an
+eine andere Aktion weitergibt.
+
+b)
+Der Exception-Handler hat einen Eingabepin für die Exception. Die Exception
+wird durch einen Pfeil(Blitz) dargestellt.
+
+c)
+Activity Final Node = komplettes Ende des Aktivitätsdiagramm 
+(Kreis mit ausgemalten Kreis drin)
+
+Flow Final Node = Nur Ende des Pfads (Kreis mit X)
+
+d)
+Sprungmarken, ermöglichen das zeichnerische Überbrücken größerer Distanzen im Diagram.
+Im Aktivitätsdiagramm wird eine Kante durch eine Sprungmarke unterbrochen und an einer
+anderen Stelle fortgesetzt
+
+e)
+Man verwendet die Raute. Die Raute hat die Abzweigungen.
+Die Rauten bzw. Diamant hat 1 Eingang und n Ausgänge oder n Eingänge und 1 Ausgang

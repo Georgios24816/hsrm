@@ -1,0 +1,5 @@
+b) mit einem gestrichelten Pfeil und <<merge>> oder <<import>>
+
+c)
+
+d) ja, es gibt class-package Diagrame
