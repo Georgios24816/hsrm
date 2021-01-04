@@ -1,0 +1,60 @@
+/* Daniel Funk Gruppe: A*/
+
+*	{
+	font-family: Helvetica;
+	}
+
+/* Nuetzliche Klassen */
+
+.nowrap {
+	white-space: nowrap;
+	}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.strikeout {
+	text-decoration: line-through;
+}
+
+/* Punktgenaue Wirksamkeit dank IDs: */
+
+#hr1 {
+        margin-left: 0px;
+	width: 100px;
+}
+#hr2 {
+        margin-right: 0px;
+	width: 60%;
+}
+#hr3 {
+	width: 30%;
+        height: 4px;
+}
+
+#kap1 {
+	background-color: rgb(255,118,70);
+	color: white;
+  /*margin: -20px;
+  padding: 20px; */
+}
+
+/* Ein Gestaltungsvorschlag fuer Ihre Tabelle:
+   (eigene Varianten erwuenscht, Aktivierung erforderlich)
+*/
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid black;
+	padding: 2px;
+}
+
+td	{
+	text-align: center;
+}
