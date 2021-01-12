@@ -272,7 +272,7 @@ begin
 		res => PCMUXres
 	);
 
-	INC: entity work.Incrementer
+	INC: entity work.Increment
 	generic map (WIDTH => 12)
 	port map (
 		clk => clk,
