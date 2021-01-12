@@ -156,6 +156,48 @@ end rtl;
 ------------------------------------------
 --END ENTITY Increment--------------------
 
+------------------------------------------
+--ENTITY CustomMuxSel---------------------
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.numeric_std.all;
+
+library work;
+	use work.all;
+	use work.hadescomponents.all;
+
+entity CustomMuxSel is
+	port (
+		clk	: in	std_logic;
+		
+		pccontr	: in	std_logic_vector(5 downto 0);
+		ov	: in	std_logic;
+		zero	: in 	std_logic;
+		
+		selPC	: out	std_logic_vector(1 downto 0)
+	);
+end CustomMuxSel;
+
+architecture rtl of CustomMuxSel is
+begin
+	CustomMuxSelP : process(clk)
+	begin
+		if (rising_edge(clk)) then
+			if (pccontr(0) = '1') then
+				selPc <= "10";
+			
+			elsif ( ((pccontr(5) and ov) or (pccontr(4) and zero) or (pccontr(3) and (not zero)) or pccontr(2) or pccontr(1)) = '1') then
+				selPc <= "01";
+
+			else
+				selPc <= "00";
+			end if;
+		end if;
+	end process;
+end rtl;
+------------------------------------------
+--END ENTITY CustomMuxSel-----------------
+
 library ieee;
 	use ieee.std_logic_1164.all;
 	use ieee.numeric_std.all;
@@ -194,7 +236,7 @@ signal PCREGres	: std_logic_vector(11 downto 0);
 signal IRQMUXres: std_logic_vector(11 downto 0);
 signal PCMUXres : std_logic_vector(11 downto 0);
 signal INCres	: std_logic_vector(11 downto 0);
-signal MUXSELres: std_logic_vector(11 downto 0);
+signal MUXSELres: std_logic_vector(1 downto 0);
 
 begin
 	PCREG: entity work.Register_RE
@@ -213,7 +255,8 @@ begin
 		clk => clk,
 		in1 => isra,
 		in0 => PCMUXres,
-		
+		sel => intr,
+
 		res => IRQMUXres
 	);
 
@@ -224,13 +267,37 @@ begin
 		in2 => isrr,
 		in1 => pcnew,
 		in0 => INCres,
+		sel => MUXSELres,
 
-		res => MUXSELres
+		res => PCMUXres
 	);
 
-	process ()
-	begin
+	INC: entity work.Incrementer
+	generic map (WIDTH => 12)
+	port map (
+		clk => clk,
+		in1 => PCREGres,
 
+		res => INCres
+	);
+
+	MUXSEL: entity work.CustomMuxSel
+	port map (
+		clk => clk,
+		pccontr => pccontr,
+		ov => ov,
+		zero => zero,
+
+		selPc => MUXSELres
+	);
+
+	process (clk)
+	begin
+		if (rising_edge(clk)) then
+			pcakt <= PCREGres;
+			pcinc <= INCres;
+			pcnext <= PCMUXres; 
+		end if;
 	end process;
 
 end rtl;
