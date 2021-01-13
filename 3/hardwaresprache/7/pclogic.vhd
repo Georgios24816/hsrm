@@ -14,7 +14,6 @@ library ieee;
 
 library work;
 	use work.all;
-	use work.hadescomponents.all;
 	
 entity Register_RE is -- Register rising edge = D Flip Flop
 	generic (WIDTH : integer := 8); -- Datenbreite
@@ -48,13 +47,10 @@ library ieee;
 
 library work;
 	use work.all;
-	use work.hadescomponents.all;
 
 entity Multiplexer21 is
 	generic (WIDTH : integer := 8);
 	port (
-		clk	: in	std_logic;
-		
 		in1	: in	std_logic_vector(WIDTH - 1 downto 0);
 		in0	: in	std_logic_vector(WIDTH - 1 downto 0);
 		sel	: in	std_logic;
@@ -65,17 +61,7 @@ end Multiplexer21;
 
 architecture rtl of Multiplexer21 is
 begin
-	Mul21P : process (clk)
-	begin
-		if (rising_edge(clk)) then
-			if (sel = '1') then
-				res <= in1;
-			
-			else
-				res <= in0;
-			end if;
-		end if;
-	end process;
+	res <= in1 when (sel = '1') else in0;
 end rtl;
 ------------------------------------------
 --END ENTITY Multiplexer21----------------
@@ -88,13 +74,10 @@ library ieee;
 
 library work;
 	use work.all;
-	use work.hadescomponents.all;
 
 entity Multiplexer31 is
 	generic (WIDTH : integer := 8);
 	port (
-		clk	: in	std_logic;
-		
 		in2	: in	std_logic_vector(WIDTH - 1 downto 0);
 		in1	: in	std_logic_vector(WIDTH - 1 downto 0);
 		in0	: in	std_logic_vector(WIDTH - 1 downto 0);
@@ -106,20 +89,9 @@ end Multiplexer31;
 
 architecture rtl of Multiplexer31 is
 begin
-	Mul31P : process (clk)
-	begin
-		if (rising_edge(clk)) then
-			if (sel = "10") then
-				res <= in2;
-
-			elsif (sel = "01") then
-				res <= in1;
-			
-			elsif (sel = "00") then
-				res <= in0;
-			end if;
-		end if;
-	end process;
+	res <= 	in2 when (sel = "10") else
+		in1 when (sel = "01") else
+		in0;
 end rtl;
 ------------------------------------------
 --END ENTITY Multiplexer31----------------
@@ -132,12 +104,10 @@ library ieee;
 
 library work;
 	use work.all;
-	use work.hadescomponents.all;
 
 entity Increment is
 	generic (WIDTH : integer := 8);
 	port (
-		clk	: in	std_logic;
 		in1	: in	std_logic_vector(WIDTH - 1 downto 0);
 
 		res	: out	std_logic_vector(WIDTH - 1 downto 0)
@@ -146,12 +116,7 @@ end Increment;
 
 architecture rtl of Increment is
 begin
-	IncP : process (clk)
-	begin
-		if (rising_edge(clk)) then
-			res <= std_logic_vector(unsigned(in1) + 1);
-		end if;
-	end process;
+	res <= std_logic_vector(unsigned(in1) + 1); 
 end rtl;
 ------------------------------------------
 --END ENTITY Increment--------------------
@@ -164,7 +129,6 @@ library ieee;
 
 library work;
 	use work.all;
-	use work.hadescomponents.all;
 
 entity CustomMuxSel is
 	port (
@@ -179,21 +143,16 @@ entity CustomMuxSel is
 end CustomMuxSel;
 
 architecture rtl of CustomMuxSel is
+alias bnez : std_logic is pccontr(0);
+alias beqz : std_logic is pccontr(1);
+alias bov  : std_logic is pccontr(2);
+alias reti : std_logic is pccontr(3); 
+alias jreg	 : std_logic is pccontr(4);
+alias jal  : std_logic is pccontr(5);	
 begin
-	CustomMuxSelP : process(clk)
-	begin
-		if (rising_edge(clk)) then
-			if (pccontr(0) = '1') then
-				selPc <= "10";
-			
-			elsif ( ((pccontr(5) and ov) or (pccontr(4) and zero) or (pccontr(3) and (not zero)) or pccontr(2) or pccontr(1)) = '1') then
-				selPc <= "01";
-
-			else
-				selPc <= "00";
-			end if;
-		end if;
-	end process;
+	selPc <="10" when (reti = '1') else
+		"01" when (((ov and ov) or (beqz and zero) or (bnez and (not zero)) or jal or jreg) = '1') else
+		"00";
 end rtl;
 ------------------------------------------
 --END ENTITY CustomMuxSel-----------------
@@ -204,7 +163,6 @@ library ieee;
 
 library work;
 	use work.all;
-	use work.hadescomponents.all;
 	
 entity pclogic is
 	port (
@@ -252,7 +210,6 @@ begin
 	IRQMUX: entity work.Multiplexer21
 	generic map (WIDTH => 12)
 	port map (
-		clk => clk,
 		in1 => isra,
 		in0 => PCMUXres,
 		sel => intr,
@@ -263,7 +220,6 @@ begin
 	PCMUX: entity work.Multiplexer31
 	generic map (WIDTH => 12)
 	port map (
-		clk => clk,
 		in2 => isrr,
 		in1 => pcnew,
 		in0 => INCres,
@@ -275,7 +231,6 @@ begin
 	INC: entity work.Increment
 	generic map (WIDTH => 12)
 	port map (
-		clk => clk,
 		in1 => PCREGres,
 
 		res => INCres
@@ -298,6 +253,13 @@ begin
 			pcinc <= INCres;
 			pcnext <= PCMUXres; 
 		end if;
+
+		if (reset = '1') then
+			pcakt  <= "000000000000";
+			pcinc  <= "000000000001";
+			pcnext <= "000000000001"; 
+		end if;
 	end process;
 
 end rtl;
+
