@@ -1,0 +1,13 @@
+1)
+a)
+	1)
+	
+	2)
+	
+	3)
+	
+	4) 	<<include>>:	ein Use-Case verwendet auch andere Use-Cases die in einem
+						anderen Diagramm definiert sind
+b)
+
+c)

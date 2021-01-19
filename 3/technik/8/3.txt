@@ -1,0 +1,35 @@
+ID: Name				UC01: Diagramm speichern als
+Ziel					Diagramme unter einem anderen Namen speichern
+Akteur					Benutzer
+Status					Entwurf
+verwendete Use-Cases	-
+Auslöser				Klick auf "Speichern als"
+Vorbedingungen			Diagram muss schon gespeichert sein
+Nachbedingungen			Erfolg:
+							Die Originaldatei wird nicht verändert.
+							Die Originaldatei wird (nochmal) unter 
+							einem anderen Namen gespeichert.
+
+						Misserfolg:
+							Die Originaldatei bleibt unverändert.
+							Sie wird nicht unter einem anderen Namen
+							gespeichert.
+							
+Standardablauf			1. 	Der Benutzer wählt im Menü ”Datei→Speichern als“.
+						2. 	Das System zeigt den Speichern-Dialog an.
+						3. 	Der Benutzer wählt das Zielverzeichnis.
+						4. 	Der Benutzer gibt den Dateinamen ein.
+						5. 	Der Benutzer klickt auf ”Speichern“.
+						6. 	Das System legt das Diagramm unter dem angegebenen 
+							Namen im Zielverzeichnis ab.
+							
+alternativer Ablauf		5.a Der Benutzer klickt auf ”Abbrechen“.
+							→ Das System bricht den Vorgang ab.
+						
+						5.b Der Dateiname ist bereits vorhanden.
+							→ Fehlermeldung und Wiederholung ab 4.
+
+Zeitverhalten			uneingeschränkt
+Verfügbarkeit			immer
+Fragen
+Kommentare
