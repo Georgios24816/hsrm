@@ -1,13 +1,26 @@
 1)
 a)
+	1)	<<Subsystem>>:	(oben rechts) werden verwendet um Abstraktionen
+						für umfangreiche Komponenten zu bilden.
+	
+	2)	<<extend>>:		der Pfeil zeigt auf den Kreis, der die Extension Points
+						angibt
+						
+	3) 	Mit einer Erweiterungsbeziehung (Extend) hingegen lässt sich ausdrücken, 
+		dass ein Anwendungsfall unter bestimmten Umständen und an einer bestimmten 
+		Stelle (dem sog. Erweiterungspunkt, englisch extension point) durch einen
+		anderen erweitert wird. Sie stellt eine optionale Beziehung dar und wird 
+		deshalb oft als „Kannbeziehung“ bezeichnet.
+	
+	4) 	<<include>>:	ein Use-Case verwendet auch andere Use-Cases die in einem
+						anderen Diagramm definiert sind.
+b)
 	1)
 	
 	2)
 	
 	3)
 	
-	4) 	<<include>>:	ein Use-Case verwendet auch andere Use-Cases die in einem
-						anderen Diagramm definiert sind
-b)
-
+	4)
+	
 c)
