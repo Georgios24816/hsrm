@@ -1,0 +1,16 @@
+a) 	Testbarkeit -> Veränderbarkeit / Wartbarkeit -> Korrektheit
+	-> Bedienbarkeit -> Performance -> Verfügbarkeit / Zuverlässigkeit
+	-> Sicherheit
+	
+b)	Bedienbarkeit:	1) 	Benutzerabhängig
+					2)	User Test
+					
+	Performance:	1)	verschiedene Testsysteme
+					2)	Leistungstest auf "Standard" Systemen
+					
+	Verfügbarkeit:	1)	Verschiedene Server
+					2)	Serverfarm erhöht die Verfügbarkeit/Zuverlässigkeit
+					
+	Sicherheit:		1)	absolute Sicherheit gibt es nie
+					2)	Pen-Testing
+	

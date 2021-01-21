@@ -15,12 +15,24 @@ a)
 	4) 	<<include>>:	ein Use-Case verwendet auch andere Use-Cases die in einem
 						anderen Diagramm definiert sind.
 b)
-	1)
+	1)	Vererbung kann mit einem Pfeil dargestellt werden. ------->
 	
-	2)
+	2)	Multiplizität kann wie bei ER Diagrammen dargestellt werden.
 	
-	3)
+	3)	Aktion werden in Ovalen mit einem Pfeil der zu Ihnen zeigt
+		dargestellt. Aktion ist eine Aufgabe die der Benutzer 
+		verwenden kann.
 	
-	4)
+	4)	Aktivität: dazu verwendet man Aktivitätsdiagramme, die eingebettet werden
+		können. Diese dienen als Abstraktionsschicht.
 	
-c)
+c)	1) rechteckiger Rahmen mit einem kleinen rechteckigen Rahmen oben links.
+	
+	2)	class hat kein Kürzel
+		package -> pkg
+		component -> cmp
+		deployment -> dep
+		use_case -> uc
+		activity -> act
+		state machine -> stm
+		interaction -> sd
