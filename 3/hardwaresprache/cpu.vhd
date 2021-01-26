@@ -1,11 +1,3 @@
----------------------------------------------------------------------------------------------------
---
--- Titel:    
--- Autor:    Georgios Markou
--- Datum:    
---
----------------------------------------------------------------------------------------------------
-
 library ieee;
 	use ieee.std_logic_1164.all;
 	use ieee.numeric_std.all;
@@ -206,6 +198,6 @@ begin
 	-- xread <= control_xread_out; -- in control_E
 	-- xwrite <= control_xwrite_out; -- in control_E
 
-	--xadr <= pmemory_wadr_in; -- datapath
+	xadr <= pmemory_wadr_in; -- datapath
 end rtl;
 
