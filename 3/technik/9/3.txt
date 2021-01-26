@@ -1,0 +1,323 @@
+3)
+a)
+""""
+#include <iostream>
+#include <string>
+#include <memory>
+
+// Produkt
+class Mahlzeit {
+};
+
+// konkretes Produkt
+class Pizza : public Mahlzeit {
+public:
+    Pizza() {
+        std::cout << "Pizza gebacken." << std::endl;
+    }
+};
+
+// noch ein konkretes Produkt
+class Rostwurst : public Mahlzeit {
+public:
+    Rostwurst(const std::string& beilage) {
+        std::cout << "Rostwurst gebraten." << std::endl;
+        if (!beilage.empty()) {
+            std::cout << "Serviert mit " << beilage << std::endl;
+        }
+    }
+};
+
+// Erzeuger
+class Restaurant {
+protected:
+    std::shared_ptr<Mahlzeit> mahlzeit;
+
+    // Die abstrakte Factory-Methode, die von Erzeugern implementiert werden muss.
+    virtual void MahlzeitZubereiten() = 0;
+
+    virtual void BestellungAufnehmen() {
+        std::cout << "Ihre Bestellung bitte!" << std::endl;
+    }
+
+    virtual void MahlzeitServieren() {
+        std::cout << "Hier Ihre Mahlzeit. Guten Appetit!" << std::endl;
+    }
+
+public:
+    // Diese Methode benutzt die Factory-Methode.
+    void MahlzeitLiefern() {
+        BestellungAufnehmen();
+        MahlzeitZubereiten(); // Aufruf der Factory-Methode
+        MahlzeitServieren();
+    }
+};
+
+// konkreter Erzeuger für konkretes Produkt "Pizza"
+class Pizzeria : public Restaurant {
+protected:
+    // Implementierung der abstrakten Methode der Basisklasse
+    virtual void MahlzeitZubereiten() {
+        mahlzeit = std::make_shared<Pizza>();
+    }
+};
+
+// konkreter Erzeuger für konkretes Produkt "Rostwurst"
+class Rostwurstbude : public Restaurant {
+protected:
+    // Implementierung der abstrakten Methode der Basisklasse
+    virtual void MahlzeitZubereiten() {
+        mahlzeit = std::make_shared<Rostwurst>("Pommes und Ketchup");
+    }
+};
+
+int main() {
+    Pizzeria daToni;
+    daToni.MahlzeitLiefern();
+
+    Rostwurstbude brunosImbiss;
+    brunosImbiss.MahlzeitLiefern();
+}
+""""
+
+b)
+"""
+// Bibliothek für algorithmische Geometrie
+
+struct Punkt {
+  double _x, _y; // der Einfachheit halber public
+  Punkt(double x, double y) : _x(x), _y(y) {}
+};
+
+class Kreis { // abstrakte Klasse, nur Interface
+public:
+  virtual double getRadius()      const = 0;
+  virtual Punkt  getMittelpunkt() const = 0;
+};
+
+// Die Implementierung dieser Funktion stützt sich rein auf die
+// Schnittstelle, also nicht auf konkrete Realisierungen:
+bool schneidetKreisKreis(const Kreis& k1, const Kreis& k2) {
+  double abstandDerKreise = abstand(k1.getMittelpunkt(), k2.getMittelpunkt());
+  return abstandDerKreise <= (k1.getRadius() + k2.getRadius());
+}
+
+class GraphicalObject {
+  virtual void draw() = 0; // zeichne dich selbst auf den Bildschirm
+};
+
+class Circle : public GraphicalObject {
+private:
+  double _mx, _my; // Mittelpunkt x und y
+  double _r;       // Radius
+public:
+  Circle(double x, double y, double r) : _mx(x), _my(y), _r(r) {}
+  double getX() const { return _mx; }
+  double getY() const { return _my; }
+  double getR() const { return _r;  }
+  void draw() { /* zeichne dich mit Bresenham-Algorithmus */}
+};
+
+// Circle-Adapter zur Benutzung eines Circle als Kreis in der
+// Geometrie-Bibliothek
+
+class CircleAdapter : public Kreis, private Circle {
+public:
+  CircleAdapter(const Circle& c) : Circle(c.getX(), c.getY(), c.getR()) {}
+
+  // Hier wird Circle so adaptiert, dass es auf Kreis passt
+  double getRadius()      const { return getR(); }
+  Punkt  getMittelpunkt() const { return Punkt(getX(), getY()); }
+};
+
+int main() {
+  // Mit Hilfe der GUI-Bibliothek werden zwei Circles erzeugt
+  Circle c1 = Circle(1.0, 0.0, 2.0);
+  Circle c2 = Circle(3.0, 0.0, 2.0);
+
+  // dann werden sie in einen Circle-Adapter gesteckt
+  CircleAdapter c1Adapter(c1);
+  CircleAdapter c2Adapter(c2);
+
+  // anschließend wird die Geometrie-Bibliothek zum Test auf Schnitt benutzt
+  if (schneidetKreisKreis(c1Adapter, c2Adapter)) {
+    ...
+  } else {
+    ...
+  }
+}
+"""
+
+c)
+"""
+#include <iostream>
+#include <cstring>
+
+using std::cout;
+using std::endl;
+
+class Game
+{
+protected:
+  int m_iPlayersCount;
+
+  Game(const int iPLAYERS_COUNT)
+  {
+    m_iPlayersCount = iPLAYERS_COUNT;
+  }
+
+  virtual void printGreeting()
+  {
+    cout << "Welcome to our wonderful game!" << endl;
+  }
+
+  // Einschub-Methode:
+  virtual void initializeBoard() = 0;
+  virtual void makeMove(const int iPLAYER) = 0;
+  virtual bool gameFinished() = 0;
+  virtual void printWinner() = 0;
+
+  // Hook-Methode:
+  virtual void takeADrink(const int iPLAYER) { }
+
+public:
+  // Schablonen-Methode
+  void playOneGame()
+  {
+    printGreeting();
+    initializeBoard();
+    int i = 0;
+
+    while (!gameFinished())
+    {
+      takeADrink(i); // Aufruf des Hook (standardmäßig leer)
+      makeMove(i);
+      i = (i + 1) % m_iPlayersCount;
+    }
+
+    printWinner();
+  }
+};
+
+class Chess : public Game
+{
+protected:
+  void initializeBoard()
+  {
+    // ...
+  }
+  void makeMove(const int iPLAYER)
+  {
+    cout << "Player " << iPLAYER << "'s turn in chess game" << endl;
+    // ...
+  }
+  bool gameFinished()
+  {
+    // ...
+  }
+  void printWinner()
+  {
+    // ...
+  }
+
+public:
+  Chess() : Game (2) { }
+};
+
+class Monopoly : public Game
+{
+protected:
+  void printGreeting()
+  {
+    cout << "Welcome to monopoly!" << endl;
+  }
+  void initializeBoard()
+  {
+    // ...
+  }
+  void makeMove(const int iPLAYER)
+  {
+    cout << "Player " << iPLAYER << "'s turn in monopoly game" << endl;
+    // ...
+  }
+  bool gameFinished()
+  {
+    // ...
+  }
+  void printWinner()
+  {
+    // ...
+  }
+
+public:
+  Monopoly(const int iPLAYERS_COUNT) : Game(iPLAYERS_COUNT) { }
+};
+
+class DrinkersMonopoly : public Monopoly
+{
+protected:
+  void printGreeting()
+  {
+    Monopoly::printGreeting();
+    cout << "(The drinkers' version)" << endl;
+  }
+  void takeADrink(const int iPLAYER)
+  {
+    cout << "Player " << iPLAYER << " drinks a glass of whiskey" << endl;
+  }
+
+public:
+  DrinkersMonopoly(const int iPLAYERS_COUNT) : Monopoly(iPLAYERS_COUNT) { }
+};
+
+int main(int iArgc, char* pa_Argv[])
+{
+  Game* p_MyGame;
+
+  if (iArgc <= 1 || strcmp(pa_Argv[1], "Chess") == 0)
+  {
+    p_MyGame = new Chess();
+  }
+  else if (strcmp(pa_Argv[1], "Monopoly") == 0)
+  {
+    p_MyGame = new Monopoly(4);
+  }
+  else if (strcmp(pa_Argv[1], "DrinkersMonopoly") == 0)
+  {
+    p_MyGame = new DrinkersMonopoly(4);
+  }
+  else
+  {
+    cout << "Unknown game." << endl;
+    return 1;
+  }
+
+  p_MyGame->playOneGame();
+  delete p_MyGame;
+  return 0;
+}
+"""
+
+d)
+"""
+public class Sale {
+    //...
+   public double getTotal(){
+       double total = 0;
+       for (SalesLineItem s : salesLineItem) {
+           ProductSpecification prodspec
+           = s.getProductSpecification();
+           total += s.getQuantity()*prodspec.getPrice();
+       }
+       return total;
+    }
+}
+
+public class SalesLineItem {
+     //...
+     public double getSubTotal(){
+         return this.getQuantity()
+         productSpecification.getPrice();
+  }
+ }
+"""

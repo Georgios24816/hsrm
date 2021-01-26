@@ -1,0 +1,4 @@
+4)
+- 	Browser zu Server ist ein "request / response communication channel"
+	sollte aber "bidirectional communication channel" sein
+	
