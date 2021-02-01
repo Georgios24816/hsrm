@@ -1,0 +1,9 @@
+1) a) 	Ein Test, dass der Eine Maschine/Komponente sehr hoch belastet, um Ihre
+		Belastbarkeit zu analysieren.
+	
+	b)	Ein Test, um zu ermitteln wie schnell/effizient ein Algorithmus/Komponente
+		funktioniert.
+		
+	c)	Das Einfügen von SQL-Code, der ausgeführt wird, ohne der Erlaubis
+		des Webseitenbetreibers. Dabei kann man z.B. Kundendaten sammeln.
+		
