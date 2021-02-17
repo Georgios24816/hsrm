@@ -1,0 +1,133 @@
+Dies ist der Uebungstext zu Aufgabenblatt 2.
+Er bietet eine "interaktive" Einfuehrung in den vi-Editor.
+(Erstellt von Marcus Thoss).
+
+Spaetestens jetzt sollte das Blatt "Die wichtigsten Befehle in vi" neben
+Ihnen liegen, es sei denn, Sie sind vi-Experte und beherrschen die zugegeben
+etwas gewoehnungsbeduerftigen Kommandos dieses Editors bereits mit
+traumwandlerischer Sicherheit. 
+In diesem Fall sollten Sie den vi jetzt verlassen und zur naechsten Aufgabe
+uebergehen.
+
+vi kennt drei verschiedene Modi:
+- Kommandomodus
+- Einfuegemodus
+- ex-Modus
+
+Zu Beginn befinden Sie sich immer im Kommandomodus. Im Unterschied
+zu den meisten Editoren bedeutet dies, dass Sie NICHT sofort Text
+eingeben koennen, sondern jeder Tastendruck als Editor-Kommando
+interpretiert wird.
+
+Unter "Cursorbewegung" finden Sie auf der Referenzkarte
+zunaechst alle wichtigen Bewegungsrichtungen wie Ctrl-f (forward) 
+und Ctrl-b (backward) zum Blaettern. Die meisten vi-Kommandos
+sind Abkuerzungen des englischen Begriffs fuer das Kommando.
+
+Mit vi koennen Sie auch in minimalistischen UNIX-Umgebungen arbeiten.
+Stehen z.B. keine Cursortasten zur Verfuegung oder sind diese
+nicht richtig konfiguriert, laesst sich der Cursor dennoch bewegen:
+
+h   links
+j   unten
+k   oben
+l   rechts
+
+Probieren Sie alle beschriebenen Kommandos gleich in diesem Text aus. 
+
+Um Text einzugeben, muessen sie das Kommando a oder A oder beispielsweise 
+i eingeben (d.h. einfach diese Taste druecken). Danach erscheint (endlich)
+der eingetippte Text als solcher auf dem Bildschirm, und zwar bis zur 
+Betaetigung der Escape-Taste !
+
+Gehen Sie nun in die mit *01 markierte Zeile und druecken Sie A, um am  
+Zeilenende etwas anzufuegen ((A)ppend).
+
+*01 Kommentar zu vi:
+
+Wenn Sie statt A nur a gedrueckt haben, ist das offensichtlich ein 
+anderes Kommando.... Denken Sie daran: In den Kommandomodus gelangen
+Sie immer wieder mit Escape.
+
+Der naechste Versuch: (J)oin bedeutet zusammenfuegen zweier aufeinander-
+folgender Zeilen - j (klein geschrieben) steht fuer cursor down. Bitte 
+JETZT in Zeile *02 testen.
+
+*02 Eine ganze Zeile
+Text.
+
+Das Loeschen von einzelnen Zeichen unter dem Cursor geschieht mit x und mit
+r (replace) kann ein einzelnes Zeichen unter dem Cursor veraendert werden, 
+z.B.
+
+*03 um Tipppfehler oder flasche Zrichen zu korrigieren.
+
+Welche der vielen Kommandos sich im taeglichen Gebrauch als
+nuetzlich erweisen, stellt sich i.a. schnell heraus. Das Suchen mit
+dem Kommando / und Weitersuchen mit n gehoert auf jeden Fall dazu.
+
+In Zeile *07 geht es weiter. Bitte nach *07 suchen...
+
+*04 Mit ? haetten Sie auch die Marke *04 von *07 aus rueckwaerts suchen 
+koennen.
+
+Drei grundlegende Kommandozeichen sind d (delete), y (yank oder kopieren)
+und p (put); letzteres fuegt immer den zuletzt geloeschten oder
+kopierten Text ein.
+Die Kommandozeichen d und y benoetigen immer noch einen Zusatz, um
+den betroffenen Bereich zu kennzeichnen.
+dd und yy betreffen z.B. die gesamte aktuelle Zeile.
+
+*05 Diese Zeile bitte loeschen, dann wieder einfuegen, und kopieren.
+
+Wird eine Zahl vorangestellt, sind ebenso viele Zeilen betroffen, z.B.
+5yy     die naechsten 5 Zeilen kopieren
+
+Hier noch ein paar schnelle Bewegungen im Text: 
+12G     Zeile 12 (hier ist Zeile 85, falls Sie zurueckspringen wollen) 
+G       Textende
+1G      Textanfang
+0       Zeilenanfang
+$       Zeilenende
+
+Zum schnellen Bearbeiten von Quellcodes sei hier noch die Moeglichkeit
+erwaehnt, Marken setzen zu koennen, um spaeter wieder dorthin zu springen
+oder Textbloecke zu kopieren und zu loeschen.
+Das Setzen geschieht mit m und einem folgenden Kennbuchstaben von a bis z,
+d.h. es koennen 26 Marken gesetzt werden. Dass das Springen zu einer
+Marke mit ' und dem Kennbuchstaben erfolgt, muss wohl daran liegen, dass
+das Zeichen ' auf amerikanischen Tastaturen ohne Shift-Taste und somit 
+schneller zu erreichen ist.
+
+Wir kommen nun zum erwaehnten dritten Modus, dem ex-Modus; benannt
+nach dem Ur-UNIX-Editor ex. Sie erreichen ihn, indem Sie im
+Kommandomodus : eingeben. Dann erscheint ein : in der Statuszeile
+(unten), hinter dem Sie ein weiteres Kommando(wort) eingeben konnen.
+
+Wichtige ex-Kommandos:
+:w     speichern (write)
+:e fn  Datei fn editieren; danach
+:e#    zwischen zwei Dateien umschalten
+:r fn  Inhalt der Datei fn einfuegen
+
+:h     Bei vielen modernen vi-Versionen: Online-Hilfe !!!
+
+Ein wichtiger letzter Punkt: das Verlassen und/oder Abspeichern.
+Gut, dass Sie bis hierhin durchgehalten haben, und wenn es nur daher kommt,
+dass sie das Kommando :q erst jetzt durchnehmen. Wurde Text veraendert,
+so bietet sich :q! fuer das Verlassen ohne bzw. :wq mit Speichern an.
+Wie auf dem Referenzblatt beschrieben, gibt es noch mehr Kommandos, die mit :
+beginnen, darunter auch die :set-Kommandos, die umfangreiche Sonderfunktionen
+zugaenglich machen.
+
+*05 :q!
+*06 ach ja - die : Kommandos muessen mit der Eingabetaste abgeschlossen 
+    werden... falls sich eben nichts getan haben sollte.
+
+
+*07 Hier ist auch schon das Ende. Aber bitte gehen Sie noch einmal zu 
+der Marke *04 zurueck. Wenn die Zeilennummer bekannt ist (z.B. nach einem
+Compilerlauf, der die Nummer einer fehlerhaften Zeile ausgegeben hat !), 
+kann man einfach die Nummer und dann G eingeben, um in die Zeile zu 
+springen. Fuer die Marke *04 ist die Zeilennummer bekannt. Sie lautet 71.
+
