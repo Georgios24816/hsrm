@@ -1,0 +1,12 @@
+1) 	a = 0;
+	b = 1;
+	P -> aPb -> aaPbb -> aaaPbbb
+	
+	Die von P erzeugte Sprache is (a^n)(b^n)
+	
+2) 	a = x | y
+	b = 0 | 1
+	I -> aIb -> aaIbb -> aaaIbbb
+	
+	Die von I erzeugte Sprache is (a^n)(b^n)
+	

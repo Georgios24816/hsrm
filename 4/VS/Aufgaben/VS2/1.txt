@@ -1,0 +1,25 @@
+1) 
+Transparenzarten gemäß International Standards Organization (ISO)und Advanced Network Systems Architecture (ANSA)
+	- Ortstransparenz: keine Kenntnis des Ortes einer Komponente notwendig, insbesondere ist der Ort nicht Teil des Namens.
+	- Zugriffstransparenz: Form des Zugriffs ist unabhängig, ob Komponente lokal oder entfernt ist.
+	- Migrationstransparenz: Komponente kann verlagert werden, ohne dass sich die Schnittstelle zu den Nutzern ändert.
+	- Replikationstransparenz: Benutzungsschnittstelle ist unabhängig von der Anzahl der Kopien einer Komponente, 
+								Verfügbarkeit als qualitative Eigenschaft kann verbessert werden.
+								
+weitere Arten:
+- Nebenläufigkeitstransparenz: Nebenl. Nutzung von Komponenten so, als ob diese privat wären, z.B. durch autom. Sperren, vgl. Datenbanken.
+- Fehlertransparenz: Ein eingetretener Fehlzustand wird an der Benutzungsstelle nicht sichtbar, sondern durch Redundanz 
+						im unterlagerten System maskiert.
+				   
+- Skalierungstransparenz: System und Applikationen können sich vergrößern, ohne dass die Systemstruktur oder die
+							Applikationsalgorithmen geändert werden müssen.
+							
+- Leistungstransparenz: Neukonfiguration des Systems bei Veränderung der Last, um die Leistung zu verbessern.							
+
+2) Netzwerkbetriebssystem (NOS: Network Operating System)
+Betriebssystemerweiterung von ev. verschiedenen LOS’(Local Operating System) für ein Multicomputer-System, um gewisse 
+Funktionen bzgl. Dateisystem, Schutz (Benutzerverwaltung), entfernter Programmausführung systemweit, mehr oder weniger 
+transparent, bereitzustellen. Beispiele:Novell NetWare,Windows for Workgroups,UNIX Yellow Pages (NIS) und Network File System (NFS)
+
+3) Serverarchitekturen
+

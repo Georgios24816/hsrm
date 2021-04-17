@@ -1,0 +1,44 @@
+1)
+a) Big Endian: 03 00 00 00 => Little Endian: 00 00 00 03
+b) Rückwärts lesen
+c)
+
+2)
+a) UDP verbindungslos ; TCP verbindungsorientiert (IP verbindungslos) ; Sockets beides
+b) Radio und Fernsehen
+c) Bereich von 224.0.0.0 bis 239.255. 255.255
+
+3)
+MESSAGE ORIENTED MIDDLEWARE:
+- Message-oriented middleware (MOM)  is middleware where transactions or event notifications are delivered between disparate 
+systems or components by way of messages, often via an enterprise messaging system. With MOM, messages sent to the client 
+are collected and stored until they are acted upon, while the client continues with other processing.
+
+- An enterprise messaging system is a type of middleware that facilitates message passing between disparate systems or 
+components in standard formats, often using XML, SOAP or web services. As part of an enterprise messaging system, 
+message broker software may queue, duplicate, translate and deliver messages to disparate systems or components in a messaging system.
+
+- Enterprise service bus (ESB) is defined by the Burton Group [11] as "some type of integration middleware product that 
+supports both message-oriented middleware and Web services".
+
+INTELLIGENT MIDDLEWARE:
+
+-Intelligent Middleware (IMW) provides real-time intelligence and event management through intelligent agents. The IMW manages 
+the real-time processing of high volume sensor signals and turns these signals into intelligent and actionable business information.
+The actionable information is then delivered in end-user power dashboards to individual users or is pushed to systems within or 
+outside the enterprise. It is able to support various heterogeneous types of hardware and software and provides an API for interfacing 
+with external systems. It should have a highly scalable, distributed architecture which embeds intelligence throughout the network to 
+transform raw data systematically into actionable and relevant knowledge. It can also be packaged with tools to view and manage 
+operations and build advanced network applications most effectively.
+
+CONTENT CENTRIC MIDDLEWARE:
+-offers a simple provider-consumer abstraction through which applications can issue requests for uniquely identified content, without 
+worrying about where or how it is obtained. Juno is one example, which allows applications to generate content requests associated 
+with high-level delivery requirements.[13] The middleware then adapts the underlying delivery to access the content from sources that 
+are best suited to matching the requirements. This is therefore similar to Publish/subscribe middleware, as well as the Content-centric 
+networking paradigm.
+
+-Remote procedure call middleware enables a client to use services running on remote systems. The process can be synchronous or asynchronous.
+-With object request broker middleware, it is possible for applications to send objects and request services in an object-oriented system.
+-SQL-oriented Data Access is middleware between applications and database servers.
+-Embedded middleware provides communication services and software/firmware integration interface that operates between embedded applications, the embedded operating system, and external applications.
