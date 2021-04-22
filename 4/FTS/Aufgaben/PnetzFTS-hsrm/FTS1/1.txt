@@ -48,15 +48,18 @@ Fehlerbehebung oder Fehlerkompensation notwendig.
 
 Intermittierende Fehler (pseudo-transient): lassen sich als Sonderfall permanenter oder transienter Fehler behandeln.
 
-Fehlervermeidung
+Fehlervermeidung:
 versucht, die Fehlerursachen zu verhindern
-• Fehlermaskierung
+
+Fehlermaskierung:
 versucht, die Fehlerauswirkung zu verhindern
-• Fehlertoleranz
+
+Fehlertoleranz:
 wirkt sich auf die Fehlerzustände im System aus, so dass bei
 entsprechender Gegenmaßnahme ein Systemausfall vermieden
 werden kann
-• Wartung und Reparatur
+
+Wartung und Reparatur:
 periodische Prüfungen und Austausch defekter Komponenten
 
 Fehlerbehandlung: 1) Übergang zu fehlerfreien Subsystemen: Rekonfiguration (Ein/Ausgliedereung, Verlagerung)
@@ -79,7 +82,17 @@ Dynamische Redundanz: erlaubt eine Aktivierung nur bzw. erst bei Bedarf. Solange
 den redundanten Komponenten aber andere Aufgaben übernommen werden => Fehlerbehebung.
 
 b)
+Statisch: Ersatzstromkreise in Flugzeugen bringen keinen Nutzen solange es noch andere
+Stromkreise gibt
+
+Dynamisch: Mehrprozessorsysteme in dem CPUs ausfallen dürfen, CPU kann unabhängig von
+anderen arbeiten, aber auch bei Ausfall der anderen für alle einspringen.
+
+Flugzeug mit 4 Turbinen: Sie arbeiten alle (funktionsbeteiligt), aber wenn eine ausfällt, fliegt
+das Flugzeug trotzdem.
 
 3)
-a)
+Hardware ist sicherer, hat aber Verschleiss, teurer, schneller (keine Latenz)
+Software ist wiederverwendbarer, leicht veränderbar, günstiger, altert nicht
 
+Safety-kritische Anwendungen: Militär, Flugkontrolle, Medizin, Weltraumforschung
