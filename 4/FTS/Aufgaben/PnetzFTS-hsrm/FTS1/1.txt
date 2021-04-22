@@ -1,3 +1,24 @@
+Notizen:
+-Heiße (aktive) Redundanz:
+Redundanz, bei der die zusätzlichen Mittel nicht nur ständig in
+Betrieb sind, sondern auch an der Ausführung der
+vorgesehenen Aufgabe beteiligt sind → Funktionsbeteiligung
+
+-Passive (Standby-) Redundanz:
+Redundanz, bei der die zusätzlichen Mittel eingeschaltet, aber
+erst bei Störung oder Ausfall an der Ausführung der
+vorgesehenen Aufgabe beteiligt sind → Funktionsbeteiligung
+
+-Kalte Redundanz:
+Redundanz, bei der die zusätzlichen Mittel zur Ausführung der
+vorgesehenen Aufgabe erst bei Störung oder Ausfall
+eingeschaltet werden.
+
+-Homogene und diversitäre Redundanz:
+Redundanz mit gleichartigen bzw. ungleichartigen (z. B.
+andere physikalische Prinzipien, andere Lösungswege,
+andere Aufbauweise usw.) Mitteln.
+
 1)
 a)
 Fehlertoleranz ist die Fähigkeit eines Systems, mit einer begrenzten Zahl fehlerhafter Teile bzw. Komponenten 
@@ -26,6 +47,17 @@ Transiente Fehler: eine Reparatur ist hier sinnlos, da gar keine Komponente im e
 Fehlerbehebung oder Fehlerkompensation notwendig. 
 
 Intermittierende Fehler (pseudo-transient): lassen sich als Sonderfall permanenter oder transienter Fehler behandeln.
+
+Fehlervermeidung
+versucht, die Fehlerursachen zu verhindern
+• Fehlermaskierung
+versucht, die Fehlerauswirkung zu verhindern
+• Fehlertoleranz
+wirkt sich auf die Fehlerzustände im System aus, so dass bei
+entsprechender Gegenmaßnahme ein Systemausfall vermieden
+werden kann
+• Wartung und Reparatur
+periodische Prüfungen und Austausch defekter Komponenten
 
 Fehlerbehandlung: 1) Übergang zu fehlerfreien Subsystemen: Rekonfiguration (Ein/Ausgliedereung, Verlagerung)
 		  2) Herstellung eines fehlerfreien Zustands: Fehlerbehebung [Error Recovery] (Rück/Vorwärtsbehebung)
