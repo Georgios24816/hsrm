@@ -6,7 +6,7 @@ int main()
     int pin = 21;
 
     wiringPiSetup();
-    pinMode (pin, OUTPUT);
+    pinMode(pin, OUTPUT);
 
     while (1)
     {

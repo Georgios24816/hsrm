@@ -1,0 +1,53 @@
+1)
+a)
+Fehlertoleranz ist die Fähigkeit eines Systems, mit einer begrenzten Zahl fehlerhafter Teile bzw. Komponenten 
+"leben" zu können. Sie Erfordert im allgemeinen zusätzliche funktionale, strukturelle und/oder logische Mittel, 
+d. h. den Einsatz von Redundanz.
+
+b) 
+Rückwärtsfehlerkorrektur: Zurückkehr in einen Zustand vor dem Auftreten eines Fehlers. Genauso ist aber auch 
+ein Zustandswechsel in einen Notbetrieb oder ein Neustart des Systems möglich.
+
+Vorwärtsfehlerkorrektur: versucht weiterzumachen, als läge kein Fehler vor. Fehlerhafte Eingabewerte werden 
+durch Erfahrungswerte aus der Vergangenheit ausgeglichen oder es wird mit korrekt funktionierenden Ersatzsystemen 
+gearbeitet. 
+
+c)
+Fehler (fault, error, defect, mistake): eher die Auswirkung eines Ausfalls auf die erbrachte Funktion und damit 
+eine unzulässige Abweichung vom wahren Wert eines Merkmals =>  Zustand.
+
+Ausfall (failure): dagegen das Ereignis der nicht erfolgten Funktionserbringung und damit der Übergang in den 
+nicht funktionsfähigen Zustand =>  Ereignis.
+
+d)
+Permanente Fehler: eine Fehlermaskierung oder Ausgliederung der betroffenen Komponente sowie anschließende Reparatur.
+
+Transiente Fehler: eine Reparatur ist hier sinnlos, da gar keine Komponente im engeren Sinn ausgefallen ist. Eine 
+Fehlerbehebung oder Fehlerkompensation notwendig. 
+
+Intermittierende Fehler (pseudo-transient): lassen sich als Sonderfall permanenter oder transienter Fehler behandeln.
+
+Fehlerbehandlung: 1) Übergang zu fehlerfreien Subsystemen: Rekonfiguration (Ein/Ausgliedereung, Verlagerung)
+		  2) Herstellung eines fehlerfreien Zustands: Fehlerbehebung [Error Recovery] (Rück/Vorwärtsbehebung)
+							      Fehlerkompensation (Maskierung, Korrektur)		
+e) 
+Zuverlässigkeit (Reliability): Beschaffenheit einer Funktionseinheit bzgl. ihrer Fähigkeit, während oder nach 
+vorgegebenen Zeitspannen bei festgelegten Betriebsbedingungen die Zuverlässigkeitsanforderungen zu erfüllen 
+(DIN 40 041, DIN 55 350).
+
+Verfügbarkeit (Availability): Wahrscheinlichkeit, ein System zu einem vorgegebenen Zeitpunkt t in einem 
+funktionsfähigen Zustand anzutreffen (DIN 40 042, ISO/IEC 2382, 7498, 9126 und 2003)
+
+2)
+a)
+Statische Redundanz: erlaubt eine Aktivierung von redundanten Komponenten von vornherein 
+(z. B. Vervielfachung der HW oder Duplizierung von Programmen) => Fehlerkompensation.
+
+Dynamische Redundanz: erlaubt eine Aktivierung nur bzw. erst bei Bedarf. Solange kein Bedarf vorliegt, können von 
+den redundanten Komponenten aber andere Aufgaben übernommen werden => Fehlerbehebung.
+
+b)
+
+3)
+a)
+
