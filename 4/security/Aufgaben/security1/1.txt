@@ -1,0 +1,45 @@
+1)
+a)
+
+b)
+Der Angreifer könnte eine Vollständige Suche verwenden um die Schlüssel von Kunden einer Bank
+zu stehlen.
+Der Angegriffene könnte den Computer vom Internet trennen oder ausschalten oder Überweisungen
+kurzzeitig verbieten.
+
+2)
+a)
+Es handelt sich einen Chosen-Plaintext-Attack, der Kunde hat seine Login-Daten direkt an den
+Angreifer geschickt (in Klartext).
+
+b)
+Die Schwachstellen sind, dass der Benutzer den falschen Link nicht bemerkt hat.
+Der Benutzername und das Passwort sind Plaintext.
+
+c)
+2-Faktor-Authentifizierung: Der Kunde sollte noch einen Code den er automatisch per SMS bekommt
+				eingeben.
+
+Skripte die im Hintergrund ausgeführt werden blockieren.
+
+d)
+Verkauf der Login-Daten.
+Geldabchebung.
+Es ist ein White-Hat Hacker der Unsicherheiten aufzeigen will.
+Erpressung.
+
+3)
+
+
+4)
+a)
+Funktionssicherheit (engl. safety):
+zielt auf Übereinstimmung der Ist-Funktionalität der Komponenten mit
+der spezifizierten Soll-Funktionalität ab (Gefahrenabwendung, Ausfall-
+sicherheit, Schutz von Leib und Leben).
+
+
+
+b)
+
+c)
