@@ -3,7 +3,7 @@
 
 int main()
 {
-    int pin = 21; //SW2 and later 20
+    int pin = 29;
     pinMode(pin, INPUT);
 
     while (1)

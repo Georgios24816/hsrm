@@ -2,7 +2,7 @@
 
 int main()
 {
-    int pin = 20;
+    int pin = 29;
     pinMode(pin, OUTPUT);
 
     while (1)
