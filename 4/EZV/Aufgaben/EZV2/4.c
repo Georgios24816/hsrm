@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[])
 {
-    int pin = 27; //SW2
+    int pin = 2; //SW2
     size_t us = 100000;
 
     pinMode(pin, INPUT);
