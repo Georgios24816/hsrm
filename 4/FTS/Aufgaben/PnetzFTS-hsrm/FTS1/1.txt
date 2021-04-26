@@ -71,7 +71,7 @@ vorgegebenen Zeitspannen bei festgelegten Betriebsbedingungen die Zuverlässigke
 (DIN 40 041, DIN 55 350).
 
 Verfügbarkeit (Availability): Wahrscheinlichkeit, ein System zu einem vorgegebenen Zeitpunkt t in einem 
-funktionsfähigen Zustand anzutreffen (DIN 40 042, ISO/IEC 2382, 7498, 9126 und 2003)
+funktionsfähigen Zustand anzutreffen (DIN 40 042, ISO/IEC 2382, 7498, 9126 und 2003).
 
 2)
 a)

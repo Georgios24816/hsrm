@@ -2,25 +2,41 @@
 a)
 
 b)
+Angreifen:
+Ziel auswählen, Angriffsmethode auswählen, eigene Identität verschleiern, Informationsgewinnung
+
 Der Angreifer könnte eine Vollständige Suche verwenden um die Schlüssel von Kunden einer Bank
 zu stehlen.
-Der Angegriffene könnte den Computer vom Internet trennen oder ausschalten oder Überweisungen
-kurzzeitig verbieten.
+
+Social Engineering: Mitarbeiter bestechen um Schwachstellen zu finden.
+Security Scans: Offene Ports usw suchen.
+
+Zeitpunkt festlegen, passende Malware finden/entwickeln, Schwachstellen ausnutzen.
+
+Schützen:
+Mitarbeiter schulen, Software aktuell halten, Rechner verschlüsseln, Firewall,
+Intrusion detection/prevention Systeme, Passwörter verwenden und regelmäßig anpassen,
+jeder hat nur Zugriff auf das was er braucht, BSI Richtlinien.
 
 2)
 a)
-Es handelt sich einen Chosen-Plaintext-Attack, der Kunde hat seine Login-Daten direkt an den
-Angreifer geschickt (in Klartext).
+Phising/Password spoofing Angriff:
+der Kunde hat seine Login-Daten direkt an den Angreifer geschickt (in Klartext).
 
 b)
 Die Schwachstellen sind, dass der Benutzer den falschen Link nicht bemerkt hat.
-Der Benutzername und das Passwort sind Plaintext.
+Der Benutzername und das Passwort sind Plaintext. Es konnte ein Keylogger installiert sein.
 
 c)
 2-Faktor-Authentifizierung: Der Kunde sollte noch einen Code den er automatisch per SMS bekommt
-				eingeben.
+			    eingeben.
 
+Zertifikate.
+End-to-End Verschlüsselung.
 Skripte die im Hintergrund ausgeführt werden blockieren.
+Links aus Email ignorieren.
+Adressleiste beobachten.
+HTTPS benutzen.
 
 d)
 Verkauf der Login-Daten.
@@ -29,7 +45,7 @@ Es ist ein White-Hat Hacker der Unsicherheiten aufzeigen will.
 Erpressung.
 
 3)
-
+Man könnte eine Wörterbuchattacke versuchen
 
 4)
 a)
@@ -38,8 +54,17 @@ zielt auf Übereinstimmung der Ist-Funktionalität der Komponenten mit
 der spezifizierten Soll-Funktionalität ab (Gefahrenabwendung, Ausfall-
 sicherheit, Schutz von Leib und Leben).
 
+Asymmetrische Verschlüsselung: es gibt einen Public und einen Private Key.
 
+Spoofing: das Vortäuschen einer anderen oder Verschleiern der eigenen Identität. Sie bezieht sich auf 
+alle Techniken, die darauf abzielen, Authentifications- und Identifikationsmechanismen auszutricksen.
 
+HMAC: "digitale Unterschrift" für Nachrichten. In die Hash-Funktion wird dabei nicht nur die Nachricht, 
+sondern auch ein privater Schlüssel des Erstellers. Symmetrischer Schlüssel (nur ein geheimer Schlüssel).
+
+Verfügbarkeit (Availability): Wahrscheinlichkeit, ein System zu einem vorgegebenen Zeitpunkt t 
+in einem funktionsfähigen Zustand anzutreffen (DIN 40 042, ISO/IEC 2382, 7498, 9126 und 2003).
 b)
-
+siehe Bild
 c)
+siehe Bild
