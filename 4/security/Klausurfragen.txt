@@ -1,0 +1,2 @@
+Warum besitzt ein HMAC, der dem Nachweis der Authentizität von Daten dienet, keine Beweis-kraft gegenüber Dritten?
+symmetrisch, nur 1 Schlüssel, nicht zurückführbar von wem die Nachricht kommt
