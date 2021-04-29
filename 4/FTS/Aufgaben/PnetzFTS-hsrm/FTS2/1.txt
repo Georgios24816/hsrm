@@ -1,0 +1,38 @@
+1)
+a)
+MTTF: Mean Time To Failure
+
+b)
+Redundanz, Komponenten parallel schalten
+regelmäßige Wartung
+fehlerkorrigierende Codes
+Fehlerentkopplung, Abschirmung (abgeschirmte Kabel)
+
+2)
+a)
+
+b)
+Fehlermaskierung (fault masking):
+... ist die dynamische Korrektur von Fehlern aus mehreren
+Ergebniswerten, die jeweils von redundanten Systemexempla-
+ren (statisch) zur Verfügung gestellt werden, z. B. anhand
+einer Mehrheitsentscheidung.
+
+Fehlerkorrektur (error correction):
+... geht nur von einem Ergebniswert bzw. nur einem System-
+exemplar aus. Ist dieser Ergebniswert fehlerhaft, so wird aus
+diesem anschließend ein fehlerfreier Wert errechnet.
+
+3)
+a)
+
+b)
+
+4)
+a)
+
+b) Beispiel: Transformator, kann kein Gleichstrom übertragen
+
+5)
+Austausch ist besser, da schneller (0.5 h statt 24h)
+Verfügbar: 18 jahre / (18 Jahre + 0.5 Stunden) = 99.99 %
