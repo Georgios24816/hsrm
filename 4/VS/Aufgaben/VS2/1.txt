@@ -22,4 +22,4 @@ Funktionen bzgl. Dateisystem, Schutz (Benutzerverwaltung), entfernter Programmau
 transparent, bereitzustellen. Beispiele:Novell NetWare,Windows for Workgroups,UNIX Yellow Pages (NIS) und Network File System (NFS)
 
 3) Serverarchitekturen
-
+sequenziell, multithreaded, parallel

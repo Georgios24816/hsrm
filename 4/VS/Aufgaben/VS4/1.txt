@@ -42,3 +42,12 @@ networking paradigm.
 -With object request broker middleware, it is possible for applications to send objects and request services in an object-oriented system.
 -SQL-oriented Data Access is middleware between applications and database servers.
 -Embedded middleware provides communication services and software/firmware integration interface that operates between embedded applications, the embedded operating system, and external applications.
+
+4)
+a)
+Nachrichtenorientierte Kommunikation
+asynchroner Nachrichtenaustausch
+
+b)
+Binding/Trading:IProblem: Binden eines Clients an einen Server notwendigIProblem gilt analog auch für andere Paradigmen
+Aspekte: Naming & Locating
