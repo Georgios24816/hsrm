@@ -1,0 +1,22 @@
+1)
+a)
+Ausfallrate λ : λ = 1 / MTTF
+Reparaturrate μ : μ = 1 / MTTR
+Mittlere Fehlerhäufigkeit ν : ν = 1 / MTBF (bzw. durchschnittliche Fehlerrate AFR)
+
+Zusammenhang: ν = λ * μ / (λ + μ)
+
+b)
+Unverfügbarkeit (Unavailability): U := 1 - V
+
+
+
+2)
+a)
+
+b)
+
+4)
+a)
+
+b)
