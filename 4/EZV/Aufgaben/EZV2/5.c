@@ -1,7 +1,7 @@
 #include <wiringPi.h>
 #include <stdint.h>
 
-static int pin = 18;
+static int pin = 1;
 
 void ISRhandler()
 {
@@ -12,7 +12,7 @@ void ISRhandler()
 
 int main()
 {
-    int pinSwitch2 = 27;
+    int pinSwitch2 = 2;
 
 	wiringPiSetup();
     pinMode(pinSwitch2, INPUT);

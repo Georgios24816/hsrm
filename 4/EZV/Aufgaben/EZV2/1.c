@@ -4,20 +4,19 @@
 
 void mySoftPWM(uint32_t us, uint8_t dutyCycle, int pin)
 {
-    softPwmWrite
+    softPwmCreate(pin, 0, 100); //pwm range 0(off) - 100(on)
+    softPwmWrite(pin, dutyCycle);
 }
 
 int main()
 {
-    int pin = 18;
+    int pin = 1;
     
     wiringPiSetup();
-    softPwmCreate(pin, 0, 100); //wom range 0(off) - 100(on)
-
 
     while (1)
     {
-        mySoftPWM(10000, 50, pin);
+        mySoftPWM(1000, 50, pin);
     }
 
     return 0;

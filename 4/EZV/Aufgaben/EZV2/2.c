@@ -9,7 +9,7 @@ bool hardwarePWM(int pin, size_t dutyCycle)
 		return false;
 	}
 	
-	pwmWrite(pin, (dutyCycle * 1024) / 100
+	pwmWrite(pin, (dutyCycle * 1024) / 100);
 	
 	return true;
 }
