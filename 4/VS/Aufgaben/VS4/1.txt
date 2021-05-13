@@ -49,5 +49,5 @@ Nachrichtenorientierte Kommunikation
 asynchroner Nachrichtenaustausch
 
 b)
-Binding/Trading:IProblem: Binden eines Clients an einen Server notwendigIProblem gilt analog auch für andere Paradigmen
+Binding/Trading:IProblem: Binden eines Clients an einen Server notwendig.Problem gilt analog auch für andere Paradigmen
 Aspekte: Naming & Locating
