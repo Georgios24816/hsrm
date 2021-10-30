@@ -1,0 +1,30 @@
+1)
+a)
+avg(x) = 2
+avg(y) = 4
+Kovarianz: Sxy = 7.4
+
+b)
+Varianz Sx² = 6.8
+Varianz Sy² = 14.8
+Standardabweichung Sx = 2.61
+Standardabweichung Sx = 3.85
+
+Korrelation r(xy) = Sxy / (Sx * Sy) = 0,74
+c)
+
+
+3)
+a)
+P(15; 4) = P(15) / P(4) = 15! / 4! = 54486432000
+b) 
+10^4 = 10000 Möglichkeiten insgesamt
+9^4 = 6561 Möglichkeiten ohne 3
+
+10000 - 6561 = 3439 Kombination in denen die 3 mindesten einmal vorkommt
+
+4)
+a) 20 Tripel in denen dreimal derselbe Wert vorkommt
+19^3 = 6859 Tripe in denen nicht dreimal derselbe Wert vorkommt
+
+b) 20^4 = 160000 Teilmengen mit genau 4 Elementen
