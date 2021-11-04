@@ -2,17 +2,24 @@
 a)
 avg(x) = 2
 avg(y) = 4
-Kovarianz: Sxy = 7.4
+Kovarianz: Sxy = 9.25
+
+Kovarianzmatrix: | 8.50 9.25 |
+		 | 9.25 18.5 |
 
 b)
-Varianz Sx² = 6.8
-Varianz Sy² = 14.8
-Standardabweichung Sx = 2.61
-Standardabweichung Sx = 3.85
+Varianz Sx² = 8.5
+Varianz Sy² = 18.5
+Standardabweichung Sx = 2.915
+Standardabweichung Sx = 4.301
 
-Korrelation r(xy) = Sxy / (Sx * Sy) = 0,74
+Korrelation r(xy) = Sxy / (Sx * Sy) = 0.738
 c)
+Wenn wir alle x(i) verdoppeln sieht die Matrix wie folgt aus:
 
+      x     y
+x 38.80 22.25
+y 22.25 18.50
 
 3)
 a)

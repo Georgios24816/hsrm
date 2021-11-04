@@ -5,3 +5,6 @@ regelmäßige Verjährungsfrist: 195
 Beginn der Rechtsfähigkeit: 1
 Geschäftsfähigkeit: 104 & 105 , 106(2) & 107
 (104 - 113)
+
+Anspruchsgrundlage: 812
+Werkvertrag: 631
