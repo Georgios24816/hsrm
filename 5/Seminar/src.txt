@@ -1,0 +1,27 @@
+https://jasonwunix.com/assets/pdf/reyes2018synchrowatch.pdf : reyes2018synchrowatch.pdf
+
+https://www.researchgate.net/profile/Keunwoo-Park/publication/332771220_FingMag_Finger_Identification_Method_for_Smartwatch/links/6004ee42299bf14088a2de90/FingMag-Finger-Identification-Method-for-Smartwatch.pdf : FingMag_CHI2019_LBW_CR.pdf
+
+https://arxiv.org/pdf/1706.01720.pdf : 1706.01720.pdf
+
+https://dergipark.org.tr/en/download/article-file/1402182 : 10.17694-bajece.827342-1402182.pdf
+
+https://www.researchgate.net/profile/Mvv-Prasad-Kantipudi/publication/348539192_Pandemic_Stabilizer_using_Smartwatch/links/600aab9392851c13fe2b1004/Pandemic-Stabilizer-using-Smartwatch.pdf : 09317056.pdf
+
+https://www.mdpi.com/1424-8220/21/6/2254/pdf : sensors-21-02254-v2.pdf
+
+https://dl.acm.org/doi/pdf/10.1145/3307334.3326107 : 3307334.3326107.pdf
+
+https://etd.ohiolink.edu/apexprod/rws_etd/send_file/send?accession=wright1484053111038364&disposition=inline : Miniatured Inertial Motion and Position Tracking and Visualization Systems Using Andorid Wear Platform.pdf
+
+https://www.cse.msu.edu/~caozc/papers/TTAS21-song.pdf : TTAS21-song.pdf
+
+[deprecated] https://www.researchgate.net/publication/228937181_Integration_of_vision_and_inertial_sensors_for_home-based_rehabilitation :  Integration_of_vision_and_inertial_sensors_for_hom.pdf
+
+https://link.springer.com/chapter/10.1007/978-3-319-94334-3_13
+
+https://www.sciencedirect.com/science/article/pii/S2352648320300635  : iWash: A smartwatch handwashing quality assessment and reminder system with real-time feedback in the context of infectious disease
+
+https://md2k.org/images/papers/biomarkers/Parate_Detecting-Eating.pdf : Parate_Detecting-Eating.pdf 
+
+http://repository.bilkent.edu.tr/bitstream/handle/11693/75445/Novel_Noniterative_Orientation_Estimation_for_Wearable_Motion_Sensor_Units_Acquiring_Accelerometer%2C_Gyroscope%2C_and_Magnetometer_Measurements.pdf?sequence=3 : Novel_Noniterative_Orientation_Estimation_for_Wearable_Motion_Sensor_Units_Acquiring_Accelerometer,_Gyroscope,_and_Magnetometer_Measurements.pdf
