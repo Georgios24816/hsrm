@@ -8,3 +8,11 @@ Geschäftsfähigkeit: 104 & 105 , 106(2) & 107
 
 Anspruchsgrundlage: 812
 Werkvertrag: 631
+
+Vertrag [Kaufleute]:
+-Auf beiden Seiten Kaufleute
+-vorher Vertragsverhandlung
+-Kaufmännisches Bestätigungsschreiben
+-Das bestätigte muss im wesentlichen dem verhandelten übereinstimmen
+-Schreiben in unmittelbarer zeitlichen Nähe
+(Schweigen gilt als Zustimmung)
