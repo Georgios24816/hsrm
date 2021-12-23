@@ -1,0 +1,264 @@
+%
+%% This is file `sample-sigplan.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigplan')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigplan.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigplan,screen]{acmart}
+%% NOTE that a single column version is required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen,review]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+%% \setcopyright{acmcopyright}
+%% \copyrightyear{2018}
+%% \acmYear{2018}
+%% \acmDOI{10.1145/1122445.1122456}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+%% \acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
+%%   Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+%% \acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+%% June 03--05, 2018, Woodstock, NY}
+%% \acmPrice{15.00}
+%% \acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Titel einfügen}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+\author{Georgios Markou}
+\affiliation{%
+  \institution{Hochschule Rhein Main}
+  \city{Wiesbaden}
+  \country{Deutschland}}
+\email{georgios24816@gmail.com}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Georgios Markou}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+  Smartwatches werden immer beliebter und sind im Alltag häufig anzutreffen. Sie erfüllen Aufgaben die für normale Uhren undenkbar sind und dienen gewissermaßen als Erweiterung des Smartphones. Smartwatches verfügen über eine Vielzahl von unterschiedlichen Sensoren, darunter auch Magnetometer. Das Ziel dieses Papers ist es nach einer kurzen Betrachtung der Geschichte und den derzeiten Stand der Entwicklung von Smartwatches, unter Betrachung der neuesten Studien, insbesondere die Verwendung von mit Magnetometern ausgestatetten Smartwatches zu beleuchten. Magnetometer dienen hauptsächlich dazu die magnetische Flussdichte von Magnetfeldern zu messen, ermöglichen jedoch auch oft deren Richtung zu erfassen. Meistens werden MEM-Magnetometer (MEM = Micro-Electromechanical Systems) in Smartphones und Smartwatches verbaut. Mithilfe von Magnetringen oder sonstigen tragbaren magnetischen Gegenständen ist es möglich einer Smartwatch verschiedene Funktionen für verschiedene Finger zuzuordnen oder die Finger als dreidimensionalen Zeiger zu verwenden. Diese Eingabemethoden verstehen sich als Ergänzung zur Touch-Bedienung. Mit den besagten Magnetringen und mit, mit Magneten ausgestatteten, Brillen kann man Autofahrer überwachen und erkennen ob sie das Lenkrad sicher greifen und ob und inwiefern sie vom Verkehrsgeschehen abgelenkt sind. 
+\end{abstract}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{smartwatch, magnetometer, magnetic sensing, motion tracking, finger identification}
+
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+Smartwatches gewinnen im Alltag immer mehr an Bedeutung, sie dienen gewissermaßen als Erweiterung des Smartphones. 
+Sie verfügen über eine Vielzahl von verschiedenen Sensoren,  darunter auch Magnetometer. 
+Magnetometer dienen hauptsächlich dazu die magnetische Flussdichte von Magnetfeldern zu messen, 
+ermöglichen es jedoch auch oft deren Richtung zu erfassen.
+Smartwatches können bauartbedingt nur über kleine runde oder rechteckige Bildschirme verfügen. 
+Um die nonverbalen Eingabemöglichkeiten (Tasten, Touchscreen) zu erweitern kann eine Fingerabdruckerkennung
+hilfreich sein. Mithilfe dieser Fingerabdruckerkennung ist es möglich bestimmte Aufgaben einzelnen Fingern
+zu-zuordnen, wie in der Arbeit von Keunwoo Park und Geehyuk Lee [1] beschrieben. 
+In diesem Paper werden verschiedene Ansätze betrachtet, die mithilfe des in der Smartwatch eingebauten
+Magnetometers, nonverbale Eingabemethoden für die Weiterverarbeitung in der Smartwatch zu realisieren.
+In der Arbeit von Gabriel Reyes, et al. [2], wird eine Vorgehensweise beschrieben die, die Realisierung einer
+einhändigen Gestenerkennung mithilfe von Magnetringen erlaubt.
+In der Arbeit von Hua Huang, et al [3] wird zur Fahrer-überwachung ebenfalls auf Magnetringe in Kombination mit
+Magnetbrillen (Brillen ausgestattet mit einem Magnet an einer Seite des Brillengestells) zurückgegriffen.
+Die vorhergenannten Problemstellungen/Forschungen benötigen mindestens ein Magnetometer zur erfolgreichen
+Implementierung. Häufig werden diese Magnetometer auch von Accelerometern, Gyroskope und Barometern unterstützt, 
+so Gabriel Reyes, et al. [2].
+Das Ziel dieses Papers ist die Verwendung von Smartwatches mit Magnetometern näher zu analysieren und auf ihre 
+Vor- und Nachteile aufmerksam zu machen.
+
+\clearpage
+
+\section{Related Work}
+Es gibt Forschungen die Methoden zur Unterscheidung des bedienenden Fingers einer Smartwatch oder anderweitige Eingabemöglichkeiten vorschlagen. Jedoch benötigen diese Methoden oft auch die Verwendung einer fest installierten Kamera, so Keunwoo Park und Geehyuk Lee [1]. Ein weiterer Ansatz ist die Spracherkennung mithilfe des in der Smartwatch intergrierten Mikrofons, laut Gabriel Reyes, et al. [2]. Ebenfalls gibt es zahlreiche Konzepte die auf Magnetismus als Eingabemöglichkeit setzen für tragbare elektronische Geräte (Wearables), so Gabriel Reyes, et al. [2].
+
+In der Arbeit von Tritap [UKN2], wird stattdessen ein rohes kapazitives Berührungsbild des Smartwatch-Bildschirms benötigt um verschiedene Finger zu unterscheiden. 20 Probanden absolvierten die Tipp-Studie während sich 9 Probanden um die Wisch-Studie kümmerten. Alle Probande sind ihrer Auffassung nach nicht mit Wearables vertraut. Die durchschnittliche Fehlerrate bei der Wischgeste ist deutlich höher. Bei der Tipp-Geste ist die höchste Fehlerrate ca 10 \% während sie beim beim Wischen bei ca. 11 \% liegt. Zu beachten ist, dass auch "unnatürliche" Gesten erprobt werden.
+Um eine zufriedenstellende Genauigkeit zu erreichen muss der Smartwatch-Nutzer eine unangenehme Position beim Berühren des Bildschirms einnehmen, laut Keunwoo Park und Geehyuk Lee [1].
+
+Hamed Ketabdar et al. [UKN3] verwendet das interne Magnetometer eines Smartphones um dreidimensionale Bewegung zu erkennen. Dazu muss der Benutzer einen Metallring, an der Hand die die Uhr bedient, tragen. In der Arbeit von Daniel Ashbrook, et al. [UKN4] wird das Projekt Nenya vorgestellt, welches ebenfalls einen Magnetring, der wie ein Ehering am Zeigefinger getragen wird, verwendet. Die Bedienung der Smartwatch kann durch Drehen und Schieben dieses Rings bewerkstelligt werden. 6 Probanden müssen Gesten mindesten 15 mal durchführen. Schließlich kann eine Genauigkeit von 91.4 \% erreicht werden. 
+Diese Methode ist jedoch ermüdend und unbequem, laut Gabriel Reyes, et al. [2]. Ebenfalls ist dieses Paper ca. 10 Jahre alt.
+
+In der Arbeit von Ke-Yu Chen, et al. [UKN5] wird uTrack vorgestellt, welches die gleichen Ambitionen verfolgt. Voraussetzungen sind das Tragen eines Magnetrings am Daumen und zwei Magnetometer am Ringfinger, um die Daumenbewegung in einen dreidimensionalen Zeiger zu übersetzen. Um die Genaugikeit des dreidimensionalen Zeigers exprerimentell zu bestimmen, werden LED Marker die in Echtzeit und mit 1 mm Auflösung die Bewegung aufnehmen. Es werden 6 Kameras verwendet um die LED Marker aufzunehmen mit einer Abtastrate von 480 Hz. Der Proband (der Autor selbst), bewegt seine Hand im Bereich von +- 80 mm (x-Achse) +- 60 mm (y-Achse) und 0-80 mm (z-Achse). Die höchste Genauigkeit wird in der Mitte dieses Raum erreicht mit einem durchschnittlichen Fehler von 4.82 mm. Im zweiten Experiment müssen Probanden den Cursor entlang eines 120-Pixel Quadrats auf einem 24 Zoll 1920x1080 Bildschirm. Schließlich konnten in XY und in XZ Richtung die Genauigkeiten in drei Konstellationen (Magnering am Daumen, Magnetring am Ringfinger, Stylus). Der durchschnittliche Fehler liegt im Bereich von 14 bis 15 Pixel.
+
+In der Arbeit von Sang Ho Yoon, et al. [UKN6], wird der TRing vorgestellt. Eine IMU (Inertial Measurement Unit) mit 9 Axen liefert die Positionsdaten eines am Finger getragenen Magnetes (vorzugsweise Magnetring). Die Position an der der Magnetring am Finger angebracht wird, wird mithilfe eines speziellen Algorithmus ermittelt.  Der Algorithmus erlaubt ebenfalls die Verwendung einer Vielzahl von Magneten. Nach der Anwendung eines gradient descent Verfahrens wird schon eine robuste Näherung der Magnetposition zur Smartwatch erreicht. Dieses Verfahren soll es ermöglichen auch mit alltäglichen Objekten problemlos interagieren zu können. Die Genauigkeit steigt exponentiell mit steigender Distanz des Magnetrings vom Magnetometer der Smartwatch. Während bei einem von 15 mm die Genauigkeitsabweichung unter 5 \% ist, liegt sie bei einem Abstand von 60 mm bei ca 30 \% für das Anvisieren und bei über 40 \% für das Doppeltippen. Zielpunkte mit einem Durchmesser kleiner oder gleich 10 mm erhöhen die Genauigkeitsabweichung deutlich. Die Probanden lernen die Benutzung des TRing schnell, bemänglen jedoch die mangelnde haptische Rückmeldung/Bestätigung.
+
+In der Arbeit von Aras Yurtman und Billur Barshan [UKN7], werden die Daten von Magnetometer, Accelerometer und Gyroskop gleichzeitig betrachtet um eine Ortung zu realisieren.  Dabei sind sind 2 nicht-parallele Referenzvektoren ausreichend um eine Bewegungrichtung abzuschätzen. Durchschnittlich wird eine Genauigkeit von ca. 80 \% erreicht. Ein Außreiser ist das RR-System welches ein Durchschnittsgenauigkeit von vergleichweise geringen 58.7 \%. Den Bestwert erreicht das REF-System mit 87.1 \%.
+
+In der Arbeit von Chris Harrison und Scott E. Hudson [UKN1] wird "Abracadabra" vorgestellt. Abracadabra verwendet einen Magnetring als Cursor oder wahlweise Gesten als Eingabemöglichkeit. Abracadabra erreichte eine Genauigkeit von 92 \% bei Zielen breiter als 15°. Bei geringeren Breiten fällt die Genauigkeit abruft auf einen unzureichenden Wert. Um die Fehlerrate zu reduzieren verwendet Abracadabra einen Bildschirm der eine geringe Okklusion sowie einen hohe Control-Display Gain aufweist. Dadurch wird die Fehlerlate durchschnittlich um mehr als 50 \% gesenkt.
+
+\clearpage
+
+\section{Grundlagen Smartwatch}
+Das Lexikon Duden.de [UKN8] definiert den Begriff Smartwatch wie folgt : „am Handgelenk getragener Minicomputer, der neben der Zeitanzeige zahlreiche Funktionen wie Konnektivität zum Smartphone, Sensoren zur Beobachtung des Anwenders u.Ä. aufweist“. Der Ursprung der Smartwatch liegt einige Dekaden in der Vergangenheit, laut Kyle Mills Johnson [UKN9]. Die Beliebtheit stieg ca. im Jahr 2014. Erwähnenswert sind die Modelle Samsung Galaxy Gear (Markteinführung: 25. September 2013, laut engadget [UKN10]) und Pebble smart watch (Markteinführung: 13. Januar 2013, laut zdnet [UKN11]), laut Kyle Mills Johnson [UKN9]. Der aktuellste Nachfolger der Samsung Galaxy Gear heißt Samsung Galaxy Watch (Markteinführung: ukn12 [UKN12]). Sie verfügt über ein Accelerometer, ein Gyroskop, ein Barometer, einen Herzfrequenzsensor, einen Lichtsensor und einen runden 1.3 Zoll Bildschirm, laut Samsung [UKN13].
+
+\section{Grundlagen Magnetometer}
+Magnetometer können vielseitig verwendet werden. Sie können als Kompass fungieren oder als Metaldetektor bei Aufspüren von magnetischen Materialen helfen. Mit ausgeklügelten Algorithmen ist die Implementierung einer Gesten-/Abstands- oder Richtungserkennung anhand von Metallringen o. Ä. Möglich.
+
+In Smartwatches finden typischerweise MEM-Magnetometer (MEM = MicroElectromechanical Systems) Anwendung. Diese besitzen einen äußerst kompakten Formfaktor. Dadurch ist eine strategische Platzierung des Sensors einfach. Ebenfalls verzichten MEM-Magnetometer auf den Gebrauch von Microfabrication (Microfabrication benutzt Halbleitertechnik um Objekte im Micro- bis Millimeter Bereich herzustellen, laut Joel Voldman, et al. [UKN15]), laut UKN14 [UKN14]. Einen weiteren Vorteil dieser Magnetometer stellt der relativ niedrige Stromverbrauch, bei hohen Arbeitsfrequenzen (100 Hz bei einer Sony Smartwatch 3 SWR50 laut Gabriel Reyes, et al. [2]), laut X16 [UKN16], dar. Jedoch können die hohen Entwicklungskosten bei der Entwicklung eines neuen verbesserten MEM-Magnetometers abschreckend wirken.
+
+Magnetoresistive-MEM-Magnetometer:
+Auf ein Hunt-Element werden typischerweise sogenannte Barber Poles auf Permalloy (Nickellegierung bestehend aus ca. 80 \% Nickel und 20 \% Eisen). Diese schmallen und gut leitenden Streifen führen dazu, dass der Sensor sensibler auf Magnetfelder reagiert, indem sie den elektrischen Strom in das Permalloy „verschieben“. Diese Sensoren sind in vielen Messbereichen verfügbar, verfügen über eine Auflösung im Bereich von 1 nT bis 10 nT und eine Messgenauigkeit von 1*10\^-3.
+
+Hall-Effekt-MEM-Magnetometer:
+Diese Sensoren verwenden den Hall-Effekt um das Magnetfeld zu bestimmen/messen.  Um eine hohe Genauigkeit zu erreichen ist das Material des Sensors von großer Bedeutung. Dabei sind Galliumarsenid, Indiumarsenid, Indiumphosphid, Indiumantimonid, und Graphen am geignetsten aufgrund ihrer hohen Electron mobility (Elektrongeschwindigkeit in einem Leiter vom Magnetfeld angezogenen Leiter). HallSensoren erreichen eine Auflösung von ca. 100 µT mit einer Genauigkeit von 1*10\^-4. Ihr Messbereich reicht von 10 mT bis 10 T.
+
+Lorentzkraft-MEM-Magnetometer:
+Dieser eher seltene Sensor hat die Vorteile, dass kein spezielles magnetisches Material gebraucht wird, keine zusätzliche Messeinrichtung um parallel zum Magnetfeld messen zu können und kann einfach in ein Smartwatch und ihre eingebauten Sensoren intergriert werden. Der vergleichsweise hohe Energieverbrauch um selbst geringe Magnetfelder zu messen gehören zu den noch nicht gelösten Problemen. Ebenso der größere Platzbedarf und Preis.
+
+\section{Magnetometer in smartwatches (Verwendung)}
+\section{Bestimmung der Magnetorientierung}
+In der Arbeit von Keunwoo Park und Geehyuk Lee [1], wird der Prozess der Bestimmung der Magnetorientierung wie folgt beschrieben. Die Probanden trugen einen Ring ohne Magnet und mussten auf einen Bereich, mit dem auf dem Bildschirm angezeigten Finger, tippen. Sie sollten währenddessen eine bequeme Haltung beibehalten. Dabei wurden der Berührungspunkt, die Position und die Orientierung der Smartwatch und des Rings. Der Berührungspunkt wurde mithilfe der Smartwatch selbst erfasst, während die restlichen Daten von 5 Kameras aufgezeichnet wurden, so Keunwoo Park und Geehyuk Lee [1]. 
+Ein virtueller Magnet wurde an den Ring angebracht. Anhand der aufgezeichneten Daten konnte das Magnetfeld des Magnetrings ermittelt werden und die Genauigkeit der Fingererkennung, so Keunwoo Park und Geehyuk Lee [1]. Es wurden 2 Magnetpositionen gefunden die eine genaue Bestimmung der Magnetorientierung erlauben, laut Keunwoo Park und Geehyuk Lee [1].
+
+\section{Interaktion}
+Knopf und Gesten: Ein Knopdruck kann die Gestenerkennung aktivieren. Für die Erfassung gültiger Gesten muss die Magnetabstand zur Smartwatch beachtet werden, laut Sang Ho Yoon, et al. [30].
+
+Näherung und Drehung: Anhand des Eintauchwinkels des bedienenden Fingers und ihrer Nähe zur Smartwatch und eine Drehung des Fingers können weitere Benutzungsmöglichkeiten realisiert werden, so Sang Ho Yoon, et al. [31].
+
+Cursor: Man kann mit einem Magnetring auf einer Fläche oder in der Luft Cursor, relativ zum Magnetometer, imitieren und auf dem Bildschirm der Smartwatch visualisieren, so Sang Ho Yoon, et al. [UKN6].
+
+Slider: Diese Variante ist ähnlich zum Cursor. Hierbei wird der Cursor als Slider verwendet, entweder mit relativen oder mit absoluten Werten, laut Sang Ho Yoon, et al. [UKN6].
+
+Finger: Anhand des Magnetrings werden können alle Finger jeweils mit einer anderen Funktion für die Smartwatch assoziiert werden, so Keunwoo Park und Geehyuk Lee [1].
+
+Daumenbewegung: Auf dem Display wird eine Daumenbewegung und ihre Auswirkungen angezeigt. Der Benutzer kann diese Bewegung mit seinem Daumen ausführen um die Aktion auszulösen, so Gabriel Reyes, et al. [2].
+
+\section{Genauigkeit}
+In der Arbeit von Hua Huang, et al. [3] erreicht MagTrack bei der Erkennung eine Genauigkeit von 87 \% bei einer Trefferquote von 90 \%. Die Daten lieferten 10 verschiedene Personen die jeweils insgesamt über 500 Minuten Auto fuhren.
+
+In der Arbeit von Laut Keunwoo Park und Geehyuk Lee [1] kann FingMag mit einer Genauigkeit von 96.21 \% verschiedene Finger korrekt unterscheiden. Zur Offline-Evaluierung wurden Daten von 12 Probanden gesammelt.
+
+In der Arbeit von Gabriel Reyes, et al. [2] benötigt SynchroWatch über 3 Sekunden um eine Genauigkeit über 50 \% zu erreichen.
+
+In der Arbeit von Sang Ho Yoon, et al. [UKN6] konnte eine maximale Abweichung von 8.6 mm, im dreidimensionalen Raum, für den TRing verifiziert werden. Bei Benutzereingaben wurde eine Genauigkeit von 92 \% für den Button-Modus und eine Genauigkeit von 91 \% für den Cursor-Modus erreicht.
+
+\section{Vorteile}
+Moderne Smartwatches verfügen immer über mindestens ein Magnetometer, so X [x].
+
+Für genug Szenarien bieten die erwähnten Verfahren eine ausreichende Genauigkeit, so X2 [x2].
+
+Viele Implementierungs betrachten nur stationäre Szenarien, so Gabriel Reyes, et al. [2].
+
+\section{Nachteile}
+Laut Keunwoo Park und Geehyuk Lee [1], können verschiedene Winkel zwischen den beiden Händen zu Fehlern führen. Es müssen viele Trainingsdaten gesammelt werden um die Fehleranfälligkeit zu minimieren. Für die Zukunft wollen Keunwoo Park und Geehyuk Lee [1] das Erdmagnetfeld isolieren und seinen Effekt kompensieren.
+
+In der Arbeit von Sang Ho Yoon, et al. [UKN6] führen hohe Bewegungsgeschwindigkeiten oder hohe Verweilzeiten zu einer Verschlechterung der Ortungsgenauigkeit. Die Positions- und die Doppelclickgenauigkeit leiden mit erhöhtem Abstand vom Ziel, so Sang Ho Yoon, et al. [UKN6]. Laut Zhipeng Song, et al. [UKN16], gibt es verschiedene Vorschläge um die Zeit zwischen zwei Bewegungen nicht als eigenständige Bewegung wahrzunehmen.
+
+Bei der Fahrerüberwachung ist es schwierig Spurwechsel von kurvigen Straßenverläufen zu unterscheiden. Zur Bewältigung dieses Problems schafft das Smartwatch-GPS Abhilfe, so Hua Huang, et al. [3].
+
+\clearpage
+
+\section{Resümee}
+Meiner Meinung nach sind Smartwatches haben Smartwatches das Potenzial zusätliche Funktionen zu erfüllen oder
+bestehende Funktionen zu vereinfachen und zu erweitern. Ihre Aufgaben können weiter über das Telefonieren, die
+GPS-Ortung und das Fitness-Tracking hinausgehen. Da Smartwatches im Alltag immer häufiger anzutreffen sind, ist es
+sinnvoll ihre Funktionalität weiter zu erforschen. Wie unschwer zu erkennen ist, gibt es viele Studien/ Forschungen
+die es sich zum Ziel gesetzt haben insbesondere die zahlreichen Sensoren der Smartwatches dafür genauer unter die
+Lupe zu nehmen.
+Bei so vielen Studien gab es auch viele Erfolge zu verzeichnen. Zwar erreichen diese Methoden allesamt keine
+ausreichend hohe Genauigkeit wie die meisten Displays und sind trotzdem fehlerbehaftet und fehleranfällig als ein
+traditionelles Display. Diese Fehleranfälligkeit ist jedoch kein Grund um die Verwendung von Magnetometern für
+zusätliche Eingabemöglichkeiten vorzeitig auszuschließen. Diese Techniken stecken noch in den Kinderschuhen. Die
+Mehrheit der Tabletnutzer, verwendet diese in Kombination mit Eingabestiften um beispielweise das Schreiben oder
+Zeichnen zu vereinfachen. Wieso sollten Smartphonenutzer nicht auf Magnetringe, Magnetbrillen, oder sonstigen
+magnetischen Gegenständen zurückgreifen können. Dafür werden jedoch zusätzliche Nachforschungen benötigt die ein
+breiteres Publikum begeistern und dieses dazu anregen bei den entsprechenden Tests als Probanden teilzunehmen.
+Die Fahrerüberwachung ist ebenfalls ein nicht zu unterschätzender Einsatzbereich. Jedoch gibt es keine international
+einheitliche Straßenverkehrsordnung, somit durfte sich eine allgemeine Zulassung als schwierig bis unmöglich
+herausstellen. Dennoch wären weitere Forschungen sinnvoll insbesondere für Berufsfahrer, die stundenlang
+konzentriert Autofahren müssen, welche vielleicht auch Gefahrgut transportieren und somit besonders strenge
+Vorschriften einhalten müssen. 
+Zusätzlich besteht die Möglichkeit ein Magnetarmband statt einen Magnetring zu verwenden. Dies würde es auch
+körperlich eingeschränkten Personen, die keinen Ring tragen können oder keinen Eingabenstift halten können,
+ermöglichen mit ihren Smartwatches oder sonstigen IoT Geräten zu interagieren. In Einrichtungen die sich auf
+körperlich eingeschränkte Menschen fokussieren, beispielsweise spezielle Schulen, würde die Möglichkeit eine
+Smartwatch, Smartphone o. Ä. zu bedienen hilfreich sein.
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigplan.tex'.
+

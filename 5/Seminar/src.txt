@@ -27,3 +27,26 @@ https://md2k.org/images/papers/biomarkers/Parate_Detecting-Eating.pdf : Parate_D
 http://repository.bilkent.edu.tr/bitstream/handle/11693/75445/Novel_Noniterative_Orientation_Estimation_for_Wearable_Motion_Sensor_Units_Acquiring_Accelerometer%2C_Gyroscope%2C_and_Magnetometer_Measurements.pdf?sequence=3 : Novel_Noniterative_Orientation_Estimation_for_Wearable_Motion_Sensor_Units_Acquiring_Accelerometer,_Gyroscope,_and_Magnetometer_Measurements.pdf
 
 https://www.cs.ru.ac.za/research/g10j6110/Kyle%20M.%20Johnson%20-%20BSc%20(Hons)%20Thesis.pdf
+
+///////////////////////////////////////////////
+Keunwoo Park und Geehyuk Lee [1]
+Gabriel Reyes, et al. [2]
+Hua Huang, et al [3]
+Chris Harrison und Scott E. Hudson [UKN1]
+Tritap [UKN2]
+Ketabdar et al. [UKN3]
+Daniel Ashbrook, et al. [UKN4]
+Ke-Yu Chen, et al. [UKN5]
+Sang Ho Yoon, et al. [UKN6]
+Aras Yurtman und Billur Barshan [UKN7]
+Duden.de [UKN8]
+Kyle Mills Johnson [UKN9]
+engadget [UKN10]
+zdnet [UKN11]
+ukn12 [UKN12]
+Samsung [UKN13]
+UKN14 [UKN14]
+Joel Voldman, et al. [UKN15]
+
+
+
