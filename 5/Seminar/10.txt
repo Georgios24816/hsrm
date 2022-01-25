@@ -1,0 +1,127 @@
+### Überblick Smartwatch:
+Laut dem Lexikon Duden ist eine Smartwatch ein
+"am Handgelenk getragener Minicomputer, der neben der Zeitanzeige 
+zahlreiche Funktionen wie Konnektivität zum Smartphone, 
+Sensoren zur Beobachtung des Anwenders u. Ä. aufweist"
+
+Eine der ersten massenproduzierten Smartwatches war die Pebble Smart Watch 
+(Markteinführung am 23. Januar 2013).
+
+Die Beliebtheit stieg im Jahr 2014 als mehrere Modelle verfügbar waren.
+Darunter auch die Samsung Galaxy Gear (Markteinführung 25. September 2013)
+
+Mittlerweile verfügen alle Smartwatches über Soundausgabe, GPS, Accelerometer
+Magnetometer, Farbbildschirme und sind internetfähig.
+Sie können zum beantworten von Anrufen, verfassen von Nachrichten oder
+zum Kalorienzählen und als Schrittzähler verwendet werden.
+
+Als Betriebssystem finden Abwandlungen von Android Verwendung.
+wie z.b. Asteroid OS, TIzen und das von Google entwickelte WearOs  
+
+### Überblick magnetismus und Magnetometer
+
+Ein Magnetfeld ist das Feld welches ein  elektrisch-geladenes Teilchen
+produziert z.B. eines negativ geladenen Elektrons.
+
+Alle Magnete bestehen aus 2 Polen (Nord- & Südpol genannt). Die
+magnetischen Feldlinien verlaufnen immer vom Nord- zum Südpol und
+dienen zur Verdeutlichen des Magnetisches Felds
+
+Das Magnetfeld wird meistens in Tesla angegeben. Eine andere Einheit
+ist Weber pro Quadratmeter welche mit Tesla gleichzusetzen ist.
+In SI-Einheiten aufgeschlüsselt ist Tesla gleich kilogramm durch Ampere 
+sekunde quadrat.
+
+Das Erdmagnetfeld beträgt durchschnittlich 60 microtesla. Das typische
+Magnetfeld eines menschlichen Gehirns beträgt circa 10 femtotesla (10*10^-15 Tesla)
+
+Die Formel für die Magnetkraft F = q * b x B
+
+ F & magnetische Kraft die auf q wirkt  & Newton \\
+ q & elektrische Ladung & Coulomb \\
+ v & Geschwindigkeit von q & $\frac{Meter}{Sekunde} $ \\ 
+ B & Magnetfeld von q & Tesla
+
+### Überblick Magnetisumus und Magnetometer
+Die am häufigsten verwendeteten magnetische Materialien sind Eisen Nickel 
+Cobald und Neodynium.
+
+Die Magnetischen Eigenschaften sind temperaturabhängig. Ab einer oder bis
+zu einer gewissen Temperatur können Materialien ihre magnetischen Fähigkeiten
+komplett verlieren. 
+
+Ferromagnetische Stoffe ändern ihre magnetische Leitfähigkeit (auch Permeabilität 
+genannt) abhängig von dem Magnetfeld in dem sie sich befinden. Diesen Effekt nennt
+man Hysterese.
+
+Magnetsensoren basieren zum Großteil auf zwei Effekte.
+Der erste ist der Hall Effekt
+
+Der zweite ist die Lorentzkraft
+
+###Überblick Magnetismus
+MEM steht für micro-elektrisch-mechanisch. Sensoren für Smartphones
+werden typischer Weise in dem Verfahren hergestellt.
+
+MEM-Magnetometer benötigen zur Herstellung kein magnetisches Material
+und sind aufgrund des kleinen Formfaktors sehr einfach mit anderen Sensoren
+(Accelerometer, Magnetometer) zu intergrieren.
+
+Ebenfalls sind diese Sensoren sehr weit verbreitet und da sie in millionen
+Smartphones und Smartwatches verbaut sind.
+
+###Magnetometer in Smartwatches
+Das eingebaute Magnetometer der Smartwatch kann als Eingabequelle 
+zum Beispiel mihilfe eines Magnetrings dienen.
+Außerdem kann man das Magnetometer zur Positionsbestimmung verwenden,
+zum Beispiel für ein Fußballspiel.
+Schließlich gibt es auch eine Forschung die das Magnetometer
+zur Fahrerüberwachung einsetzt
+
+###Magnetometer in Smartwatch
+Wie vorhin erwähnt kann man das Magnetometer auch als Eingabequelle nutzen.
+Um solch ein Verfahren zu realisieren ist ein magnetischer Gegenstand von Nöten.
+Bei solchen Verfahren finden  typischerweise Magnetringe Anwendung.
+Ebenfalls ist die Verwendung eines magnetischen Stylus (Eingabestift) möglich.
+
+Somit ergeben sich viele realisierbare Anwendungsfälle.
+Beispielsweise ist die Verwendung des Magnetrings als Zeiger in einem
+zwei oder sogar dreidimensionalen Raum realisierbar.
+
+Es gibt Implementierungen die es erlauben einzelne Finger von einander zu
+unterscheiden (Fingeridentifikation). Somit kann man einzelnen Fingern
+einzelne Funktionen zuweisen.
+
+###Magnetometer in Smartwatches
+Vorteile:
+Da Magnetometer und Magnete massenware sind und in allen modernen
+Smartwatches verbaut sind sind sie kostengünstig.
+
+Magnetringe weisen im Vergleich zu Eingabestiften ein leichteres 
+Gewicht auf und sind kostengünstig in der Herstellung
+
+Magnetometer verringern die Akkulaufzeit nur unwesentlich
+
+Zum schluss lässt sich sagen, dass Magnetometer auch bei 
+Dunkelheit gleichermaßen funktionieren, im gegensatz zu optischen 
+verfahren
+
+Nachteile:
+Handelsübliche in Smartwatches eingebaute Magnetometer
+erreichen gute bis sehr-gute Genauigkeiten im Abstand von ein paar
+centimeter
+
+Ebenfalls wird das Magnetfeld der Magnetringe irgendwann schwächer
+oder die Auflösung des Magnetometer sinkt aufgrund von Alterung
+
+Das Magnetfeld der Magnetringe muss zur Kalibrierung bekannt sein
+
+Schließlich können andere Magnetfelder wie von Stromleitungen und
+von sonstigen Haushaltsgeräten, die mit dem gewünschten 
+Magnetfeld in Kontakt kommen Interferenzen erzeugen,  welche
+das Magnetometer stören.
+
+###Magnetometer in Smartwatches
+
+
+
