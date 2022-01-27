@@ -122,6 +122,39 @@ Magnetfeld in Kontakt kommen Interferenzen erzeugen,  welche
 das Magnetometer stören.
 
 ###Magnetometer in Smartwatches
+Im Vergleich zum vorherigen Beispiel finden hier Magnetbrille in 
+Kombination mit Magnetarmbändern Anwendung.
 
+Es ist möglich eine Müdigkeitserkennung zu implementieren.
+Bei Müdigkeit kann es vorkommen das der Fahrer den Kopf
+senkt, seinen Blick schweifen lässt oder langsamere
+Lenkbewegungen ausführt.
 
+Somit ergibt sich auch die Möglichkeit die Fahrsicherheit
+zu kontrollieren, zum Beispiel das Vorgehen des Fahrers
+bei einem Überholszenario.
 
+###Magnetometer in Smartwatches
+Vorteile:
+Wie bei der Verwendung des Magnetometers als Eingabequelle
+ist auch bei der Fahrerüberwachung die tatsache, dass 
+Lichtverhältnisse das Ergebnis nicht beinflussen ein großer vorteil
+im Vergleich zu kamerabasierten Verfahren.
+
+Da die Hände des Fahrers sich immer in der Nähe des Lenkrads 
+befinden, ist die dauerhafte Überwachung einfacher.
+
+Nachteile:
+Magnetbrillen können durch das hohe Eigengewicht
+ermüdend wirken. Als Alternative kann man Magnete
+auf andere Kopfbedeckungen zum Beispiel Hütte aufbringen
+
+Viele Probanden müssen viele Stunden Auto fahren um
+genug Situationen aufzuzeichnen.
+
+Die Fahrerdaten könnten zwischengespeichert und and die
+eigene Autoversicherung weitergeleitet werden.
+Bei ab Januar 2022 zugelassenen Neuwagen ist ein
+System zur Fahrerüberwachung erforderlich.
+
+###Fazit
