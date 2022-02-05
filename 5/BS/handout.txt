@@ -1,0 +1,20 @@
+sem mutex=1;empty=N;full=0; erzeuger(){int item;while(1){prodItem(&item);P(&empty); P(&mutex);enterItem(item);V(&mutex);V(&full)}} verbraucher(){int item;while(1){P(&full);P(&mutex);removItem(&item);V(&mutex);V(&empty);consumeItem(item)}}
+
+N=100;MSIZE=4;typedef int message[MSIZE]; producer(){int item;message m;while(1){prodItem(&item);receive(consumer,&m);buildMsg(&m,item);send(consumer,&m)}} consumer
+(){int item,i;message m; for i in range(N){send(producer,&m)};while(1 {receive (producer,&m);extractItem(&m,&item);send(producer,&m);consItem(item)}}
+
+Verweilzeit=Abschlusszeit-Ankunftszeit;Q->0;c=0: Processor Sharing
+Q->0;c!=0:nur Kontextwechsel;Q->+inf:konvergiert gegen FCFS, RunToCompletion
+
+fork: Kopie des aufrufenden Prozesses, Neuer Prozess(Sohn) mit Kopie der Speicher
+inhalte,offenen Dateien usw.,Returnwert: Vater PID des Sohns(Error:-1);Sohn: PID 0
+exec: Angegebener Prozess wird geladen,überschreibt laufenden Prozess, erbt seine PID
+
+Verallgemeinterte Bankier Algorithmus: Sachen 3A, 2B, 8C: Personen P1,P2,P3
+vorhanden (3 2 8) -> zugewiesen |1 0 2| -> verfügbar (2 0 4) -> angefordert |2 0 2|
+				|0 1 1|				      	    |1 1 0|
+				|0 1 1|				      	    |3 0 3|
+1) P1 verfügbar (3 0 6) ; P3 verfügbar (3 1 7) ; P2 verfügbar (3 2 8)
+
+inode: Block:4KB;12 direkt adressierte Blöcke->48KB;1-, 2-, 3-fach indirekte Blöcke(4KB)
+können 2^10 weitere Verweise speichern: maxDateigrösse = (12+2^10+2^20+2^30)*4KB
