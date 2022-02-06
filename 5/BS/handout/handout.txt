@@ -43,7 +43,7 @@ und anderer Prozessor muss aktiv auf die Freigabe des Spinlocks warten um krit.B
 Kanal (Kapazität 0, beschränkt, unbeschränkt)
 MessageQueues:Kanal für mehrere Sender & mehrere Empfänger(müssen nicht verwandt sein gleichzeitig)
 
-TLB = Translation Lookaside Buffer
+TLB = Translation Lookaside Buffer: Cache für Seitentabellen; typ. 80% Hitrate
 
 Anforderungen Speicherverwaltung:Schutz,Gemeinsame Nutzung(shared memory),Relokation, Organisation
 Strategie Speicherallokation: First fit, rotating first fit, best fit, worst fit
@@ -51,11 +51,8 @@ Buddy-System: Speicherbereiche immer 2-Potenzen
 
 interne-Fragmentierung: Fragmentierung im belegten Speichersegment selbst
 externe-Fragmentierung: Zerstückelung von Freispeicher zwischen belegten Segmenten
-Speicherverdichtung (mit base und bound Register): unbelegte Speicherbereiche verschieben & zusammenfassen
+Speicherverdichtung(base & bound Register): unbelegte Speicherbereiche verschieben &zusammenfassen
 Speicherverwaltung: Swapping,virtueller Speicher
 virtueller Speicher (MMU): Paging(1D), Segmentierung(2D)
 Paging: Virtueller Speicher in Seiten (Pages) fester Länge unterteilt
 Physikalischer Speicher in Seitenrahmen (Page Frames) derselben Länge unterteilt
-
-
-Mehrstufige Seitentabellen, Cache, Semaphore, tlb
