@@ -18,3 +18,44 @@ vorhanden (3 2 8) -> zugewiesen |1 0 2| -> verfügbar (2 0 4) -> angefordert |2 
 
 inode: Block:4KB;12 direkt adressierte Blöcke->48KB;1-, 2-, 3-fach indirekte Blöcke(4KB)
 können 2^10 weitere Verweise speichern: maxDateigrösse = (12+2^10+2^20+2^30)*4KB
+
+Deadlock-Vorraussetzung: wechselseitiger Ausschluss (Verfahren, das verhindert dass immer nur ein Prozess auf ein gemeinsames Datum zugreift);
+belegungs-/Anforderungsbedingung (Prozesse können zusätzliche BM anfordern)
+Ununterbrechbarkeit (BM eines Prozesses können nicht ohne dessen Zustimmung entzogen werden)
+zyklisches Warten (Es muss eine zyklische Kette von Prozessen geben in der jeder Prozess
+auf ein BM wartet, das dem nächsten Prozess in der Kette gehört)
+
+Deadlock-Vermeidung:mutual-exclusion (spool-system); belegungsbedingung (preclaiming)
+ununterbrechbarkeit:(BM linear ordnen,Anforderungen in aufsteigender Orndung "print>scan>cdBrener")
+
+guter Algorithmus zum wechselseitigen Ausschluss
+Korrektheit: immer nur ein Prozess in seinem kritischen Bereich
+Fortschritt: Prozesse im nicht-kritischen Bereich dürfen andere Prozess nicht blockieren
+Fairness: Alle Prozesse gleich behandelt
+Starvation: Kein Prozess darf unendlich lange warten müssen um in seinen kritischen Abschnitt
+eintreten zu können
+
+Peterson Algorithmus: setze Marke, unteilbar (atomar)
+Sperrvariablen, atomic read-modify-write Instruktionen (TAS-Befehl)
+Lockholder-Preemption Problem: Prozessor wird in seinem kritischen Bereich unterbrochen
+und anderer Prozessor muss aktiv auf die Freigabe des Spinlocks warten um krit.Bereich zu betreten
+
+Kanal (Kapazität 0, beschränkt, unbeschränkt)
+MessageQueues:Kanal für mehrere Sender & mehrere Empfänger(müssen nicht verwandt sein gleichzeitig)
+
+TLB = Translation Lookaside Buffer
+
+Anforderungen Speicherverwaltung:Schutz,Gemeinsame Nutzung(shared memory),Relokation, Organisation
+Strategie Speicherallokation: First fit, rotating first fit, best fit, worst fit
+Buddy-System: Speicherbereiche immer 2-Potenzen
+
+interne-Fragmentierung: Fragmentierung im belegten Speichersegment selbst
+externe-Fragmentierung: Zerstückelung von Freispeicher zwischen belegten Segmenten
+Speicherverdichtung (mit base und bound Register): unbelegte Speicherbereiche verschieben & zusammenfassen
+Speicherverwaltung: Swapping,virtueller Speicher
+virtueller Speicher (MMU): Paging(1D), Segmentierung(2D)
+Paging: Virtueller Speicher in Seiten (Pages) fester Länge unterteilt
+Physikalischer Speicher in Seitenrahmen (Page Frames) derselben Länge unterteilt
+
+
+Mehrstufige Seitentabellen, Cache, Semaphore, tlb
