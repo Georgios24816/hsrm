@@ -1,0 +1,92 @@
+Der Anspruch und seine Verjährung:
+194: Anspruch: Recht, von einem anderen ein Tun/Unterlassen zu verlangen unterliegt der Verjährung
+195: regelmäßige Verjährungsfrist: 3 Jahre
+199 Abs 1:  Beginn der Verjährungsfrist: Ende des Jahres in dem der Anspruch entstanden ist & Kenntnis
+            von Anspruch und Schuldner
+203 ff: Hemmung der Verjährung
+209: Ablauf der Frist wird unterbrochen. Rest der Frist läuft nach Ende der Hemmung weiter
+212: Neubeginn (vollständig neu) der Verjährung (insbes. durch Anerkenntnis)
+214 Abs 1: Nach Ablauf der Verjährungsfrist, kann Schuldner die Leistung verweigern
+
+Beispiel Anspruchsgrundlage (823 Abs 1 Schadensersatzpflicht)
+
+Prüfung Tatbestandsmerkmale
+1) Rechtsgutverletzung
+2) Widerrechtlichkeit
+3) Vorsatz / Fahrlässigkeit (Schuld)
+Sind diese erfüllt -> Rechtsfolge (Schadensersatz)
+
+1: Rechtsfähigkeit: beginnt mit Vollendung der Geburt. Bei Juristischen Personen mit ihrer Entstehung
+
+104: Geschäftsunfähigkeit
+    -> 105 I: Willenserklärung nichtig (Ausnahme 105a Geschäfte des täglichen Lebens "Brötchen kaufen")
+106: Beschränkte Geschäftsfähigkeit
+    -> Willenserklärung bedarf Zustimmung des gesetzlichen Vertreters (107, 184, 108)
+    -> 110: Ausnahme: lediglich rechtlich vorteilhafte Geschäfte, Taschengeldparagraph
+
+827, 828 Abs 1: Deliktsunfähigkeit
+828 Abs 2, 3: Bedingte Deliktsfähigkeit
+827, 828: volle Deliktsfähigkeit
+
+Willenserklärungen:
+Aüßerung die auf Herbeiführung einer bestimmten Rechtsfolge gerichtet ist
+Bestandteile: Handlungsbewusstsein, Rechtsbindungswille, Geschäftswille
+
+130 I S1: Empfangsbedürftigkeit
+Grundsätzlich Formfrei, außer gesetzlich vorgeschrieben (z.B. 766, 311b)
+125: Fehlt die vorgeschriebe Form -> Willenserklärung von vornherein unwirksam
+
+Zugang Willenserklärung:
+    -> gegenüber Anwesenden: Vernehmungstheorie
+    -> gegenüber Abwesenden: Wenn die WE der Art in den Machtbereich des Empfängers gelangt ist, dass
+                             bei Annahem gewöhnlicher Umstände anzunehmen ist, der Empfänger könne
+                             von ihr Kenntnis erlangen
+
+Mängel von Willenserklärungen:
+Nichtigkeit: Person (z.B. Geschäftsunfähig), Formmangel (125), Inhalt (134-138)
+Anfechtbarkeit: Inhaltsirrtum(119 I 1.Fall), Erklärungsirrtum(119 I 2.Fall), Eigenschaftsirrtum(119 II)
+
+Anfechtung von Willenserklärungen:
+Vorraussetzungen: Anfechtungsgrund, Anfechtunserklärung, Anfechtungsfrist gewahrt
+    -> Rechtsfolge 142 Abs 1: Rechtsgeschäft von vornherein nichtig! -> 812 Herausgabe der Leistungen
+
+Vertrag (145 ff):
+-Vertragsfreiheit: Inhalts- & Abschlussfreiheit, Grenzen der Vertragsfreiheit
+-Vertragstypen
+-Zustandekommen von Verträgen: Angebot und Annahme (empfangsbedürftige Willenserklärungen),
+                               Widerruf der WE (130 I S.2), Invitatio ad offerendum 
+150: vespätete oder den Vertragsinhalt abändernde Annahme gilt als neues Angebot (150 I, II)
+
+151 S1:Angebot & Annahme (=WEen)
+145: Verbindlichkeit des Angebots
+150 Abs 2: modifizierte Annahme
+150 Abs 1: verspätete Annahme: Neues Angebot
+Schweigen im Rechtsverkehr: Kaufmännisches Bestätigungsschreiben
+
+Vertetung (164ff)
+Vorraussetzungen: eigene WE, in fremden Name, mit Vertretungsmacht
+    -> Vertrag mit Wirkung für & gegen den Vertretenen
+
+Abgrenzung: Vertreter (eigene WE) ; Bote (überbringt fremde WE)
+
+Kaufvertrag:
+433 I S.1 : Pflichten des Verkäufers
+433 II: Pflichten des Käufers
+Kaufvertrag = Verpflichtungsgeschäft
+
+BEACHTE: Kaufvertrag führt NICHT zu einer Änderung der Rechtslage der Kaufsache -> Abstraktionsprinzip
+
+Prüfungsschema Mängelgewährleistung
+437: Anspruchsgrundlage:
+    - Kaufvertrag zustande gekommen?
+    - Kaufsache mangelhaft?
+    - Wenn SE, Rücktritt, Minderung verlangt wird: Wurde vorher Nachbesserung verlangt?
+    - Sind Mängelrechte ausgeschlossen?
+    - Sind Mängelrechte verjährt
+    -> Anspruch besteht
+
+AGB (305ff)
+305 Abs 1 S.1 : für eine Vielzahl vorformulierte Vertragsbedingungen, die eine Vertragspartei
+                (Verwender)der anderen Vertragspartei bei Abschluss eines Vertrages stellt(305 Abs1 S1)
+1) Ausdrücklicher Hinweis auf AGB
+2) Wirksamer Einbezug in den Vertrag

@@ -1,0 +1,89 @@
+Vertragsabschluss : 151
+    Kaufvertrag : 433
+    Mietvertrag : 535
+    Bürgschaftsvertrag : 765
+    Darlehensvertrag : 488
+
+#
+Ansprüche und ihre Verjährung
+#
+- Was ist ein Anspruch 194 Abs 1
+- Anspruch verjährt -> Leistung verweigern 214 Abs 1
+- Regelmäßige Verjährungfrist 195
+- Mängel & Gewährleistungsrechte Verjährungsfrist 438 Abs 1 Z 3
+- Beginn der Verjährungsfrist 199 Abs 1
+- Verjährungsfrist hemmen: Klage 203 Abs 1 Z 1, Mahnbescheid 204 Abs 1 Z 3, Beweisverfahren 204 Abs 1 Z 7
+- Wirkung der Hemmung 209
+- Hemmung (bei Verhandlungen): 203
+- Neubeginn der Verjährung: 212 Abs 1
+
+#
+Rechstfähigkeit
+#
+Rechtsfähigkeit : 1
+
+#
+Geschäftsfähigkeit
+#
+- Willenerklärung eines Geschäftsunfähigen : 105 Abs 1
+- Geschäftsunfähig : (Kind) 104 Nr 1, (krank) 104 Nr 2
+- Vorübergehend geschäftsunfähig: 104 (Willenserklärung 105 Abs 2)
+
+- beschränkt : §§ 2, 106
+- Einwilligung des gesetzlichen Vertreters : 107
+- nachträgliche Einwilligung: 184 Abs 1, 108
+- mangelnde Einwilligung: 108 Abs 2, 109
+- Teilnahme am Geschäftsverkehr : 110
+
+#
+Deliktfähigkeit
+#
+- 827, 828
+
+#
+Willenserklärungen
+#
+- Auskunft Rat Empfehlung: 675 Abs 2
+
+- Abgabe der Willenserklärung: 130 Abs 1 S.1
+- empfangsbedürftig : 130 Abs 1 Satz 1
+- nicht empfangsbedürftig (Auslobung) : 657
+
+- Form : 125
+- Unterschrift : 126
+- Bürgschaftserklärung : 766
+- Notar Beglaubigung : 128
+
+- Nichtigkeit wegen Mangels in der Person : 105 Abs 1
+- Nichtigkeit wegen Formmangels: 125
+- Nichtigkeit wegen Sittenwidrigkeit: 134, 138 Abs 1, 2
+- Schenkung : 518 Abs 2
+
+- Anfechtbarkeit : §§ 119 ff
+- Anfechtungserklärung : 143 Abs 1
+- Frist 121 Abs 1, 124 Abs 1
+- weitere Anfechtungsgründe: 120 , 123
+- Nichtigkeit : 142
+
+#
+Vertrag
+#
+- Vertragsschluss (Angebot & Annahme) : 151
+- modifizierte Annahme : 150 Abs 2
+- fristgerechte Annahme: 145
+- Angebot sofort annehmen : 147 Abs 1
+- Antrag (Abwesend) : 147 Abs 2
+- verspätete Annahme (gilt als neues Angebto) : 150 Abs 1
+- Zugang entbehrlich : 151
+- Zusendung unbestellter Waren: 241 Abs 1
+- Schweigen als Annahmeerklärung: 362 Abs 1, 516 Abs 2
+
+kaufmännisches Bestätigungsschreiben
+- Widerspruch : 157, 242
+
+Vertragstypen: 
+- Kaufvertrag : 433 ff
+- Schenkungsvertrag : 516 ff
+- Mietvertrag : 535 ff
+- Leihe : 589 ff
+- Pacht : 585 ff
