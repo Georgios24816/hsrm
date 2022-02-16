@@ -88,5 +88,64 @@ Prüfungsschema Mängelgewährleistung
 AGB (305ff)
 305 Abs 1 S.1 : für eine Vielzahl vorformulierte Vertragsbedingungen, die eine Vertragspartei
                 (Verwender)der anderen Vertragspartei bei Abschluss eines Vertrages stellt(305 Abs1 S1)
-1) Ausdrücklicher Hinweis auf AGB
-2) Wirksamer Einbezug in den Vertrag
+1) Ausdrücklicher Hinweis auf AGB (305 Abs 1)
+2) Wirksamer Einbezug in den Vertrag (305 Abs 2)
+3) Sind AGB wirksam(309, 308, 307)
+
+434: Sachmangel
+435: Rechtsmagnel (z.B: Vertrieb Raubkopie)
+444, 476, 309 Ziff 8b: Ausschluss Mängelgewährleistungsrechte
+438 Abs 1 Ziff 3: Verjährung: 2 Jahre ab Gefahrübergang(438, 446, 447)
+Ausnahme: Arglistiges Verschweigen -> regelmäßige Verjährungsfrist 196, 199 Abs 1 (438 Abs 3)
+
+Softwareüberlassungsverträge:
+433 ff: Kaufrecht
+631 ff: Werkvertragsrecht
+535 ff: Mietrecht
+323 : Rücktritt wegen nicht erbrachter Leistung: angemessen Frist zur Nacherfüllung gesetzt Abs 1
+    -> Frist ggfs entbehrlich 323 Abs 2, 440
+
+286 ff: Verzug
+286 Abs 2: Entbehrlichkeit der Mahnung
+286 Abs 3: Verzugseintritt ohne Mahnung
+271: Fälligkeit
+
+Werkvertrag 631 ff:
+Erfolg geschuldet
+632 Abs 1: ortsübliche Vergütung gilt als stillschweigend vereinbart
+633 : Mangelbegriff (wie Kaufrecht)
+634 : Nacherfüllung
+640 : Abnahme
+    -> Fälligkeit des Werklohns 641 Abs 1 & Verjährung beginnt zu laufen 634 a Abs 2
+Verjährung 2 Jahre (bei Bauwerken/Planungen 5 Jahre)
+
+Dienstvertrag 611:
+631: Beratung + Projekt: Werkvertrag
+Beratung im Vorfeld zu Projektvertrag: 311 Abs 2, 280 Abs 1, 241 Abs 2
+Verletzung der Pflichten aus Dienstvertrag: 280, 311 Schadensersatz (keine Nacherfüllung, Rücktritt..)
+Fristlose Kündigung aus wichtigem Grund: 626 (+ Schadensersatz 280)
+
+In Vorphase/Ausschreibungsphase: Vertraulichkeitsvereinbarung / Letter of Intend (Betriebsinterna!)
+-> damit Grundlage für 311 Abs 2, 280 Abs 1 dokumentiert
+
+Urheberrecht (2):
+7: Urheber = Schöpfer des Werkes
+8: Miturheber
+11: Allgemeines : Schützt Urheber
+15 ff: Allgemeine Rechte
+28: Vererbung des Urheberrechts
+29: Rechtsgeschäfte über das Urheberrechts
+31: Einräumung von Nutzungsrechte
+32: angemessene Vergütung
+53: Vervielfältigung zum privaten und sonstigen eingenen Gebrauch
+64: Allgemeines: Urheberrecht erlischt 70 Jahre nach dem Tode des Urhebers
+69a: Gegenstand des Schutzes
+69b: Urheber in Arbeits- & Dienstverhältnissen
+69c: Zustimmungsbedürftige Handlungen
+69d: Ausnahmen von den zustimmungsbedürftigen Handlungen
+97: Anspruch auf Unterlassung & Schadensersatz
+97a: Abmahnung
+98: Anspruch auf Vernichtung, Rückruf & Überlassung
+102: Verjährung
+106: Unerlaubte Verwertung urheberrechtlich geschützter Werke
+
