@@ -149,3 +149,17 @@ Urheberrecht (2):
 102: Verjährung
 106: Unerlaubte Verwertung urheberrechtlich geschützter Werke
 
+
+########################
+Kaufvertrag 433
+Mietvertrag 535 - 550
+Werkvertrag 631 - 640
+Dienstvertrag 611
+Anspruch und Verjährung 194 - 214
+Verzug 286 - 271
+
+323 : Rücktritt wegen nicht erbrachter Leistung: angemessen Frist zur Nacherfüllung gesetzt Abs 1
+    -> Frist ggfs entbehrlich 323 Abs 2, 440
+
+AGB 305 - 309
+Schadensersatzpflicht 823
