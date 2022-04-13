@@ -1,0 +1,5 @@
+1)
+Vereinigung: M3 = M1 oder M2 = { a, b, c, d, e, f }
+Durchschnitt: M3 = M1 und M2 = { b }
+Differenz: M3 = M1 \ M2 = { a, c } 
+Kreuzprodukt: M3 = M1 x M2 = { ab, ad, ae, af, bb, bd, be, bf, cb, cd, ce, cf }

@@ -1,0 +1,2 @@
+a) Potenzmenge ist die Menge aller Teilmengen einer gegebenen Grundmenge.
+
