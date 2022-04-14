@@ -1,6 +1,6 @@
 a)
-b)+ : A und nicht B = A ohne B
+b)- : C = A \ B; C hat keine leere Menge 
 c)
-d)
+d)+
 e)
-f)
+f)+
