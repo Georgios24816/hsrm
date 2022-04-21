@@ -1,0 +1,37 @@
+a)
+Alphabet (Sigma): Eine endliche nicht-leere Menge von Symbolen
+
+Wort: Eine Aneinanderreihung von Symbolen eines Alphabets
+
+Sprache (T):	Die Menge aller Eingabefolgen, die von einem Automaten A
+		akzeptiert werden, nennt man die Sprache T des Automaten
+
+endlicher Automat:
+-Verfügt über eine endliche Menge von Zuständen
+-Folgezustand ist von Eingabezeichen und dem momentaten Zustand abhängig
+
+Eingabe: dient zur Versorgung des Automaten mit Eingabedaten ei aus den 
+sog. Eingabealphabet Sigma
+
+Interne Zustände: werden als Reaktion auf die Eingabe durchlaufen
+
+Ausgabe: sind die vom Automaten i.d.R. produzierten Ausgabedaten mit
+A = Ausgabealphabet
+
+b)
+Zustands-Überführungsfunktion d : S x Sigma -> S
+
+c)
+siehe a
+
+d)
+siehe a
+
+e)
+2 unterschiedliche Automatenmodelle sind äquivalent (s =~ s') wenn
+die Menge der Worte, die in einen Endzustand führen, für beide identisch ist
+delta(s,w) Element von F <=> delta(s', w) Element von F für alle w Element 
+von Sigma*
+
+f)
+Eine Sprache ist regulär wenn

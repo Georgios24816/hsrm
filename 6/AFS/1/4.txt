@@ -1,2 +1,14 @@
 a) Potenzmenge ist die Menge aller Teilmengen einer gegebenen Grundmenge.
+b)
+c)
+Eine Menge M heißt abzählbar unendlich, wenn sie zur Menge N der natürlichen Zahlen gleichmächtig ist. Alle anderen unendlichen Mengen sollen überabzählbar unendlich heißen.
+Die abzählbare Unendlichkeit einer Menge M bedeutet also nichts anderes, als dass M mit den natürlichen Zahlen durchnummeriert werden kann, quasi abgezählt werden kann.
 
+1) 0, 1, 2, 3, ..., n
+2) 2^0, 2^1, 2^2, ..., 2^n
+3) 16^0, 16^1, 16^2, ..., 16^n
+
+d) 
+überabzählbar unendlich
+
+e)

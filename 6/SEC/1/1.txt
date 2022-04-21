@@ -1,0 +1,35 @@
+1)
+a) 
+sicherstellen, dass es zu keiner unerlaubten Informationsveränderung,
+zu keiner unerlaubten Informationsgewinnung, oder zu keiner unerlaubten
+Informationsvorenthaltung kommt.
+
+b)
+IT-Sicherheit (IT-Security):
+-umfasst alle Vorkehrungen zum Schutz von elektronisch gespeicherten
+Informationen sowie informationstechnischen Systeme (SW & HW)
+
+Cybersicherheit:
+
+Informationssicherheit: 
+-beinhaltet sowohl die Cyber- &  Internet- als auch die IT-Sicherheit
+-erweitert IT-Sicherheit um die Sicherheit von nicht technisch gespeicherten
+und nicht elektronisch verarbeiteten Daten
+
+c) Der vom BSI entwickelte IT-Grundschutz
+
+2)
+a)
+Schwachstelle: 
+
+Sicherheitslücke: ist eine Schwachstelle
+
+Exploit: das Ausnutzen einer Schwachstelle
+
+b) 
+trifft eine Bedrohung auf eine Schwachstelle, entsteht eine Gefährdung
+
+c)
+Risiko ist das Prodult aus Eintrittswahrscheinlichkeit eins Ereignisses
+und dessen Konsequenz (Schadenshöhe) bezogen auf ein konkretes Schutzziel
+(Vetraulichkeit, Intefrität, Verfügbarkeit)
