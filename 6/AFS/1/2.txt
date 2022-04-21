@@ -1,6 +1,7 @@
-a)
-b)- : C = A \ B; C hat keine leere Menge 
-c)-
+a)+
+b)+
+c)+
 d)+
-e)
-f)+
+e)+
+f)-
+
