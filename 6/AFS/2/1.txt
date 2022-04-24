@@ -34,4 +34,5 @@ delta(s,w) Element von F <=> delta(s', w) Element von F für alle w Element
 von Sigma*
 
 f)
-Eine Sprache ist regulär wenn
+Eine Sprache ist regulär wenn sie von einem endlichen Automaten
+akzeptiert wird
