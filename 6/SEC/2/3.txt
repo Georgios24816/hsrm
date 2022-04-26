@@ -1,0 +1,9 @@
+a)
+Vorteile: 	Stromchiffre meistens schneller als Blockchiffre
+		Stromchiffre benötigt meisten weniger Speicher
+		Stromchiffre braucht kein Padding
+Nachteile:	Unzureichender Schutz
+
+b)
+Die Periode der vom Pseudo-Zufallszahlengenerator erzeugten Folge muß größer als 
+die zu verschlüsselnde Nachricht sein (sog. one time pat).

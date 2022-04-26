@@ -1,0 +1,9 @@
+a)
+Steganographie: geheime Daten werden in nicht-geheimen Dateien oder Nachrichten
+		versteckt, um unentdeckt zu bleiben
+b) LSB eines Bytes, weißes Rausches
+
+c) Geheimhaltung (Es soll kein Verdacht geschöpft werden)
+
+d)
+

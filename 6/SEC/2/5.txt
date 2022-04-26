@@ -1,0 +1,21 @@
+a) 
+Sender, Empfänger, Verschlüsselung, Entschlüsselung
+
+P ist eine endliche Menge von Klartexten
+C ist eine endliche Menge von Geheimtexten
+K ist eine endliche Menge von Schlüsseln
+Chiffrierungsregeln
+Dechifrrierungsregeln
+
+b)
+Kanalcodierung: Eliminierung der Redundanz (Datenkompression oder Quellencodierung)
+Gezieltes Hinzufügen von Redundanz (Kanalcodierung)
+
+c)
+
+d)
+Blockchiffre arbeitet an Datenblöcke (fester) Länge (braucht Padding)
+Stromchiffre arbeitet an Datenstrom (byteweise)
+
+e)
+
