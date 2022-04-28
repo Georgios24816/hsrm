@@ -1,3 +1,5 @@
 Sigma = {a, b}
 S = Knoten
 F = Endknoten
+
+A = (S, S0, F, Sigma, S)
