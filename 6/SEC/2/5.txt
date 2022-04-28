@@ -12,10 +12,11 @@ Kanalcodierung: Eliminierung der Redundanz (Datenkompression oder Quellencodieru
 Gezieltes Hinzufügen von Redundanz (Kanalcodierung)
 
 c)
+Anzahl Zeichen ^ Schlüssellänge
 
 d)
 Blockchiffre arbeitet an Datenblöcke (fester) Länge (braucht Padding)
 Stromchiffre arbeitet an Datenstrom (byteweise)
 
 e)
-
+MAC braucht Schlüssel

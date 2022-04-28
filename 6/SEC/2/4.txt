@@ -1,4 +1,1 @@
-Rauchmelder: 	Ausfallswahrscheinlichkeit: 0.1 * 0.1 = 0.01 = 1 %
-WLAN:		Ausfallswahrscheinlichkeit: 2 %
-Cloud:		Ausfallswahrscheinlichkeit: 4 %
-Gesamt:		Ausfallswahrscheinlichkeit: 0.01 * 0.02 * 0.04 = 0.000008
+((0,9+0,9)−(0,9×0,9))×0,96×0,98 = 0.9314 = 93%
