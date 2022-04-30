@@ -1,0 +1,274 @@
+Test run by georgios on Sat Apr 30 14:26:50 2022
+Native configuration is x86_64-pc-linux-gnu
+
+		=== hamster tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+WARNING: Couldn't find tool config file for unix, using default.
+Running ./testsuite/hamster/t00_rtfm.exp ...
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+PASS: hamster 
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -x
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+PASS: hamster -x
+testcase ./testsuite/hamster/t00_rtfm.exp completed in 0 seconds
+Running ./testsuite/hamster/t01_normaluse.exp ...
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n schmidt baggins 17
+PASS: hamster "-n schmidt baggins 17" "Done"
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n mueller mueller 22
+PASS: hamster "-n mueller mueller 22" "Done"
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n meier meier
+PASS: hamster "-n meier meier" "Done"
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l
+owner: schmidt name: baggins price: 17 treats left: 17
+owner: mueller name: mueller price: 17 treats left: 22
+owner: meier name: meier price: 17 treats left: 0
+PASS: hamster -l
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l mueller
+owner: mueller name: mueller price: 17 treats left: 22
+PASS: hamster -l mueller
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f schmidt baggins 3
+FAIL: hamster -f schmidt baggins 3
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l schmidt
+owner: schmidt name: baggins price: 17 treats left: 14
+PASS: hamster -l schmidt
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s mueller mueller
+treats: 22; rounds: 0; cost: 18
+FAIL: hamster -s mueller mueller
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b meier
+owner meier has to pay 17 â‚¬
+PASS: hamster -b meier
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l
+owner: schmidt name: baggins price: 17 treats left: 14
+owner: mueller name: mueller price: 18 treats left: 22
+PASS: hamster -l
+testcase ./testsuite/hamster/t01_normaluse.exp completed in 0 seconds
+Running ./testsuite/hamster/t02_wrongcommand.exp ...
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster  keine Option -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -u
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -u ungueltige Option -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l blah blubb
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -l blah blubb zuviele args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n blah ratz 22 fatz
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -n blah ratz 22 fatz zuviele args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n blah
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -n blah zu wenige args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -n keine args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n blah ratz fatz
+XFAIL: hamster -n blah ratz fatz keine Zahl -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f blah ratz 22 fatz
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -f blah ratz 22 fatz zuviele args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f blah ratz
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -f blah ratz zu wenige args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f blah
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -f blah zu wenige args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -f keine args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f blah ratz fatz
+XFAIL: hamster -f blah ratz fatz keine Zahl -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s blah ratz fatz
+XFAIL: hamster -s blah ratz fatz zu viele args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s blah
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -s blah zu wenige args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -s keine args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b blah ratz
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -b blah ratz zu viele args -> kein Fehler
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster {<Option>} <param1> {<param2>}
+Function: Hamster management
+Optionen:
+     -l {<owner>}                    - show current list of hamsters
+     -n <owner> <hamster> [<treats>] - add new hamster
+     -f <owner> <hamster> <treats>   - feed treats to hamster
+     -s <owner> <hamster>            - how is my hamster doing?
+     -b <owner>                      - the bill please!
+XFAIL: hamster -b keine args -> kein Fehler
+testcase ./testsuite/hamster/t02_wrongcommand.exp completed in 0 seconds
+Running ./testsuite/hamster/t03_data.exp ...
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l motzki
+FAIL: hamster -l motzki
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b schmidt
+owner schmidt has to pay 17 â‚¬
+PASS: hamster -b schmidt
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b mueller
+owner mueller has to pay 18 â‚¬
+PASS: hamster -b mueller
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l mueller
+FAIL: hamster -l mueller
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Paus Backenbube
+PASS: hamster -n Paus Backenbube
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Paus Backenbube
+XFAIL: hamster -n Paus Backenbube EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n meier meier
+PASS: hamster -n meier meier
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n mueller mueller
+PASS: hamster -n mueller mueller
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n meier meier
+XFAIL: hamster -n meier meier EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n mueller mueller
+XFAIL: hamster -n mueller mueller EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f Blott OnTheLandscape 222
+XFAIL: hamster -f Blott OnTheLandscape 222 EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s Blott OnTheLandscape
+XFAIL: hamster -s Blott OnTheLandscape EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b Blott
+XFAIL: hamster -b Blott EXIT_FAILURE
+testcase ./testsuite/hamster/t03_data.exp completed in 0 seconds
+Running ./testsuite/hamster/t04_longnames.exp ...
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach
+XFAIL: hamster -l Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach
+XFAIL: hamster -n Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube
+XFAIL: hamster -n Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach
+XFAIL: hamster -n Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach 234
+XFAIL: hamster -f Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach 234 EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube 567
+XFAIL: hamster -f Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube 567 EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach 789
+XFAIL: hamster -f Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach 789 EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach
+XFAIL: hamster -s Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube
+XFAIL: hamster -s Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach
+XFAIL: hamster -s Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach
+XFAIL: hamster -b Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+testcase ./testsuite/hamster/t04_longnames.exp completed in 0 seconds
+
+		=== hamster Summary ===
+
+# of expected passes		15
+# of unexpected failures	4
+# of expected failures		34
+runtest completed at Sat Apr 30 14:26:50 2022

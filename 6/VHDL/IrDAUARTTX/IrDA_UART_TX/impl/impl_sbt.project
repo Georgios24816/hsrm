@@ -1,0 +1,57 @@
+[Project]
+Version=Lattice Semiconductor Corporation iCEcube - Release: 2012.09SP1.22498 - Build Date: Feb 1 2013 11:34:25
+ProjectName=impl
+Vendor=SiliconBlue
+ProjectVFiles=../uart_source/uart_tx_fsm.v,../uart_source/ice_pll/ice_pll.v,../uart_source/uart_ir_tx_ice.v,../uart_source/uart_rx_fsm.v
+ProjectCFiles=
+CurImplementation=impl_Implmnt
+Implementations=impl_Implmnt
+StartFromSynthesis=yes
+IPGeneration=false
+
+[impl_Implmnt]
+DeviceFamily=iCE40
+Device=HX1K
+DevicePackage=TQ144
+DevicePower=
+NetlistFile=impl_Implmnt/impl.edf
+AdditionalEDIFFile=
+IPEDIFFile=
+DesignLib=impl_Implmnt/sbt/netlist/oadb-uart
+DesignView=_rt
+DesignCell=uart
+SynthesisSDCFile=impl_Implmnt/impl.scf
+UserPinConstraintFile=
+UserSDCFile=
+PhysicalConstraintFile=../constraint/uart_pcf_sbt.pcf
+BackendImplPathName=
+Devicevoltage=1.14
+DevicevoltagePerformance=+/-5%(datasheet default)
+DeviceTemperature=85
+TimingAnalysisBasedOn=Worst
+OperationRange=Commercial
+TypicalCustomTemperature=25
+WorstCustomTemperature=85
+BestCustomTemperature=0
+IOBankVoltages=topBank,2.5 bottomBank,2.5 leftBank,2.5 rightBank,2.5
+derValue=0.701346
+TimingPathNumberStick=0
+
+[tool options]
+PlacerEffortLevel=std
+PlacerAutoLutCascade=yes
+PlacerAutoRamCascade=yes
+PlacerPowerDriven=no
+RouteWithTimingDriven=yes
+RouteWithPinPermutation=yes
+BitmapSPIFlashMode=yes
+BitmapRAM4KInit=yes
+BitmapInitRamBank=1111
+BitmapOscillatorFR=low
+BitmapEnableWarmBoot=yes
+BitmapSetSecurity=no
+BitmapSetNoUsedIONoPullup=no
+FloorPlannerShowFanInNets=yes
+FloorPlannerShowFanOutNets=yes
+HookTo3rdPartyTextEditor=
+

@@ -1,0 +1,73 @@
+Test run by georgios on Sat Apr 30 14:26:50 2022
+Native configuration is x86_64-pc-linux-gnu
+
+		=== hamster tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Running ./testsuite/hamster/t00_rtfm.exp ...
+PASS: hamster 
+PASS: hamster -x
+Running ./testsuite/hamster/t01_normaluse.exp ...
+PASS: hamster "-n schmidt baggins 17" "Done"
+PASS: hamster "-n mueller mueller 22" "Done"
+PASS: hamster "-n meier meier" "Done"
+PASS: hamster -l
+PASS: hamster -l mueller
+FAIL: hamster -f schmidt baggins 3
+PASS: hamster -l schmidt
+FAIL: hamster -s mueller mueller
+PASS: hamster -b meier
+PASS: hamster -l
+Running ./testsuite/hamster/t02_wrongcommand.exp ...
+XFAIL: hamster  keine Option -> kein Fehler
+XFAIL: hamster -u ungueltige Option -> kein Fehler
+XFAIL: hamster -l blah blubb zuviele args -> kein Fehler
+XFAIL: hamster -n blah ratz 22 fatz zuviele args -> kein Fehler
+XFAIL: hamster -n blah zu wenige args -> kein Fehler
+XFAIL: hamster -n keine args -> kein Fehler
+XFAIL: hamster -n blah ratz fatz keine Zahl -> kein Fehler
+XFAIL: hamster -f blah ratz 22 fatz zuviele args -> kein Fehler
+XFAIL: hamster -f blah ratz zu wenige args -> kein Fehler
+XFAIL: hamster -f blah zu wenige args -> kein Fehler
+XFAIL: hamster -f keine args -> kein Fehler
+XFAIL: hamster -f blah ratz fatz keine Zahl -> kein Fehler
+XFAIL: hamster -s blah ratz fatz zu viele args -> kein Fehler
+XFAIL: hamster -s blah zu wenige args -> kein Fehler
+XFAIL: hamster -s keine args -> kein Fehler
+XFAIL: hamster -b blah ratz zu viele args -> kein Fehler
+XFAIL: hamster -b keine args -> kein Fehler
+Running ./testsuite/hamster/t03_data.exp ...
+FAIL: hamster -l motzki
+PASS: hamster -b schmidt
+PASS: hamster -b mueller
+FAIL: hamster -l mueller
+PASS: hamster -n Paus Backenbube
+XFAIL: hamster -n Paus Backenbube EXIT_FAILURE
+PASS: hamster -n meier meier
+PASS: hamster -n mueller mueller
+XFAIL: hamster -n meier meier EXIT_FAILURE
+XFAIL: hamster -n mueller mueller EXIT_FAILURE
+XFAIL: hamster -f Blott OnTheLandscape 222 EXIT_FAILURE
+XFAIL: hamster -s Blott OnTheLandscape EXIT_FAILURE
+XFAIL: hamster -b Blott EXIT_FAILURE
+Running ./testsuite/hamster/t04_longnames.exp ...
+XFAIL: hamster -l Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+XFAIL: hamster -n Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+XFAIL: hamster -n Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube EXIT_FAILURE
+XFAIL: hamster -n Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+XFAIL: hamster -f Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach 234 EXIT_FAILURE
+XFAIL: hamster -f Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube 567 EXIT_FAILURE
+XFAIL: hamster -f Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach 789 EXIT_FAILURE
+XFAIL: hamster -s Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+XFAIL: hamster -s Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach Paus_Backenbube EXIT_FAILURE
+XFAIL: hamster -s Ludo Paus_Backenbube_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+XFAIL: hamster -b Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
+
+		=== hamster Summary ===
+
+# of expected passes		15
+# of unexpected failures	4
+# of expected failures		34

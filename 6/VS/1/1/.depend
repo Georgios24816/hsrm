@@ -1,0 +1,1 @@
+hamster.o: src/hamster.c include/hamsterlib.h
