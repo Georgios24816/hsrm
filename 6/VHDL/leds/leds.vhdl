@@ -11,6 +11,6 @@ use ieee.numeric_std.all;
 --            D1
 --
 entity leds is
-  port (clk : in std_logic;
+  port (hwclk : in std_logic;
         led1, led2, led3, led4, led5 : out std_logic);
 end leds;

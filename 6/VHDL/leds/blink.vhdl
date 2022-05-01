@@ -1,11 +1,11 @@
 architecture blink of leds is
     signal clk_4hz: std_logic;
   begin
-    process (clk)
+    process (hwclk)
       --  3_000_000 is 0x2dc6c0
       variable counter : unsigned (23 downto 0);
     begin
-      if rising_edge(clk) then
+      if rising_edge(hwclk) then
         if counter = 2_999_999 then
           counter := x"000000";
           clk_4hz <= not clk_4hz;
