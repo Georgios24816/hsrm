@@ -1,4 +1,4 @@
-PROJ = uart8n1_tx
+PROJ = uart8n1_rx2
 
 PIN_DEF = $(PROJ).pcf
 DEVICE = hx1k

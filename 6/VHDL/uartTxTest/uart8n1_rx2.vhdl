@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity uart8n1_rx is
+entity uart8n1_rx2 is
     port 
     (
         clk     : in    std_ulogic;
@@ -16,9 +16,9 @@ subtype st_logicBit is std_ulogic;
 subtype st_bit is unsigned(0 downto 0);
 subtype st_byte is unsigned(7 downto 0);
 subtype state_t is unsigned(2 downto 0);
-end uart8n1_rx;
+end uart8n1_rx2;
 
-architecture behave of uart8n1_rx is
+architecture behave of uart8n1_rx2 is
 signal rxByteSignal : st_byte := (others => '0');
 begin
     rxByte <= rxByteSignal;
