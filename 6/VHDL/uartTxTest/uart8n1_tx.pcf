@@ -6,3 +6,4 @@ set_io --warn-no-port led3 96
 set_io --warn-no-port ledGreen 95
 # FTDI / UART pins
 set_io --warn-no-port ftdi_tx 8
+set_io --warn-no-port ftdi_rx 9

@@ -25,6 +25,7 @@ signal txBit: st_bit    := "1";
 
 begin
     tx <= txBit;
+    --bufTx <= txByte;
 
     process (clk)
     
@@ -34,43 +35,47 @@ begin
     constant StateTxDone    : state_t   := "11";
 
     variable state          : state_t   := StateIdle;
-    variable bufTx          : st_byte   := "00000000";
+    variable bufTx: st_byte   := "00000000";
     variable bitsSent       : st_byte   := "00000000";
     --variable txBit          : _bit    := "1";*/
 
     begin
         if (rising_edge(clk)) then
-            if (sendData = "1" and state = StateIdle) then
-                state := StateStartTx;
-                bufTx := txByte;
-                txDone <= "1";
+            if (state = StateIdle) then
+                if (sendData = "1" and state = StateIdle) then
+                    state := StateStartTx;
+                    bufTx := txByte;
+                    txDone <= "0";
 
-            elsif (state = StateIdle) then
-                txBit <= "1";
-                txDone <= "0";
-            end if;
+                elsif (state = StateIdle) then
+                    txBit <= "1";
+                    txDone <= "0";
+                end if;
 
-            if (state = StateStartTx) then
-                txBit <= "0";
-                state := StateTxing;
-            end if;
+            elsif (state = StateStartTx) then
+                if (state = StateStartTx) then
+                    txBit <= "0";
+                    state := StateTxing;
+                end if;
 
-            if (state = StateTxing and bitsSent < "00001000") then
-                txBit <= bufTx(0 downto 0);
-                bufTx := (bufTx sll 1);
-                bitsSent := bitsSent + 1;
-            
             elsif (state = StateTxing) then
-                txBit <= "1";
-                bitsSent := "00000000";
-                state := StateTxDone;
-            end if;
+                if (state = StateTxing and bitsSent < to_unsigned(8, 8)) then
+                    txBit <= bufTx(0 downto 0);
+                    bufTx := shift_right(bufTx, 1);
+                    bitsSent := bitsSent + 1;
+            
+                elsif (state = StateTxing) then
+                    txBit <= "1";
+                    bitsSent := "00000000";
+                    state := StateTxDone;
+                end if;
 
-            if (state = StateTxDone) then
-                txDone <= "1";
-                state := StateIdle;
+            elsif (state = StateTxDone) then
+                if (state = StateTxDone) then
+                    txDone <= "1";
+                    state := StateIdle;
+                end if;
             end if;
-
         end if;
 
     end process;
