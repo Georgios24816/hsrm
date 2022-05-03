@@ -21,9 +21,11 @@ architecture test of uart8n1_tx_tb is
         port 
         (
             clk     : in    std_ulogic;
+            en      : in    unsigned(0 downto 0);
             txByte  : in    unsigned(7 downto 0);
             sendData: in    unsigned(0 downto 0);
     
+            isIdle  : out   unsigned(0 downto 0);
             txDone  : out   unsigned(0 downto 0);
             tx      : out   unsigned(0 downto 0)
         );
@@ -39,7 +41,7 @@ signal period9600   : unsigned(31 downto 0) := to_unsigned(625, 32);
 
 signal ledGreenSignal : unsigned(0 downto 0) := "0";
 signal cntr_32    : unsigned(31 downto 0) := (others => '0');
-
+signal txidleSignal : unsigned(0 downto 0);
 begin
     led0 <= "0";
     led1 <= "0";
@@ -53,6 +55,7 @@ begin
         clk => clk_9600,
         txByte => to_unsigned(48, 8),
         sendData => "1",
+        isIdle => txidleSignal,
         txDone => uart_txed,
         tx => ftdi_tx
     );

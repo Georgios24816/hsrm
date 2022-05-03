@@ -6,9 +6,11 @@ entity uart8n1_rx2 is
     port 
     (
         clk     : in    std_ulogic;
+        en      : in    unsigned(0 downto 0);
         rxIn    : in    unsigned(0 downto 0);
 
         rxDv    : out   unsigned(0 downto 0);
+        isIdle  : out   unsigned(0 downto 0);
         rxByte  : out   unsigned(7 downto 0)
     );
 
@@ -38,8 +40,9 @@ begin
     variable g_CLKS_PER_BIT : integer := 1250;
 
     begin
-        if (rising_edge(clk)) then
+        if (rising_edge(clk) and en = "1") then
             if (state = StateIdle) then
+                isIdle <= "1";
                 rxDv <= "0";
                 posEdgeCounter := to_unsigned(0, 32);
                 bitIndex := 0;
@@ -51,6 +54,7 @@ begin
                 end if;
 
             elsif (state = StateStartRx) then
+                isIdle <= "0";
                 if (posEdgeCounter = to_unsigned((g_CLKS_PER_BIT-1)/2, 32)) then
                     if (rxIn = "0") then
                         posEdgeCounter := (others => '0');
@@ -65,6 +69,7 @@ begin
                 end if;
 
             elsif (state = StateRxing) then
+                isIdle <= "0";
                 if (posEdgeCounter < g_CLKS_PER_BIT-1) then
                     posEdgeCounter := posEdgeCounter + 1;
                     state := StateRxing;
@@ -89,6 +94,7 @@ begin
                 end if;
 
             elsif (state = StateRxDone) then
+                isIdle <= "0";
                 if (posEdgeCounter < to_unsigned(g_CLKS_PER_BIT - 1, 32)) then
                     posEdgeCounter := posEdgeCounter + 1;
                     state := StateRxDone;
@@ -100,6 +106,7 @@ begin
                 end if;
 
             elsif (state = StateRxCleanup) then
+                isIdle <= "0";
                 state := StateIdle;
                 rxDv <= "0";
 

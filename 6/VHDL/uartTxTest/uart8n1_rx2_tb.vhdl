@@ -21,9 +21,11 @@ architecture test of uart8n1_rx2_tb is
         port 
         (
             clk     : in    std_ulogic;
+            en      : in    unsigned(0 downto 0);
             rxIn    : in    unsigned(0 downto 0);
     
             rxDv    : out   unsigned(0 downto 0);
+            isIdle  : out   unsigned(0 downto 0);
             rxByte  : out   unsigned(7 downto 0)
         );
     end component;
@@ -42,11 +44,14 @@ signal cntr_32    : unsigned(31 downto 0) := (others => '0');
 signal rxInSignal : unsigned(0 downto 0) := "0";
 signal rxDvSignal : unsigned(0 downto 0) := "0";
 
+signal led0Signal : unsigned(0 downto 0) := "0";
+signal isIdleSignal : unsigned(0 downto 0);
+
 begin
-    led0 <= "0";
-    led1 <= "0";
-    led2 <= "0";
-    led3 <= "1";
+    led0 <= isIdleSignal;
+    led1 <= isIdleSignal;
+    led2 <= isIdleSignal;
+    led3 <= isIdleSignal;
     ledGreen <= ledGreenSignal;
 
     uartInstance: uart8n1_rx2 
@@ -55,10 +60,13 @@ begin
         clk => hwclk,
         rxIn => ftdi_rx,
         rxDv => rxDvSignal,
+        isIdle => isIdleSignal,
         rxByte => uart_txbyte
     );
 
     process (hwclk)
+        variable oldState : unsigned(1 downto 0) := "00";
+        variable newState : unsigned(1 downto 0) := "00";
     begin
         if rising_edge(hwclk) then
             cntr_9600 <= cntr_9600 + 1;
@@ -71,7 +79,11 @@ begin
 
             if (uart_txbyte = to_unsigned(48, 8)) then
                 ledGreenSignal <= "1";
+
+            else
+                ledGreenSignal <= "0";
             end if;
+
         end if;
     end process;
 
