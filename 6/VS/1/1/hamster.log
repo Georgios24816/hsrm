@@ -1,4 +1,4 @@
-Test run by georgios on Sat Apr 30 14:26:50 2022
+Test run by georgios on Fri May  6 17:55:37 2022
 Native configuration is x86_64-pc-linux-gnu
 
 		=== hamster tests ===
@@ -48,13 +48,14 @@ exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l mueller
 owner: mueller name: mueller price: 17 treats left: 22
 PASS: hamster -l mueller
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -f schmidt baggins 3
-FAIL: hamster -f schmidt baggins 3
+treats : 595693142
+PASS: hamster -f schmidt baggins 3
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l schmidt
 owner: schmidt name: baggins price: 17 treats left: 14
 PASS: hamster -l schmidt
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -s mueller mueller
-treats: 22; rounds: 0; cost: 18
-FAIL: hamster -s mueller mueller
+owner: mueller hamster: mueller treats: 22; rounds: 0; cost: 18
+PASS: hamster -s mueller mueller
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b meier
 owner meier has to pay 17 â‚¬
 PASS: hamster -b meier
@@ -213,7 +214,8 @@ XFAIL: hamster -b keine args -> kein Fehler
 testcase ./testsuite/hamster/t02_wrongcommand.exp completed in 0 seconds
 Running ./testsuite/hamster/t03_data.exp ...
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l motzki
-FAIL: hamster -l motzki
+No hamsters found
+PASS: hamster -l motzki
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b schmidt
 owner schmidt has to pay 17 â‚¬
 PASS: hamster -b schmidt
@@ -221,7 +223,8 @@ exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -b mueller
 owner mueller has to pay 18 â‚¬
 PASS: hamster -b mueller
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -l mueller
-FAIL: hamster -l mueller
+No hamsters found
+PASS: hamster -l mueller
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Paus Backenbube
 PASS: hamster -n Paus Backenbube
 exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/1/1/hamster -n Paus Backenbube
@@ -268,7 +271,6 @@ testcase ./testsuite/hamster/t04_longnames.exp completed in 0 seconds
 
 		=== hamster Summary ===
 
-# of expected passes		15
-# of unexpected failures	4
+# of expected passes		19
 # of expected failures		34
-runtest completed at Sat Apr 30 14:26:50 2022
+runtest completed at Fri May  6 17:55:37 2022

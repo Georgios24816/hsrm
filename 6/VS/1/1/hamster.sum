@@ -1,4 +1,4 @@
-Test run by georgios on Sat Apr 30 14:26:50 2022
+Test run by georgios on Fri May  6 17:55:37 2022
 Native configuration is x86_64-pc-linux-gnu
 
 		=== hamster tests ===
@@ -16,9 +16,9 @@ PASS: hamster "-n mueller mueller 22" "Done"
 PASS: hamster "-n meier meier" "Done"
 PASS: hamster -l
 PASS: hamster -l mueller
-FAIL: hamster -f schmidt baggins 3
+PASS: hamster -f schmidt baggins 3
 PASS: hamster -l schmidt
-FAIL: hamster -s mueller mueller
+PASS: hamster -s mueller mueller
 PASS: hamster -b meier
 PASS: hamster -l
 Running ./testsuite/hamster/t02_wrongcommand.exp ...
@@ -40,10 +40,10 @@ XFAIL: hamster -s keine args -> kein Fehler
 XFAIL: hamster -b blah ratz zu viele args -> kein Fehler
 XFAIL: hamster -b keine args -> kein Fehler
 Running ./testsuite/hamster/t03_data.exp ...
-FAIL: hamster -l motzki
+PASS: hamster -l motzki
 PASS: hamster -b schmidt
 PASS: hamster -b mueller
-FAIL: hamster -l mueller
+PASS: hamster -l mueller
 PASS: hamster -n Paus Backenbube
 XFAIL: hamster -n Paus Backenbube EXIT_FAILURE
 PASS: hamster -n meier meier
@@ -68,6 +68,5 @@ XFAIL: hamster -b Ludovic_Freihherr_von_Knoblauch_zu_Hatzbach EXIT_FAILURE
 
 		=== hamster Summary ===
 
-# of expected passes		15
-# of unexpected failures	4
+# of expected passes		19
 # of expected failures		34
