@@ -1,0 +1,7 @@
+a)
++ -	: ungepufferte Kommunikationsform
++ - 	: Sender und Empfänger werden zeitlich sehr eng gekoppelt
++	: geringer Speicherverbrauch
+-	: Blockiert
+-	: inflexibel
+

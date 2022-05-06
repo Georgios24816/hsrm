@@ -64,6 +64,11 @@ void errorCheck(int32_t retCode)
 		printf("Error: HMSTR_ERR_EXISTS\n");
 	}
 
+	else
+	{
+		printf("Error: UNKNOW ERROR\n");
+	}
+
 	exit(EXIT_FAILURE);
 }
 

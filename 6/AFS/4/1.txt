@@ -1,0 +1,7 @@
+b)
+S2, S3 a
+
+c)
+L(A1) = { w Element { a, b }* | (a(a, b)*) | b(a, b)  }
+
+d)
