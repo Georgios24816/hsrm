@@ -6,8 +6,8 @@ entity uart8n1_tr_tb is
         port
         (
             hwclk     : in      std_ulogic;
-            ftdi_tx   : out     unsigned(0 downto 0);
-            ftdi_rx   : out     unsigned(0 downto 0)
+            ftdi_rx   : in     unsigned(0 downto 0);
+            ftdi_tx   : out     unsigned(0 downto 0)
         );
 end uart8n1_tr_tb;
 
@@ -20,6 +20,7 @@ architecture test of uart8n1_tr_tb is
             txByte  : in    unsigned(7 downto 0);
             sendData: in    unsigned(0 downto 0);
     
+            isIdle  : out   unsigned(0 downto 0);
             txDone  : out   unsigned(0 downto 0);
             tx      : out   unsigned(0 downto 0)
         );
@@ -57,10 +58,10 @@ signal uartActive : unsigned(0 downto 0) := "0";
 signal txIdleSignal : unsigned(0 downto 0) := "0";
 signal rxIdleSignal : unsigned(0 downto 0) := "0";
 
-signal txEnable: unsigned(0 downto 0) := '0';
-signal rxEnable: unsigned(0 downto 0) := '0';
-signal txInUse: unsigned(0 downto 0) := '0';
-signal rxInUse: unsigned(0 downto 0) := '0';
+signal txEnable: unsigned(0 downto 0) := "0";
+signal rxEnable: unsigned(0 downto 0) := "0";
+signal txInUse: unsigned(0 downto 0) := "0";
+signal rxInUse: unsigned(0 downto 0) := "0";
 
 --uart8n1_rx2
 
@@ -78,7 +79,7 @@ signal rxInUse: unsigned(0 downto 0) := '0';
 signal uart_txbyteCopy  : unsigned(7 downto 0)  := "00000000";
 
 begin
-    uart_receive <= not uart_send;
+    --uart_receive <= not uart_send;
 
     uart8n1_tx_Instance: uart8n1_tx 
     port map
@@ -92,16 +93,16 @@ begin
         tx => ftdi_tx
     );
 
-    uart8n1_rx2_Instance: uart8n1_rx2 
-    port map
-    (
-        clk => hwclk,
-        en => rxEnable,
-        rxIn => ftdi_rx,
-        rxDv => uart_receive,
-        isIdle => rxIdleSignal,
-        rxByte => uart_txbyte
-    );
+    --uart8n1_rx2_Instance: uart8n1_rx2 
+    --port map
+    --(
+    --    clk => hwclk,
+    --    en => rxEnable,
+    --    rxIn => ftdi_rx,
+    --    rxDv => uart_receive,
+    --    isIdle => rxIdleSignal,
+    --    rxByte => uart_txbyte
+    --);
 
     process (hwclk)
         constant State_idle         : unsigned(3 downto 0)  := "0000";

@@ -64,7 +64,7 @@
         }
       },
       "cells": {
-        "$specify$203": {
+        "$specify$169": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -95,7 +95,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$204": {
+        "$specify$170": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -126,7 +126,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$205": {
+        "$specify$171": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -157,7 +157,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$206": {
+        "$specify$172": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -188,7 +188,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$207": {
+        "$specify$173": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -219,7 +219,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$208": {
+        "$specify$174": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -250,7 +250,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$209": {
+        "$specify$175": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -281,7 +281,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$210": {
+        "$specify$176": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -312,7 +312,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$211": {
+        "$specify$177": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -343,7 +343,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$212": {
+        "$specify$178": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -374,7 +374,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$213": {
+        "$specify$179": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -405,7 +405,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$214": {
+        "$specify$180": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -442,7 +442,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$215": {
+        "$specify$181": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -473,7 +473,7 @@
             "SRC": [ 9 ]
           }
         },
-        "$specify$216": {
+        "$specify$182": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -508,7 +508,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$217": {
+        "$specify$183": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -543,7 +543,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$218": {
+        "$specify$184": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -578,7 +578,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$219": {
+        "$specify$185": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -613,7 +613,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$220": {
+        "$specify$186": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -648,7 +648,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$221": {
+        "$specify$187": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -683,7 +683,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$222": {
+        "$specify$188": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -718,7 +718,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$223": {
+        "$specify$189": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -753,7 +753,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$224": {
+        "$specify$190": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -788,7 +788,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$225": {
+        "$specify$191": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -823,7 +823,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$226": {
+        "$specify$192": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -858,7 +858,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$227": {
+        "$specify$193": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -893,7 +893,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$228": {
+        "$specify$194": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -928,7 +928,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$229": {
+        "$specify$195": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -963,7 +963,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$230": {
+        "$specify$196": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -998,7 +998,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$231": {
+        "$specify$197": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1033,7 +1033,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$232": {
+        "$specify$198": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1068,7 +1068,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$233": {
+        "$specify$199": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1103,7 +1103,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$234": {
+        "$specify$200": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1138,7 +1138,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$235": {
+        "$specify$201": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1173,7 +1173,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$236": {
+        "$specify$202": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -1208,7 +1208,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$237": {
+        "$specify$203": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -2507,8 +2507,9 @@
     },
     "SB_DFFESR": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:590.1-645.10"
       },
       "ports": {
@@ -2579,8 +2580,9 @@
     },
     "SB_DFFESS": {
       "attributes": {
-        "abc9_flop": "00000000000000000000000000000001",
         "blackbox": "00000000000000000000000000000001",
+        "abc9_flop": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:725.1-780.10"
       },
       "ports": {
@@ -6396,7 +6398,7 @@
         }
       },
       "cells": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1633$322": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1633$288": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6420,7 +6422,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1635$323": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1635$289": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6444,7 +6446,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1641$324": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1641$290": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6468,7 +6470,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1645$325": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1645$291": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -6492,7 +6494,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$167": {
+        "$specify$133": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6527,7 +6529,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$168": {
+        "$specify$134": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6562,7 +6564,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$169": {
+        "$specify$135": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6597,7 +6599,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$170": {
+        "$specify$136": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6632,7 +6634,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$171": {
+        "$specify$137": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6667,7 +6669,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$172": {
+        "$specify$138": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6702,7 +6704,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$173": {
+        "$specify$139": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6737,7 +6739,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$174": {
+        "$specify$140": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -6772,7 +6774,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$175": {
+        "$specify$141": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -6811,28 +6813,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1633$322_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1633$288_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1633.33-1633.44"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1635$323_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1635$289_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1635.34-1635.45"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1641$324_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1641$290_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1641.34-1641.45"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1645$325_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1645$291_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -6997,7 +6999,7 @@
         }
       },
       "cells": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1769$326": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1769$292": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7021,7 +7023,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1771$327": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1771$293": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7045,7 +7047,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1777$328": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1777$294": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7069,7 +7071,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1781$329": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1781$295": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7093,7 +7095,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$176": {
+        "$specify$142": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7128,7 +7130,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$177": {
+        "$specify$143": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7163,7 +7165,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$178": {
+        "$specify$144": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7198,7 +7200,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$179": {
+        "$specify$145": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7233,7 +7235,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$180": {
+        "$specify$146": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7268,7 +7270,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$181": {
+        "$specify$147": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7303,7 +7305,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$182": {
+        "$specify$148": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7338,7 +7340,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$183": {
+        "$specify$149": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7373,7 +7375,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$184": {
+        "$specify$150": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -7412,28 +7414,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1769$326_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1769$292_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1769.33-1769.44"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1771$327_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1771$293_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1771.35-1771.46"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1777$328_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1777$294_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1777.34-1777.45"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1781$329_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1781$295_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -7598,7 +7600,7 @@
         }
       },
       "cells": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2041$334": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2041$300": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7622,7 +7624,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2043$335": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2043$301": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7646,7 +7648,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2049$336": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2049$302": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7670,7 +7672,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2053$337": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2053$303": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -7694,7 +7696,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$194": {
+        "$specify$160": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7729,7 +7731,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$195": {
+        "$specify$161": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7764,7 +7766,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$196": {
+        "$specify$162": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7799,7 +7801,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$197": {
+        "$specify$163": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7834,7 +7836,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$198": {
+        "$specify$164": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7869,7 +7871,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$199": {
+        "$specify$165": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7904,7 +7906,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$200": {
+        "$specify$166": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7939,7 +7941,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$201": {
+        "$specify$167": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -7974,7 +7976,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$202": {
+        "$specify$168": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -8013,28 +8015,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2041$334_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2041$300_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:2041.34-2041.45"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2043$335_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2043$301_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:2043.35-2043.46"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2049$336_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2049$302_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:2049.35-2049.46"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2053$337_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:2053$303_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -8199,7 +8201,7 @@
         }
       },
       "cells": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1905$330": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1905$296": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8223,7 +8225,7 @@
             "Y": [ 78 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1907$331": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1907$297": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8247,7 +8249,7 @@
             "Y": [ 79 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1913$332": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1913$298": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8271,7 +8273,7 @@
             "Y": [ 80 ]
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1917$333": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1917$299": {
           "hide_name": 1,
           "type": "$logic_and",
           "parameters": {
@@ -8295,7 +8297,7 @@
             "Y": [ 81 ]
           }
         },
-        "$specify$185": {
+        "$specify$151": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8330,7 +8332,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$186": {
+        "$specify$152": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8365,7 +8367,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$187": {
+        "$specify$153": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8400,7 +8402,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$188": {
+        "$specify$154": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8435,7 +8437,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$189": {
+        "$specify$155": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8470,7 +8472,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$190": {
+        "$specify$156": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8505,7 +8507,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$191": {
+        "$specify$157": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8540,7 +8542,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$192": {
+        "$specify$158": {
           "hide_name": 1,
           "type": "$specrule",
           "parameters": {
@@ -8575,7 +8577,7 @@
             "SRC_EN": [ "1" ]
           }
         },
-        "$specify$193": {
+        "$specify$159": {
           "hide_name": 1,
           "type": "$specify3",
           "parameters": {
@@ -8614,28 +8616,28 @@
         }
       },
       "netnames": {
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1905$330_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1905$296_Y": {
           "hide_name": 1,
           "bits": [ 78 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1905.34-1905.45"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1907$331_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1907$297_Y": {
           "hide_name": 1,
           "bits": [ 79 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1907.34-1907.45"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1913$332_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1913$298_Y": {
           "hide_name": 1,
           "bits": [ 80 ],
           "attributes": {
             "src": "/usr/local/bin/../share/yosys/ice40/cells_sim.v:1913.35-1913.46"
           }
         },
-        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1917$333_Y": {
+        "$logic_and$/usr/local/bin/../share/yosys/ice40/cells_sim.v:1917$299_Y": {
           "hide_name": 1,
           "bits": [ 81 ],
           "attributes": {
@@ -9654,7 +9656,7 @@
         }
       }
     },
-    "uart8n1_tx_tb": {
+    "uart8n1_tr_tb": {
       "attributes": {
         "top": "00000000000000000000000000000001"
       },
@@ -9663,12 +9665,338 @@
           "direction": "input",
           "bits": [ 2 ]
         },
+        "ftdi_rx": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
         "ftdi_tx": {
           "direction": "output",
-          "bits": [ 3 ]
+          "bits": [ 4 ]
         }
       },
       "cells": {
+        "clk_9600_SB_DFFE_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 5 ],
+            "E": [ 6 ],
+            "Q": [ 7 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 8 ],
+            "I3": [ 9 ],
+            "O": [ 6 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 11 ],
+            "I2": [ 12 ],
+            "I3": [ 13 ],
+            "O": [ 9 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 14 ],
+            "I1": [ 15 ],
+            "I2": [ 16 ],
+            "I3": [ 17 ],
+            "O": [ 8 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 18 ],
+            "I1": [ 19 ],
+            "I2": [ 20 ],
+            "I3": [ 21 ],
+            "O": [ 17 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 22 ],
+            "I1": [ 23 ],
+            "I2": [ 24 ],
+            "I3": [ 25 ],
+            "O": [ 16 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 26 ],
+            "I1": [ 27 ],
+            "I2": [ 28 ],
+            "I3": [ 29 ],
+            "O": [ 15 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 30 ],
+            "I1": [ 31 ],
+            "I2": [ 32 ],
+            "I3": [ 33 ],
+            "O": [ 14 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "I1": [ 35 ],
+            "I2": [ 36 ],
+            "I3": [ 37 ],
+            "O": [ 13 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 38 ],
+            "I1": [ 39 ],
+            "I2": [ 40 ],
+            "I3": [ 41 ],
+            "O": [ 12 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 42 ],
+            "I1": [ 43 ],
+            "I2": [ 44 ],
+            "I3": [ 45 ],
+            "O": [ 11 ]
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 46 ],
+            "I1": [ 47 ],
+            "I2": [ 48 ],
+            "I3": [ 49 ],
+            "O": [ 10 ]
+          }
+        },
+        "clk_9600_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ "0" ],
+            "I3": [ 7 ],
+            "O": [ 5 ]
+          }
+        },
         "cntr_9600_SB_CARRY_CI": {
           "hide_name": 0,
           "type": "SB_CARRY",
@@ -9684,10 +10012,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 4 ],
-            "CO": [ 5 ],
+            "CI": [ 21 ],
+            "CO": [ 50 ],
             "I0": [ "0" ],
-            "I1": [ 6 ]
+            "I1": [ 42 ]
           }
         },
         "cntr_9600_SB_CARRY_I1": {
@@ -9705,10 +10033,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 7 ],
-            "CO": [ 8 ],
+            "CI": [ 51 ],
+            "CO": [ 52 ],
             "I0": [ "0" ],
-            "I1": [ 9 ]
+            "I1": [ 25 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_1": {
@@ -9726,10 +10054,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 10 ],
-            "CO": [ 7 ],
+            "CI": [ 53 ],
+            "CO": [ 51 ],
             "I0": [ "0" ],
-            "I1": [ 11 ]
+            "I1": [ 46 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_10": {
@@ -9747,10 +10075,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 12 ],
-            "CO": [ 13 ],
+            "CI": [ 54 ],
+            "CO": [ 55 ],
             "I0": [ "0" ],
-            "I1": [ 14 ]
+            "I1": [ 33 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_11": {
@@ -9768,10 +10096,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 15 ],
-            "CO": [ 12 ],
+            "CI": [ 56 ],
+            "CO": [ 54 ],
             "I0": [ "0" ],
-            "I1": [ 16 ]
+            "I1": [ 32 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_12": {
@@ -9789,10 +10117,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 17 ],
-            "CO": [ 15 ],
+            "CI": [ 57 ],
+            "CO": [ 56 ],
             "I0": [ "0" ],
-            "I1": [ 18 ]
+            "I1": [ 31 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_13": {
@@ -9810,10 +10138,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 19 ],
-            "CO": [ 17 ],
+            "CI": [ 58 ],
+            "CO": [ 57 ],
             "I0": [ "0" ],
-            "I1": [ 20 ]
+            "I1": [ 30 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_14": {
@@ -9831,10 +10159,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 21 ],
-            "CO": [ 19 ],
+            "CI": [ 59 ],
+            "CO": [ 58 ],
             "I0": [ "0" ],
-            "I1": [ 22 ]
+            "I1": [ 29 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_15": {
@@ -9852,10 +10180,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 23 ],
-            "CO": [ 21 ],
+            "CI": [ 60 ],
+            "CO": [ 59 ],
             "I0": [ "0" ],
-            "I1": [ 24 ]
+            "I1": [ 28 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_16": {
@@ -9873,10 +10201,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 25 ],
-            "CO": [ 23 ],
+            "CI": [ 61 ],
+            "CO": [ 60 ],
             "I0": [ "0" ],
-            "I1": [ 26 ]
+            "I1": [ 27 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_17": {
@@ -9894,10 +10222,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 27 ],
-            "CO": [ 25 ],
+            "CI": [ 62 ],
+            "CO": [ 61 ],
             "I0": [ "0" ],
-            "I1": [ 28 ]
+            "I1": [ 26 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_18": {
@@ -9915,10 +10243,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 29 ],
-            "CO": [ 27 ],
+            "CI": [ 63 ],
+            "CO": [ 62 ],
             "I0": [ "0" ],
-            "I1": [ 30 ]
+            "I1": [ 41 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_19": {
@@ -9936,10 +10264,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 31 ],
-            "CO": [ 29 ],
+            "CI": [ 64 ],
+            "CO": [ 63 ],
             "I0": [ "0" ],
-            "I1": [ 32 ]
+            "I1": [ 40 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_2": {
@@ -9957,10 +10285,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 33 ],
-            "CO": [ 10 ],
+            "CI": [ 65 ],
+            "CO": [ 53 ],
             "I0": [ "0" ],
-            "I1": [ 34 ]
+            "I1": [ 45 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_20": {
@@ -9978,10 +10306,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 35 ],
-            "CO": [ 31 ],
+            "CI": [ 66 ],
+            "CO": [ 64 ],
             "I0": [ "0" ],
-            "I1": [ 36 ]
+            "I1": [ 39 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_21": {
@@ -9999,8 +10327,8 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 37 ],
-            "CO": [ 35 ],
+            "CI": [ 67 ],
+            "CO": [ 66 ],
             "I0": [ "0" ],
             "I1": [ 38 ]
           }
@@ -10020,10 +10348,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 39 ],
-            "CO": [ 37 ],
+            "CI": [ 68 ],
+            "CO": [ 67 ],
             "I0": [ "0" ],
-            "I1": [ 40 ]
+            "I1": [ 37 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_23": {
@@ -10041,10 +10369,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 41 ],
-            "CO": [ 39 ],
+            "CI": [ 69 ],
+            "CO": [ 68 ],
             "I0": [ "0" ],
-            "I1": [ 42 ]
+            "I1": [ 36 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_24": {
@@ -10062,10 +10390,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 43 ],
-            "CO": [ 41 ],
+            "CI": [ 70 ],
+            "CO": [ 69 ],
             "I0": [ "0" ],
-            "I1": [ 44 ]
+            "I1": [ 35 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_25": {
@@ -10083,10 +10411,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 45 ],
-            "CO": [ 43 ],
+            "CI": [ 71 ],
+            "CO": [ 70 ],
             "I0": [ "0" ],
-            "I1": [ 46 ]
+            "I1": [ 34 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_26": {
@@ -10104,10 +10432,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 47 ],
-            "CO": [ 45 ],
+            "CI": [ 72 ],
+            "CO": [ 71 ],
             "I0": [ "0" ],
-            "I1": [ 48 ]
+            "I1": [ 49 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_27": {
@@ -10125,10 +10453,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 49 ],
-            "CO": [ 47 ],
+            "CI": [ 73 ],
+            "CO": [ 72 ],
             "I0": [ "0" ],
-            "I1": [ 50 ]
+            "I1": [ 48 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_28": {
@@ -10146,10 +10474,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 8 ],
-            "CO": [ 49 ],
+            "CI": [ 52 ],
+            "CO": [ 73 ],
             "I0": [ "0" ],
-            "I1": [ 51 ]
+            "I1": [ 47 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_3": {
@@ -10167,10 +10495,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 52 ],
-            "CO": [ 33 ],
+            "CI": [ 74 ],
+            "CO": [ 65 ],
             "I0": [ "0" ],
-            "I1": [ 53 ]
+            "I1": [ 24 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_4": {
@@ -10188,10 +10516,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 54 ],
-            "CO": [ 52 ],
+            "CI": [ 75 ],
+            "CO": [ 74 ],
             "I0": [ "0" ],
-            "I1": [ 55 ]
+            "I1": [ 23 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_5": {
@@ -10209,10 +10537,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 56 ],
-            "CO": [ 54 ],
+            "CI": [ 76 ],
+            "CO": [ 75 ],
             "I0": [ "0" ],
-            "I1": [ 57 ]
+            "I1": [ 22 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_6": {
@@ -10230,10 +10558,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 58 ],
-            "CO": [ 56 ],
+            "CI": [ 77 ],
+            "CO": [ 76 ],
             "I0": [ "0" ],
-            "I1": [ 59 ]
+            "I1": [ 44 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_7": {
@@ -10251,10 +10579,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 60 ],
-            "CO": [ 61 ],
+            "CI": [ 78 ],
+            "CO": [ 79 ],
             "I0": [ "0" ],
-            "I1": [ 62 ]
+            "I1": [ 19 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_8": {
@@ -10272,10 +10600,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 5 ],
-            "CO": [ 58 ],
+            "CI": [ 50 ],
+            "CO": [ 77 ],
             "I0": [ "0" ],
-            "I1": [ 63 ]
+            "I1": [ 43 ]
           }
         },
         "cntr_9600_SB_CARRY_I1_9": {
@@ -10293,10 +10621,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 13 ],
-            "CO": [ 60 ],
+            "CI": [ 55 ],
+            "CO": [ 78 ],
             "I0": [ "0" ],
-            "I1": [ 64 ]
+            "I1": [ 18 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q": {
@@ -10316,9 +10644,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 65 ],
-            "Q": [ 66 ],
-            "R": [ 67 ]
+            "D": [ 80 ],
+            "Q": [ 20 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_1": {
@@ -10338,9 +10666,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 68 ],
-            "Q": [ 62 ],
-            "R": [ 67 ]
+            "D": [ 81 ],
+            "Q": [ 19 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_10": {
@@ -10360,9 +10688,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 69 ],
-            "Q": [ 28 ],
-            "R": [ 67 ]
+            "D": [ 82 ],
+            "Q": [ 26 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_11": {
@@ -10382,9 +10710,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 70 ],
-            "Q": [ 30 ],
-            "R": [ 67 ]
+            "D": [ 83 ],
+            "Q": [ 41 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_12": {
@@ -10404,9 +10732,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 71 ],
-            "Q": [ 32 ],
-            "R": [ 67 ]
+            "D": [ 84 ],
+            "Q": [ 40 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_13": {
@@ -10426,9 +10754,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 72 ],
-            "Q": [ 36 ],
-            "R": [ 67 ]
+            "D": [ 85 ],
+            "Q": [ 39 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_14": {
@@ -10448,9 +10776,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 73 ],
+            "D": [ 86 ],
             "Q": [ 38 ],
-            "R": [ 67 ]
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_15": {
@@ -10470,9 +10798,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 74 ],
-            "Q": [ 40 ],
-            "R": [ 67 ]
+            "D": [ 87 ],
+            "Q": [ 37 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_16": {
@@ -10492,9 +10820,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 75 ],
-            "Q": [ 42 ],
-            "R": [ 67 ]
+            "D": [ 88 ],
+            "Q": [ 36 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_17": {
@@ -10514,9 +10842,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 76 ],
-            "Q": [ 44 ],
-            "R": [ 67 ]
+            "D": [ 89 ],
+            "Q": [ 35 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_18": {
@@ -10536,9 +10864,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 77 ],
-            "Q": [ 46 ],
-            "R": [ 67 ]
+            "D": [ 90 ],
+            "Q": [ 34 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_19": {
@@ -10558,9 +10886,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 78 ],
-            "Q": [ 48 ],
-            "R": [ 67 ]
+            "D": [ 91 ],
+            "Q": [ 49 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_2": {
@@ -10580,9 +10908,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 79 ],
-            "Q": [ 64 ],
-            "R": [ 67 ]
+            "D": [ 92 ],
+            "Q": [ 18 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_20": {
@@ -10602,9 +10930,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 80 ],
-            "Q": [ 50 ],
-            "R": [ 67 ]
+            "D": [ 93 ],
+            "Q": [ 48 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_21": {
@@ -10624,9 +10952,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 81 ],
-            "Q": [ 51 ],
-            "R": [ 67 ]
+            "D": [ 94 ],
+            "Q": [ 47 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_22": {
@@ -10646,9 +10974,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 82 ],
-            "Q": [ 9 ],
-            "R": [ 67 ]
+            "D": [ 95 ],
+            "Q": [ 25 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_23": {
@@ -10668,9 +10996,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 83 ],
-            "Q": [ 11 ],
-            "R": [ 67 ]
+            "D": [ 96 ],
+            "Q": [ 46 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_24": {
@@ -10690,9 +11018,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 84 ],
-            "Q": [ 34 ],
-            "R": [ 67 ]
+            "D": [ 97 ],
+            "Q": [ 45 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_25": {
@@ -10712,9 +11040,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 85 ],
-            "Q": [ 53 ],
-            "R": [ 67 ]
+            "D": [ 98 ],
+            "Q": [ 24 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_26": {
@@ -10734,9 +11062,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 86 ],
-            "Q": [ 55 ],
-            "R": [ 67 ]
+            "D": [ 99 ],
+            "Q": [ 23 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_27": {
@@ -10756,9 +11084,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 87 ],
-            "Q": [ 57 ],
-            "R": [ 67 ]
+            "D": [ 100 ],
+            "Q": [ 22 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_28": {
@@ -10778,9 +11106,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 88 ],
-            "Q": [ 59 ],
-            "R": [ 67 ]
+            "D": [ 101 ],
+            "Q": [ 44 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_29": {
@@ -10800,9 +11128,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 89 ],
-            "Q": [ 63 ],
-            "R": [ 67 ]
+            "D": [ 102 ],
+            "Q": [ 43 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_3": {
@@ -10822,9 +11150,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 90 ],
-            "Q": [ 14 ],
-            "R": [ 67 ]
+            "D": [ 103 ],
+            "Q": [ 33 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_30": {
@@ -10844,9 +11172,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 91 ],
-            "Q": [ 6 ],
-            "R": [ 67 ]
+            "D": [ 104 ],
+            "Q": [ 42 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_31": {
@@ -10866,9 +11194,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 92 ],
-            "Q": [ 4 ],
-            "R": [ 67 ]
+            "D": [ 105 ],
+            "Q": [ 21 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_31_D_SB_LUT4_O": {
@@ -10892,8 +11220,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 4 ],
-            "O": [ 92 ]
+            "I3": [ 21 ],
+            "O": [ 105 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_4": {
@@ -10913,9 +11241,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 93 ],
-            "Q": [ 16 ],
-            "R": [ 67 ]
+            "D": [ 106 ],
+            "Q": [ 32 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_5": {
@@ -10935,9 +11263,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 94 ],
-            "Q": [ 18 ],
-            "R": [ 67 ]
+            "D": [ 107 ],
+            "Q": [ 31 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_6": {
@@ -10957,9 +11285,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 95 ],
-            "Q": [ 20 ],
-            "R": [ 67 ]
+            "D": [ 108 ],
+            "Q": [ 30 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_7": {
@@ -10979,9 +11307,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 96 ],
-            "Q": [ 22 ],
-            "R": [ 67 ]
+            "D": [ 109 ],
+            "Q": [ 29 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_8": {
@@ -11001,9 +11329,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 97 ],
-            "Q": [ 24 ],
-            "R": [ 67 ]
+            "D": [ 110 ],
+            "Q": [ 28 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_9": {
@@ -11023,9 +11351,9 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 98 ],
-            "Q": [ 26 ],
-            "R": [ 67 ]
+            "D": [ 111 ],
+            "Q": [ 27 ],
+            "R": [ 6 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O": {
@@ -11048,9 +11376,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 9 ],
-            "I3": [ 7 ],
-            "O": [ 82 ]
+            "I2": [ 47 ],
+            "I3": [ 52 ],
+            "O": [ 94 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_1": {
@@ -11073,9 +11401,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 11 ],
-            "I3": [ 10 ],
-            "O": [ 83 ]
+            "I2": [ 25 ],
+            "I3": [ 51 ],
+            "O": [ 95 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_10": {
@@ -11098,9 +11426,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 64 ],
-            "I3": [ 13 ],
-            "O": [ 79 ]
+            "I2": [ 43 ],
+            "I3": [ 50 ],
+            "O": [ 102 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_11": {
@@ -11123,9 +11451,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 14 ],
-            "I3": [ 12 ],
-            "O": [ 90 ]
+            "I2": [ 18 ],
+            "I3": [ 55 ],
+            "O": [ 92 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_12": {
@@ -11148,9 +11476,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 16 ],
-            "I3": [ 15 ],
-            "O": [ 93 ]
+            "I2": [ 33 ],
+            "I3": [ 54 ],
+            "O": [ 103 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_13": {
@@ -11173,9 +11501,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 18 ],
-            "I3": [ 17 ],
-            "O": [ 94 ]
+            "I2": [ 32 ],
+            "I3": [ 56 ],
+            "O": [ 106 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_14": {
@@ -11198,9 +11526,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 20 ],
-            "I3": [ 19 ],
-            "O": [ 95 ]
+            "I2": [ 31 ],
+            "I3": [ 57 ],
+            "O": [ 107 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_15": {
@@ -11223,9 +11551,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 22 ],
-            "I3": [ 21 ],
-            "O": [ 96 ]
+            "I2": [ 30 ],
+            "I3": [ 58 ],
+            "O": [ 108 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_16": {
@@ -11248,9 +11576,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 24 ],
-            "I3": [ 23 ],
-            "O": [ 97 ]
+            "I2": [ 29 ],
+            "I3": [ 59 ],
+            "O": [ 109 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_17": {
@@ -11273,9 +11601,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 26 ],
-            "I3": [ 25 ],
-            "O": [ 98 ]
+            "I2": [ 28 ],
+            "I3": [ 60 ],
+            "O": [ 110 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_18": {
@@ -11298,9 +11626,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 28 ],
-            "I3": [ 27 ],
-            "O": [ 69 ]
+            "I2": [ 27 ],
+            "I3": [ 61 ],
+            "O": [ 111 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_19": {
@@ -11323,9 +11651,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 30 ],
-            "I3": [ 29 ],
-            "O": [ 70 ]
+            "I2": [ 26 ],
+            "I3": [ 62 ],
+            "O": [ 82 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_2": {
@@ -11348,9 +11676,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 34 ],
-            "I3": [ 33 ],
-            "O": [ 84 ]
+            "I2": [ 46 ],
+            "I3": [ 53 ],
+            "O": [ 96 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_20": {
@@ -11373,9 +11701,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 6 ],
-            "I3": [ 4 ],
-            "O": [ 91 ]
+            "I2": [ 41 ],
+            "I3": [ 63 ],
+            "O": [ 83 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_21": {
@@ -11398,9 +11726,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 32 ],
-            "I3": [ 31 ],
-            "O": [ 71 ]
+            "I2": [ 42 ],
+            "I3": [ 21 ],
+            "O": [ 104 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_22": {
@@ -11423,9 +11751,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 36 ],
-            "I3": [ 35 ],
-            "O": [ 72 ]
+            "I2": [ 40 ],
+            "I3": [ 64 ],
+            "O": [ 84 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_23": {
@@ -11448,9 +11776,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 38 ],
-            "I3": [ 37 ],
-            "O": [ 73 ]
+            "I2": [ 39 ],
+            "I3": [ 66 ],
+            "O": [ 85 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_24": {
@@ -11473,9 +11801,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 40 ],
-            "I3": [ 39 ],
-            "O": [ 74 ]
+            "I2": [ 38 ],
+            "I3": [ 67 ],
+            "O": [ 86 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_25": {
@@ -11498,9 +11826,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 42 ],
-            "I3": [ 41 ],
-            "O": [ 75 ]
+            "I2": [ 37 ],
+            "I3": [ 68 ],
+            "O": [ 87 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_26": {
@@ -11523,9 +11851,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 44 ],
-            "I3": [ 43 ],
-            "O": [ 76 ]
+            "I2": [ 36 ],
+            "I3": [ 69 ],
+            "O": [ 88 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_27": {
@@ -11548,9 +11876,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 46 ],
-            "I3": [ 45 ],
-            "O": [ 77 ]
+            "I2": [ 35 ],
+            "I3": [ 70 ],
+            "O": [ 89 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_28": {
@@ -11573,9 +11901,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 48 ],
-            "I3": [ 47 ],
-            "O": [ 78 ]
+            "I2": [ 34 ],
+            "I3": [ 71 ],
+            "O": [ 90 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_29": {
@@ -11598,9 +11926,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 50 ],
-            "I3": [ 49 ],
-            "O": [ 80 ]
+            "I2": [ 49 ],
+            "I3": [ 72 ],
+            "O": [ 91 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_3": {
@@ -11623,9 +11951,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 53 ],
-            "I3": [ 52 ],
-            "O": [ 85 ]
+            "I2": [ 45 ],
+            "I3": [ 65 ],
+            "O": [ 97 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_30": {
@@ -11648,9 +11976,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 51 ],
-            "I3": [ 8 ],
-            "O": [ 81 ]
+            "I2": [ 48 ],
+            "I3": [ 73 ],
+            "O": [ 93 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_4": {
@@ -11673,9 +12001,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 55 ],
-            "I3": [ 54 ],
-            "O": [ 86 ]
+            "I2": [ 24 ],
+            "I3": [ 74 ],
+            "O": [ 98 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_5": {
@@ -11698,9 +12026,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 57 ],
-            "I3": [ 56 ],
-            "O": [ 87 ]
+            "I2": [ 23 ],
+            "I3": [ 75 ],
+            "O": [ 99 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_6": {
@@ -11723,9 +12051,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 59 ],
-            "I3": [ 58 ],
-            "O": [ 88 ]
+            "I2": [ 22 ],
+            "I3": [ 76 ],
+            "O": [ 100 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_7": {
@@ -11748,9 +12076,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 66 ],
-            "I3": [ 61 ],
-            "O": [ 65 ]
+            "I2": [ 44 ],
+            "I3": [ 77 ],
+            "O": [ 101 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_8": {
@@ -11773,9 +12101,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 62 ],
-            "I3": [ 60 ],
-            "O": [ 68 ]
+            "I2": [ 20 ],
+            "I3": [ 79 ],
+            "O": [ 80 ]
           }
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_9": {
@@ -11798,1673 +12126,90 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 63 ],
-            "I3": [ 5 ],
-            "O": [ 89 ]
+            "I2": [ 19 ],
+            "I3": [ 78 ],
+            "O": [ 81 ]
           }
         },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O": {
+        "uart8n1_tx_instance": {
           "hide_name": 0,
-          "type": "SB_LUT4",
+          "type": "uart8n1_tx",
           "parameters": {
-            "LUT_INIT": "1111000000000000"
           },
           "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
           },
           "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
+            "clk": "input",
+            "en": "input",
+            "isIdle": "output",
+            "sendData": "input",
+            "tx": "output",
+            "txByte": "input",
+            "txDone": "output"
           },
           "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 99 ],
-            "I3": [ 100 ],
-            "O": [ 67 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 101 ],
-            "I1": [ 102 ],
-            "I2": [ 103 ],
-            "I3": [ 104 ],
-            "O": [ 100 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 105 ],
-            "I1": [ 106 ],
-            "I2": [ 107 ],
-            "I3": [ 108 ],
-            "O": [ 99 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 14 ],
-            "I1": [ 64 ],
-            "I2": [ 62 ],
-            "I3": [ 66 ],
-            "O": [ 108 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 4 ],
-            "I1": [ 57 ],
-            "I2": [ 55 ],
-            "I3": [ 53 ],
-            "O": [ 107 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 30 ],
-            "I1": [ 28 ],
-            "I2": [ 26 ],
-            "I3": [ 24 ],
-            "O": [ 106 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 22 ],
-            "I1": [ 20 ],
-            "I2": [ 18 ],
-            "I3": [ 16 ],
-            "O": [ 105 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 48 ],
-            "I1": [ 46 ],
-            "I2": [ 44 ],
-            "I3": [ 42 ],
-            "O": [ 104 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 40 ],
-            "I1": [ 38 ],
-            "I2": [ 36 ],
-            "I3": [ 32 ],
-            "O": [ 103 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 6 ],
-            "I1": [ 63 ],
-            "I2": [ 59 ],
-            "I3": [ 9 ],
-            "O": [ 102 ]
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 34 ],
-            "I1": [ 11 ],
-            "I2": [ 51 ],
-            "I3": [ 50 ],
-            "O": [ 101 ]
-          }
-        },
-        "ftdi_tx_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 109 ],
-            "O": [ 3 ]
-          }
-        },
-        "ftdi_tx_SB_LUT4_O_I3_SB_DFFESS_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESS",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 150",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:25.66-25.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "S": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 111 ],
-            "E": [ 112 ],
-            "Q": [ 109 ],
-            "S": [ 113 ]
-          }
-        },
-        "ftdi_tx_SB_LUT4_O_I3_SB_DFFESS_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000001111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 114 ],
-            "I3": [ 115 ],
-            "O": [ 111 ]
-          }
-        },
-        "ftdi_tx_SB_LUT4_O_I3_SB_DFFESS_Q_S_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 116 ],
-            "I3": [ 117 ],
-            "O": [ 113 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 118 ],
-            "E": [ 119 ],
-            "Q": [ 120 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 121 ],
-            "E": [ 119 ],
-            "Q": [ 122 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 123 ],
-            "E": [ 119 ],
-            "Q": [ 124 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_3": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 125 ],
-            "E": [ 119 ],
-            "Q": [ 126 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_4": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 127 ],
-            "E": [ 119 ],
-            "Q": [ 128 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_5": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 129 ],
-            "E": [ 119 ],
-            "Q": [ 130 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_6": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 131 ],
-            "E": [ 119 ],
-            "Q": [ 132 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 156",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 133 ],
-            "E": [ 119 ],
-            "Q": [ 134 ],
-            "R": [ 114 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 128 ],
-            "O": [ 135 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 120 ],
-            "O": [ 136 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 122 ],
-            "O": [ 137 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 124 ],
-            "O": [ 138 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_4": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 126 ],
-            "O": [ 139 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_5": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 130 ],
-            "O": [ 140 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_6": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 132 ],
-            "O": [ 141 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D_SB_LUT4_O_7": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 134 ],
-            "O": [ 133 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 120 ],
-            "I3": [ 142 ],
-            "O": [ 118 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 122 ],
-            "I3": [ 143 ],
-            "O": [ 121 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 124 ],
-            "I3": [ 144 ],
-            "O": [ 123 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 126 ],
-            "I3": [ 145 ],
-            "O": [ 125 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_4": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 128 ],
-            "I3": [ 146 ],
-            "O": [ 127 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_5": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 130 ],
-            "I3": [ 147 ],
-            "O": [ 129 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_6": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0110100110010110"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 132 ],
-            "I3": [ 134 ],
-            "O": [ 131 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 143 ],
-            "CO": [ 142 ],
-            "I0": [ "0" ],
-            "I1": [ 122 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_1": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 144 ],
-            "CO": [ 143 ],
-            "I0": [ "0" ],
-            "I1": [ 124 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_2": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 145 ],
-            "CO": [ 144 ],
-            "I0": [ "0" ],
-            "I1": [ 126 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_3": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 146 ],
-            "CO": [ 145 ],
-            "I0": [ "0" ],
-            "I1": [ 128 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_4": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 147 ],
-            "CO": [ 146 ],
-            "I0": [ "0" ],
-            "I1": [ 130 ]
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_5": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 134 ],
-            "CO": [ 147 ],
-            "I0": [ "0" ],
-            "I1": [ 132 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 154",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 148 ],
-            "E": [ 149 ],
-            "Q": [ 150 ],
-            "R": [ 151 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESR_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 154",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 150 ],
-            "E": [ 149 ],
-            "Q": [ 152 ],
-            "R": [ 151 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESR_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 154",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 152 ],
-            "E": [ 149 ],
-            "Q": [ 153 ],
-            "R": [ 151 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESR_Q_3": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 154",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 153 ],
-            "E": [ 149 ],
-            "Q": [ 115 ],
-            "R": [ 151 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESR_Q_E_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 151 ],
-            "I3": [ 114 ],
-            "O": [ 149 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESS_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESS",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 154",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:25.66-25.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "S": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ "0" ],
-            "E": [ 149 ],
-            "Q": [ 154 ],
-            "S": [ 151 ]
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESS_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFESS",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 154",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:25.66-25.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "S": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 154 ],
-            "E": [ 149 ],
-            "Q": [ 148 ],
-            "S": [ 151 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESR_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 152",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 112 ],
-            "E": [ 114 ],
-            "Q": [ 116 ],
-            "R": [ 151 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESR_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111111110000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 116 ],
-            "I3": [ 117 ],
-            "O": [ 112 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFESS",
-          "parameters": {
-          },
-          "attributes": {
-            "hdlname": "uartinstance 152",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:25.66-25.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "S": "input"
-          },
-          "connections": {
-            "C": [ 110 ],
-            "D": [ 119 ],
-            "E": [ 114 ],
-            "Q": [ 117 ],
-            "S": [ 151 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 155 ],
-            "I1": [ 156 ],
-            "I2": [ 119 ],
-            "I3": [ 157 ],
-            "O": [ 114 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 158 ],
-            "CO": [ 157 ],
-            "I0": [ "0" ],
-            "I1": [ 136 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 159 ],
-            "CO": [ 158 ],
-            "I0": [ "0" ],
-            "I1": [ 137 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 160 ],
-            "CO": [ 159 ],
-            "I0": [ "0" ],
-            "I1": [ 138 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 161 ],
-            "CO": [ 160 ],
-            "I0": [ "0" ],
-            "I1": [ 139 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 162 ],
-            "CO": [ 161 ],
-            "I0": [ "1" ],
-            "I1": [ 135 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_4": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 163 ],
-            "CO": [ 162 ],
-            "I0": [ "0" ],
-            "I1": [ 140 ]
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_5": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 133 ],
-            "CO": [ 163 ],
-            "I0": [ "0" ],
-            "I1": [ 141 ]
-          }
-        },
-        "uartinstance.45.state_SB_LUT4_I2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 117 ],
-            "I3": [ 116 ],
-            "O": [ 119 ]
-          }
-        },
-        "uartinstance.45.state_SB_LUT4_I2_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000001111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 116 ],
-            "I3": [ 117 ],
-            "O": [ 151 ]
-          }
-        },
-        "uartinstance.45.state_SB_LUT4_I2_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 134 ],
-            "I1": [ 132 ],
-            "I2": [ 130 ],
-            "I3": [ 128 ],
-            "O": [ 155 ]
-          }
-        },
-        "uartinstance.45.state_SB_LUT4_I2_O_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 126 ],
-            "I1": [ 124 ],
-            "I2": [ 122 ],
-            "I3": [ 120 ],
-            "O": [ 156 ]
-          }
-        },
-        "uartinstance.clk_SB_DFFE_Q": {
-          "hide_name": 0,
-          "type": "SB_DFFE",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/ff_map.v:5.57-5.103"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "C": [ 2 ],
-            "D": [ 164 ],
-            "E": [ 67 ],
-            "Q": [ 110 ]
-          }
-        },
-        "uartinstance.clk_SB_DFFE_Q_D_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 110 ],
-            "O": [ 164 ]
+            "clk": [ 7 ],
+            "en": [ "0" ],
+            "isIdle": [ 112 ],
+            "sendData": [ "0" ],
+            "tx": [ 4 ],
+            "txByte": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "txDone": [ 113 ]
           }
         }
       },
       "netnames": {
         "clk_9600": {
           "hide_name": 0,
-          "bits": [ 110 ],
+          "bits": [ 7 ],
           "attributes": {
+          }
+        },
+        "clk_9600_SB_DFFE_Q_D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 8, 9 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "clk_9600_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I0": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "cntr_9600": {
           "hide_name": 0,
-          "bits": [ 4, 6, 63, 59, 57, 55, 53, 34, 11, 9, 51, 50, 48, 46, 44, 42, 40, 38, 36, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 64, 62, 66 ],
+          "bits": [ 21, 42, 43, 44, 22, 23, 24, 45, 46, 25, 47, 48, 49, 34, 35, 36, 37, 38, 39, 40, 41, 26, 27, 28, 29, 30, 31, 32, 33, 18, 19, 20 ],
           "attributes": {
           }
         },
         "cntr_9600_SB_DFFSR_Q_31_D": {
           "hide_name": 0,
-          "bits": [ 92, 6, 63, 59, 57, 55, 53, 34, 11, 9, 51, 50, 48, 46, 44, 42, 40, 38, 36, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 64, 62, 66 ],
+          "bits": [ 105, 42, 43, 44, 22, 23, 24, 45, 46, 25, 47, 48, 49, 34, 35, 36, 37, 38, 39, 40, 41, 26, 27, 28, 29, 30, 31, 32, 33, 18, 19, 20 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:33.23-33.24"
@@ -13472,7 +12217,7 @@
         },
         "cntr_9600_SB_DFFSR_Q_D": {
           "hide_name": 0,
-          "bits": [ 92, 91, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 98, 97, 96, 95, 94, 93, 90, 79, 68, 65 ],
+          "bits": [ 105, 104, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 111, 110, 109, 108, 107, 106, 103, 92, 81, 80 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
@@ -13480,65 +12225,21 @@
         },
         "cntr_9600_SB_DFFSR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 4, 5, 58, 56, 54, 52, 33, 10, 7, 8, 49, 47, 45, 43, 41, 39, 37, 35, 31, 29, 27, 25, 23, 21, 19, 17, 15, 12, 13, 60, 61 ],
+          "bits": [ "0", 21, 50, 77, 76, 75, 74, 65, 53, 51, 52, 73, 72, 71, 70, 69, 68, 67, 66, 64, 63, 62, 61, 60, 59, 58, 57, 56, 54, 55, 78, 79 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
-        "cntr_9600_SB_DFFSR_Q_R": {
-          "hide_name": 0,
-          "bits": [ 67 ],
-          "attributes": {
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 99, 100 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_1_I0": {
-          "hide_name": 0,
-          "bits": [ 105, 106, 107, 108 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "cntr_9600_SB_DFFSR_Q_R_SB_LUT4_O_I2_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 101, 102, 103, 104 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "ftdi_tx": {
+        "ftdi_rx": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
           }
         },
-        "ftdi_tx_SB_LUT4_O_I3": {
+        "ftdi_tx": {
           "hide_name": 0,
-          "bits": [ 109 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "ftdi_tx_SB_LUT4_O_I3_SB_DFFESS_Q_D": {
-          "hide_name": 0,
-          "bits": [ 111 ],
-          "attributes": {
-          }
-        },
-        "ftdi_tx_SB_LUT4_O_I3_SB_DFFESS_Q_S": {
-          "hide_name": 0,
-          "bits": [ 113 ],
+          "bits": [ 4 ],
           "attributes": {
           }
         },
@@ -13554,154 +12255,140 @@
           "attributes": {
           }
         },
-        "uartinstance.45.bitssent": {
+        "rxidlesignal": {
           "hide_name": 0,
-          "bits": [ 134, 132, 130, 128, 126, 124, 122, 120 ],
-          "attributes": {
-            "hdlname": "uartinstance 45.bitssent"
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_7_D": {
-          "hide_name": 0,
-          "bits": [ 133, 141, 140, 135, 139, 138, 137, 136 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:49.21-49.23"
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D": {
-          "hide_name": 0,
-          "bits": [ 133, 131, 129, 127, 125, 123, 121, 118 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:33.26-33.27"
-          }
-        },
-        "uartinstance.45.bitssent_SB_DFFESR_Q_D_SB_LUT4_O_I3": {
-          "hide_name": 0,
-          "bits": [ "0", 134, 147, 146, 145, 144, 143, 142 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
-          }
-        },
-        "uartinstance.45.buftx": {
-          "hide_name": 0,
-          "bits": [ 115, 153, 152, 150, 148, 154, "0", "0" ],
-          "attributes": {
-            "hdlname": "uartinstance 45.buftx"
-          }
-        },
-        "uartinstance.45.buftx_SB_DFFESR_Q_E": {
-          "hide_name": 0,
-          "bits": [ 149 ],
+          "bits": [ "0" ],
           "attributes": {
           }
         },
-        "uartinstance.45.state": {
+        "txenable": {
           "hide_name": 0,
-          "bits": [ 117, 116 ],
+          "bits": [ "0" ],
           "attributes": {
-            "hdlname": "uartinstance 45.state"
           }
         },
-        "uartinstance.45.state_SB_DFFESR_Q_D": {
+        "txidlesignal": {
           "hide_name": 0,
           "bits": [ 112 ],
           "attributes": {
+            "unused_bits": "0 "
           }
         },
-        "uartinstance.45.state_SB_DFFESS_Q_E": {
+        "uart8n1_tx_instance_txDone": {
           "hide_name": 0,
-          "bits": [ 114, 115 ],
+          "bits": [ 113 ],
           "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
+            "unused_bits": "0 "
           }
         },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3": {
+        "uart_receive": {
           "hide_name": 0,
-          "bits": [ 133, 163, 162, 161, 160, 159, 158, 157 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:37.23-37.25"
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI": {
-          "hide_name": 0,
-          "bits": [ "1", 133, 163, 162, 161, 160, 159, 158 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/arith_map.v:51.21-51.22"
-          }
-        },
-        "uartinstance.45.state_SB_DFFESS_Q_S": {
-          "hide_name": 0,
-          "bits": [ 151, 114 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "uartinstance.45.state_SB_LUT4_I2_O": {
-          "hide_name": 0,
-          "bits": [ 155, 156, 119, 157 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/usr/local/bin/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "uartinstance.clk": {
-          "hide_name": 0,
-          "bits": [ 110 ],
-          "attributes": {
-            "hdlname": "uartinstance clk"
-          }
-        },
-        "uartinstance.clk_SB_DFFE_Q_D": {
-          "hide_name": 0,
-          "bits": [ 164 ],
+          "bits": [ "0" ],
           "attributes": {
           }
         },
-        "uartinstance.en": {
+        "uart_send": {
           "hide_name": 0,
-          "bits": [ "1" ],
+          "bits": [ "0" ],
           "attributes": {
-            "hdlname": "uartinstance en"
           }
         },
-        "uartinstance.senddata": {
+        "uart_txbyte": {
           "hide_name": 0,
-          "bits": [ "1" ],
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "hdlname": "uartinstance senddata"
           }
         },
-        "uartinstance.tx": {
+        "uart_txbytecopy": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+          }
+        },
+        "uartactive": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "uart8n1_tx": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "en": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "txByte": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ]
+        },
+        "sendData": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "isIdle": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "txDone": {
+          "direction": "output",
+          "bits": [ 14 ]
+        },
+        "tx": {
+          "direction": "output",
+          "bits": [ 15 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        },
+        "en": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "hdlname": "uartinstance tx"
           }
         },
-        "uartinstance.txbit": {
+        "isIdle": {
           "hide_name": 0,
-          "bits": [ 3 ],
+          "bits": [ 13 ],
           "attributes": {
-            "hdlname": "uartinstance txbit"
           }
         },
-        "uartinstance.txbyte": {
+        "sendData": {
           "hide_name": 0,
-          "bits": [ "0", "0", "0", "0", "1", "1", "0", "0" ],
+          "bits": [ 12 ],
           "attributes": {
-            "hdlname": "uartinstance txbyte"
           }
         },
-        "uartinstance:14": {
+        "tx": {
           "hide_name": 0,
-          "bits": [ 3 ],
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "txByte": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+          "attributes": {
+          }
+        },
+        "txDone": {
+          "hide_name": 0,
+          "bits": [ 14 ],
           "attributes": {
           }
         }

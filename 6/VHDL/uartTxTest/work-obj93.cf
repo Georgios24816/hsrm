@@ -2,3 +2,9 @@ v 4
 file . "uart8n1_rx2.vhdl" "37bdf0f1b36e007948ef43f943505031cd3a1a8a" "20220501164801.301":
   entity uart8n1_rx at 1( 0) + 0 on 15;
   architecture behave of uart8n1_rx at 21( 463) + 0 on 16;
+file . "uart8n1_tr_tb.vhdl" "be4769939977208a91af1f5249ad01240b3c6238" "20220507144040.306":
+  entity uart8n1_tr_tb at 1( 0) + 0 on 25;
+  architecture test of uart8n1_tr_tb at 14( 298) + 0 on 26;
+file . "uart8n1_tr.vhdl" "7fdaadaeb9276c261cf693a60e2e09ae976949b8" "20220507144040.307":
+  entity uart8n1_tr at 1( 0) + 0 on 27;
+  architecture rtl of uart8n1_tr at 12( 174) + 0 on 28;

@@ -1,4 +1,4 @@
-PROJ = uart8n1_tx
+PROJ = uart8n1_tx2
 
 PIN_DEF = $(PROJ).pcf
 DEVICE = hx1k
@@ -6,7 +6,7 @@ DEVICE = hx1k
 all: $(PROJ).bin
 
 %.json: $(PROJ)_tb.vhdl %.vhdl
-	yosys -m /usr/local/share/yosys/plugins/ghdl.so -p 'ghdl $^ -e $(PROJ)_tb; synth_ice40 -json $@'
+	yosys -m /usr/local/share/yosys/plugins/ghdl.so -p 'ghdl chacha_qr.vhdl uart8n1_tx.vhdl $^ -e $(PROJ)_tb; synth_ice40 -json $@'
 
 %.asc: %.json
 	~/nextpnr/nextpnr-ice40 --package $(DEVICE) --pcf $(PIN_DEF) --json $< --asc $@
