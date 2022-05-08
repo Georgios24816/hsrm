@@ -54,7 +54,7 @@ begin
     d2 <= d4Signal;
     done <= "1";
     
-    process(clk)
+    process (clk)
     begin
         a0Signal <= a + b;
         d0Signal <= d xor a0Signal;

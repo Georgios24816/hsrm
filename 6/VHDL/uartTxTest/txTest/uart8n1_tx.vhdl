@@ -47,7 +47,7 @@ begin
     variable bitsSent       : st_byte   := "00000000";
     --variable txBit          : _bit    := "1";*/
 
-    begin
+    begin 
         if (rising_edge(clk) and en = "1") then
             if (state = StateIdle) then
                 isidleSignal <= "1";

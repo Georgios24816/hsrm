@@ -20,6 +20,12 @@ prog: $(PROJ).bin
 clean:
 	rm -f $(PROJ).json $(PROJ).asc $(PROJ).bin
 
+sim.vcd: uart8n1_tx.vhdl uart8n1_tx2.vhdl uart8n1_tx2_tb.vhdl chacha_qr.vhdl
+	ghdl -a uart8n1_tx.vhdl uart8n1_tx2.vhdl uart8n1_tx2_tb.vhdl chacha_qr.vhdl
+	ghdl -e uart8n1_tx2_tb
+	ghdl -r uart8n1_tx2_tb --vcd=sim.vcd
+
+
 .SECONDARY:
 
 .PHONY: all prog clean
