@@ -25,8 +25,14 @@ architecture behave of uart8n1_tx is
 signal txBit: st_bit    := "1";
 --signal bufTx: st_byte   := "00000000";
 
+signal isidleSignal: unsigned(0 downto 0) := "1";
+signal isDoneSignal: unsigned(0 downto 0) := "1";
+
 begin
     tx <= txBit;
+    isIdle <= isidleSignal;
+    txDone <= isDoneSignal;
+
     --bufTx <= txByte;
 
     process (clk)
@@ -44,26 +50,26 @@ begin
     begin
         if (rising_edge(clk) and en = "1") then
             if (state = StateIdle) then
-                isIdle <= "1";
+                isidleSignal <= "1";
                 if (sendData = "1" and state = StateIdle) then
                     state := StateStartTx;
                     bufTx := txByte;
-                    txDone <= "0";
+                    isDoneSignal <= "0";
 
                 elsif (state = StateIdle) then
                     txBit <= "1";
-                    txDone <= "0";
+                    isDoneSignal <= "0";
                 end if;
 
             elsif (state = StateStartTx) then
-                isIdle <= "0";
+                isidleSignal <= "0";
                 if (state = StateStartTx) then
                     txBit <= "0";
                     state := StateTxing;
                 end if;
 
             elsif (state = StateTxing) then
-                isIdle <= "0";
+                isidleSignal <= "0";
                 if (state = StateTxing and bitsSent < to_unsigned(8, 8)) then
                     txBit <= bufTx(0 downto 0);
                     bufTx := shift_right(bufTx, 1);
@@ -76,9 +82,9 @@ begin
                 end if;
 
             elsif (state = StateTxDone) then
-                isIdle <= "0";
+                isidleSignal <= "0";
                 if (state = StateTxDone) then
-                    txDone <= "1";
+                    isDoneSignal <= "1";
                     state := StateIdle;
                 end if;
             end if;

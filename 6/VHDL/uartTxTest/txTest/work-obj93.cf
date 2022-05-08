@@ -1,4 +1,0 @@
-v 4
-file . "chacha_qr.vhdl" "6d3ba5cca84dd5cb3e8f4c8de68ec8e1a62aa11c" "20220507170017.390":
-  entity chacha_qr at 1( 0) + 0 on 15;
-  architecture behave of chacha_qr at 24( 549) + 0 on 16;
