@@ -45,7 +45,7 @@ architecture test of uart8n1_tx2_tb is
     end component;
 
 signal clk_9600     : std_ulogic            := '0';
-signal uart_txbyte  : unsigned(7 downto 0)  := to_unsigned(70, 8);
+signal uart_txbyte  : unsigned(7 downto 0)  := to_unsigned(0, 8);
 signal uart_send    : unsigned(0 downto 0)  := "0";
 signal uart_txed    : unsigned(0 downto 0)  := "0";
 signal uart_tx      : unsigned(0 downto 0)  := "0";
@@ -112,29 +112,29 @@ begin
 
             --uart_txbyte <= to_unsigned(50, 8);
 
-            if (txidleSignal = "1" and done = "1") then
-                uart_txbyte <= "00110011";
-            end if;
-
             --if (txidleSignal = "1" and done = "1") then
-            --    uart_txbyte <= to_unsigned(48, 8);
-            --    if (state = "000") then
-            --        uart_txbyte <= a2(7 downto 0) xor b2(7 downto 0) xor c2(7 downto 0) xor d2(7 downto 0);
-            --        state := state + 1;
---
-            --    elsif (state = "001") then
-            --        uart_txbyte <= a2(15 downto 8) xor b2(15 downto 8) xor c2(15 downto 8) xor d2(15 downto 8);
-            --        state := state + 1;
---
-            --    elsif (state = "010") then
-            --        uart_txbyte <= a2(23 downto 16) xor b2(23 downto 16) xor c2(23 downto 16) xor d2(23 downto 16);
-            --        state := state + 1;
---
-            --    else
-            --        uart_txbyte <= a2(31 downto 24) xor b2(31 downto 24) xor c2(31 downto 24) xor d2(31 downto 24);
-            --        state := "000";
-            --    end if;
+            --    uart_txbyte <= "00110011";
             --end if;
+
+            if (txidleSignal = "1" and done = "1") then
+                uart_txbyte <= to_unsigned(48, 8);
+                if (state = "000") then
+                    uart_txbyte <= a2(7 downto 0) xor b2(7 downto 0) xor c2(7 downto 0) xor d2(7 downto 0);
+                    state := state + 1;
+
+                elsif (state = "001") then
+                    uart_txbyte <= a2(15 downto 8) xor b2(15 downto 8) xor c2(15 downto 8) xor d2(15 downto 8);
+                    state := state + 1;
+
+                elsif (state = "010") then
+                    uart_txbyte <= a2(23 downto 16) xor b2(23 downto 16) xor c2(23 downto 16) xor d2(23 downto 16);
+                    state := state + 1;
+
+                else
+                    uart_txbyte <= a2(31 downto 24) xor b2(31 downto 24) xor c2(31 downto 24) xor d2(31 downto 24);
+                    state := "000";
+                end if;
+            end if;
         end if;
     end process;
 
