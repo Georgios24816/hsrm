@@ -71,10 +71,10 @@ signal done : unsigned(0 downto 0);
 signal txDoneSignal : unsigned(0 downto 0);
 --signal a3 : unsigned(31 downto 0) := "10101010101110111100110011011101";
 
-signal hwclk: std_ulogic := '0';
+signal hwclk : std_logic := '0';
 
 begin
-    hwclk <= not hwclk after 10 ms;
+    hwclk <= not hwclk after 10 ns;
 
     uartInstance: uart8n1_tx 
     port map
@@ -119,12 +119,12 @@ begin
             end if;
 
             --uart_txbyte <= to_unsigned(50, 8);
-
-            --if (txidleSignal = "1" and done = "1") then
-            --    uart_txbyte <= "00110011";
-            --end if;
+            if (txidleSignal = "1" and done = "1") then
+                uart_txbyte <= "00110011";
+            end if;
 
             if ((txDoneSignal = "1" or txidleSignal = "1") and done = "1") then
+                uart_txbyte <= to_unsigned(138, 8);
                 if (state = "000") then
                     led0 <= "0";
                     uart_txbyte <= a2(7 downto 0) xor b2(7 downto 0) xor c2(7 downto 0) xor d2(7 downto 0);

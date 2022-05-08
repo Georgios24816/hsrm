@@ -22,52 +22,58 @@ entity chacha_qr is
 end chacha_qr;
 
 architecture behave of chacha_qr is
-signal a0Signal: unsigned(31 downto 0);
-signal b0Signal: unsigned(31 downto 0);
-signal c0Signal: unsigned(31 downto 0);
-signal d0Signal: unsigned(31 downto 0);
-
-signal a1Signal: unsigned(31 downto 0);
-signal b1Signal: unsigned(31 downto 0);
-signal c1Signal: unsigned(31 downto 0);
-signal d1Signal: unsigned(31 downto 0);
-
 signal a2Signal: unsigned(31 downto 0);
 signal b2Signal: unsigned(31 downto 0);
 signal c2Signal: unsigned(31 downto 0);
 signal d2Signal: unsigned(31 downto 0);
 
-signal a3Signal: unsigned(31 downto 0);
-signal b3Signal: unsigned(31 downto 0);
-signal c3Signal: unsigned(31 downto 0);
-signal d3Signal: unsigned(31 downto 0);
-
-signal a4Signal: unsigned(31 downto 0);
-signal b4Signal: unsigned(31 downto 0);
-signal c4Signal: unsigned(31 downto 0);
-signal d4Signal: unsigned(31 downto 0);
-
 begin
-    a2 <= a4Signal;
-    b2 <= b4Signal;
-    c2 <= c4Signal;
-    d2 <= d4Signal;
-    done <= "1";
-    
+    a2 <= a2Signal;
+    b2 <= b2Signal;
+    c2 <= c2Signal;
+    d2 <= d2Signal;
+
     process (clk)
+        variable state: unsigned(1 downto 0) := "00";
+        variable index: unsigned(4 downto 0) := "00000";
     begin
-        a0Signal <= a + b;
-        d0Signal <= d xor a0Signal;
-        d1Signal <= d0Signal(15 downto 0) & d0Signal(31 downto 16);
-        c0Signal <= c + d1Signal;
-        b0Signal <= b xor c0Signal;
-        b1Signal <= b0Signal(19 downto 0) & b0Signal(31 downto 20);
-        a1Signal <= a0Signal + b1Signal;
-        d2Signal <= d1Signal xor a1Signal;
-        d3Signal <= d2Signal(23 downto 0) & d2Signal(31 downto 24);
-        c1Signal <= c0Signal + d3Signal;
-        b2Signal <= b1Signal xor c1Signal;
-        b3Signal <= b2Signal(24 downto 0) & b2Signal(31 downto 25);
-    end process;
+        if (rising_edge(clk)) then
+            if (state = "00") then
+                a2Signal <= a + b;
+                b2Signal <= b;
+                c2Signal <= c;
+                d2Signal <= (d xor a2Signal) sll 16;
+
+                done <= "0";
+                state := "01";
+
+            elsif (state = "01") then
+                --c += d; b ^= c; b <<<= 12;
+                c2Signal <= c2Signal + d2Signal;
+                b2Signal <= (b2Signal xor c2Signal) sll 12;
+                state := "10";
+
+            elsif (state = "10") then
+                --a += b; d ^= a; d <<<= 8;
+                a2Signal <= a2Signal + b2Signal;
+                d2Signal <= (d2Signal xor a2Signal) sll 8;
+                state := "11";
+
+            else
+                --c += d; b ^= c; b <<<= 7;
+                c2Signal <= c2Signal + d2Signal;
+                b2Signal <= (b2Signal xor c2Signal) sll 7;
+
+                if (index = "10100" and state = "11") then
+                    done <= "1";
+                    index := "00000";
     
+                else
+                    index := index + 1;
+                end if;
+
+                state := "00";
+            end if;
+        end if;
+    end process;
 end behave;
