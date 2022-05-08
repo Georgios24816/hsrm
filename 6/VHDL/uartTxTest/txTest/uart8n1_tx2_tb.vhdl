@@ -101,9 +101,9 @@ begin
         variable state: unsigned(2 downto 0) := "000";
     begin
         if rising_edge(hwclk) then
+            ledGreen <= "0";
             cntr_9600 <= cntr_9600 + 1;
             cntr_32 <= cntr_32 + 1;
-            ledGreen <= "1";
 
             if (cntr_9600 = period9600) then
                 clk_9600 <= not clk_9600;
@@ -117,7 +117,7 @@ begin
             --end if;
 
             if (txidleSignal = "1" and done = "1") then
-                uart_txbyte <= to_unsigned(48, 8);
+                --uart_txbyte <= to_unsigned(48, 8);
                 if (state = "000") then
                     uart_txbyte <= a2(7 downto 0) xor b2(7 downto 0) xor c2(7 downto 0) xor d2(7 downto 0);
                     state := state + 1;
