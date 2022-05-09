@@ -1,4 +1,4 @@
-Test run by georgios on Sun May  8 15:47:15 2022
+Test run by georgios on Mon May  9 13:56:13 2022
 Native configuration is x86_64-pc-linux-gnu
 
 		=== hamster tests ===
@@ -273,4 +273,4 @@ testcase ./testsuite/hamster/t04_longnames.exp completed in 0 seconds
 
 # of expected passes		19
 # of expected failures		34
-runtest completed at Sun May  8 15:47:15 2022
+runtest completed at Mon May  9 13:56:13 2022
