@@ -54,8 +54,9 @@ begin
     d2 <= dSignal;
 
     process (clk)
-        variable state: unsigned(1 downto 0) := "00";
-        variable index: unsigned(4 downto 0) := "00000";
+        variable state:     unsigned(1 downto 0) := "00";
+        variable index:     unsigned(4 downto 0) := "00000";
+        constant maxIndex:  unsigned(4 downto 0) := to_unsigned(20, 5);
     begin
         if (rising_edge(clk)) then
             if (state = "00") then
@@ -97,14 +98,13 @@ begin
                 c3Signal <= c2Signal + d2Signal;
                 b3Signal <= (b2Signal xor (c2Signal + d2Signal)) sll 7;
 
-
                 aSignal <= a3Signal;
                 dSignal <= d3Signal;
                 cSignal <= c3Signal;
                 bSignal <= b3Signal;
 
                 done <= "1";
-                if (index = "10100" and state = "11") then
+                if (index = maxIndex and state = "11") then
                     done <= "1";
                     index := "00000";
                 

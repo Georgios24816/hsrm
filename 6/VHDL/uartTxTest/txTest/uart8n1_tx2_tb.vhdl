@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity uart8n1_tx2_tb is
     port 
     (
-        --hwclk     : in      std_ulogic;
+        hwclk     : in      std_ulogic;
         ledGreen  : out     unsigned(0 downto 0);
         led0      : out     unsigned(0 downto 0);
         ftdi_tx   : out     unsigned(0 downto 0)
@@ -71,16 +71,17 @@ signal done : unsigned(0 downto 0);
 signal txDoneSignal : unsigned(0 downto 0);
 --signal a3 : unsigned(31 downto 0) := "10101010101110111100110011011101";
 
-signal hwclk : std_logic := '0';
+--signal hwclk : std_logic := '0';
+signal uart8n1_tx_en : unsigned(0 downto 0) := "1";
 
 begin
-    hwclk <= not hwclk after 10 ns;
+    --hwclk <= not hwclk after 10 ns;
 
     uartInstance: uart8n1_tx 
     port map
     (
         clk => clk_9600,
-        en => "1",
+        en => uart8n1_tx_en,
         txByte => uart_txbyte,
         sendData => "1",
         isIdle => txidleSignal,
@@ -119,33 +120,33 @@ begin
             end if;
 
             --uart_txbyte <= to_unsigned(50, 8);
-            if (txidleSignal = "1" and done = "1") then
-                uart_txbyte <= "00110011";
-            end if;
+            --if (txidleSignal = "1" and done = "1") then
+            --    uart_txbyte <= "00110011";
+            --end if;
 
-            if ((txDoneSignal = "1" or txidleSignal = "1") and done = "1") then
-                uart_txbyte <= to_unsigned(138, 8);
+            if ((txDoneSignal = "1" and txidleSignal = "1") and done = "1") then
                 if (state = "000") then
+                    --uart8n1_tx_en <= "1";
                     led0 <= "0";
-                    uart_txbyte <= a2(7 downto 0) xor b2(7 downto 0) xor c2(7 downto 0) xor d2(7 downto 0);
-                    state := state + 1;
+                    uart_txbyte <= to_unsigned(48, 8);--a2(7 downto 0) xor b2(7 downto 0) xor c2(7 downto 0) xor d2(7 downto 0);
+                    state := "001";
                     report "The value of 'uart_txbyte' is " & integer'image(to_integer(uart_txbyte));
 
                 elsif (state = "001") then
-                    uart_txbyte <= a2(15 downto 8) xor b2(15 downto 8) xor c2(15 downto 8) xor d2(15 downto 8);
-                    state := state + 1;
-                    report "The value of 'uart_txbyte' is " & integer'image(to_integer(uart_txbyte));
-
-                elsif (state = "010") then
-                    uart_txbyte <= a2(23 downto 16) xor b2(23 downto 16) xor c2(23 downto 16) xor d2(23 downto 16);
-                    state := state + 1;
-                    report "The value of 'uart_txbyte' is " & integer'image(to_integer(uart_txbyte));
-
-                elsif (state = "011") then
-                    uart_txbyte <= a2(31 downto 24) xor b2(31 downto 24) xor c2(31 downto 24) xor d2(31 downto 24);
+                    uart_txbyte <= to_unsigned(51, 8);--a2(15 downto 8) xor b2(15 downto 8) xor c2(15 downto 8) xor d2(15 downto 8);
                     state := "000";
                     report "The value of 'uart_txbyte' is " & integer'image(to_integer(uart_txbyte));
-                    report "end" severity failure;
+--
+                --elsif (state = "010") then
+                --    uart_txbyte <= to_unsigned(52, 8);--a2(23 downto 16) xor b2(23 downto 16) xor c2(23 downto 16) xor d2(23 downto 16);
+                --    state := "011";
+                --    report "The value of 'uart_txbyte' is " & integer'image(to_integer(uart_txbyte));
+--
+                --elsif (state = "011") then
+                --    uart_txbyte <= to_unsigned(53, 8);--a2(31 downto 24) xor b2(31 downto 24) xor c2(31 downto 24) xor d2(31 downto 24);
+                --    state := "111";
+                --    report "The value of 'uart_txbyte' is " & integer'image(to_integer(uart_txbyte));
+                --    report "end" severity failure;              
                 end if;
             end if;
         end if;
