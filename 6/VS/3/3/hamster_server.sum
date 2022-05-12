@@ -1,0 +1,44 @@
+Test run by georgios on Thu May 12 21:03:48 2022
+Native configuration is x86_64-pc-linux-gnu
+
+		=== hamster_server tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Running ./testsuite/hamster_server/t00_rtfm.exp ...
+PASS: hamster_server -x
+PASS: hamster_server -?
+PASS: hamster_server -p blah
+PASS: hamster_server -h blah
+Running ./testsuite/hamster_server/t01_normaluse.exp ...
+FAIL: normal use: unexpected EOF while flushing
+
+ERROR: tcl error sourcing ./testsuite/hamster_server/t01_normaluse.exp.
+ERROR: expect: spawn id exp12 not open
+    while executing
+"expect  {
+		timeout { 
+			incr flushed
+		}	
+		-re "\[^\r]*\r\n" {
+			continue
+		}
+		eof {
+			fail "$test_name: unexpected EOF while flushing\n"
+		}
+		..."
+    (file "./testsuite/hamster_server/t01_normaluse.exp" line 23)
+    invoked from within
+"source ./testsuite/hamster_server/t01_normaluse.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source ./testsuite/hamster_server/t01_normaluse.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+
+		=== hamster_server Summary ===
+
+# of expected passes		4
+# of unexpected failures	1

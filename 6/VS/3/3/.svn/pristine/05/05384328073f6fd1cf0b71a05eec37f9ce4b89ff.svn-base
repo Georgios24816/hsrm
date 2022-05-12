@@ -1,0 +1,86 @@
+/**
+ * @file	hamster_server.c
+ * @brief	Remote Hamsterverwaltungsprogramm
+ *
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <assert.h>
+#include <errno.h>
+
+#include <stdint.h>
+#include <stdbool.h>
+#include <inttypes.h>
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+#include "../include/hamsterlib.h"
+
+#include "hamsterprotocol.h"
+
+/** Default port number and IP */
+#define DEFAULT_PORT 2323
+#define DEFAULT_IP   "127.0.0.1"
+
+/**
+ * @brief Kurze Hilfe ausgeben
+ */
+static void rtfm(char* argv[])
+{
+	printf("Usage: %s {<Option>} <param1> \n", argv[0]);
+	printf("Function: Hamster management server\n");
+	printf("Optionen:\n");
+	printf("     -p {<port>}                    - port to run the server\n");
+	printf("     -h {<IP address>}              - IP address to run the server on (default: 127.0.0.1\n");
+}
+
+
+/**
+ * @brief Main program
+ */
+int main(int argc, char* argv[])
+{
+	unsigned long  port = DEFAULT_PORT;
+	char *ipaddr = DEFAULT_IP;
+	char option;
+	char *end;
+	// parse arguments
+	while ((option = getopt(argc, argv, "?h:p:v")) != -1)
+	{
+		switch(option)
+		{
+			case '?':
+				rtfm(argv);
+				return EXIT_SUCCESS;
+				break;
+			case 'p':
+				port = strtoul(optarg, &end, 0);
+				if (end == optarg)
+				{
+					rtfm(argv);
+					exit(EXIT_FAILURE);
+				}
+				break;
+			case 'h':
+				ipaddr = optarg;
+				break;
+		}
+	}
+	if(argc - optind)
+	{
+		rtfm(argv);
+		return 0;
+	}
+
+	// do stuff
+	
+}
+

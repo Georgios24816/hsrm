@@ -1,0 +1,80 @@
+Test run by georgios on Thu May 12 21:03:48 2022
+Native configuration is x86_64-pc-linux-gnu
+
+		=== hamster_server tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+WARNING: Couldn't find tool config file for unix, using default.
+Running ./testsuite/hamster_server/t00_rtfm.exp ...
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server -x
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server {<Option>} <param1> 
+Function: Hamster management server
+Optionen:
+     -p {<port>}                    - port to run the server
+     -h {<IP address>}              - IP address to run the server on (default: 127.0.0.1
+PASS: hamster_server -x
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server -?
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server {<Option>} <param1> 
+Function: Hamster management server
+Optionen:
+     -p {<port>}                    - port to run the server
+     -h {<IP address>}              - IP address to run the server on (default: 127.0.0.1
+PASS: hamster_server -?
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server -p blah
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server {<Option>} <param1> 
+Function: Hamster management server
+Optionen:
+     -p {<port>}                    - port to run the server
+     -h {<IP address>}              - IP address to run the server on (default: 127.0.0.1
+PASS: hamster_server -p blah
+exp_spawn /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server -h blah
+Usage: /home/georgios/Schreibtisch/hsrm/6/VS/3/3/hamster_server {<Option>} <param1> 
+Function: Hamster management server
+Optionen:
+     -p {<port>}                    - port to run the server
+     -h {<IP address>}              - IP address to run the server on (default: 127.0.0.1
+PASS: hamster_server -h blah
+testcase ./testsuite/hamster_server/t00_rtfm.exp completed in 0 seconds
+Running ./testsuite/hamster_server/t01_normaluse.exp ...
+spawn ./hamster_server -h 127.0.0.1 -p 4242
+Usage: ./hamster_server {<Option>} <param1> 
+Function: Hamster management server
+Optionen:
+     -p {<port>}                    - port to run the server
+     -h {<IP address>}              - IP address to run the server on (default: 127.0.0.1
+FAIL: normal use: unexpected EOF while flushing
+
+ERROR: tcl error sourcing ./testsuite/hamster_server/t01_normaluse.exp.
+ERROR: expect: spawn id exp12 not open
+    while executing
+"expect  {
+		timeout { 
+			incr flushed
+		}	
+		-re "\[^\r]*\r\n" {
+			continue
+		}
+		eof {
+			fail "$test_name: unexpected EOF while flushing\n"
+		}
+		..."
+    (file "./testsuite/hamster_server/t01_normaluse.exp" line 23)
+    invoked from within
+"source ./testsuite/hamster_server/t01_normaluse.exp"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source ./testsuite/hamster_server/t01_normaluse.exp"
+    invoked from within
+"catch "uplevel #0 source $test_file_name""
+testcase ./testsuite/hamster_server/t01_normaluse.exp completed in 1 seconds
+
+		=== hamster_server Summary ===
+
+# of expected passes		4
+# of unexpected failures	1
+runtest completed at Thu May 12 21:03:49 2022
