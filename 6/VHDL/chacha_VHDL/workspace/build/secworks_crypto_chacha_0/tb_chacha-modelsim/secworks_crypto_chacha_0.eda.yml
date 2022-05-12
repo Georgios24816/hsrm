@@ -1,0 +1,31 @@
+dependencies:
+  secworks:crypto:chacha:0: []
+files:
+- core: secworks:crypto:chacha:0
+  file_type: verilogSource
+  name: ../src/secworks_crypto_chacha_0/src/rtl/chacha_qr.v
+- core: secworks:crypto:chacha:0
+  file_type: verilogSource
+  name: ../src/secworks_crypto_chacha_0/src/rtl/chacha_core.v
+- core: secworks:crypto:chacha:0
+  file_type: verilogSource
+  name: ../src/secworks_crypto_chacha_0/src/rtl/chacha.v
+- core: secworks:crypto:chacha:0
+  file_type: verilogSource
+  name: ../src/secworks_crypto_chacha_0/src/tb/tb_chacha_core.v
+- core: secworks:crypto:chacha:0
+  file_type: verilogSource
+  name: ../src/secworks_crypto_chacha_0/src/tb/tb_chacha.v
+hooks: {}
+name: secworks_crypto_chacha_0
+parameters:
+  DEBUG:
+    datatype: int
+    default: 0
+    description: Enable debug printouts
+    paramtype: vlogparam
+tool_options:
+  modelsim: {}
+toplevel: tb_chacha
+version: 0.2.1
+vpi: []

@@ -1,0 +1,103 @@
+   -- Testbench for chacha started --
+State at init after reset:
+
+Top internal state
+------------------
+init_reg   = 0
+next_reg   = 0
+keylen_reg = 0
+rounds_reg = 00
+
+key0_reg = 00000000, key1_reg  = 00000000, key2_reg = 00000000, key3_reg  = 00000000
+key4_reg = 00000000, key5_reg  = 00000000, key6_reg = 00000000, key7_reg  = 00000000
+
+iv0_reg = 00000000, iv1_reg = 00000000
+
+data_in0_reg  = 00000000, data_in1_reg   = 00000000, data_in2_reg  = 00000000, data_in3_reg   = 00000000
+data_in4_reg  = 00000000, data_in5_reg   = 00000000, data_in6_reg  = 00000000, data_in7_reg   = 00000000
+data_in8_reg  = 00000000, data_in9_reg   = 00000000, data_in10_reg = 00000000, data_in11_reg  = 00000000
+data_in12_reg = 00000000, data_in13_reg  = 00000000, data_in14_reg = 00000000, data_in15_reg  = 00000000
+
+ready = 0x1, data_out_valid = 0
+data_out00 = 00000000, data_out01 = 00000000, data_out02 = 00000000, data_out03 = 00000000
+data_out04 = 00000000, data_out05 = 00000000, data_out06 = 00000000, data_out07 = 00000000
+data_out08 = 00000000, data_out09 = 00000000, data_out10 = 00000000, data_out11 = 00000000
+data_out12 = 00000000, data_out13 = 00000000, data_out14 = 00000000, data_out15 = 00000000
+
+*** Trying to read name and version from core.
+DUT name: chacha  
+DUT version: 0.80
+
+TC1-1: All zero inputs. 128 bit key, 8 rounds.
+***TC 1- 1 started
+***-----------------
+*** Started.
+*** Ready seen.
+
+Top internal state
+------------------
+init_reg   = 0
+next_reg   = 0
+keylen_reg = 0
+rounds_reg = 08
+
+key0_reg = 00000000, key1_reg  = 00000000, key2_reg = 00000000, key3_reg  = 00000000
+key4_reg = 00000000, key5_reg  = 00000000, key6_reg = 00000000, key7_reg  = 00000000
+
+iv0_reg = 00000000, iv1_reg = 00000000
+
+data_in0_reg  = 00000000, data_in1_reg   = 00000000, data_in2_reg  = 00000000, data_in3_reg   = 00000000
+data_in4_reg  = 00000000, data_in5_reg   = 00000000, data_in6_reg  = 00000000, data_in7_reg   = 00000000
+data_in8_reg  = 00000000, data_in9_reg   = 00000000, data_in10_reg = 00000000, data_in11_reg  = 00000000
+data_in12_reg = 00000000, data_in13_reg  = 00000000, data_in14_reg = 00000000, data_in15_reg  = 00000000
+
+ready = 0x1, data_out_valid = 1
+data_out00 = e28a5fa4, data_out01 = a67f8c5d, data_out02 = efed3e6f, data_out03 = b7303486
+data_out04 = aa8427d3, data_out05 = 1419a729, data_out06 = 572d7779, data_out07 = 53491120
+data_out08 = b64ab8e7, data_out09 = 2b8deb85, data_out10 = cd6aea7c, data_out11 = b6089a10
+data_out12 = 1824beeb, data_out13 = 08814a42, data_out14 = 8aab1fa2, data_out15 = c816081b
+
+***TC 1- 1 - SUCCESS
+***-------------------
+
+TC7-2: Increasing, decreasing sequences in key and IV. 256 bit key, 8 rounds.
+***TC 7- 2 started
+***-----------------
+*** Started.
+*** Ready seen.
+
+Top internal state
+------------------
+init_reg   = 0
+next_reg   = 0
+keylen_reg = 1
+rounds_reg = 08
+
+key0_reg = 00112233, key1_reg  = 44556677, key2_reg = 8899aabb, key3_reg  = ccddeeff
+key4_reg = ffeeddcc, key5_reg  = bbaa9988, key6_reg = 77665544, key7_reg  = 33221100
+
+iv0_reg = 0f1e2d3c, iv1_reg = 4b596877
+
+data_in0_reg  = 00000000, data_in1_reg   = 00000000, data_in2_reg  = 00000000, data_in3_reg   = 00000000
+data_in4_reg  = 00000000, data_in5_reg   = 00000000, data_in6_reg  = 00000000, data_in7_reg   = 00000000
+data_in8_reg  = 00000000, data_in9_reg   = 00000000, data_in10_reg = 00000000, data_in11_reg  = 00000000
+data_in12_reg = 00000000, data_in13_reg  = 00000000, data_in14_reg = 00000000, data_in15_reg  = 00000000
+
+ready = 0x1, data_out_valid = 1
+data_out00 = 60fdedbd, data_out01 = 1a280cb7, data_out02 = 41d0593b, data_out03 = 6ea03090
+data_out04 = 10acf18e, data_out05 = 1471f689, data_out06 = 68f4c9e3, data_out07 = 11dca149
+data_out08 = b8e027b4, data_out09 = 7c81e035, data_out10 = 3db01389, data_out11 = 1aa5f68e
+data_out12 = a3b13dd2, data_out13 = f3b8dd08, data_out14 = 73bf3746, data_out15 = e7d6c567
+
+***TC 7- 2 - SUCCESS
+***-------------------
+
+TC7-3: Increasing, decreasing sequences in key and IV. 256 bit key, 8 rounds.
+TC7-3: Testing correct second block.
+***TC 7- 3 started
+***-----------------
+***TC 7- 3 - SUCCESS
+***-------------------
+
+*** All 03 test cases completed successfully
+*** chacha simulation done.
