@@ -92,7 +92,7 @@ int32_t collect(const char* owner)
 		return false;
 	}
 
-	printf("owner %s has to pay %d Ã¢â€šÂ¬\n", owner, price);
+	printf("owner %s has to pay %d â‚¬\n", owner, price);
 	return true;
 }
 

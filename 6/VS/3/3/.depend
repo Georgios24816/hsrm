@@ -1,2 +1,5 @@
 hamster_server.o: src/hamster_server.c src/../include/hamsterlib.h \
- include/hamsterprotocol.h include/hamsterlib.h
+ include/hamsterprotocol.h include/hamsterlib.h \
+ include/hamsterInterface.h
+hamsterInterface.o: src/hamsterInterface.c include/hamsterInterface.h \
+ include/hamsterlib.h
