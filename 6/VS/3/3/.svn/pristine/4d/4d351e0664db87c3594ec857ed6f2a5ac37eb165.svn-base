@@ -143,9 +143,7 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
     else if (funcID == HAMSTER_RPC_FUNCID_DIRECTORY) //DONE TESTED
     {
         //int32_t file = (int32_t)encode_uint32(*((uint32_t*)&message[index]));
-        //bool started = false;
-        static int32_t fileCopy = 0;
-        static int32_t entryCount = 0;
+        bool started = false;
         int32_t file = (*((int32_t*)&message[index]));
         index += 4;
         char* owner = &message[index];
@@ -156,35 +154,15 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
 
         int16_t price = 0;
 
-        // result = hmstr_directory(&file, owner, hamster);
-        if (entryCount == 0)
-        {
-            fileCopy = file;
-        }
-
+        result = hmstr_directory(&file, owner, hamster);
+        
         while (result != HMSTR_ERR_NOTFOUND)
 	    {
-	    	result = hmstr_directory(&fileCopy, owner, hamster);
+	    	result = hmstr_directory(&file, owner, NULL);
 
-            if (errorCheck(result)) //result == HMSTR_ERR_NOTFOUND)
+            if (result >= 0)
             {
-                //started = false;
-                entryCount = 0;
-                //if (index == 0)
-                goto functionDecoderEnd;
-            }
-
-            //else
-            //{
-            //    errorCheck(result);
-            //}
-
-            //index++;
-            entryCount++;
-
-            //if (result >= 0)
-            //{
-                //started = true;
+                started = true;
                 ((uint32_t*)&ResponseBuffer[*payloadLen])[0] = encode_uint32((uint32_t)result);
                 *payloadLen += 4;
 
@@ -201,8 +179,7 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
                 
                 ((uint32_t*)&ResponseBuffer[*payloadLen])[0] = encode_uint32((uint32_t)result);
                 *payloadLen += 4;
-            //}
-
+            }
 	    }
 
 
@@ -279,8 +256,6 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
 
         *payloadLen += 2 + (2 * (HMSTR_MAX_NAME + 1));
     }
-
-    functionDecoderEnd:
 
     ((uint32_t*)ResponseBuffer)[0] = encode_uint32((uint32_t)result);
     
