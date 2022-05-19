@@ -144,19 +144,47 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
     {
         //int32_t file = (int32_t)encode_uint32(*((uint32_t*)&message[index]));
         //bool started = false;
-        static int32_t fileCopy = 0;
-        static int32_t entryCount = 0;
-        int32_t file = (*((int32_t*)&message[index]));
+        //static int32_t fileCopy = 0;
+        //static int32_t entryCount = 0;
+        //int32_t file = (*((int32_t*)&message[index]));
         index += 4;
-        char* owner = &message[index];
-        char* hamster = &message[index + HMSTR_MAX_NAME + 1];
+        //char* owner = &message[index];
+        //char* hamster = &message[index + HMSTR_MAX_NAME + 1];
 
         char ownerBuffer[HMSTR_MAX_NAME + 1] = { 0 };
         char hamsterBuffer[HMSTR_MAX_NAME + 1] = { 0 };
 
         int16_t price = 0;
 
+        #if 1
+            result = 456789;
+            ((uint32_t*)&ResponseBuffer[*payloadLen])[0] = encode_uint32((uint32_t)result);
+                *payloadLen += 4;
+
+	    	    //result = hmstr_readentry(result, ownerBuffer, hamsterBuffer, &price);
+
+                strcpy(ownerBuffer, "Besitzer");
+                memcpy(&ResponseBuffer[*payloadLen], ownerBuffer, HMSTR_MAX_NAME + 1);
+                *payloadLen += HMSTR_MAX_NAME + 1;
+
+                strcpy(ownerBuffer, "Hamster");
+                memcpy(&ResponseBuffer[*payloadLen], hamsterBuffer, HMSTR_MAX_NAME + 1);
+                *payloadLen += HMSTR_MAX_NAME + 1;
+
+                price = 5; result = 0;
+                ((int16_t*)&ResponseBuffer[*payloadLen])[0] = (int16_t)encode_uint16((uint16_t)price);
+                *payloadLen += 2;
+                
+                ((uint32_t*)&ResponseBuffer[*payloadLen])[0] = encode_uint32((uint32_t)result);
+                *payloadLen += 4;
+
+                return encode_uint32(456789);
+                goto functionDecoderEnd;
+        #endif
+
+
         // result = hmstr_directory(&file, owner, hamster);
+        #if 0
         if (entryCount == 0)
         {
             fileCopy = file;
@@ -204,6 +232,7 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
             //}
 
 	    }
+                #endif
 
 
         /*
