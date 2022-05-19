@@ -1,0 +1,11 @@
+a)
+Big Endian 	: 00000003
+Little Endian	: 03000000
+
+b)
+byteswap.h
+__bswap_32
+__bswap_16
+
+c)
+OSI Schicht 6: Darstellung
