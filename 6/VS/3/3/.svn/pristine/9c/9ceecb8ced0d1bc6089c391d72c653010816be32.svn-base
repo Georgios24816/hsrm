@@ -142,40 +142,6 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
 
     else if (funcID == HAMSTER_RPC_FUNCID_DIRECTORY) //DONE TESTED
     {
-        int32_t fd = (int32_t)encode_uint32(*(uint32_t*)&message[0]);
-        char* ownerName = (char*)&message[4];
-        char* hamsterName = (char*)&message[36];
-
-        if (!strlen(ownerName))
-        {
-            ownerName = NULL;
-        }
-
-        if (!strlen(hamsterName))
-        {
-            hamsterName = NULL;
-        }
-
-        printf("--> ID : %d\n", fd);
-
-        result = hmstr_directory(&fd, ownerName, hamsterName);
-
-        //((int32_t*)&ResponseBuffer[0])[0] = (int32_t)encode_uint32((uint32_t)result);
-
-        printf("\nRESULT : %d\n", result);
-
-        //*payloadLen = 4;
-        if (result >= 0)
-        {
-            ((int32_t*)&ResponseBuffer[4])[0] = htonl(fd);//(int32_t)encode_uint32((uint32_t)fd);
-            *payloadLen += 4;
-        }
-
-        //return result;
-        goto functionDecoderEnd;
-
-#if 0
-        //#if 0
         //int32_t file = (int32_t)encode_uint32(*((uint32_t*)&message[index]));
         //bool started = false;
         //static int32_t fileCopy = 0;
@@ -284,7 +250,6 @@ int32_t functionDecoder(char* message, size_t maxSize, uint16_t funcID, uint16_t
         ((int16_t*)&ResponseBuffer[4])[0] = (int16_t)encode_uint16((uint16_t)price);
         *payloadLen += 6 + (2 * (HMSTR_MAX_NAME + 1));
         */
-#endif
     }
 
     else if (funcID == HAMSTER_RPC_FUNCID_GIVETREATS) //DONE TESTED
