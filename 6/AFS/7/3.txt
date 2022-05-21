@@ -1,0 +1,10 @@
+a)
+abbbbb
+
+b)
+ab
+abb
+abbb
+abbbb
+
+c) a(b)*
