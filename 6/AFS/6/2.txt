@@ -1,1 +1,16 @@
-1) Typ 3 : regulär
+1) 
+Typ 2 : Kontextfrei
+
+A sei nicht-terminal, h sei Menge von terminal und nicht terminalen Zeichen
+A -> gamma
+
+2) 
+Typ 3 : regulär 
+
+X, Y seien nicht-terminal, alpha sei terminal
+(X -> alpha | X -> alpha Y)
+
+3)
+Typ 1: kontextsensitiv
+Regel kann auch nur aus nicht-terminalen Symbolen bestehen 
+Bb -> bb

@@ -1,0 +1,29 @@
+a)
+S -> 0S | 1A
+A -> 0A | 1B
+B -> 0B | 1C
+C -> 0C | 1A | epsilon
+
+b)
+w1 = 111
+Start → S
+S → 	1A	S
+A → 	1B	1A
+B → 	1C	11B
+C → 	epsilon
+
+w2 = 0111111
+
+Start → S
+S → 0S	S
+S → 1A	0S
+A → 1B	01A
+B → 1C	011B
+C → 1A	0111C
+A → 1B	01111A
+B → 1C	011111B
+C → ɛ
+
+w3 = 0
+Start -> S
+S -> 0S
