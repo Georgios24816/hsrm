@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define M_Pause 10000
+
 int main(int argc, char* argv[])
 {
 	const unsigned int printPeriodMs = 5000;
@@ -63,7 +65,9 @@ int main(int argc, char* argv[])
 			}
 
 		}
-
+#if M_Pause
+	delayMicroseconds(M_Pause);
+#endif
 	}
 
 	return 0;
