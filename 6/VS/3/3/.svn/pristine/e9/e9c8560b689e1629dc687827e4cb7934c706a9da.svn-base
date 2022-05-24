@@ -330,11 +330,11 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	//else
-	//{
-    //    rtfm(argv);
-    //    exit(EXIT_FAILURE);
-	//}
+	else
+	{
+        rtfm(argv);
+        exit(EXIT_FAILURE);
+	}
 
 
     
@@ -349,11 +349,13 @@ int main(int argc, char* argv[])
         perror("socket failed");
         exit(EXIT_FAILURE);
     }
+	printf("TEST1\n");
        
     if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, &opt, sizeof(opt)))
     {
         exitAndCloseSocket(server_fd, "setsockopt");
     }
+	printf("TEST2\n");
 
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = ip;
@@ -363,16 +365,19 @@ int main(int argc, char* argv[])
     {
         exitAndCloseSocket(server_fd, "bind");
     }
+	printf("TEST3\n");
 
     if (listen(server_fd, 3) < 0)
     {
         exitAndCloseSocket(server_fd, "listen");
     }
+	printf("TEST4\n");
 
     if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0)
     {
         exitAndCloseSocket(server_fd, "accept");
     }
+	printf("TEST5\n");
 
     while (1) //wait for connections
     {
