@@ -1,0 +1,30 @@
+Bewertung: Blatt {exercise}
+==============================================
+
+Datum:                        {date}
+Prüfer:                       {examiner}
+
+Name:                         {name}
+Maximalpunktzahl:             20
+Gesamtpunktzahl:              {points}
+
+
+Verlorene Punkte: 
+==============================================
+
+Funktionale Fehler:	{func_error}
+Fehlgeschlagene Tests:
+{failed_tests}
+
+Abzug für Warnings:	{warning_error}
+Kommentar:
+{warning_comment}
+
+Code Qualität:		{quality_error}
+Kommentar:
+{quality_comment}
+
+Dokumentation:		{docu_error}
+Kommentar:
+{docu_comment}
+

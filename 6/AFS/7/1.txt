@@ -1,0 +1,23 @@
+a)
+Typ 1
+
+b)
+Start → S	Start		S
+S → AB		S		AB
+A → CF		AB		CFB
+C → a		CFB		aFB
+F → AD		aFB		aADB
+A → CF		aADB		aCFDB
+C → a		aCFDB		aaFDB
+F → AD		aaFDB		aaADDB
+A → CD		aaADDB		aaCDDDB
+C → a		aaCDDDB		aaaDDDB
+D → b		aaaDDDB		aaabDDB
+D → b		aaabDDB		aaabbDB
+D → b		aaabbDB		aaabbbB
+B → EB		aaabbbB		aaabbbEB
+E → c		aaabbbEB	aaabbbcB
+B → c		aaabbbcB	aaabbbcc
+
+c)
+

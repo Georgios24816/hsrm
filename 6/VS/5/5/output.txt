@@ -1,0 +1,231 @@
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> checking in new hamster:
+        owner:         hamster name:         treats: OK
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> checking in new hamster:
+        owner:         hamster name:         treats: OK
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> checking in new hamster:
+        owner:         hamster name:         treats: OK
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> START
+hmstr_directory : -1
+ownerName : aU
+hamsterName : b
+END
+hmstr_directory : -1 | -3
+No hamsters matching criteria found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+>         ID:         treats: Done! 14 treats remaining in store
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+>         ID: return code: 0
+         Hamster State
+==================================
+treats left: 22
+rounds:      0
+cost:        18
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> collecting hamsters:
+        owner: DEBUG: hmstr_collect: owner_name : 'meier'
+return code: 17
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> START
+hmstr_directory : -1
+ownerName : aU
+hamsterName : b
+END
+hmstr_directory : -1 | -3
+No hamsters matching criteria found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> collecting hamsters:
+        owner: DEBUG: hmstr_collect: owner_name : '595693142'
+In function hmstr_collect(): Error: A hamster or hamster owner could not be found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> collecting hamsters:
+        owner: DEBUG: hmstr_collect: owner_name : 'schmidt'
+return code: 17
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> START
+hmstr_directory : -1
+ownerName : aU
+hamsterName : b
+END
+hmstr_directory : -1 | -3
+No hamsters matching criteria found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+>         ID:         treats: Done! 0 treats remaining in store
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+>         ID:         treats: Not a valid number, please try again: Not a valid number, please try again: Done! 0 treats remaining in store
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> START
+hmstr_directory : -1
+ownerName : aU
+hamsterName : b
+END
+hmstr_directory : -1 | -3
+No hamsters matching criteria found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> checking in new hamster:
+        owner:         hamster name:         treats: OK
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> START
+hmstr_directory : -1
+ownerName : aU
+hamsterName : b
+END
+hmstr_directory : -1 | -3
+No hamsters matching criteria found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> collecting hamsters:
+        owner: DEBUG: hmstr_collect: owner_name : 'meier'
+In function hmstr_collect(): Error: A hamster or hamster owner could not be found
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> collecting hamsters:
+        owner: DEBUG: hmstr_collect: owner_name : 'mueller'
+return code: 24
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> collecting hamsters:
+        owner: DEBUG: hmstr_collect: owner_name : 'Paus'
+return code: 17
+
+Commands:
+        q                           - quit
+        n                           - check in new hamster
+        b                           - collect hamsters
+        l                           - list all hamsters
+        s                           - show hamster status
+        f                           - feed hamster
+> quit

@@ -1,0 +1,59 @@
+Middleware-Plattformen bieten eine abstraktere, auf das jeweilige
+Kooperations-Paradigma ausgerichtete Schnittstelle, basieren aber
+intern auf den hier zunächst besprochenen Konzepten eines
+unterlagerten Kommunikationssystems
+
+Abhängikeiten von Programmiersprachen, Anwendungen, Betriebssysteme, Hardware
+
+1)
+Nachrichtenorientierung [Message-oriented Middleware]  (Socktes, Transport Layer Interface)
+Prozesse als verteilbare Einheiten
+Nachrichten als kommunizierte Einheiten
+Programmierung von Parallelrechner-Anwendungen
+Basis bilden spezielle nachrichtenorientierte Library-Schnittstellen
+Message Passing Interface (MPI) (Quasi-Standard)
+
+2)
+Dienstorientierung [Remote Procedure Call] (SunRPC, Apache Thrift, OSF, Microsoft RPC)
+Dienste als verteilbare Einheiten
+Dienst = Service: Menge von angebotenen Operationen/Funktionen
+Nutzung entfernter Dienste durch Prozeduraufrufe
+i.d.R. synchrone Verarbeitung
+kommunizierte Einheiten sind Requests und Responses
+Basis für Client/Server-Anwendungen
+Bindung von Client und Server relativ statisch
+
+3)
+Objektorientierung (OMG COBRA, Microsoft DCOM, Java RMI)
+Objekte als verteilbare Einheiten
+Anwendung = verteiltes Objekt-"Geflecht"
+Interaktion durch Methodenaufrufe auf Basis eines RPC-Mechanismus
+Wiederverwendung von Klassen auf Quellcodeebene
+
+Requestarten: 
+-synchron (Client blockiert bis Response ankommt)
+-verzögert synchron (Client arbeitet und fragt später nach Antwort)
+-Einwegaufruf (Zustellung ohne Response, muss nicht beim Target Object ankommen)
+-asynchrone Aufrufe (definiert im Rahmen von COBRA)
+
+4)
+Komponentenorientierung (Enterprise Java Beans, Microsoft .NET)
+
+Komponenenten als verteilbare Einheiten
+starke Unabhängigkeit und Austauschbarkeit der Komponenten
+Interaktion durch Methodenaufrufe (basierend auf RPC)
+
+5)
+Service Orientierung (Web Service Description Language, Simple Object Access Protocol)
+
+Vorteile: 
+-Definition von Diensten anhand der Geschäftsprozesse
+-Gleichzeitige mehrfache Nutzung von Diensten in verschiedenen Anwendungen
+-Dadurch Reduktion ansonsten mehrfach zu pflegender Funktionalität
+-zentrale Integration verschiedener Anwendungen statt paarweiser Schnittstellen
+
+Nachteile:
+-komplette Dekomposition bestehender Anwendungen ist schwierig, aufwendig und 
+ für Nutzer nicht sichtbar
+-Veränderung an zentralen Dienste betreffen viele Anwendungen
+-Formalisierung der Geschäftsprozesse aus Diesnten für Fachabteilungen schwierig
