@@ -6,7 +6,7 @@ unterlagerten Kommunikationssystems
 Abhängikeiten von Programmiersprachen, Anwendungen, Betriebssysteme, Hardware
 
 1)
-Nachrichtenorientierung [Message-oriented Middleware]  (Socktes, Transport Layer Interface)
+Nachrichtenorientierung [Message-oriented Middleware]  (Sockets, Transport Layer Interface)
 Prozesse als verteilbare Einheiten
 Nachrichten als kommunizierte Einheiten
 Programmierung von Parallelrechner-Anwendungen

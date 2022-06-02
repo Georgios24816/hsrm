@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<RadiantModule date="2020 05 15 11:46:38" generator="ipgen" library="module" module="ram_dp" name="dpram" source_format="Verilog" vendor="latticesemi.com" version="1.1.0">
+ <Package>
+  <File modified="2020 05 15 11:46:38" name="rtl/dpram.v" type="top_level_verilog"/>
+  <File modified="2020 05 15 11:46:38" name="rtl/dpram_bb.v" type="black_box_verilog"/>
+  <File modified="2020 05 15 11:46:38" name="testbench/dut_params.v" type="testbench_parameters_verilog"/>
+  <File modified="2020 05 15 11:46:38" name="misc/dpram_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2020 05 15 11:46:38" name="testbench/dut_inst.v" type="testbench_instance_verilog"/>
+  <File modified="2020 05 15 11:46:38" name="component.xml" type="IP-XACT_output_file"/>
+  <File modified="2020 05 15 11:46:38" name="dpram.cfg" type="cfg"/>
+  <File modified="2020 05 15 11:46:38" name="misc/dpram_tmpl.v" type="template_verilog"/>
+  <File modified="2018 09 26 02:14:30" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

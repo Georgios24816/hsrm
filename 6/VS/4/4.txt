@@ -1,4 +1,8 @@
 a)
+Nelson’s These:
+-RPC ist ein leistungsfähiges Konzept zur Konstruktion verteilter
+Anwendungen
 
+-RPC vereinfacht die Programmierung verteilter Systeme
 b)
 

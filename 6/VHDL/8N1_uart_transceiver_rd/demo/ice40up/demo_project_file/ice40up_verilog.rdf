@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.1" title="ice40up_verilog" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Area">
+        <Options def_top="uart_ice40up_top"/>
+        <Source name="dpram/dpram.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/uart_rx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/uart_transceiver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/uart_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/reset.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/8N1_uart_ice40up_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="uart_ice40up_top"/>
+        </Source>
+        <Source name="source/impl_1/dp_ram_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ice40up_verilog.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+        <Source name="ice40up_verilog.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="ice40up_verilog1.sty"/>
+</RadiantProject>

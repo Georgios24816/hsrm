@@ -30,6 +30,20 @@ architecture test of uart8n1_rx2_tb is
         );
     end component;
 
+    component uart8n1_tx
+    port 
+        (
+            clk     : in    std_ulogic;
+            en      : in    unsigned(0 downto 0);
+            txByte  : in    unsigned(7 downto 0);
+            sendData: in    unsigned(0 downto 0);
+    
+            isIdle  : out   unsigned(0 downto 0);
+            txDone  : out   unsigned(0 downto 0);
+            tx      : out   unsigned(0 downto 0)
+        );
+    end component;
+
 signal clk_9600     : std_ulogic            := '0';
 signal uart_txbyte  : unsigned(7 downto 0)  := "00000000";
 signal uart_send    : unsigned(0 downto 0)  := "0";
@@ -47,9 +61,14 @@ signal rxDvSignal : unsigned(0 downto 0) := "0";
 signal led0Signal : unsigned(0 downto 0) := "0";
 signal isIdleSignal : unsigned(0 downto 0);
 
+signal uartInstanceEn : unsigned(0 downto 0) := "1";
+signal txInstanceEn : unsigned(0 downto 0) := "0";
+signal txInstanceSendData : unsigned(0 downto 0) := "0";
+signal txInstanceIsIdle : unsigned(0 downto 0);
+signal txInstanceTxDone : unsigned(0 downto 0);
+signal txInstanceTx : unsigned(0 downto 0);
+
 begin
-    led0 <= isIdleSignal;
-    led1 <= isIdleSignal;
     led2 <= isIdleSignal;
     led3 <= isIdleSignal;
     ledGreen <= ledGreenSignal;
@@ -58,15 +77,26 @@ begin
     port map
     (
         clk => hwclk,
+        en => uartInstanceEn,
         rxIn => ftdi_rx,
         rxDv => rxDvSignal,
         isIdle => isIdleSignal,
         rxByte => uart_txbyte
     );
 
+    txInstance: uart8n1_tx
+    port map
+    (
+        clk => clk_9600,
+        en => txInstanceEn,
+        txByte => to_unsigned(48, 8),
+        sendData => txInstanceSendData,
+        isIdle => txinstanceIsIdle,
+        txDone => txInstanceTxDone,
+        tx => txInstanceTx
+    );
+
     process (hwclk)
-        variable oldState : unsigned(1 downto 0) := "00";
-        variable newState : unsigned(1 downto 0) := "00";
     begin
         if rising_edge(hwclk) then
             cntr_9600 <= cntr_9600 + 1;
@@ -77,12 +107,23 @@ begin
                 cntr_9600 <= to_unsigned(0, 32);
             end if;
 
-            if (uart_txbyte = to_unsigned(48, 8)) then
-                ledGreenSignal <= "1";
+            if (ftdi_rx = "1" and isIdleSignal = "1") then
+                led1 <= "1";
+                uartInstanceEn <= "1";
+                txInstanceEn <= "0";
+            
+            elsif (txinstanceIsIdle = "1" and txInstanceTxDone = "1") then
+                uartInstanceEn <= "0";
+                txInstanceEn <= "1"; 
+                led0 <= "1";
 
-            else
-                ledGreenSignal <= "0";
             end if;
+
+            --if (uart_txbyte = to_unsigned(48, 8)) then
+            --    ledGreenSignal <= "1";
+            --else
+            --    ledGreenSignal <= "0";
+            --end if;
 
         end if;
     end process;

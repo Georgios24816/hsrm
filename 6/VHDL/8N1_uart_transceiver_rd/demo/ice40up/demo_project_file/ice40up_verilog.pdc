@@ -1,0 +1,3 @@
+ldc_set_location -site {15} [get_ports i_rx_serial]
+ldc_set_location -site {14} [get_ports o_tx_serial]
+ldc_set_port -iobuf {PULLMODE=NA} [get_ports o_tx_serial]

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="xo2_verilog" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="uart_tranceiver"/>
+        <Source name="../../../source/verilog/common/uart_transceiver.v" type="Verilog" type_short="Verilog">
+            <Options top_module="uart_tranceiver"/>
+        </Source>
+        <Source name="../../../source/verilog/common/baudrates.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/common/uart_rx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/common/uart_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/xo2/dp_ram_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="dpram.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="simul/simul.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="xo2_verilog.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+        <Source name="xo2_verilog.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="xo2_verilog1.sty"/>
+</BaliProject>

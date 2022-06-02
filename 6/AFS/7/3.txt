@@ -8,3 +8,11 @@ abbb
 abbbb
 
 c) a(b)*
+
+d)
+1) Typ 2 
+2) Typ 1 
+3) Typ 3 (linkslinear)
+
+e)
+Typ 1
