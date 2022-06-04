@@ -1,0 +1,27 @@
+a)
+"aaabb"
+k0	a	a	a	a	a
+	k0	a	a	a	k0
+		k0	a	k0
+			k0
+
+
+
+
+
+b)
+"aabbb"
+
+k0	a	a	a	k0	?
+	k0	a	k0
+		k0
+
+"abab"
+k0	a	k0	?
+	k0
+
+"aabb"
+
+k0	a	a	a	k0
+	k0	a	k0
+		k0

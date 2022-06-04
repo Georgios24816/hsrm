@@ -1,0 +1,9 @@
+a)
+delta(s0, a, k0) = (s0, a)
+delta(s0, b, k0) = (s0, b)
+
+delta(s0, k0, k0) = (s1, k0)
+
+delta(s1, a, a) = (s1, k0)
+delta(s1, b, b) = (s1, k0)
+
