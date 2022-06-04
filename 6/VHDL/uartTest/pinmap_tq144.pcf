@@ -1,9 +1,9 @@
 # example.pcf
 set_io --warn-no-port led0 99
-set_io --warn-no-port ledGreen 98
+set_io --warn-no-port led3 98
 set_io --warn-no-port led1 97
 set_io --warn-no-port led2 96
-set_io --warn-no-port led3 95
+set_io --warn-no-port ledGreen 95
 set_io --warn-no-port hwclk 21
 # FTDI / UART pins
 set_io --warn-no-port ftdi_tx 8

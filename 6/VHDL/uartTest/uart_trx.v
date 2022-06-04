@@ -6,6 +6,9 @@ module uart_tx_8n1 (
     senddata,   // trigger tx
     txdone,     // outgoing byte sent
     tx,         // tx wire
+    en,
+
+    debugLed
     );
 
     /* Inputs */
@@ -13,9 +16,12 @@ module uart_tx_8n1 (
     input[7:0] txbyte;
     input senddata;
 
+    input en;
+
     /* Outputs */
     output txdone;
     output tx;
+    output debugLed;
 
     /* Parameters */
     parameter STATE_IDLE=8'd0;
@@ -35,40 +41,48 @@ module uart_tx_8n1 (
 
     /* always */
     always @ (posedge clk) begin
-        // start sending?
-        if (senddata == 1 && state == STATE_IDLE) begin
-            state <= STATE_STARTTX;
-            buf_tx <= txbyte;
-            txdone <= 1'b0;
-        end else if (state == STATE_IDLE) begin
-            // idle at high
-            txbit <= 1'b1;
-            txdone <= 1'b1;
-        end //else
 
-        // send start bit (low)
-        if (state == STATE_STARTTX) begin
-		txdone <= 0;
-            txbit <= 1'b0;
-            state <= STATE_TXING;
-        end //else
-        // clock data out
-        if (state == STATE_TXING && bits_sent < 8'd8) begin
-            txbit <= buf_tx[0];
-            buf_tx <= buf_tx>>1;
-            bits_sent = bits_sent + 1;
-        end else if (state == STATE_TXING) begin
-            // send stop bit (high)
-            txbit <= 1'b1;
-            bits_sent <= 8'b0;
-            state <= STATE_TXDONE;
-        end //else
+	if (en == 1) begin
+        	// start sending?
+        	if (senddata == 1 && state == STATE_IDLE) begin
+			debugLed <= 1;
+        	    state <= STATE_STARTTX;
+        	    buf_tx <= txbyte;
+        	    txdone <= 1'b0;
+        	end else if (state == STATE_IDLE) begin
+        	    // idle at high
+        	    txbit <= 1'b1;
+        	    txdone <= 1'b1;
+        	end //else
 
-        // tx done
-        if (state == STATE_TXDONE) begin
-            txdone <= 1'b1;
-            state <= STATE_IDLE;
-        end
+        	// send start bit (low)
+        	if (state == STATE_STARTTX) begin
+			txdone <= 0;
+        	    txbit <= 1'b0;
+        	    state <= STATE_TXING;
+        	end //else
+        	// clock data out
+        	if (state == STATE_TXING && bits_sent < 8'd8) begin
+        	    txbit <= buf_tx[0];
+        	    buf_tx <= buf_tx>>1;
+        	    bits_sent = bits_sent + 1;
+        	end else if (state == STATE_TXING) begin
+        	    // send stop bit (high)
+        	    txbit <= 1'b1;
+        	    bits_sent <= 8'b0;
+        	    state <= STATE_TXDONE;
+        	end //else
+
+        	// tx done
+        	if (state == STATE_TXDONE) begin
+        	    txdone <= 1'b1;
+        	    state <= STATE_IDLE;
+        	end
+	end else begin
+			debugLed <= 0;
+		txdone <= 1;
+		state = STATE_IDLE;
+	end
 
     end
 
