@@ -1,0 +1,49 @@
+Bewertung: Blatt {exercise}
+==============================================
+
+Datum:                      {date}
+Prüfer:                     {examiner}
+
+Name:                       {name}
+
+Maximalpunktzahl: 	        20
+Gesamtpunktzahl:			{points}
+
+Grundfunktionalität         (20)
+==============================================
+
+- Subscriben aller Control Topics
+- Publishen aller Hamster Topics
+- Verschlüsselung
+- Zertifikat erstellt
+- Authentifizierung
+
+
+Verlorene Punkte: 
+==============================================
+
+Funktionale Fehler:	{func_error}
+Fehlgeschlagene Tests:
+{failed_tests}
+
+Abzug für Warnings:	{warning_error}
+Kommentar:
+{warning_comment}
+
+Code Qualität:		{quality_error}
+Kommentar:
+{quality_comment}
+
+Dokumentation:		{docu_error}
+Kommentar:
+{docu_comment}
+
+Bonuspunkte               (N)
+==============================================
+
+z.B:
+
+- Admin-Funktionalität
+- Plausibilitätskontrolle
+- Simulator-Funktionalität
+
