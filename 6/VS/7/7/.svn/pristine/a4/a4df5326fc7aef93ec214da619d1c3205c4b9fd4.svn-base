@@ -129,7 +129,7 @@ typedef struct MQTT_Subscription
 
 typedef struct MQTT_Connection
 {
-	MQTTClient client;
+	MQTTClient* client;
 	const char* address;
 	const char* clientId;
 } MQTT_Connection_t;
@@ -137,39 +137,23 @@ typedef struct MQTT_Connection
 
 bool mqtt_connectionStructTest(MQTT_Connection_t* connection)
 {
-	return (connection && connection->address && connection->clientId);
+	return (connection && connection->client && connection->address && connection->clientId);
 }
 
 bool mqtt_connect(MQTT_Connection_t* connection)
 {
-	#define ADDRESS     "tcp://localhost:1883"
-#define CLIENTID    "ExampleClientSub"
-#define TOPIC       "MQTT Examples"
-#define PAYLOAD     "Hello World!"
-#define QOS         1
-#define TIMEOUT     10000L
-
 	assert(mqtt_connectionStructTest(connection));
-	int rc;
 	MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
 
-	rc = MQTTClient_create(&(connection->client), connection->address, connection->clientId,
+	MQTTClient_create(connection->client, connection->address, connection->clientId,
         				MQTTCLIENT_PERSISTENCE_NONE, NULL);
-
-	if (rc != MQTTCLIENT_SUCCESS)
-	{
-		printf("error1 : %d\n", rc);
-		exit(EXIT_FAILURE);
-	}
 
     conn_opts.keepAliveInterval = 20;
     conn_opts.cleansession = 1;
 
-	//MQTTClient_setCallbacks(connection->client, NULL, NULL, NULL, NULL);
-
-	if ((rc = MQTTClient_connect(connection->client, &conn_opts)) != MQTTCLIENT_SUCCESS)
+	//MQTTClient_setCallbacks(connection->client, NULL);
+	if (MQTTClient_connect(connection->client, &conn_opts) != MQTTCLIENT_SUCCESS)
 	{
-		printf("error2 : %d\n", rc);
 		exit(EXIT_FAILURE);
 	}
 
@@ -184,8 +168,7 @@ void mqtt_disconnect(MQTTClient* client)
 	MQTTClient_destroy(client);
 }
 
-//static MQTT_Connection_t Connection = { .address = "tcp://localhost:1883", .clientId = "1234" };
-static MQTT_Connection_t Connection = { NULL, "tcp://localhost:1883", "1234" };
+static MQTT_Connection_t Connection = { .address = "tcp://localhost:1883", .clientId = "1234" };
 
 int main(int argc, char** argv) 
 {
@@ -278,7 +261,9 @@ int main(int argc, char** argv)
 	* connect to MQTT broker
 	* 
 	*/
-	assert(mqtt_connect(&Connection) && "connection failed");
+
+	
+
 	/* Hier ist was zu tun: */
 
 	/*

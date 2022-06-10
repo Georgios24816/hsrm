@@ -9,7 +9,7 @@
 #include <netinet/in.h>
 #include <sys/time.h>
 #include <assert.h>
-#include "MQTTClient.h"
+
 
 /**
  * @brief Debug support macros
@@ -82,110 +82,6 @@ static int  doEncrypt = 0;
 static unsigned int port = 1883;
 static char *ipaddr = "127.0.0.1";
 
-typedef enum HamsterRoom { HR_A, HR_B, HR_C, HR_D } HamsterRoom_t;
-typedef enum HamsterState { HS_Running, HS_Sleeping, HS_Eating, HS_Mateing } HamsterState_t;
-
-const char* hamsterRoomString(HamsterRoom_t room)
-{
-	static const char* Rooms[] = { "A", "B", "C", "D" };
-
-	if (room >= (sizeof(Rooms) / sizeof(Rooms[0])))
-	{
-		assert(false && "wrong room");
-	}
-
-	return Rooms[room];
-}
-
-const char* hamsterStateString(HamsterState_t state)
-{
-	static const char* States[] = { "RUNNING", "SLEEPING", "EATING", "MATEING" };
-	
-	if (state >= (sizeof(States) / sizeof(States[0])))
-	{
-		assert(false && "wrong state");
-	}
-
-	return States[state];
-}
-
-void hamsterSetRoom(HamsterRoom_t room)
-{
-	const char* roomString = hamsterRoomString(room);
-	assert(roomString);
-}
-
-void hamsterSetState(HamsterState_t state)
-{
-	const char* stateString = hamsterStateString(state);
-	assert(stateString);
-}
-
-typedef struct MQTT_Subscription
-{
-	const char* topic;
-	uint8_t serviceQuality;
-} MQTT_Subscription_t;
-
-typedef struct MQTT_Connection
-{
-	MQTTClient client;
-	const char* address;
-	const char* clientId;
-} MQTT_Connection_t;
-
-
-bool mqtt_connectionStructTest(MQTT_Connection_t* connection)
-{
-	return (connection && connection->address && connection->clientId);
-}
-
-bool mqtt_connect(MQTT_Connection_t* connection)
-{
-	#define ADDRESS     "tcp://localhost:1883"
-#define CLIENTID    "ExampleClientSub"
-#define TOPIC       "MQTT Examples"
-#define PAYLOAD     "Hello World!"
-#define QOS         1
-#define TIMEOUT     10000L
-
-	assert(mqtt_connectionStructTest(connection));
-	int rc;
-	MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
-
-	rc = MQTTClient_create(&(connection->client), connection->address, connection->clientId,
-        				MQTTCLIENT_PERSISTENCE_NONE, NULL);
-
-	if (rc != MQTTCLIENT_SUCCESS)
-	{
-		printf("error1 : %d\n", rc);
-		exit(EXIT_FAILURE);
-	}
-
-    conn_opts.keepAliveInterval = 20;
-    conn_opts.cleansession = 1;
-
-	//MQTTClient_setCallbacks(connection->client, NULL, NULL, NULL, NULL);
-
-	if ((rc = MQTTClient_connect(connection->client, &conn_opts)) != MQTTCLIENT_SUCCESS)
-	{
-		printf("error2 : %d\n", rc);
-		exit(EXIT_FAILURE);
-	}
-
-	return true;
-}
-
-void mqtt_disconnect(MQTTClient* client)
-{
-	assert(client);
-	const int timeoutMs = 10000;
-	MQTTClient_disconnect(*client, timeoutMs);
-	MQTTClient_destroy(client);
-}
-
-//static MQTT_Connection_t Connection = { .address = "tcp://localhost:1883", .clientId = "1234" };
-static MQTT_Connection_t Connection = { NULL, "tcp://localhost:1883", "1234" };
 
 int main(int argc, char** argv) 
 {
@@ -193,6 +89,7 @@ int main(int argc, char** argv)
 	char *owner = getenv("USER");
 	char *hamster = "myhamster";
 	char cmd;
+
 
 	/*
 	* parse args:
@@ -274,11 +171,12 @@ int main(int argc, char** argv)
 
 //mosquitto_pub -t "/Test" -h hamsteriot.vs.cs.hs-rm.de -m "test2"
 
+
 	/*
 	* connect to MQTT broker
 	* 
 	*/
-	assert(mqtt_connect(&Connection) && "connection failed");
+
 	/* Hier ist was zu tun: */
 
 	/*
@@ -302,36 +200,44 @@ int main(int argc, char** argv)
 		flushinput();
 		switch (cmd) {
 			case 'A': /* going to room A */
+
 				/* Hier ist was zu tun: */
-				hamsterSetRoom(HR_A);
+
 				break;
 			case 'B': /* going to room B */
+
 				/* Hier ist was zu tun: */
-				hamsterSetRoom(HR_B);
+
 				break;
 			case 'C': /* going to room C */
+
 				/* Hier ist was zu tun: */
-				hamsterSetRoom(HR_C);
+
 				break;
 			case 'D': /* going to room D */
+
 				/* Hier ist was zu tun: */
-				hamsterSetRoom(HR_D);
+
 				break;
 			case 'r': /* change to "RUNNING" state */
+
 				/* Hier ist was zu tun: */
-				hamsterSetState(HS_Running);
+
 				break;
 			case 's': /* change to "SLEEPING" state */
+
 				/* Hier ist was zu tun: */
-				hamsterSetState(HS_Sleeping);
+
 				break;
 			case 'e': /* change to "EATING" state */
+
 				/* Hier ist was zu tun: */
-				hamsterSetState(HS_Eating);
+
 				break;
 			case 'm': /* change to "MATEING" state */
+
 				/* Hier ist was zu tun: */
-				hamsterSetState(HS_Mateing);
+
 				break;
 			case 'q':
 				printf("quit\n");
@@ -343,6 +249,6 @@ int main(int argc, char** argv)
 	while(cmd != EOF && cmd != 'q');
 
 	/* Hier ist was zu tun: */
-	mqtt_disconnect(Connection.client);
+
 	return 0;
 }
