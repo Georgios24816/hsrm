@@ -111,6 +111,7 @@ module top (
         if (cntr_9600 == period_9600) begin
             clk_9600 <= ~clk_9600;
             cntr_9600 <= 32'b0;
+            chachaStart <= 0;
         end
 
         /* generate 1 Hz clock */
@@ -120,8 +121,7 @@ module top (
             cntr_1 <= 32'b0;
         end
 
-	    if (UartStateCounter == 0) begin
-            chachaStart <= 0;
+        if (UartStateCounter == 0) begin
 
 		    if (uart_txed == 1 && chachaDone == 1) begin
 				UartStateCounter <= 1;
