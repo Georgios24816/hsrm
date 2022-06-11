@@ -331,6 +331,29 @@ void hamsterFondle()
 	printf("FONDLE %d\n", ++fondleCounter);
 }
 
+static int make_hash(const char *s1, const char *s2)
+{
+	const int InitialValue = 5381;
+	const int M = 33;
+
+	unsigned int hash;
+	int i;
+    char key[2*(HMSTR_MAX_NAME+1)];
+     /* copy both strings into a single buffer */
+	memset(key, 0, sizeof(key));
+	strcpy(&key[0], s1);
+	strcpy(&key[HMSTR_MAX_NAME+1], s2);
+
+        /* compute a hash value over the buffer's contents */
+	hash = InitialValue;
+	for(i = 0; i < 2*(HMSTR_MAX_NAME+1); ++i)
+	        hash = M * hash + key[i];
+
+	/* make sure always get a >= 0 number */
+	return hash >> 1U;
+}
+
+
 int main(int argc, char** argv) 
 {
 	int hamster_id = -1;
@@ -410,7 +433,7 @@ int main(int argc, char** argv)
 	if(hamster_id == -1)
 	{
 		/* Hier ist was zu tun: */
-		hamster_id = 42;
+		hamster_id = make_hash(owner, hamster);
 		debug(("Calling: hamster_id = make_hash(\"%s\", \"%s\");", owner, hamster));
 	}
 	sprintf(clientid, "%d", hamster_id);
