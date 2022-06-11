@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <sys/time.h>
+#include <time.h>
 #include <assert.h>
 #include "MQTTClient.h"
 
@@ -171,6 +172,7 @@ bool mqtt_connect(MQTT_Connection_t* connection)
 
     conn_opts.keepAliveInterval = 20;
     conn_opts.cleansession = 1;
+	conn_opts.username = "hamster";
 
 	MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_messageArrived, NULL);
 	
@@ -186,11 +188,12 @@ bool mqtt_connect(MQTT_Connection_t* connection)
 
 void mqtt_disconnect(MQTTClient* client)
 {
-	assert(client);
-	MQTTClient_disconnect(*client, M_TimeoutMs);
-	MQTTClient_destroy(client);
+	if (client)
+	{
+		MQTTClient_disconnect(*client, M_TimeoutMs);
+		MQTTClient_destroy(client);
+	}
 }
-
 
 typedef enum HamsterRoom { HR_A, HR_B, HR_C, HR_D } HamsterRoom_t;
 typedef enum HamsterState { HS_Running, HS_Sleeping, HS_Eating, HS_Mateing } HamsterState_t;
@@ -277,18 +280,37 @@ bool hamsterSetRoom(MQTTClient client, int hamsterId, HamsterRoom_t room)
 
 bool hamsterSetState(MQTTClient client, int hamsterId, HamsterState_t state)
 {
+	static int SecondCounter = 0;
+	static int SecondCounterStart = -1;
+	static int SecondCounterEnd = -1;
+
+	static int RoundCounter = 0;
 	static HamsterState_t oldState = HS_Running;
 	char buffer[M_MqttMessageLen];
 	snprintf(buffer, M_MqttMessageLen, "/pension/hamster/%d/state", hamsterId);
+
+	if (SecondCounterStart == -1 && oldState == HS_Running)
+	{
+		SecondCounterStart = time(NULL);
+	}
 
 	if (mqtt_publish(client, buffer, M_QosMin1, hamsterStateString(state)) != MQTTCLIENT_SUCCESS)
 	{
 		//return false;
 	}
 
+	if (state != HS_Running && SecondCounterEnd == -1)
+	{
+		SecondCounterEnd = time(NULL);
+	}
+
 	if (state == HS_Running && oldState != state)
 	{
-		mqtt_publishRounds(client, hamsterId, 0);
+		SecondCounter += SecondCounterEnd - SecondCounterStart;
+		SecondCounterStart = time(NULL);
+		SecondCounterEnd = -1;
+		RoundCounter = SecondCounter / 60;
+		mqtt_publishRounds(client, hamsterId, (int)(RoundCounter * 25));
 	}
 
 	oldState = state;
@@ -299,12 +321,14 @@ bool hamsterSetState(MQTTClient client, int hamsterId, HamsterState_t state)
 
 void hamsterPunish()
 {
-	printf("PUNISH\n");
+	static int punishmentCounter = 0;
+	printf("PUNISH %d\n", ++punishmentCounter);
 }
 
 void hamsterFondle()
 {
-	printf("FONDLE\n");
+	static unsigned int fondleCounter = 0;
+	printf("FONDLE %d\n", ++fondleCounter);
 }
 
 int main(int argc, char** argv) 
@@ -408,7 +432,7 @@ int main(int argc, char** argv)
 	* Get admission time, start RUNNING in room A
 	*/
 
-	//const time_t admissionTime = time(NULL); //TODO
+	// time_t admissionTime = time(NULL); //TODO
 
 	hamsterSetState(connection.client, hamster_id, HS_Running);
 	hamsterSetRoom(connection.client, hamster_id, HR_A);
@@ -468,6 +492,7 @@ int main(int argc, char** argv)
 	while(cmd != EOF && cmd != 'q');
 
 	/* Hier ist was zu tun: */
-	mqtt_disconnect(connection.client);
+	mqtt_disconnect(&(connection.client));
+
 	return 0;
 }
