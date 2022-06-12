@@ -8,7 +8,7 @@ module uart_tx_8n1 (
     tx,         // tx wire
     en,
 
-    debugLed
+    //debugLed
     );
 
     /* Inputs */
@@ -21,7 +21,7 @@ module uart_tx_8n1 (
     /* Outputs */
     output txdone;
     output tx;
-    output debugLed;
+    //output debugLed;
 
     /* Parameters */
     parameter STATE_IDLE=8'd0;
@@ -45,7 +45,7 @@ module uart_tx_8n1 (
 	if (en == 1) begin
         	// start sending?
         	if (senddata == 1 && state == STATE_IDLE) begin
-			debugLed <= 1;
+			//debugLed <= 1;
         	    state <= STATE_STARTTX;
         	    buf_tx <= txbyte;
         	    txdone <= 1'b0;
@@ -69,7 +69,7 @@ module uart_tx_8n1 (
         	end else if (state == STATE_TXING) begin
         	    // send stop bit (high)
         	    txbit <= 1'b1;
-        	    bits_sent <= 8'b0;
+        	    bits_sent = 0;
         	    state <= STATE_TXDONE;
         	end //else
 
@@ -79,9 +79,9 @@ module uart_tx_8n1 (
         	    state <= STATE_IDLE;
         	end
 	end else begin
-			debugLed <= 0;
+			//debugLed <= 0;
 		txdone <= 1;
-		state = STATE_IDLE;
+		state <= STATE_IDLE;
 	end
 
     end

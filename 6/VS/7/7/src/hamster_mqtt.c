@@ -436,6 +436,7 @@ int main(int argc, char** argv)
 		hamster_id = make_hash(owner, hamster);
 		debug(("Calling: hamster_id = make_hash(\"%s\", \"%s\");", owner, hamster));
 	}
+	
 	sprintf(clientid, "%d", hamster_id);
 	printf("** Using ID %d for %s's Hamster %s **\n", hamster_id, owner, hamster);
 

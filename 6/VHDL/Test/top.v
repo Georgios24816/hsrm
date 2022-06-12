@@ -3,7 +3,7 @@ module top (
     // input hardware clock (12 MHz)
     hwclk, 
     // all LEDs
-    led1, led0, ledGreen, led3, led2, 
+    //led1, led0, ledGreen, led3, led2, 
     // UART lines
     ftdi_tx, //ftdi_rx
     );
@@ -11,12 +11,13 @@ module top (
     /* Clock input */
     input hwclk;
 
-    /* LED outputs */
+    /* LED outputs 
     output led0;
     output led1;
     output led2;
     output led3;
     output ledGreen;
+	*/
 
     /* FTDI I/O */
     output ftdi_tx;
@@ -79,16 +80,16 @@ module top (
         .txdone (uart_txed),
         // output UART tx pin
         .tx (ftdi_tx),
-	    .en (uart_send_en),
-	    .debugLed(led2)
+	    .en (uart_send_en)
+	    //.debugLed(led2)
     );
 
     reg chachaStart = 0;
     reg [255 : 0] chachaKey = 256'h657870616e642033322d62797465206b657870616e642033322d62797465206b;
     reg [63 : 0] chachaIndex = 0;
     reg [63 : 0] chachaNonce = 64'h6578706164312887;
-    reg chachaDone;
-    reg [511 : 0] chachaOut;
+    wire chachaDone;
+    wire [511 : 0] chachaOut;
 
     chacha20 chacha (
         .clock(hwclk),
@@ -124,8 +125,9 @@ module top (
         if (UartStateCounter == 0) begin
 
 		    if (uart_txed == 1 && chachaDone == 1) begin
+				chachaStart <= 0;
 				UartStateCounter <= 1;
-                		led1 <= 1;
+                	//led1 <= 1;
 			end 
 
 	    end else if (UartStateCounter == 1) begin
@@ -143,7 +145,7 @@ module top (
         //wait for transmission to start
 	    end else if (UartStateCounter == 3) begin
 		    if (uart_txed == 0) begin
-			    UartStateCounter = 4;
+			    UartStateCounter <= 4;
 		    end
 
         //wait for transmission to end
@@ -157,11 +159,13 @@ module top (
 
         //init leds
 	    end else if (UartStateCounter == 15) begin
+			/*
 			led3 <= 0;
 			led0 <= 0;
 			led1 <= 0;
 			led2 <= 0;
 			ledGreen <= 0;
+			*/
             		chachaStart <= 1;
 			UartStateCounter <= 0;
 	    end
