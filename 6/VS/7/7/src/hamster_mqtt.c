@@ -106,18 +106,18 @@ typedef struct MQTT_Connection
 
 static int HamsterId = 0;
 
-void hamsterFondle();
-void hamsterPunish();
+void hamsterFondle(int count);
+void hamsterPunish(int count);
 
 int mqtt_messageArrived(void *context, char *topicName, int topicLen, MQTTClient_message *message)
 {
-    //char* payloadptr = message->payload;
+    char* payloadptr = message->payload;
 	char buffer[M_MqttMessageLen];
 	snprintf(buffer, M_MqttMessageLen, "/pension/hamster/%d/fondle", HamsterId);
 
 	if (strcmp(topicName, buffer) == 0)
 	{
-		hamsterFondle();
+		hamsterFondle(atoi(payloadptr));
 	}
 
 	else
@@ -126,7 +126,7 @@ int mqtt_messageArrived(void *context, char *topicName, int topicLen, MQTTClient
 
 		if (strcmp(topicName, buffer) == 0)
 		{
-			hamsterPunish();
+			hamsterPunish(atoi(payloadptr));
 		}
 	}
     
@@ -135,23 +135,173 @@ int mqtt_messageArrived(void *context, char *topicName, int topicLen, MQTTClient
     return 1;
 }
 
+typedef enum MqqtPensionTopic 
+{ 
+	MPT_ERROR = -1,
+	MPT_Livestock, 
+	MPT_Wheels, 
+	MPT_State, 
+	MPT_Position, 
+	MPT_Fondle, 
+	MPT_Punish,
+	MPT_RoomA,
+	MPT_RoomB,
+	MPT_RoomC,
+	MPT_RoomD,
+	MPT_COUNT
+} MqttPensionTopic_t;
+
+typedef struct MqttFormatString
+{
+	const char* s;
+	bool needsHamsterId;
+	int qos;
+} MqttFormatString_t;
+
+typedef int (*MqttIteratorFunction_t)(const char*, MqttPensionTopic_t, int);
+
+#define M_HamsterIdAll (-43)
+
+void mqtt_topicIterator(MqttIteratorFunction_t func, int hamsterId)
+{
+	static const MqttFormatString_t FormatStrings[] ={
+												{"/pension/livestock", 0, M_Qos1},
+												{"/pension/hamster/%d/wheels", 1, M_QosMax1},
+												{"/pension/hamster/%d/state", 1, M_QosMin1},
+												{"/pension/hamster/%d/position", 1, M_QosMin1},
+												{"/pension/hamster/%d/fondle", 1, M_Qos1},
+												{"/pension/hamster/%d/punish", 1, M_Qos1},
+												{"/pension/room/A", 0, M_QosMax1},
+												{"/pension/room/B", 0, M_QosMax1},
+												{"/pension/room/C", 0, M_QosMax1},
+												{"/pension/room/D", 0, M_QosMax1}
+											};
+
+	assert((sizeof(FormatStrings) / sizeof(FormatStrings[0])) == MPT_COUNT);
+	assert(func);
+
+	char buffer[M_MqttMessageLen];
+	const MqttFormatString_t* s;
+	int funcRet;
+
+	for (int i = 0; i < MPT_COUNT; i++)
+	{
+		s = &FormatStrings[i];
+
+		if (s->needsHamsterId)
+		{
+			if (hamsterId == M_HamsterIdAll)
+			{
+				char buffer2[M_MqttMessageLen];
+				const int intIndex = 18;
+
+				strcpy(buffer2, s->s);
+				buffer2[intIndex] = 'c';
+
+				snprintf(buffer, M_MqttMessageLen, buffer2, (char)(-M_HamsterIdAll)); 
+			}
+
+			else
+			{
+				snprintf(buffer, M_MqttMessageLen, s->s, hamsterId);
+			}
+
+			funcRet = func(buffer, i, s->qos);
+		}
+
+		else
+		{
+			funcRet = func(s->s, i, s->qos);
+		}
+
+		if (funcRet)
+		{
+			return;
+		}
+	}
+}
+
+MqttPensionTopic_t MatchedTopic = MPT_ERROR;
+char* ReceivedTopic;
+
+int mqtt_matchTopic(const char* topic, MqttPensionTopic_t topicIndex, int qos)
+{
+	if (strcmp(ReceivedTopic, topic) == 0)
+	{
+		MatchedTopic = topicIndex;
+		return 1;
+	}
+
+	return 0;
+}
+
+MqttPensionTopic_t mqtt_topicChecker(char* topic, int topicLen, int hamsterId)
+{
+	if (!(topic && hamsterId))
+	{
+		return MPT_ERROR;
+	}
+
+	ReceivedTopic = topic;
+	mqtt_topicIterator(mqtt_matchTopic, hamsterId);
+	
+	MqttPensionTopic_t matchedTopicCopy = MatchedTopic;
+	MatchedTopic = MPT_ERROR;
+	ReceivedTopic = NULL;
+
+	return matchedTopicCopy;
+}
+
+int mqtt_visualizer(void *context, char *topicName, int topicLen, MQTTClient_message *message)
+{
+	//assert(context && topicName && topicLen && message && message->payloadlen && message->payload);
+
+	//extract id from topic if it exists
+
+	//find last backslash (first from the end) and check if its lead by a digit
+	//simple solution
+	const int numberIndex = 17;
+	int hamster = atoi(&topicName[numberIndex]);
+
+	if (hamster == 0)
+	{
+		hamster = HamsterId;
+	}
+
+
+	MqttPensionTopic_t ret = mqtt_topicChecker(topicName, topicLen, hamster);
+	//char* payload = message->payload;
+	printf("hamsterId : %d | topic : '%s' | ret : %d\n", hamster, topicName, (int)ret);
+
+	return ret != MPT_ERROR; 
+}
+
 bool mqtt_connectionStructTest(MQTT_Connection_t* connection)
 {
 	return connection && connection->address && connection->clientId && connection->clientIdString;
 }
 
+MQTT_Connection_t* SubscribeConnection;
+int mqtt_subscribeAll(const char* topic, MqttPensionTopic_t topicIndex, int qos)
+{
+	assert(topic && topicIndex != MPT_ERROR);
+	MQTTClient_subscribe(SubscribeConnection, topic, qos);
+
+	return 0;
+}
+
 bool mqtt_subscribe(MQTT_Connection_t* connection)
 {
-	char fondleBuffer[M_MqttMessageLen];
-	snprintf(fondleBuffer, M_MqttMessageLen, "/pension/hamster/%d/fondle", connection->clientId);
+	//char fondleBuffer[M_MqttMessageLen];
+	//snprintf(fondleBuffer, M_MqttMessageLen, "/pension/hamster/%d/fondle", connection->clientId);
+	//char punishBuffer[M_MqttMessageLen];
+	//snprintf(punishBuffer, M_MqttMessageLen, "/pension/hamster/%d/punish", connection->clientId);
+	//MQTTClient_subscribe(connection->client, fondleBuffer, M_Qos1);
+	//MQTTClient_subscribe(connection->client, punishBuffer, M_Qos1);
 
-	char punishBuffer[M_MqttMessageLen];
-	snprintf(punishBuffer, M_MqttMessageLen, "/pension/hamster/%d/punish", connection->clientId);
-
-	MQTTClient_subscribe(connection->client, fondleBuffer, M_Qos1);
-	MQTTClient_subscribe(connection->client, punishBuffer, M_Qos1);
-
-	MQTTClient_subscribe(connection->client, "/pension/room/+", M_QosMax1);
+	SubscribeConnection = connection->client;
+	mqtt_topicIterator(mqtt_subscribeAll, M_HamsterIdAll);
+	//SubscribeConnection = NULL;
 
 	return true;
 }
@@ -174,7 +324,8 @@ bool mqtt_connect(MQTT_Connection_t* connection)
     conn_opts.cleansession = 1;
 	conn_opts.username = "hamster";
 
-	MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_messageArrived, NULL);
+	//MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_messageArrived, NULL);
+	MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_visualizer, NULL);
 	
 	if ((rc = MQTTClient_connect(connection->client, &conn_opts)) != MQTTCLIENT_SUCCESS)
 	{
@@ -244,7 +395,7 @@ bool mqtt_publish(MQTTClient client, const char* topic, int qos, const char* mes
 	pubmsg.payload = buffer;
 	pubmsg.payloadlen = messageLen;
 	pubmsg.qos = qos;
-	pubmsg.retained = true;
+	pubmsg.retained = false;
 
 	if (MQTTClient_publishMessage(client, topic, &pubmsg, &DeliveryToken) != MQTTCLIENT_SUCCESS)
 	{
@@ -319,16 +470,18 @@ bool hamsterSetState(MQTTClient client, int hamsterId, HamsterState_t state)
 	return true;
 }
 
-void hamsterPunish()
+void hamsterPunish(int count)
 {
 	static int punishmentCounter = 0;
-	printf("PUNISH %d\n", ++punishmentCounter);
+	punishmentCounter += count;
+	printf("PUNISH %d\n", punishmentCounter);
 }
 
-void hamsterFondle()
+void hamsterFondle(int count)
 {
 	static unsigned int fondleCounter = 0;
-	printf("FONDLE %d\n", ++fondleCounter);
+	fondleCounter += count;
+	printf("FONDLE %d\n", fondleCounter);
 }
 
 static int make_hash(const char *s1, const char *s2)
@@ -474,6 +627,12 @@ int main(int argc, char** argv)
 		cmd = getchar();
 		flushinput();
 		switch (cmd) {
+			case '*':
+				mqtt_topicChecker("/pension/livestock", 27, 10);
+				break;
+			case '/':
+				break;
+
 			case 'A': /* going to room A */
 				/* Hier ist was zu tun: */
 				hamsterSetRoom(connection.client, hamster_id, HR_A);
