@@ -268,10 +268,11 @@ int mqtt_visualizer(void *context, char *topicName, int topicLen, MQTTClient_mes
 		hamster = HamsterId;
 	}
 
-
 	MqttPensionTopic_t ret = mqtt_topicChecker(topicName, topicLen, hamster);
-	//char* payload = message->payload;
-	printf("hamsterId : %d | topic : '%s' | ret : %d\n", hamster, topicName, (int)ret);
+	char* payload = message->payload;
+	//printf("hamsterId : %d | topic : '%s' | ret : %d\n", hamster, topicName, (int)ret);
+
+	printf("PAYLOAD : '%s'\n", payload);
 
 	return ret != MPT_ERROR; 
 }
@@ -324,8 +325,8 @@ bool mqtt_connect(MQTT_Connection_t* connection)
     conn_opts.cleansession = 1;
 	conn_opts.username = "hamster";
 
-	//MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_messageArrived, NULL);
-	MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_visualizer, NULL);
+	MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_messageArrived, NULL);
+	//MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_visualizer, NULL);
 	
 	if ((rc = MQTTClient_connect(connection->client, &conn_opts)) != MQTTCLIENT_SUCCESS)
 	{
