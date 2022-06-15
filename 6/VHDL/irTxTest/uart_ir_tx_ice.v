@@ -173,8 +173,3 @@ uart_tx_fsm uut2(
  assign test3 =  i_rst ; 
   
 endmodule
-
-
-
-
-
