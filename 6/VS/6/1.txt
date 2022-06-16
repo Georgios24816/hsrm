@@ -1,0 +1,42 @@
+a)
+Client und Server haben jeweils eigenen Adressraum
+
+Der Client ruft die gewünschte Server-Funktion mit gepackten Argumenten.
+Der Server entpackt die Argumente und verarbeitet die gewünschte Funktion.
+Anschließend verpackt er die Ergebnisse und schickt diese an den Client zurück.
+Der Client entpackt die Ergebnisse und kann weiterarbeiten.
+
+Die Client- & Serversoftware haben für die Implementierung eine Schnittstellenspezifikation.
+
+Die Verbindung erfolgt über einen Binder Trader.
+Binden eines Clients an einen Server notwendig.
+
+Alternativen zur Herstellung einer Verbindung:
+-Naming: Client nennt seinen Zielserver
+-Locating: ortsabhängige Adresse (typ: IP, Port)
+-statische Adresse
+
+b)
+SunRPC
+DCE
+Thrift
+
+c)
+
+explizit:
+Es muss explizit definiert sein wie Daten (vorallem zusammengesetzte Typen
+wie Arrays, Structs & Unions) verpackt / serialisiert werden.
+Das heißt dass allen Datenfeldern die Typinformation vorausgeht
+
+Beispiel Packet: Typ, Länge, Inhalt
+
+implizit:
+keine sich selbst beschreibenden Daten
+
+d)
+Da Client und Server jeweils einen eigenen Adressraum haben unterscheiden sich die 
+Speicheradressen und die Speicherinhalte. 
+Statt mit Pointern zu arbeiten muss man die Zeigerinhalte kopieren.
+
+Netzwerke verwenden die Big-Endian Netzdatendarstellung.
+Man braucht die passenden Konvertierungsfunktionen aus der Standard Library

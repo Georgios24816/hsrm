@@ -1,0 +1,7 @@
+Die Verbindung erfolgt über einen Binder Trader.
+Binden eines Clients an einen Server notwendig.
+
+-Naming: Client nennt seinen Zielserver
+-Locating: ortsabhängige Adresse (typ: IP, Port)
+-statische Adresse
+

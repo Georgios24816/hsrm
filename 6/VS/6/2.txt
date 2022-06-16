@@ -1,0 +1,33 @@
+a)
+Client / Server:
+Client und Server laufen i.d.R. auf verschiedenen Rechnern
+Kommunikationsvorgänge basieren auf dem Auftrag/Antwort-Interaktionsmuster und
+werden vom Client initiert.
+
+Ein Client kann mit mehreren Servern kommunizieren
+sowie ein Server mehrere Clients bedienen kann.
+Ein Server kann als Client mit einem anderen Server kommunizieren
+sowie ein Client für einen anderen Client als Server fungiert.
+
+Es gibt die Möglichkeit einen Proxy zwischenzuschalten.
+Dieser übernimmt für den Client die Serverrolle und 
+für den Server die Clientrolle.
+Der Proxy kann Anfragen zwischenspeichern (Cachen), modifizieren usw.
+
+Peer 2 Peer:
+dezentrale Kommunikation zwischen gleichrangigen Teilnehmern.
+Die Clients benötigen keine zusätzliche Infrastruktur (z.B. Server).
+Direkte Kommunikation unter den Teilnehmern
+Netzwerk und Anwendungsebene
+beliebige nachrichtenorientierte Interaktion (message oriented middleware)
+
+
+b)
+Multi-Tier-Modell
+Reihen eher ortogonal zu (Abstraktions)-Schichten, i.d.R. orientiert an
+Benutzerschnittstelle/Präsentation, Anwendungslogik/Funktion, Datenhaltung
+
+Das Multi Tier Modell enthält keine Festlegung über verwendete Middleware
+heute sehr weit verbreitet meistens in Form von 2 oder 3 Reihen
+
+Das 3 Teier Modell besteht aus 3 Schichten

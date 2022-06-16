@@ -1,0 +1,14 @@
+Maybe-Semantik:
+-Kein Wiederholung von Request
+-Einfach und effizient
+-keine Erfolgsgarantie
+
+At-Least-Once Semantik:
+-Hartnäckige automatische Wieder von Request bis er einmal erfolgreich bearbeitet wird
+-keine Duplikatserkennung (zustandsloses Protokoll auf Serverseite)
+-akzeptabel bei idempotenten Operationen (z.B. Lesen einer Datei)
+
+At-most-Once Semantik:
+-Erkennen von Duplikaten (z.B. Sequenznummern, Log-Datei)
+-Keine wiederholte Ausführung der Prozedur
+-auch für nicht-idempotente Operationen geignet
