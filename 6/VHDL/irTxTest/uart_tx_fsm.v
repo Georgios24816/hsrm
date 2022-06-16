@@ -63,7 +63,10 @@ module uart_tx_fsm(
     //Int serial data for loopback purpose
     output wire       o_int_serial_data,
     //Serial data out to MODEM    
-    output wire       o_serial_data
+    output wire       o_serial_data,
+
+    //
+    output wire     o_is_idle
     );
 
     parameter [3:0]/*synopsys enum state_info*/ IDLE_STATE        = 4'b0000,

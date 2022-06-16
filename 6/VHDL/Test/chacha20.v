@@ -19,7 +19,9 @@ module chacha20(input wire clock,
                 input  wire [63:0] index, // integer, not little-endian bytes
                 input  wire [63:0] nonce,
                 output reg done = 0,
-                output wire [511:0] out);
+                output wire [511:0] out
+                //output wire led
+                );
     function automatic [31:0] LE32(input [31:0] a);
         LE32 = {a[7:0], a[15:8], a[23:16], a[31:24]};
     endfunction
@@ -59,6 +61,7 @@ module chacha20(input wire clock,
         end
         if (i < ROUNDS+1) i <= i + 1;
         if (i == ROUNDS) begin
+            //led <= 1;
             done <= 1;
             `ARRAY16(x) <= `ARRAY16(x_final);
         end

@@ -3,25 +3,23 @@ module top (
     // input hardware clock (12 MHz)
     hwclk, 
     // all LEDs
-    //led1, led0, ledGreen, led3, led2, 
+    led1, led4, ledGreen, led3, led2, 
     // UART lines
-    ftdi_tx, //ftdi_rx
+    ftdi_tx, ftdi_rx
     );
 
     /* Clock input */
     input hwclk;
 
-    /* LED outputs 
-    output led0;
+    output led4;
     output led1;
     output led2;
     output led3;
     output ledGreen;
-	*/
 
     /* FTDI I/O */
     output ftdi_tx;
-    //input ftdi_rx;
+    input ftdi_rx;
 
     /* 9600 Hz clock generation (from 12 MHz) */
     reg clk_9600 = 0;
@@ -39,7 +37,7 @@ module top (
     parameter ASCII_9 = 8'd57;
 
     /* UART registers */
-    reg [7:0] uart_txbyte = ASCII_0;
+    reg [7:0] uart_txbyte = 0;
     reg uart_send = 0;
     wire uart_txed;
 	reg uart_send_en = 0;
@@ -84,11 +82,11 @@ module top (
 	    //.debugLed(led2)
     );
 
-    reg chachaStart = 0;
-    reg [255 : 0] chachaKey = 256'h657870616e642033322d62797465206b657870616e642033322d62797465206b;
-    reg [63 : 0] chachaIndex = 0;
-    reg [63 : 0] chachaNonce = 64'h6578706164312887;
-    wire chachaDone;
+    wire chachaStart = 1;
+    wire [255 : 0] chachaKey = 256'h657870616e642033322d62797465206b657870616e642033322d62797465206b;
+    wire [63 : 0] chachaIndex = 0;
+    wire [63 : 0] chachaNonce = 64'h6578706164312887;
+    reg chachaDone;
     wire [511 : 0] chachaOut;
 
     chacha20 chacha (
@@ -99,11 +97,10 @@ module top (
         .nonce(chachaNonce),
         .done(chachaDone),
         .out(chachaOut)
+        //.led(ledGreen)
     );
-    
-    reg [511 : 0] TestReg;
 
-    /* Wiring */
+    reg [15 : 0] outputIndex = 0;
     
     /* Low speed clock generation */
     always @ (posedge hwclk) begin
@@ -112,7 +109,6 @@ module top (
         if (cntr_9600 == period_9600) begin
             clk_9600 <= ~clk_9600;
             cntr_9600 <= 32'b0;
-            chachaStart <= 0;
         end
 
         /* generate 1 Hz clock */
@@ -123,17 +119,21 @@ module top (
         end
 
         if (UartStateCounter == 0) begin
-
+            chachaStart <= 0;
 		    if (uart_txed == 1 && chachaDone == 1) begin
-				chachaStart <= 0;
-				UartStateCounter <= 1;
-                	//led1 <= 1;
+                chachaOutCopy <= chachaOut;
+                if (chachaOutCopy != 0) begin
+				    chachaStart <= 0;
+				    UartStateCounter <= 1;
+				    led1 <= 1;
+                end
 			end 
 
 	    end else if (UartStateCounter == 1) begin
 			if (uart_txed == 1) begin
 				UartStateCounter <= 2;
-				uart_txbyte <= chachaOut[7 : 0];
+				uart_txbyte <= 48 + chachaOutCopy[outputIndex];
+                led2 <= 1;
 			end
 
         //begin transmission
@@ -141,11 +141,13 @@ module top (
 		    uart_send_en <= 1;
 		    uart_send <= 1;
 		    UartStateCounter <= 3;
+            led3 <= 1;
 
         //wait for transmission to start
 	    end else if (UartStateCounter == 3) begin
 		    if (uart_txed == 0) begin
 			    UartStateCounter <= 4;
+                led4 <= 1;
 		    end
 
         //wait for transmission to end
@@ -153,20 +155,25 @@ module top (
 		    if (uart_txed == 1) begin
 			    uart_send_en <= 0;
 			    uart_send <= 0;
-		        //led3 <= ~led3;
+		        ledGreen <= 1;
 		        UartStateCounter <= 0;
+                //chachaOutCopy <= chachaOutCopy >> 8;
+                outputIndex <= outputIndex + 1;
+
+                if (outputIndex == 16) begin
+                    //chachaOutCopy <= chachaOut;
+                    outputIndex <= 0;
+                end
 		    end
 
         //init leds
 	    end else if (UartStateCounter == 15) begin
-			/*
 			led3 <= 0;
 			led0 <= 0;
 			led1 <= 0;
 			led2 <= 0;
 			ledGreen <= 0;
-			*/
-            		chachaStart <= 1;
+            chachaStart <= 1;
 			UartStateCounter <= 0;
 	    end
 
