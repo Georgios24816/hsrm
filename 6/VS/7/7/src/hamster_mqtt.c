@@ -597,6 +597,7 @@ int main(int argc, char** argv)
 	char hamsterIdString[M_MaxIdLen];
 	snprintf(hamsterIdString, M_MaxIdLen, "%d", hamster_id);
 	MQTT_Connection_t connection = { NULL, "tcp://localhost:1883", hamster_id, hamsterIdString };
+	//MQTT_Connection_t connection = { NULL, "hamsteriot.vs.cs.hs-rm.de", hamster_id, hamsterIdString };
 
 //mosquitto_pub -t "/Test" -h hamsteriot.vs.cs.hs-rm.de -m "test2"
 

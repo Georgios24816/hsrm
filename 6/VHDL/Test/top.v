@@ -101,6 +101,8 @@ module top (
     );
 
     reg [15 : 0] outputIndex = 0;
+    reg [15 : 0] temp1 = 0;
+    reg [15 : 0] temp2 = 7;
     
     /* Low speed clock generation */
     always @ (posedge hwclk) begin
@@ -121,8 +123,7 @@ module top (
         if (UartStateCounter == 0) begin
             chachaStart <= 0;
 		    if (uart_txed == 1 && chachaDone == 1) begin
-                chachaOutCopy <= chachaOut;
-                if (chachaOutCopy != 0) begin
+                if (chachaOut != 0) begin
 				    chachaStart <= 0;
 				    UartStateCounter <= 1;
 				    led1 <= 1;
@@ -132,7 +133,143 @@ module top (
 	    end else if (UartStateCounter == 1) begin
 			if (uart_txed == 1) begin
 				UartStateCounter <= 2;
-				uart_txbyte <= 48 + chachaOutCopy[outputIndex];
+                uart_txbyte <= chachaOut[7 : 0];
+                temp1 <= temp1 + 8;
+                //temp2 <= temp2 + 8;
+                /*
+                if (outputIndex == 0) begin
+				    uart_txbyte <= chachaOut[7 : 0];
+                end else if (outputIndex == 1) begin
+                    uart_txbyte <= chachaOut[15 : 8];
+                end else if (outputIndex == 2) begin
+                    uart_txbyte <= chachaOut[23 : 16];
+                end else if (outputIndex ==3) begin 
+                    uart_txbyte <= chachaOut[31:24];
+                end else if (outputIndex ==4) begin 
+                    uart_txbyte <= chachaOut[39:32];
+                end else if (outputIndex ==5) begin 
+                    uart_txbyte <= chachaOut[47:40];
+                end else if (outputIndex ==6) begin 
+                    uart_txbyte <= chachaOut[55:48];
+                end else if (outputIndex ==7) begin 
+                    uart_txbyte <= chachaOut[63:56];
+                end else if (outputIndex ==8) begin 
+                    uart_txbyte <= chachaOut[71:64];
+                end else if (outputIndex ==9) begin 
+                    uart_txbyte <= chachaOut[79:72];
+                end else if (outputIndex ==10) begin 
+                    uart_txbyte <= chachaOut[87:80];
+                end else if (outputIndex ==11) begin 
+                    uart_txbyte <= chachaOut[95:88];
+                end else if (outputIndex ==12) begin 
+                    uart_txbyte <= chachaOut[103:96];
+                end else if (outputIndex ==13) begin 
+                    uart_txbyte <= chachaOut[111:104];
+                end else if (outputIndex ==14) begin 
+                    uart_txbyte <= chachaOut[119:112];
+                end else if (outputIndex ==15) begin 
+                    uart_txbyte <= chachaOut[127:120];
+                end else if (outputIndex ==16) begin 
+                    uart_txbyte <= chachaOut[135:128];
+                end else if (outputIndex ==17) begin 
+                    uart_txbyte <= chachaOut[143:136];
+                //end else if (outputIndex ==18) begin 
+                //    uart_txbyte <= chachaOut[151:144];
+                //end else if (outputIndex ==19) begin 
+                //    uart_txbyte <= chachaOut[159:152];
+                //end else if (outputIndex ==20) begin 
+                //    uart_txbyte <= chachaOut[167:160];
+                //end else if (outputIndex ==21) begin 
+                //    uart_txbyte <= chachaOut[175:168];
+                //end else if (outputIndex ==22) begin 
+                //    uart_txbyte <= chachaOut[183:176];
+                //end else if (outputIndex ==23) begin 
+                //    uart_txbyte <= chachaOut[191:184];
+                //end else if (outputIndex ==24) begin 
+                //    uart_txbyte <= chachaOut[199:192];
+                //end else if (outputIndex ==25) begin 
+                //    uart_txbyte <= chachaOut[207:200];
+                //end else if (outputIndex ==26) begin 
+                //    uart_txbyte <= chachaOut[215:208];
+                //end else if (outputIndex ==27) begin 
+                //    uart_txbyte <= chachaOut[223:216];
+                //end else if (outputIndex ==28) begin 
+                //    uart_txbyte <= chachaOut[231:224];
+                //end else if (outputIndex ==29) begin 
+                //    uart_txbyte <= chachaOut[239:232];
+                //end else if (outputIndex ==30) begin 
+                //    uart_txbyte <= chachaOut[247:240];
+                //end else if (outputIndex ==31) begin 
+                //    uart_txbyte <= chachaOut[255:248];
+                //end else if (outputIndex ==32) begin 
+                //    uart_txbyte <= chachaOut[263:256];
+                //end else if (outputIndex ==33) begin 
+                //    uart_txbyte <= chachaOut[271:264];
+                //end else if (outputIndex ==34) begin 
+                //    uart_txbyte <= chachaOut[279:272];
+                //end else if (outputIndex ==35) begin 
+                //    uart_txbyte <= chachaOut[287:280];
+                //end else if (outputIndex ==36) begin 
+                //    uart_txbyte <= chachaOut[295:288];
+                //end else if (outputIndex ==37) begin 
+                //    uart_txbyte <= chachaOut[303:296];
+                //end else if (outputIndex ==38) begin 
+                //    uart_txbyte <= chachaOut[311:304];
+                //end else if (outputIndex ==39) begin 
+                //    uart_txbyte <= chachaOut[319:312];
+                //end else if (outputIndex ==40) begin 
+                //    uart_txbyte <= chachaOut[327:320];
+                //end else if (outputIndex ==41) begin 
+                //    uart_txbyte <= chachaOut[335:328];
+                //end else if (outputIndex ==42) begin 
+                //    uart_txbyte <= chachaOut[343:336];
+                //end else if (outputIndex ==43) begin 
+                //    uart_txbyte <= chachaOut[351:344];
+                //end else if (outputIndex ==44) begin 
+                //    uart_txbyte <= chachaOut[359:352];
+                //end else if (outputIndex ==45) begin 
+                //    uart_txbyte <= chachaOut[367:360];
+                //end else if (outputIndex ==46) begin 
+                //    uart_txbyte <= chachaOut[375:368];
+                //end else if (outputIndex ==47) begin 
+                //    uart_txbyte <= chachaOut[383:376];
+                //end else if (outputIndex ==48) begin 
+                //    uart_txbyte <= chachaOut[391:384];
+                //end else if (outputIndex ==49) begin 
+                //    uart_txbyte <= chachaOut[399:392];
+                //end else if (outputIndex ==50) begin 
+                //    uart_txbyte <= chachaOut[407:400];
+                //end else if (outputIndex ==51) begin 
+                //    uart_txbyte <= chachaOut[415:408];
+                //end else if (outputIndex ==52) begin 
+                //    uart_txbyte <= chachaOut[423:416];
+                //end else if (outputIndex ==53) begin 
+                //    uart_txbyte <= chachaOut[431:424];
+                //end else if (outputIndex ==54) begin 
+                //    uart_txbyte <= chachaOut[439:432];
+                //end else if (outputIndex ==55) begin 
+                //    uart_txbyte <= chachaOut[447:440];
+                //end else if (outputIndex ==56) begin 
+                //    uart_txbyte <= chachaOut[455:448];
+                //end else if (outputIndex ==57) begin 
+                //    uart_txbyte <= chachaOut[463:456];
+                //end else if (outputIndex ==58) begin 
+                //    uart_txbyte <= chachaOut[471:464];
+                //end else if (outputIndex ==59) begin 
+                //    uart_txbyte <= chachaOut[479:472];
+                //end else if (outputIndex ==60) begin 
+                //    uart_txbyte <= chachaOut[487:480];
+                //end else if (outputIndex ==61) begin 
+                //    uart_txbyte <= chachaOut[495:488];
+                //end else if (outputIndex ==62) begin 
+                //    uart_txbyte <= chachaOut[503:496];
+                //end else if (outputIndex ==63) begin 
+                //    uart_txbyte <= chachaOut[511:504];
+                end else begin
+                    uart_txbyte <= 0;
+                end
+                */
+
                 led2 <= 1;
 			end
 
@@ -158,9 +295,10 @@ module top (
 		        ledGreen <= 1;
 		        UartStateCounter <= 0;
                 //chachaOutCopy <= chachaOutCopy >> 8;
+                //chachaOut <= chachaOut >> 8;
                 outputIndex <= outputIndex + 1;
 
-                if (outputIndex == 16) begin
+                if (outputIndex == 64) begin
                     //chachaOutCopy <= chachaOut;
                     outputIndex <= 0;
                 end
