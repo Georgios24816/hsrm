@@ -307,7 +307,7 @@ bool mqtt_subscribe(MQTT_Connection_t* connection)
 	return true;
 }
 
-bool mqtt_connect(MQTT_Connection_t* connection)
+bool mqtt_connect(MQTT_Connection_t* connection, MQTTClient_SSLOptions* ssl)
 {
 	assert(mqtt_connectionStructTest(connection));
 	int rc;
@@ -324,6 +324,11 @@ bool mqtt_connect(MQTT_Connection_t* connection)
     conn_opts.keepAliveInterval = 20;
     conn_opts.cleansession = 1;
 	conn_opts.username = "hamster";
+
+	if (ssl)
+	{
+		conn_opts.ssl = ssl;
+	}
 
 	MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_messageArrived, NULL);
 	//MQTTClient_setCallbacks(connection->client, NULL, NULL, mqtt_visualizer, NULL);
@@ -596,7 +601,39 @@ int main(int argc, char** argv)
 
 	char hamsterIdString[M_MaxIdLen];
 	snprintf(hamsterIdString, M_MaxIdLen, "%d", hamster_id);
-	MQTT_Connection_t connection = { NULL, "tcp://localhost:1883", hamster_id, hamsterIdString };
+	//const char* connectionUnsafe = ;
+	//const char* connectionSafe = ; //"hamsteriot.vs.cs.hs-rm.de:8883";
+
+	int connectionStringIndex = 0;
+	const char* connectionStrings[] = 	{  	
+											"tcp://localhost:1883",
+									 	 	"tcp://localhost:8883",
+										 	"tcp://localhost:8884"
+										};
+
+	static MQTTClient_SSLOptions sslOptions = MQTTClient_SSLOptions_initializer;
+	static MQTTClient_SSLOptions* ssl = NULL;
+
+	//openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365
+	if (doEncrypt)
+	{
+		sslOptions.trustStore = "../certs/mqtt_ca.crt";
+		sslOptions.keyStore = "../certs/cert.pem";
+		connectionStringIndex = 1;
+		ssl = &sslOptions;
+	}
+
+	if (doAuthenticate)
+	{
+		sslOptions.privateKey = "../certs/key.pem";
+		sslOptions.privateKeyPassword = "1234";
+		connectionStringIndex = 2;
+		//ssl = &sslOptions;
+	}
+
+	const char* connectionString = connectionStrings[connectionStringIndex];
+
+	MQTT_Connection_t connection = { NULL, connectionString, hamster_id, hamsterIdString };
 	//MQTT_Connection_t connection = { NULL, "hamsteriot.vs.cs.hs-rm.de", hamster_id, hamsterIdString };
 
 //mosquitto_pub -t "/Test" -h hamsteriot.vs.cs.hs-rm.de -m "test2"
@@ -605,7 +642,7 @@ int main(int argc, char** argv)
 	* connect to MQTT broker
 	* 
 	*/
-	assert(mqtt_connect(&connection) && "connection failed");
+	assert(mqtt_connect(&connection, ssl) && "connection failed");
 	HamsterId = hamster_id;
 	/*
 	* Get admission time, start RUNNING in room A
