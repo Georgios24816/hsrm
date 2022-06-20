@@ -39,6 +39,7 @@ static char clientid[32];
  */
 static void cli_commands() {
 	printf("\nCommands:\n");
+	printf("        *                           - randomAction\n");
 	printf("        A                           - Go to room A\n");
 	printf("        B                           - Go to room B\n");
 	printf("        C                           - Go to room C\n");
@@ -106,11 +107,32 @@ typedef struct MQTT_Connection
 
 static int HamsterId = 0;
 
+/**
+ * @brief fondle hamster
+ * 
+ * @param count counts of fondles
+ */
 void hamsterFondle(int count);
+
+/**
+ * @brief punish hamster
+ * 
+ * @param count punishment count
+ */
 void hamsterPunish(int count);
 
+/**
+ * @brief Callback to be called when a MQTT message arrives
+ * 
+ * @param context 
+ * @param topicName 
+ * @param topicLen 
+ * @param message 
+ * @return int 
+ */
 int mqtt_messageArrived(void *context, char *topicName, int topicLen, MQTTClient_message *message)
 {
+	assert(topicName && message);
     char* payloadptr = message->payload;
 	char buffer[M_MqttMessageLen];
 	snprintf(buffer, M_MqttMessageLen, "/pension/hamster/%d/fondle", HamsterId);
@@ -162,6 +184,12 @@ typedef int (*MqttIteratorFunction_t)(const char*, MqttPensionTopic_t, int);
 
 #define M_HamsterIdAll (-43)
 
+/**
+ * @brief iterate all topics and call a function on them
+ * 
+ * @param func function to be called with topic names qos ...
+ * @param hamsterId hamsterId to be used for the topics
+ */
 void mqtt_topicIterator(MqttIteratorFunction_t func, int hamsterId)
 {
 	static const MqttFormatString_t FormatStrings[] ={
@@ -223,7 +251,14 @@ void mqtt_topicIterator(MqttIteratorFunction_t func, int hamsterId)
 
 MqttPensionTopic_t MatchedTopic = MPT_ERROR;
 char* ReceivedTopic;
-
+/**
+ * @brief check if a message received is from a valid topic
+ * 
+ * @param topic topic the of message received
+ * @param topicIndex index of the message received
+ * @param qos  qos of the message received
+ * @return int 1 on success ; 0 on error
+ */
 int mqtt_matchTopic(const char* topic, MqttPensionTopic_t topicIndex, int qos)
 {
 	if (strcmp(ReceivedTopic, topic) == 0)
@@ -235,6 +270,14 @@ int mqtt_matchTopic(const char* topic, MqttPensionTopic_t topicIndex, int qos)
 	return 0;
 }
 
+/**
+ * @brief check if the topic matches with the received topic
+ * 
+ * @param topic topic to be matched
+ * @param topicLen topic length in bytes
+ * @param hamsterId hamster id
+ * @return MqttPensionTopic_t matched topic
+ */
 MqttPensionTopic_t mqtt_topicChecker(char* topic, int topicLen, int hamsterId)
 {
 	if (!(topic && hamsterId))
@@ -252,6 +295,15 @@ MqttPensionTopic_t mqtt_topicChecker(char* topic, int topicLen, int hamsterId)
 	return matchedTopicCopy;
 }
 
+/**
+ * @brief optional idea 7.1.6. This funtions is like mqtt_messageArrived but for all topics
+ * 
+ * @param context 
+ * @param topicName 
+ * @param topicLen 
+ * @param message 
+ * @return int 
+ */
 int mqtt_visualizer(void *context, char *topicName, int topicLen, MQTTClient_message *message)
 {
 	//assert(context && topicName && topicLen && message && message->payloadlen && message->payload);
@@ -269,20 +321,33 @@ int mqtt_visualizer(void *context, char *topicName, int topicLen, MQTTClient_mes
 	}
 
 	MqttPensionTopic_t ret = mqtt_topicChecker(topicName, topicLen, hamster);
-	char* payload = message->payload;
+	//char* payload = message->payload;
 	//printf("hamsterId : %d | topic : '%s' | ret : %d\n", hamster, topicName, (int)ret);
-
-	printf("PAYLOAD : '%s'\n", payload);
+	//printf("PAYLOAD : '%s'\n", payload);
 
 	return ret != MPT_ERROR; 
 }
 
+/**
+ * @brief check if the connection struct has valid pointers
+ * 
+ * @param connection a connection struct
+ * @return true if all pointers are valid; else false
+ */
 bool mqtt_connectionStructTest(MQTT_Connection_t* connection)
 {
 	return connection && connection->address && connection->clientId && connection->clientIdString;
 }
 
 MQTT_Connection_t* SubscribeConnection;
+/**
+ * @brief function to subscribe to all topics
+ * 
+ * @param topic topic to subscribe
+ * @param topicIndex index of topic
+ * @param qos qos of topic
+ * @return int always 0
+ */
 int mqtt_subscribeAll(const char* topic, MqttPensionTopic_t topicIndex, int qos)
 {
 	assert(topic && topicIndex != MPT_ERROR);
@@ -291,6 +356,12 @@ int mqtt_subscribeAll(const char* topic, MqttPensionTopic_t topicIndex, int qos)
 	return 0;
 }
 
+/**
+ * @brief subscribe to topic
+ * 
+ * @param connection connection
+ * @return always true
+ */
 bool mqtt_subscribe(MQTT_Connection_t* connection)
 {
 	//char fondleBuffer[M_MqttMessageLen];
@@ -307,6 +378,13 @@ bool mqtt_subscribe(MQTT_Connection_t* connection)
 	return true;
 }
 
+/**
+ * @brief connect to mqqt
+ * 
+ * @param connection connections struct
+ * @param ssl optional ssl options
+ * @return true on success; exit on failure
+ */
 bool mqtt_connect(MQTT_Connection_t* connection, MQTTClient_SSLOptions* ssl)
 {
 	assert(mqtt_connectionStructTest(connection));
@@ -343,6 +421,11 @@ bool mqtt_connect(MQTT_Connection_t* connection, MQTTClient_SSLOptions* ssl)
 	return true;
 }
 
+/**
+ * @brief end mqtt connection
+ * 
+ * @param client client to be disconnected
+ */
 void mqtt_disconnect(MQTTClient* client)
 {
 	if (client)
@@ -355,6 +438,12 @@ void mqtt_disconnect(MQTTClient* client)
 typedef enum HamsterRoom { HR_A, HR_B, HR_C, HR_D } HamsterRoom_t;
 typedef enum HamsterState { HS_Running, HS_Sleeping, HS_Eating, HS_Mateing } HamsterState_t;
 
+/**
+ * @brief get room-string from room
+ * 
+ * @param room room for string needed
+ * @return const char* room-string; on failure no return
+ */
 const char* hamsterRoomString(HamsterRoom_t room)
 {
 	static const char* Rooms[] = { "A", "B", "C", "D" };
@@ -367,6 +456,12 @@ const char* hamsterRoomString(HamsterRoom_t room)
 	return Rooms[room];
 }
 
+/**
+ * @brief string from hamster state
+ * 
+ * @param state state
+ * @return const char* hamster string; on failure false assertion
+ */
 const char* hamsterStateString(HamsterState_t state)
 {
 	static const char* States[] = { "RUNNING", "SLEEPING", "EATING", "MATEING" };
@@ -380,12 +475,26 @@ const char* hamsterStateString(HamsterState_t state)
 }
 
 MQTTClient_deliveryToken DeliveryToken;
-
+/**
+ * @brief check if the qos is valid
+ * 
+ * @param qos qos
+ * @return true if qos is valid; else false
+ */
 bool isQosValid(int qos)
 {
 	return (qos == M_Qos1) || (qos == M_QosMin1) || (qos == M_QosMax1);
 }
 
+/**
+ * @brief publish mqtt message
+ * 
+ * @param client client to publish the message
+ * @param topic topic of the message
+ * @param qos qos of the message
+ * @param message message string itself
+ * @return true on success; false on error
+ */
 bool mqtt_publish(MQTTClient client, const char* topic, int qos, const char* message)
 {
 	assert(client && topic && isQosValid(qos) && message);
@@ -411,11 +520,26 @@ bool mqtt_publish(MQTTClient client, const char* topic, int qos, const char* mes
 	return MQTTClient_waitForCompletion(client, DeliveryToken, M_TimeoutMs) == MQTTCLIENT_SUCCESS;
 }
 
+/**
+ * @brief register new hamster in /pension/livestock
+ * 
+ * @param client client to publish the message
+ * @param id hamster id of the new hamster
+ * @return true on success; false on error
+ */
 bool mqtt_publishLivestock(MQTTClient client, const char* id)
 {
 	return mqtt_publish(client, "/pension/livestock", M_Qos1, id);
 }
 
+/**
+ * @brief publish hamster rounds 
+ * 
+ * @param client client to publish the message
+ * @param hamsterId hamster id
+ * @param roundCount hamster round count
+ * @return true on success; false on error
+ */
 bool mqtt_publishRounds(MQTTClient client, int hamsterId, int roundCount)
 {
 	char buffer[M_MqttMessageLen];
@@ -427,6 +551,14 @@ bool mqtt_publishRounds(MQTTClient client, int hamsterId, int roundCount)
 	return mqtt_publish(client, buffer, M_QosMax1, roundBuffer);
 }
 
+/**
+ * @brief change hamster room and publish message
+ * 
+ * @param client client to publish the message
+ * @param hamsterId hamster to change room
+ * @param room new room
+ * @return true on success; false on error
+ */
 bool hamsterSetRoom(MQTTClient client, int hamsterId, HamsterRoom_t room)
 {
 	char buffer[M_MqttMessageLen];
@@ -435,6 +567,14 @@ bool hamsterSetRoom(MQTTClient client, int hamsterId, HamsterRoom_t room)
 	return mqtt_publish(client, buffer, M_QosMin1, hamsterRoomString(room));
 }
 
+/**
+ * @brief change hamster state and publish message
+ * 
+ * @param client client to publish the message
+ * @param hamsterId hamster to change state
+ * @param state new state
+ * @return true on success; false on error
+ */
 bool hamsterSetState(MQTTClient client, int hamsterId, HamsterState_t state)
 {
 	static int SecondCounter = 0;
@@ -476,6 +616,11 @@ bool hamsterSetState(MQTTClient client, int hamsterId, HamsterState_t state)
 	return true;
 }
 
+/**
+ * @brief punish hamster prototype above
+ * 
+ * @param count count of punishments
+ */
 void hamsterPunish(int count)
 {
 	static int punishmentCounter = 0;
@@ -483,6 +628,11 @@ void hamsterPunish(int count)
 	printf("PUNISH %d\n", punishmentCounter);
 }
 
+/**
+ * @brief fondle hamster prototype above
+ * 
+ * @param count count of fondles
+ */
 void hamsterFondle(int count)
 {
 	static unsigned int fondleCounter = 0;
@@ -490,6 +640,13 @@ void hamsterFondle(int count)
 	printf("FONDLE %d\n", fondleCounter);
 }
 
+/**
+ * @brief function to make_hash, stolen from an old exercise
+ * 
+ * @param s1 string 1
+ * @param s2 string 2
+ * @return int hash value
+ */
 static int make_hash(const char *s1, const char *s2)
 {
 	const int InitialValue = 5381;
@@ -512,6 +669,24 @@ static int make_hash(const char *s1, const char *s2)
 	return hash >> 1U;
 }
 
+void hamster_randomAction(MQTTClient client, int hamster_id)
+{
+	assert(client);
+
+	int r = rand() % 7;
+
+	if (r <= 3)
+	{
+		hamsterSetRoom(client, hamster_id, r);
+		printf("go to room : %s\n", hamsterRoomString(r));
+	}
+
+	else if (r <= 7)
+	{
+		hamsterSetState(client, hamster_id, r - 4);
+		printf("set state : %s\n", hamsterStateString(r - 4));
+	}
+}
 
 int main(int argc, char** argv) 
 {
@@ -609,6 +784,9 @@ int main(int argc, char** argv)
 											"tcp://localhost:1883",
 									 	 	"tcp://localhost:8883",
 										 	"tcp://localhost:8884"
+											//"hamsteriot.vs.cs.hs-rm.de:1883",
+											//"hamsteriot.vs.cs.hs-rm.de:8883",
+											//"hamsteriot.vs.cs.hs-rm.de:8884"
 										};
 
 	static MQTTClient_SSLOptions sslOptions = MQTTClient_SSLOptions_initializer;
@@ -634,7 +812,7 @@ int main(int argc, char** argv)
 	const char* connectionString = connectionStrings[connectionStringIndex];
 
 	MQTT_Connection_t connection = { NULL, connectionString, hamster_id, hamsterIdString };
-	//MQTT_Connection_t connection = { NULL, "hamsteriot.vs.cs.hs-rm.de", hamster_id, hamsterIdString };
+	//MQTT_Connection_t connection={NULL,"hamsteriot.vs.cs.hs-rm.de",hamster_id,hamsterIdString};
 
 //mosquitto_pub -t "/Test" -h hamsteriot.vs.cs.hs-rm.de -m "test2"
 
@@ -649,7 +827,7 @@ int main(int argc, char** argv)
 	*/
 
 	// time_t admissionTime = time(NULL); //TODO
-
+	srand(time(NULL)); //initialize random
 	hamsterSetState(connection.client, hamster_id, HS_Running);
 	hamsterSetRoom(connection.client, hamster_id, HR_A);
 
@@ -667,11 +845,8 @@ int main(int argc, char** argv)
 		flushinput();
 		switch (cmd) {
 			case '*':
-				mqtt_topicChecker("/pension/livestock", 27, 10);
+				hamster_randomAction(connection.client, hamster_id);
 				break;
-			case '/':
-				break;
-
 			case 'A': /* going to room A */
 				/* Hier ist was zu tun: */
 				hamsterSetRoom(connection.client, hamster_id, HR_A);

@@ -1,0 +1,21 @@
+Test run by georgios on Sun Jun 19 12:39:52 2022
+Native configuration is x86_64-pc-linux-gnu
+
+		=== hamster_mqtt tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Running ./test/hamster_mqtt/t00_rtfm.exp ...
+PASS: hamster_mqtt -h
+PASS: hamster_mqtt -h
+Running ./test/hamster_mqtt/t01_livestock.exp ...
+FAIL: publish livestock: timeout
+
+Running ./test/hamster_mqtt/t02_wheels.exp ...
+
+		=== hamster_mqtt Summary ===
+
+# of expected passes		2
+# of unexpected failures	1

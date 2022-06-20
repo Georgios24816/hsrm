@@ -22,10 +22,6 @@
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0001000000000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_sampling_clock_reg2 I3=uut1.rx_sampling_clock_reg1 O=bit_sample_en
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111100000000
 .gate SB_DFFSR C=ice_pll_inst.PLLOUTCORE D=clk_count_SB_DFFSR_Q_D[5] Q=clk_count[5] R=CLKOS_SB_DFFE_Q_E
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "uart_ir_tx_ice.v:92.1-95.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:19.59-19.105"
@@ -77,29 +73,25 @@
 .gate SB_CARRY CI=clk_count[0] CO=clk_count_SB_DFFSR_Q_D_SB_LUT4_O_I3[2] I0=$false I1=clk_count[1]
 .attr src "uart_ir_tx_ice.v:94.23-94.36|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
 .gate SB_CARRY CI=count[0] CO=count_SB_CARRY_CI_CO[2] I0=$false I1=count[1]
-.attr src "uart_ir_tx_ice.v:129.35-129.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+.attr src "uart_ir_tx_ice.v:133.35-133.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
 .gate SB_CARRY CI=count_SB_CARRY_CI_CO[2] CO=count_SB_CARRY_CI_CO[3] I0=$false I1=count[2]
-.attr src "uart_ir_tx_ice.v:129.35-129.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+.attr src "uart_ir_tx_ice.v:133.35-133.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
 .gate SB_DFF C=CLKOS D=count_SB_DFF_Q_D[2] Q=count[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.1-129.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
+.attr src "uart_ir_tx_ice.v:133.1-133.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
 .gate SB_DFF C=CLKOS D=count_SB_DFF_Q_D[1] Q=count[1]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.1-129.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
+.attr src "uart_ir_tx_ice.v:133.1-133.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
 .gate SB_DFF C=CLKOS D=count_SB_DFF_Q_D[0] Q=count[0]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.1-129.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_LUT4 I0=$false I1=$false I2=uut2.i_clk I3=count_SB_CARRY_CI_CO[3] O=count_SB_DFF_Q_D[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.35-129.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0110100110010110
+.attr src "uart_ir_tx_ice.v:133.1-133.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
 .gate SB_LUT4 I0=$false I1=$false I2=count[2] I3=count_SB_CARRY_CI_CO[2] O=count_SB_DFF_Q_D[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.35-129.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.attr src "uart_ir_tx_ice.v:133.35-133.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0110100110010110
 .gate SB_LUT4 I0=$false I1=$false I2=count[1] I3=count[0] O=count_SB_DFF_Q_D[1]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.35-129.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.attr src "uart_ir_tx_ice.v:133.35-133.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0110100110010110
 .gate SB_LUT4 I0=$false I1=$false I2=$false I3=count[0] O=count_SB_DFF_Q_D[0]
 .attr module_not_derived 00000000000000000000000000000001
@@ -121,45 +113,6 @@
 .param FILTER_RANGE 001
 .param PLLOUT_SELECT "GENCLK"
 .param SHIFTREG_DIV_MODE 00
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=ir_tx_reg[3] Q=ir_tx_reg[4]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:166.2-166.78|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=ir_tx_reg[2] Q=ir_tx_reg[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:166.2-166.78|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=ir_tx_reg[1] Q=ir_tx_reg[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:166.2-166.78|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=ir_tx_reg[0] Q=ir_tx_reg[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:166.2-166.78|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=bit_sample_en Q=ir_tx_reg[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:166.2-166.78|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut1.o_rx_data[4] O=led[4]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut1.o_rx_data[3] O=led[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut1.o_rx_data[2] O=led[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut1.o_rx_data[1] O=led[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut1.o_rx_data[0] O=led[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_data_ready_reg2 I3=uut1.rx_data_ready_reg1 O=o_rx_data_ready
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111100000000
 .gate SB_CARRY CI=rst_count[0] CO=rst_count_SB_DFFE_Q_D_SB_LUT4_O_I3[2] I0=$false I1=rst_count[1]
 .attr src "uart_ir_tx_ice.v:76.26-76.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
 .gate SB_CARRY CI=rst_count_SB_DFFE_Q_D_SB_LUT4_O_I3[9] CO=rst_count_SB_DFFE_Q_D_SB_LUT4_O_I3[10] I0=$false I1=rst_count[9]
@@ -499,193 +452,53 @@
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "uart_ir_tx_ice.v:76.26-76.39|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0110100110010110
-.gate SB_LUT4 I0=$false I1=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[0] I2=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[1] I3=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[26] O=rst_count_SB_DFFE_Q_E
+.gate SB_LUT4 I0=$false I1=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[0] I2=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[1] I3=test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[26] O=rst_count_SB_DFFE_Q_E
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
 .param LUT_INIT 0011111100000000
-.gate SB_LUT4 I0=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[0] I1=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[1] I2=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[2] I3=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[3] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1000000000000000
-.gate SB_LUT4 I0=$false I1=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I1[0] I2=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I1[1] I3=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I1[2] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[1]
+.gate SB_LUT4 I0=$false I1=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I1[0] I2=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I1[1] I3=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I1[2] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[0]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
 .param LUT_INIT 1100000000000000
-.gate SB_LUT4 I0=rst_count[23] I1=rst_count[26] I2=rst_count[2] I3=rst_count[4] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I1[2]
+.gate SB_LUT4 I0=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[0] I1=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[1] I2=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[2] I3=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[3] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[1]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=rst_count[5] I1=rst_count[9] I2=rst_count[12] I3=rst_count[13] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I1[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=$false I1=rst_count[21] I2=rst_count[24] I3=rst_count[25] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I1[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0000000000000011
-.gate SB_LUT4 I0=rst_count[0] I1=rst_count[1] I2=rst_count[20] I3=rst_count[22] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[3]
+.param LUT_INIT 1000000000000000
+.gate SB_LUT4 I0=rst_count[0] I1=rst_count[1] I2=rst_count[20] I3=rst_count[22] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[3]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0001000000000000
-.gate SB_LUT4 I0=rst_count[3] I1=rst_count[6] I2=rst_count[14] I3=rst_count[18] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=rst_count[19] I1=rst_count[7] I2=rst_count[8] I3=rst_count[10] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[1]
+.gate SB_LUT4 I0=rst_count[11] I1=rst_count[15] I2=rst_count[16] I3=rst_count[17] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[2]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 1000000000000000
-.gate SB_LUT4 I0=rst_count[11] I1=rst_count[15] I2=rst_count[16] I3=rst_count[17] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I0[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1000000000000000
-.gate SB_CARRY CI=test3_SB_CARRY_I1_CO[26] CO=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[26] I0=$false I1=rst_count_SB_DFFE_Q_26_D[26]
-.attr src "uart_ir_tx_ice.v:74.13-74.38|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-.gate SB_LUT4 I0=$false I1=$false I2=rx_rdy_SB_LUT4_O_I2[0] I3=rx_rdy_SB_LUT4_O_I2[1] O=rx_rdy
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111111111111
-.gate SB_LUT4 I0=shift_reg2[9] I1=shift_reg2[10] I2=shift_reg2[12] I3=shift_reg2[15] O=rx_rdy_SB_LUT4_O_I2[1]
+.gate SB_LUT4 I0=rst_count[6] I1=rst_count[9] I2=rst_count[12] I3=rst_count[13] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[1]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[0] I1=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[1] I2=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[2] I3=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[3] O=rx_rdy_SB_LUT4_O_I2[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1000000000000000
-.gate SB_LUT4 I0=shift_reg2[8] I1=shift_reg2[11] I2=shift_reg2[13] I3=shift_reg2[14] O=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=shift_reg2[16] I1=shift_reg2[17] I2=shift_reg2[18] I3=shift_reg2[19] O=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=shift_reg2[0] I1=shift_reg2[1] I2=shift_reg2[2] I3=shift_reg2[3] O=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=shift_reg2[4] I1=shift_reg2[5] I2=shift_reg2[6] I3=shift_reg2[7] O=rx_rdy_SB_LUT4_O_I2_SB_LUT4_O_1_I0[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_DFF C=CLKOS D=shift_reg1[14] Q=shift_reg1[15]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[13] Q=shift_reg1[14]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[4] Q=shift_reg1[5]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[3] Q=shift_reg1[4]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[2] Q=shift_reg1[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[1] Q=shift_reg1[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[0] Q=shift_reg1[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=rx_rdy Q=shift_reg1[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[12] Q=shift_reg1[13]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[11] Q=shift_reg1[12]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[10] Q=shift_reg1[11]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[9] Q=shift_reg1[10]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[8] Q=shift_reg1[9]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[7] Q=shift_reg1[8]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[6] Q=shift_reg1[7]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=CLKOS D=shift_reg1[5] Q=shift_reg1[6]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:131.1-131.74|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[18] Q=shift_reg2[19]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[17] Q=shift_reg2[18]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[8] Q=shift_reg2[9]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[7] Q=shift_reg2[8]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[6] Q=shift_reg2[7]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[5] Q=shift_reg2[6]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[4] Q=shift_reg2[5]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[3] Q=shift_reg2[4]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[2] Q=shift_reg2[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[1] Q=shift_reg2[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[0] Q=shift_reg2[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=o_rx_data_ready Q=shift_reg2[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[16] Q=shift_reg2[17]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[15] Q=shift_reg2[16]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[14] Q=shift_reg2[15]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[13] Q=shift_reg2[14]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[12] Q=shift_reg2[13]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[11] Q=shift_reg2[12]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[10] Q=shift_reg2[11]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_DFF C=ice_pll_inst.PLLOUTCORE D=shift_reg2[9] Q=shift_reg2[10]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:130.1-130.83|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_LUT4 I0=$false I1=ir_tx_reg[3] I2=test1_SB_LUT4_O_I2[1] I3=from_pc O=test1
+.gate SB_LUT4 I0=$false I1=rst_count[24] I2=rst_count[25] I3=rst_count[26] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1_I0[0]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0000000011001111
-.gate SB_LUT4 I0=ir_tx_reg[0] I1=ir_tx_reg[1] I2=ir_tx_reg[2] I3=ir_tx_reg[4] O=test1_SB_LUT4_O_I2[1]
+.param LUT_INIT 0000000000000011
+.gate SB_LUT4 I0=rst_count[2] I1=rst_count[3] I2=rst_count[4] I3=rst_count[5] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I1[2]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0000000000000001
+.gate SB_LUT4 I0=rst_count[19] I1=rst_count[7] I2=rst_count[8] I3=rst_count[10] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I1[1]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.param LUT_INIT 1000000000000000
+.gate SB_LUT4 I0=rst_count[14] I1=rst_count[18] I2=rst_count[21] I3=rst_count[23] O=rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1_SB_LUT4_O_I1[0]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.param LUT_INIT 0000000000000001
+.gate SB_LUT4 I0=$false I1=$false I2=$false I3=from_pc O=test1
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
+.param LUT_INIT 0000000011111111
 .gate SB_CARRY CI=test3_SB_CARRY_I1_CO[19] CO=test3_SB_CARRY_I1_CO[20] I0=$true I1=test3
+.attr src "uart_ir_tx_ice.v:74.13-74.38|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
+.gate SB_CARRY CI=test3_SB_CARRY_I1_CO[26] CO=test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[26] I0=$false I1=rst_count_SB_DFFE_Q_26_D[26]
 .attr src "uart_ir_tx_ice.v:74.13-74.38|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
 .gate SB_CARRY CI=test3_SB_CARRY_I1_CO[9] CO=test3_SB_CARRY_I1_CO[10] I0=$false I1=rst_count_SB_DFFE_Q_26_D[9]
 .attr src "uart_ir_tx_ice.v:74.13-74.38|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
@@ -739,337 +552,56 @@
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
 .param LUT_INIT 0000000011111111
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.data_validation_SB_DFFER_Q_D E=uut1.data_validation_SB_DFFER_Q_E Q=uut1.data_validation R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=uut1.state[2] I2=uut1.state[3] I3=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[2] O=uut1.data_validation_SB_DFFER_Q_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0011000000000000
-.gate SB_LUT4 I0=$false I1=uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[0] I2=uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[1] I3=bit_sample_en O=uut1.data_validation_SB_DFFER_Q_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0000001100000000
-.gate SB_LUT4 I0=uut1.state[2] I1=uut1.state[3] I2=uut1.state[1] I3=uut1.state[0] O=uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1011111011111111
-.gate SB_DFFS C=ice_pll_inst.PLLOUTCORE D=from_pc Q=uut1.modem_serial_data S=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:107.5-118.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:10.57-10.103"
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_D Q=uut1.o_rx_data[6] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_1_D Q=uut1.o_rx_data[5] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[4] O=uut1.o_rx_data_SB_DFFR_Q_1_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_2_D Q=uut1.o_rx_data[4] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[5] O=uut1.o_rx_data_SB_DFFR_Q_2_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_3_D Q=uut1.o_rx_data[3] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[6] O=uut1.o_rx_data_SB_DFFR_Q_3_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_4_D Q=uut1.o_rx_data[2] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[7] O=uut1.o_rx_data_SB_DFFR_Q_4_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_5_D Q=uut1.o_rx_data[1] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[8] O=uut1.o_rx_data_SB_DFFR_Q_5_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.o_rx_data_SB_DFFR_Q_6_D Q=uut1.o_rx_data[0] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:361.5-393.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[9] O=uut1.o_rx_data_SB_DFFR_Q_6_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.data_validation I3=uut1.rx_data[3] O=uut1.o_rx_data_SB_DFFR_Q_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_E Q=uut1.rx_data[6] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_1_E Q=uut1.rx_data[5] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=uut1.state[0] I1=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[0] I2=bit_sample_en I3=uut1.state[1] O=uut1.rx_data_SB_DFFER_Q_1_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0100000000000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_2_E Q=uut1.rx_data[4] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=bit_sample_en I2=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[2] I3=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[0] O=uut1.rx_data_SB_DFFER_Q_2_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 1100000000000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_3_E Q=uut1.rx_data[3] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=uut1.state[2] I2=uut1.state[3] I3=uut1.rx_data_SB_DFFER_Q_3_E_SB_LUT4_O_I3[2] O=uut1.rx_data_SB_DFFER_Q_3_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0011000000000000
-.gate SB_LUT4 I0=$false I1=uut1.state[0] I2=uut1.state[1] I3=bit_sample_en O=uut1.rx_data_SB_DFFER_Q_3_E_SB_LUT4_O_I3[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0000001100000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_4_E Q=uut1.rx_data[9] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=uut1.state[0] I1=uut1.rx_sampling_start_SB_LUT4_I3_I2[2] I2=bit_sample_en I3=uut1.state[1] O=uut1.rx_data_SB_DFFER_Q_4_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0100000000000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_5_E Q=uut1.rx_data[8] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=bit_sample_en I2=uut1.rx_sampling_start_SB_LUT4_I3_I2[2] I3=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[2] O=uut1.rx_data_SB_DFFER_Q_5_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 1100000000000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.modem_serial_data E=uut1.rx_data_SB_DFFER_Q_6_E Q=uut1.rx_data[7] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_data_SB_DFFER_Q_3_E_SB_LUT4_O_I3[2] I3=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[0] O=uut1.rx_data_SB_DFFER_Q_6_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_LUT4 I0=uut1.state[1] I1=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[0] I2=uut1.state[0] I3=bit_sample_en O=uut1.rx_data_SB_DFFER_Q_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0100000000000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.state[3] I3=uut1.state[2] O=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111100000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.state[0] I3=uut1.state[1] O=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.data_validation Q=uut1.rx_data_ready_reg1 R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:402.5-410.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.rx_data_ready_reg1 Q=uut1.rx_data_ready_reg2 R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:402.5-410.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFER C=CLKOS D=uut1.rx_sampling_counter[3] E=uut1.rx_sampling_start_SB_LUT4_I3_O[1] Q=uut1.rx_sampling_clock R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:457.5-486.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.rx_sampling_clock Q=uut1.rx_sampling_clock_reg1 R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:489.5-497.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=ice_pll_inst.PLLOUTCORE D=uut1.rx_sampling_clock_reg1 Q=uut1.rx_sampling_clock_reg2 R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:489.5-497.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=CLKOS D=uut1.rx_sampling_counter_SB_DFFR_Q_D Q=uut1.rx_sampling_counter[3] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:457.5-486.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=CLKOS D=uut1.rx_sampling_counter_SB_DFFR_Q_1_D Q=uut1.rx_sampling_counter[2] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:457.5-486.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=uut1.rx_sampling_start_SB_LUT4_I3_O[0] I2=uut1.rx_sampling_start_SB_LUT4_I3_O[1] I3=uut1.rx_sampling_counter_SB_DFFR_Q_2_D_SB_LUT4_O_I3[2] O=uut1.rx_sampling_counter_SB_DFFR_Q_1_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0011000000000000
-.gate SB_DFFR C=CLKOS D=uut1.rx_sampling_counter_SB_DFFR_Q_2_D Q=uut1.rx_sampling_counter[1] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:457.5-486.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=uut1.rx_sampling_start_SB_LUT4_I3_O[0] I2=uut1.rx_sampling_start_SB_LUT4_I3_O[1] I3=uut1.rx_sampling_counter_SB_DFFR_Q_2_D_SB_LUT4_O_I3[1] O=uut1.rx_sampling_counter_SB_DFFR_Q_2_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0011000000000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_sampling_counter[2] I3=uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[2] O=uut1.rx_sampling_counter_SB_DFFR_Q_2_D_SB_LUT4_O_I3[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:473.52-473.75|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0110100110010110
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_sampling_counter[1] I3=uut1.rx_sampling_counter[0] O=uut1.rx_sampling_counter_SB_DFFR_Q_2_D_SB_LUT4_O_I3[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:473.52-473.75|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0110100110010110
-.gate SB_DFFR C=CLKOS D=uut1.rx_sampling_counter_SB_DFFR_Q_3_D Q=uut1.rx_sampling_counter[0] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:457.5-486.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_sampling_counter[0] I3=uut1.rx_sampling_start_SB_LUT4_I3_O[1] O=uut1.rx_sampling_counter_SB_DFFR_Q_3_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111100000000
-.gate SB_LUT4 I0=uut1.rx_sampling_start_SB_LUT4_I3_O[0] I1=uut1.rx_sampling_start_SB_LUT4_I3_O[1] I2=uut1.rx_sampling_counter[3] I3=uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[3] O=uut1.rx_sampling_counter_SB_DFFR_Q_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:473.52-473.75|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000010001000000
-.gate SB_CARRY CI=uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[2] CO=uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[3] I0=$false I1=uut1.rx_sampling_counter[2]
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:473.52-473.75|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-.gate SB_CARRY CI=uut1.rx_sampling_counter[0] CO=uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[2] I0=$false I1=uut1.rx_sampling_counter[1]
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:473.52-473.75|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4"
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.rx_sampling_start_SB_DFFER_Q_D E=uut1.rx_sampling_start_SB_DFFER_Q_E Q=uut1.rx_sampling_start R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:442.5-454.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.modem_serial_data I3=uut1.rx_sampling_start_SB_DFFER_Q_D_SB_LUT4_O_I3[0] O=uut1.rx_sampling_start_SB_DFFER_Q_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111100000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.rx_sampling_start_SB_DFFER_Q_D_SB_LUT4_O_I3[0] I3=uut1.modem_serial_data O=uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_LUT4 I0=uut1.state[3] I1=uut1.state[1] I2=uut1.state[2] I3=uut1.state[0] O=uut1.rx_sampling_start_SB_DFFER_Q_D_SB_LUT4_O_I3[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000100000000
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.state[1] I3=uut1.rx_sampling_start_SB_LUT4_I3_I2[2] O=uut1.rx_sampling_start_SB_DFFER_Q_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000111100000000
-.gate SB_LUT4 I0=uut1.state[0] I1=uut1.state[1] I2=uut1.rx_sampling_start_SB_LUT4_I3_I2[2] I3=uut1.rx_sampling_start O=uut1.rx_sampling_start_SB_LUT4_I3_O[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1110111100000000
-.gate SB_LUT4 I0=$false I1=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[0] I2=uut1.rx_sampling_start_SB_LUT4_I3_I2[2] I3=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[2] O=uut1.state_SB_DFFER_Q_D[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 1111000011001100
-.gate SB_LUT4 I0=$false I1=$false I2=uut1.state[3] I3=uut1.state[2] O=uut1.rx_sampling_start_SB_LUT4_I3_I2[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 0000000000001111
-.gate SB_LUT4 I0=uut1.rx_sampling_counter[3] I1=uut1.rx_sampling_counter[1] I2=uut1.rx_sampling_counter[0] I3=uut1.rx_sampling_counter[2] O=uut1.rx_sampling_start_SB_LUT4_I3_O[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1000000000000000
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.state_SB_DFFER_Q_D[3] E=uut1.state_SB_DFFER_Q_E Q=uut1.state[3] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.state_SB_DFFER_Q_D[2] E=uut1.state_SB_DFFER_Q_E Q=uut1.state[2] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.state_SB_DFFER_Q_D[1] E=uut1.state_SB_DFFER_Q_E Q=uut1.state[1] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_DFFER C=ice_pll_inst.PLLOUTCORE D=uut1.state_SB_DFFER_Q_D[0] E=uut1.state_SB_DFFER_Q_E Q=uut1.state[0] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:102.13-123.6|uart_rx_fsm.v:123.5-262.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=$false I1=uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[2] I2=uut1.state[2] I3=uut1.state[3] O=uut1.state_SB_DFFER_Q_D[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 0000001111000000
-.gate SB_LUT4 I0=uut1.state[2] I1=uut1.state[3] I2=uut1.state[0] I3=uut1.state[1] O=uut1.state_SB_DFFER_Q_D[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000011101110100
-.gate SB_LUT4 I0=uut1.state[1] I1=uut1.state[0] I2=uut1.state[2] I3=uut1.state[3] O=uut1.state_SB_DFFER_Q_D[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000011100110011
-.gate SB_LUT4 I0=uut1.state_SB_DFFER_Q_E_SB_LUT4_O_I0[0] I1=uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[0] I2=bit_sample_en I3=uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[1] O=uut1.state_SB_DFFER_Q_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1111101000110000
-.gate SB_LUT4 I0=$false I1=uut1.state[1] I2=uut1.state[2] I3=uut1.state[3] O=uut1.state_SB_DFFER_Q_E_SB_LUT4_O_I0[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 1111000000000011
-.gate SB_DFFR C=uut2.i_clk D=uut2.check_bit_SB_DFFR_Q_D Q=uut2.check_bit R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:332.5-353.12|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=uut2.check_bit_SB_DFFR_Q_D_SB_LUT4_O_I0[0] I1=uut2.tx_data[4] I2=uut2.tx_data[5] I3=uut2.tx_data[6] O=uut2.check_bit_SB_DFFR_Q_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1001011001101001
-.gate SB_LUT4 I0=uut2.tx_data[0] I1=uut2.tx_data[1] I2=uut2.tx_data[2] I3=uut2.tx_data[3] O=uut2.check_bit_SB_DFFR_Q_D_SB_LUT4_O_I0[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1001011001101001
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut2.check_bit O=uut2.parity_bit_SB_DFFR_Q_D
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
 .gate SB_DFF C=CLKOS D=count_SB_DFF_Q_D[3] Q=uut2.i_clk
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:129.1-129.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
-.gate SB_LUT4 I0=$false I1=$false I2=$false I3=uut1.o_rx_data[5] O=uut2.i_tx_data[5]
+.attr src "uart_ir_tx_ice.v:133.1-133.46|/usr/local/bin/../share/yosys/ice40/ff_map.v:2.51-2.90"
+.gate SB_LUT4 I0=$false I1=$false I2=uut2.i_clk I3=count_SB_CARRY_CI_CO[3] O=count_SB_DFF_Q_D[3]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:12.34-13.52"
-.param LUT_INIT 0000000011111111
-.gate SB_DFFR C=uut2.i_clk D=uut2.parity_bit_SB_DFFR_Q_D Q=uut2.parity_bit R=test3
+.attr src "uart_ir_tx_ice.v:133.35-133.44|/usr/local/bin/../share/yosys/ice40/arith_map.v:62.5-70.4|/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.param LUT_INIT 0110100110010110
+.gate SB_DFFR C=uut2.i_clk D=$true Q=uut2.parity_bit R=test3
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:359.5-377.12|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_LUT4 I0=$false I1=uut2.parity_bit I2=uut2.state[1] I3=uut2.state[0] O=uut2.parity_bit_SB_LUT4_I1_O[0]
+.attr src "uart_ir_tx_ice.v:155.13-175.6|uart_tx_fsm.v:362.5-380.12|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
+.gate SB_LUT4 I0=uut2.parity_bit_SB_LUT4_I2_I0[0] I1=uut2.parity_bit_SB_LUT4_I2_I0[1] I2=uut2.parity_bit I3=uut2.parity_bit_SB_LUT4_I2_I0[3] O=uut2.serial_data_SB_DFFES_Q_D
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.param LUT_INIT 0001000011111111
+.gate SB_LUT4 I0=uut2.state[0] I1=uut2.state[2] I2=uut2.state[1] I3=uut2.state[3] O=uut2.parity_bit_SB_LUT4_I2_I0[3]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
+.param LUT_INIT 1110101111111110
+.gate SB_LUT4 I0=$false I1=uut2.state[0] I2=uut2.state[1] I3=uut2.state[3] O=uut2.parity_bit_SB_LUT4_I2_I0[0]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 1111001100001111
-.gate SB_LUT4 I0=uut2.parity_bit_SB_LUT4_I1_O[0] I1=uut2.parity_bit_SB_LUT4_I1_O[1] I2=uut2.state[2] I3=uut2.state[3] O=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[3]
+.param LUT_INIT 0000000011110011
+.gate SB_LUT4 I0=uut2.state[1] I1=uut2.state[2] I2=uut2.state[0] I3=uut2.state[3] O=uut2.parity_bit_SB_LUT4_I2_I0[1]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1111101011111100
-.gate SB_LUT4 I0=$false I1=uut2.tx_data[4] I2=uut2.state[1] I3=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O_SB_LUT4_O_I3[2] O=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52"
-.param LUT_INIT 1111110000001111
-.gate SB_LUT4 I0=uut2.tx_data[3] I1=uut2.state[3] I2=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O_SB_LUT4_O_I3[2] I3=uut2.state[2] O=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0011111000000011
-.gate SB_LUT4 I0=uut2.state[2] I1=uut2.state[3] I2=uut2.state[1] I3=uut2.tx_data[0] O=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1100000100000000
-.gate SB_LUT4 I0=uut2.tx_data[5] I1=uut2.tx_data[6] I2=uut2.state[1] I3=uut2.state[0] O=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O_SB_LUT4_O_I3[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1100111110100000
-.gate SB_LUT4 I0=uut2.tx_data[1] I1=uut2.tx_data[2] I2=uut2.state[0] I3=uut2.state[1] O=uut2.parity_bit_SB_LUT4_I1_O[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0011010111111111
+.param LUT_INIT 0100000100000000
 .gate SB_DFFES C=uut2.i_clk D=uut2.serial_data_SB_DFFES_Q_D E=uut2.serial_data_SB_DFFES_Q_E Q=uut2.serial_data S=test3
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:133.5-275.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:15.63-15.116"
-.gate SB_LUT4 I0=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[0] I1=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[1] I2=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[2] I3=uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O[3] O=uut2.serial_data_SB_DFFES_Q_D
+.attr src "uart_ir_tx_ice.v:155.13-175.6|uart_tx_fsm.v:136.5-278.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:15.63-15.116"
+.gate SB_LUT4 I0=uut2.state[2] I1=uut2.state[0] I2=uut2.state[3] I3=uut2.state[1] O=uut2.serial_data_SB_DFFES_Q_E
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1111100011111111
-.gate SB_LUT4 I0=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[0] I1=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[1] I2=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[2] I3=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[3] O=uut2.serial_data_SB_DFFES_Q_E
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000001111111
+.param LUT_INIT 0001111111111111
 .gate SB_DFFER C=uut2.i_clk D=uut2.state_SB_DFFER_Q_D[3] E=uut2.state_SB_DFFER_Q_E Q=uut2.state[3] R=test3
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:133.5-275.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
+.attr src "uart_ir_tx_ice.v:155.13-175.6|uart_tx_fsm.v:136.5-278.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
 .gate SB_DFFER C=uut2.i_clk D=uut2.state_SB_DFFER_Q_D[2] E=uut2.state_SB_DFFER_Q_E Q=uut2.state[2] R=test3
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:133.5-275.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
+.attr src "uart_ir_tx_ice.v:155.13-175.6|uart_tx_fsm.v:136.5-278.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
 .gate SB_DFFER C=uut2.i_clk D=uut2.state_SB_DFFER_Q_D[1] E=uut2.state_SB_DFFER_Q_E Q=uut2.state[1] R=test3
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:133.5-275.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
+.attr src "uart_ir_tx_ice.v:155.13-175.6|uart_tx_fsm.v:136.5-278.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
 .gate SB_DFFER C=uut2.i_clk D=uut2.state_SB_DFFER_Q_D[0] E=uut2.state_SB_DFFER_Q_E Q=uut2.state[0] R=test3
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:133.5-275.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
-.gate SB_LUT4 I0=uut2.state[3] I1=uut2.state[0] I2=uut2.state[1] I3=uut2.state[2] O=uut2.state_SB_DFFER_Q_D[3]
+.attr src "uart_ir_tx_ice.v:155.13-175.6|uart_tx_fsm.v:136.5-278.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:14.63-14.116"
+.gate SB_LUT4 I0=uut2.state[3] I1=uut2.state[0] I2=uut2.state[2] I3=uut2.state[1] O=uut2.state_SB_DFFER_Q_D[3]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0100000000001011
-.gate SB_LUT4 I0=uut2.state[2] I1=uut2.state[1] I2=uut2.state[0] I3=uut2.state[3] O=uut2.state_SB_DFFER_Q_D[2]
+.gate SB_LUT4 I0=uut2.state[2] I1=uut2.state[0] I2=uut2.state[1] I3=uut2.state[3] O=uut2.state_SB_DFFER_Q_D[2]
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0000000001101011
@@ -1081,120 +613,17 @@
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
 .param LUT_INIT 0100000000001111
-.gate SB_LUT4 I0=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[2] I1=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[1] I2=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[0] I3=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I3[3] O=uut2.state_SB_DFFER_Q_E
+.gate SB_LUT4 I0=uut2.state[2] I1=uut2.state[0] I2=uut2.state[3] I3=uut2.state[1] O=uut2.state_SB_DFFER_Q_E
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000001111111
-.gate SB_LUT4 I0=uut2.state[0] I1=uut2.state[2] I2=uut2.state[1] I3=uut2.state[3] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 1110000000000000
-.gate SB_LUT4 I0=uut2.state[3] I1=uut2.state[2] I2=uut2.state[1] I3=uut2.state[0] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[2]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=$false I1=$false I2=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_2_I2[0] I3=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_2_I2[1] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_LUT4 I0=shift_reg1[8] I1=shift_reg1[9] I2=shift_reg1[10] I3=shift_reg1[11] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_2_I2[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=shift_reg1[12] I1=shift_reg1[13] I2=shift_reg1[14] I3=shift_reg1[15] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_2_I2[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=$false I1=$false I2=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_3_I2[0] I3=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_3_I2[1] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
-.param LUT_INIT 1111000000000000
-.gate SB_LUT4 I0=shift_reg1[0] I1=shift_reg1[1] I2=shift_reg1[2] I3=shift_reg1[3] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_3_I2[1]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=shift_reg1[4] I1=shift_reg1[5] I2=shift_reg1[6] I3=shift_reg1[7] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0_SB_LUT4_O_3_I2[0]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=uut2.state[2] I1=uut2.state[3] I2=uut2.state[1] I3=uut2.state[0] O=uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I3[3]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:26.33-27.52"
-.param LUT_INIT 0100000000000000
-.gate SB_DFFR C=uut2.i_clk D=uut1.o_rx_data[6] Q=uut2.tx_data[6] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=uut2.i_clk D=uut2.i_tx_data[5] Q=uut2.tx_data[5] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=uut2.i_clk D=uut1.o_rx_data[4] Q=uut2.tx_data[4] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=uut2.i_clk D=uut1.o_rx_data[3] Q=uut2.tx_data[3] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=uut2.i_clk D=uut1.o_rx_data[2] Q=uut2.tx_data[2] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=uut2.i_clk D=uut1.o_rx_data[1] Q=uut2.tx_data[1] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.gate SB_DFFR C=uut2.i_clk D=uut1.o_rx_data[0] Q=uut2.tx_data[0] R=test3
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "uart_ir_tx_ice.v:137.13-157.6|uart_tx_fsm.v:94.5-100.8|/usr/local/bin/../share/yosys/ice40/ff_map.v:9.57-9.103"
-.names uut1.rx_sampling_start_SB_LUT4_I3_I2[2] uut1.rx_data_SB_DFFER_Q_E_SB_LUT4_O_I1[1]
-1 1
-.names uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[0] uut1.state_SB_DFFER_Q_E_SB_LUT4_O_I0[1]
-1 1
-.names bit_sample_en uut1.state_SB_DFFER_Q_E_SB_LUT4_O_I0[2]
-1 1
-.names uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[1] uut1.state_SB_DFFER_Q_E_SB_LUT4_O_I0[3]
-1 1
-.names uut1.state[2] uut1.rx_data_SB_DFFER_Q_3_E_SB_LUT4_O_I3[0]
-1 1
-.names uut1.state[3] uut1.rx_data_SB_DFFER_Q_3_E_SB_LUT4_O_I3[1]
-1 1
-.names uut1.rx_sampling_counter_SB_DFFR_Q_2_D_SB_LUT4_O_I3[1] uut1.rx_sampling_start_SB_LUT4_I3_O[2]
-1 1
-.names uut2.tx_data[4] uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O_SB_LUT4_O_I3[0]
-1 1
-.names uut2.state[1] uut2.parity_bit_SB_LUT4_I1_O_SB_LUT4_I0_O_SB_LUT4_O_I3[1]
-1 1
+.param LUT_INIT 1011111111111111
 .names clk_count[1] CLKOS_SB_DFFE_Q_E_SB_LUT4_O_I3[0]
 1 1
 .names clk_count[2] CLKOS_SB_DFFE_Q_E_SB_LUT4_O_I3[1]
 1 1
-.names uut1.modem_serial_data uut1.rx_sampling_start_SB_DFFER_Q_D_SB_LUT4_O_I3[1]
+.names test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[26] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[2]
 1 1
-.names rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[26] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I1[2]
-1 1
-.names ir_tx_reg[3] test1_SB_LUT4_O_I2[0]
-1 1
-.names from_pc test1_SB_LUT4_O_I2[2]
-1 1
-.names bit_sample_en uut1.data_validation_SB_DFFER_Q_E_SB_LUT4_O_I1[2]
-1 1
-.names uut2.state[2] uut2.parity_bit_SB_LUT4_I1_O[2]
-1 1
-.names uut2.state[3] uut2.parity_bit_SB_LUT4_I1_O[3]
-1 1
-.names uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[2] uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I3[0]
-1 1
-.names uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[1] uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I3[1]
-1 1
-.names uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I0[0] uut2.state_SB_DFFER_Q_E_SB_LUT4_O_I3[2]
-1 1
-.names uut2.tx_data[4] uut2.check_bit_SB_DFFR_Q_D_SB_LUT4_O_I0[1]
-1 1
-.names uut2.tx_data[5] uut2.check_bit_SB_DFFR_Q_D_SB_LUT4_O_I0[2]
-1 1
-.names uut2.tx_data[6] uut2.check_bit_SB_DFFR_Q_D_SB_LUT4_O_I0[3]
-1 1
-.names uut1.state[0] uut1.rx_sampling_start_SB_LUT4_I3_I2[0]
-1 1
-.names uut1.state[1] uut1.rx_sampling_start_SB_LUT4_I3_I2[1]
-1 1
-.names uut1.rx_sampling_start uut1.rx_sampling_start_SB_LUT4_I3_I2[3]
+.names uut2.parity_bit uut2.parity_bit_SB_LUT4_I2_I0[2]
 1 1
 .names test3 rst_count_SB_DFFE_Q_26_D[19]
 1 1
@@ -1202,57 +631,57 @@
 1 1
 .names rst_count_SB_DFFE_Q_26_D[0] test3_SB_CARRY_I1_CO[1]
 1 1
-.names rst_count_SB_DFFE_Q_26_D[0] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[0]
+.names rst_count_SB_DFFE_Q_26_D[0] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[0]
 1 1
-.names test3_SB_CARRY_I1_CO[2] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[1]
+.names test3_SB_CARRY_I1_CO[2] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[1]
 1 1
-.names test3_SB_CARRY_I1_CO[3] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[2]
+.names test3_SB_CARRY_I1_CO[3] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[2]
 1 1
-.names test3_SB_CARRY_I1_CO[4] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[3]
+.names test3_SB_CARRY_I1_CO[4] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[3]
 1 1
-.names test3_SB_CARRY_I1_CO[5] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[4]
+.names test3_SB_CARRY_I1_CO[5] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[4]
 1 1
-.names test3_SB_CARRY_I1_CO[6] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[5]
+.names test3_SB_CARRY_I1_CO[6] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[5]
 1 1
-.names test3_SB_CARRY_I1_CO[7] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[6]
+.names test3_SB_CARRY_I1_CO[7] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[6]
 1 1
-.names test3_SB_CARRY_I1_CO[8] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[7]
+.names test3_SB_CARRY_I1_CO[8] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[7]
 1 1
-.names test3_SB_CARRY_I1_CO[9] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[8]
+.names test3_SB_CARRY_I1_CO[9] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[8]
 1 1
-.names test3_SB_CARRY_I1_CO[10] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[9]
+.names test3_SB_CARRY_I1_CO[10] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[9]
 1 1
-.names test3_SB_CARRY_I1_CO[11] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[10]
+.names test3_SB_CARRY_I1_CO[11] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[10]
 1 1
-.names test3_SB_CARRY_I1_CO[12] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[11]
+.names test3_SB_CARRY_I1_CO[12] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[11]
 1 1
-.names test3_SB_CARRY_I1_CO[13] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[12]
+.names test3_SB_CARRY_I1_CO[13] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[12]
 1 1
-.names test3_SB_CARRY_I1_CO[14] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[13]
+.names test3_SB_CARRY_I1_CO[14] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[13]
 1 1
-.names test3_SB_CARRY_I1_CO[15] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[14]
+.names test3_SB_CARRY_I1_CO[15] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[14]
 1 1
-.names test3_SB_CARRY_I1_CO[16] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[15]
+.names test3_SB_CARRY_I1_CO[16] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[15]
 1 1
-.names test3_SB_CARRY_I1_CO[17] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[16]
+.names test3_SB_CARRY_I1_CO[17] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[16]
 1 1
-.names test3_SB_CARRY_I1_CO[18] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[17]
+.names test3_SB_CARRY_I1_CO[18] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[17]
 1 1
-.names test3_SB_CARRY_I1_CO[19] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[18]
+.names test3_SB_CARRY_I1_CO[19] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[18]
 1 1
-.names test3_SB_CARRY_I1_CO[20] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[19]
+.names test3_SB_CARRY_I1_CO[20] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[19]
 1 1
-.names test3_SB_CARRY_I1_CO[21] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[20]
+.names test3_SB_CARRY_I1_CO[21] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[20]
 1 1
-.names test3_SB_CARRY_I1_CO[22] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[21]
+.names test3_SB_CARRY_I1_CO[22] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[21]
 1 1
-.names test3_SB_CARRY_I1_CO[23] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[22]
+.names test3_SB_CARRY_I1_CO[23] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[22]
 1 1
-.names test3_SB_CARRY_I1_CO[24] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[23]
+.names test3_SB_CARRY_I1_CO[24] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[23]
 1 1
-.names test3_SB_CARRY_I1_CO[25] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[24]
+.names test3_SB_CARRY_I1_CO[25] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[24]
 1 1
-.names test3_SB_CARRY_I1_CO[26] rst_count_SB_DFFE_Q_E_SB_LUT4_O_I3[25]
+.names test3_SB_CARRY_I1_CO[26] test3_SB_CARRY_I1_CO_SB_CARRY_CI_CO[25]
 1 1
 .names $false count_SB_CARRY_CI_CO[0]
 1 1
@@ -1280,33 +709,31 @@
 1 1
 .names clk_count_SB_DFFSR_Q_5_D[0] clk_count_SB_DFFSR_Q_D[0]
 1 1
-.names $false uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[0]
-1 1
-.names uut1.rx_sampling_counter[0] uut1.rx_sampling_counter_SB_DFFR_Q_D_SB_LUT4_O_I3[1]
-1 1
 .names ice_pll_inst.PLLOUTCORE CLKOP
 1 1
 .names ice_pll_inst.PLLOUTGLOBAL PLLOUTGLOBAL
+1 1
+.names $undef bit_sample_en
 1 1
 .names uut2.i_clk count[3]
 1 1
 .names test3 i_rst
 1 1
-.names uut2.i_start_tx i_start_tx
+.names $true i_start_tx
 1 1
-.names uut1.o_rx_data[0] i_tx_data[0]
+.names $true i_tx_data[0]
 1 1
-.names uut1.o_rx_data[1] i_tx_data[1]
+.names $false i_tx_data[1]
 1 1
-.names uut1.o_rx_data[2] i_tx_data[2]
+.names $false i_tx_data[2]
 1 1
-.names uut1.o_rx_data[3] i_tx_data[3]
+.names $false i_tx_data[3]
 1 1
-.names uut1.o_rx_data[4] i_tx_data[4]
+.names $true i_tx_data[4]
 1 1
-.names uut2.i_tx_data[5] i_tx_data[5]
+.names $false i_tx_data[5]
 1 1
-.names uut1.o_rx_data[6] i_tx_data[6]
+.names $false i_tx_data[6]
 1 1
 .names $false i_tx_data[7]
 1 1
@@ -1314,99 +741,131 @@
 1 1
 .names $true ice_pll_inst.RESET
 1 1
-.names uut1.o_rx_data[0] o_rx_data[0]
+.names $true ir_tx
 1 1
-.names uut1.o_rx_data[1] o_rx_data[1]
+.names $undef ir_tx_reg[0]
 1 1
-.names uut1.o_rx_data[2] o_rx_data[2]
+.names $undef ir_tx_reg[1]
 1 1
-.names uut1.o_rx_data[3] o_rx_data[3]
+.names $undef ir_tx_reg[2]
 1 1
-.names uut1.o_rx_data[4] o_rx_data[4]
+.names $undef ir_tx_reg[3]
 1 1
-.names uut1.o_rx_data[5] o_rx_data[5]
+.names $undef ir_tx_reg[4]
 1 1
-.names uut1.o_rx_data[6] o_rx_data[6]
+.names $undef led[0]
+1 1
+.names $undef led[1]
+1 1
+.names $undef led[2]
+1 1
+.names $undef led[3]
+1 1
+.names $undef led[4]
+1 1
+.names $true o_rx_data[0]
+1 1
+.names $false o_rx_data[1]
+1 1
+.names $false o_rx_data[2]
+1 1
+.names $false o_rx_data[3]
+1 1
+.names $true o_rx_data[4]
+1 1
+.names $true o_rx_data[5]
+1 1
+.names $false o_rx_data[6]
 1 1
 .names $false o_rx_data[7]
 1 1
+.names $true o_rx_data_ready
+1 1
 .names uut2.serial_data o_serial_data
 1 1
+.names $true rx_rdy
+1 1
 .names $false sd
+1 1
+.names $true shift_reg1[0]
+1 1
+.names $true shift_reg1[1]
+1 1
+.names $undef shift_reg1[2]
+1 1
+.names $undef shift_reg1[3]
+1 1
+.names $undef shift_reg1[4]
+1 1
+.names $undef shift_reg1[5]
+1 1
+.names $undef shift_reg1[6]
+1 1
+.names $undef shift_reg1[7]
+1 1
+.names $undef shift_reg1[8]
+1 1
+.names $undef shift_reg1[9]
+1 1
+.names $undef shift_reg1[10]
+1 1
+.names $undef shift_reg1[11]
+1 1
+.names $undef shift_reg1[12]
+1 1
+.names $undef shift_reg1[13]
+1 1
+.names $undef shift_reg1[14]
+1 1
+.names $undef shift_reg1[15]
+1 1
+.names $true shift_reg2[0]
+1 1
+.names $true shift_reg2[1]
+1 1
+.names $undef shift_reg2[2]
+1 1
+.names $undef shift_reg2[3]
+1 1
+.names $undef shift_reg2[4]
+1 1
+.names $undef shift_reg2[5]
+1 1
+.names $undef shift_reg2[6]
+1 1
+.names $undef shift_reg2[7]
+1 1
+.names $undef shift_reg2[8]
+1 1
+.names $undef shift_reg2[9]
+1 1
+.names $undef shift_reg2[10]
+1 1
+.names $undef shift_reg2[11]
+1 1
+.names $undef shift_reg2[12]
+1 1
+.names $undef shift_reg2[13]
+1 1
+.names $undef shift_reg2[14]
+1 1
+.names $undef shift_reg2[15]
+1 1
+.names $undef shift_reg2[16]
+1 1
+.names $undef shift_reg2[17]
+1 1
+.names $undef shift_reg2[18]
+1 1
+.names $undef shift_reg2[19]
 1 1
 .names from_pc test2
 1 1
 .names test1 to_ir
 1 1
-.names bit_sample_en uut1.bit_sample_en
-1 1
-.names $false uut1.clear_data_ready
-1 1
-.names $false uut1.i_clear_linestatusreg
-1 1
-.names $false uut1.i_clear_rxdataready
-1 1
-.names ice_pll_inst.PLLOUTCORE uut1.i_clk
-1 1
-.names $false uut1.i_loopback_en
-1 1
-.names $false uut1.i_no_of_data_bits[0]
-1 1
-.names $true uut1.i_no_of_data_bits[1]
-1 1
-.names $false uut1.i_parity_en
-1 1
-.names $false uut1.i_parity_even
-1 1
-.names test3 uut1.i_rst
-1 1
-.names CLKOS uut1.i_rx_clk
-1 1
-.names from_pc uut1.i_serial_data
-1 1
-.names $true uut1.i_start_rx
-1 1
-.names $false uut1.i_stick_parity_en
-1 1
-.names $false uut1.o_rx_data[7]
-1 1
-.names o_rx_data_ready uut1.o_rx_data_ready
-1 1
-.names $false uut1.receive_data[0]
-1 1
-.names uut1.rx_data[9] uut1.receive_data[1]
-1 1
-.names uut1.rx_data[8] uut1.receive_data[2]
-1 1
-.names uut1.rx_data[7] uut1.receive_data[3]
-1 1
-.names uut1.rx_data[6] uut1.receive_data[4]
-1 1
-.names uut1.rx_data[5] uut1.receive_data[5]
-1 1
-.names uut1.rx_data[4] uut1.receive_data[6]
-1 1
-.names uut1.rx_data[3] uut1.receive_data[7]
-1 1
-.names $undef uut1.receive_data[8]
-1 1
-.names $undef uut1.receive_data[9]
-1 1
-.names $undef uut1.receive_data[10]
-1 1
-.names $undef uut1.rx_data[0]
-1 1
-.names $undef uut1.rx_data[1]
-1 1
-.names $undef uut1.rx_data[2]
-1 1
-.names $false uut1.rx_data[10]
-1 1
-.names uut1.data_validation uut1.rx_data_ready1
-1 1
-.names bit_sample_en uut1.rx_sample_en
-1 1
 .names $false uut2.break_control_en
+1 1
+.names $false uut2.check_bit
 1 1
 .names $false uut2.i_break_control
 1 1
@@ -1424,23 +883,27 @@
 1 1
 .names test3 uut2.i_rst
 1 1
+.names $true uut2.i_start_tx
+1 1
 .names $false uut2.i_stick_parity_en
 1 1
 .names $false uut2.i_stop_bit_15
 1 1
 .names $false uut2.i_stop_bit_2
 1 1
-.names uut1.o_rx_data[0] uut2.i_tx_data[0]
+.names $true uut2.i_tx_data[0]
 1 1
-.names uut1.o_rx_data[1] uut2.i_tx_data[1]
+.names $false uut2.i_tx_data[1]
 1 1
-.names uut1.o_rx_data[2] uut2.i_tx_data[2]
+.names $false uut2.i_tx_data[2]
 1 1
-.names uut1.o_rx_data[3] uut2.i_tx_data[3]
+.names $false uut2.i_tx_data[3]
 1 1
-.names uut1.o_rx_data[4] uut2.i_tx_data[4]
+.names $true uut2.i_tx_data[4]
 1 1
-.names uut1.o_rx_data[6] uut2.i_tx_data[6]
+.names $false uut2.i_tx_data[5]
+1 1
+.names $false uut2.i_tx_data[6]
 1 1
 .names $false uut2.i_tx_data[7]
 1 1
@@ -1451,6 +914,20 @@
 .names uut2.serial_data uut2.o_int_serial_data
 1 1
 .names uut2.serial_data uut2.o_serial_data
+1 1
+.names uut2.parity_bit uut2.tx_data[0]
+1 1
+.names $false uut2.tx_data[1]
+1 1
+.names $false uut2.tx_data[2]
+1 1
+.names $false uut2.tx_data[3]
+1 1
+.names uut2.parity_bit uut2.tx_data[4]
+1 1
+.names $false uut2.tx_data[5]
+1 1
+.names $false uut2.tx_data[6]
 1 1
 .names $false uut2.tx_data[7]
 1 1

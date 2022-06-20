@@ -62,8 +62,8 @@ wire        i_rst ;
 wire        CLKOP ;
 wire        CLKOS ;        
 
-wire [7:0]  o_rx_data       ; 
-wire        o_rx_data_ready ;
+wire [7:0]  o_rx_data       = 49; 
+wire        o_rx_data_ready = 1;
 
 wire [7:0]  i_tx_data       ;
 wire        i_start_tx      ;
@@ -98,6 +98,7 @@ always @ (posedge CLKOP) begin
     if ( clk_count == 9 ) CLKOS <= ~CLKOS ;    
     end
 
+/*
 // UART RX instantiation
 uart_rx_fsm uut1 (                   
      .i_clk                 ( CLKOP           ),
@@ -122,9 +123,12 @@ uart_rx_fsm uut1 (
      .i_serial_data         ( from_pc         ) // from_pc UART signal
     );
 
-reg [3:0] count ;
+*/
+reg [7:0] count ;
 reg [15:0] shift_reg1 ;
 reg [19:0] shift_reg2 ;
+
+wire o_tx_en_stop_;
 
 always @ (posedge CLKOS) count <= count + 1 ;
 always @ (posedge CLKOP) shift_reg2[19:0] <= {shift_reg2[18:0], o_rx_data_ready} ; 
@@ -132,6 +136,20 @@ always @ (posedge CLKOS) shift_reg1[15:0] <= {shift_reg1[14:0], rx_rdy} ;
 assign rx_rdy = |shift_reg2 ;
 assign i_start_tx = |shift_reg1 ;
 assign i_tx_data = {o_rx_data[7:6], ~o_rx_data[5], o_rx_data[4:0]} ; // o_rx_data
+
+
+always @ (posedge count[7]) begin
+    /*
+    if (count == 255 && o_tx_en_stop_ == 1) begin
+        //o_rx_data_ready <= 1;
+        led[0] <= 1;
+    end else begin
+        o_rx_data_ready <= 0;
+        led[1] <= 1;
+    end
+    */
+end
+
 
 // UART TX instantiation
 uart_tx_fsm uut2(                                
@@ -142,7 +160,7 @@ uart_tx_fsm uut2(
     .i_tx_en               ( 1'b1          ),   
     .i_tx_en_div2          ( 1'b0          ),   
     .i_break_control       ( 1'b0          ),   
-    .o_tx_en_stop          (  ),                
+    .o_tx_en_stop          ( o_tx_en_stop_ ),                
     .i_loopback_en         ( 1'b0          ),   
     .i_stop_bit_15         ( 1'b0          ),   
     .i_stop_bit_2          ( 1'b0          ),   
@@ -157,7 +175,7 @@ uart_tx_fsm uut2(
     );                                          
 
 // LED display ASCII code
- assign led = ~i_tx_data ;                      
+ //assign led = ~i_tx_data ;                      
 
  reg [4:0] ir_tx_reg ;  
  wire ir_tx ;

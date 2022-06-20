@@ -63,7 +63,7 @@ wire        CLKOP ;
 wire        CLKOS ;        
 
 wire [7:0]  o_rx_data       ; 
-wire        o_rx_data_ready ;
+wire        o_rx_data_ready <= 1;
 
 wire [7:0]  i_tx_data       ;
 wire        i_start_tx      ;
@@ -97,7 +97,7 @@ always @ (posedge CLKOP) begin
 always @ (posedge CLKOP) begin
     if ( clk_count == 9 ) CLKOS <= ~CLKOS ;    
     end
-
+/*
 // UART RX instantiation
 uart_rx_fsm uut1 (                   
      .i_clk                 ( CLKOP           ),
@@ -121,7 +121,7 @@ uart_rx_fsm uut1 (
      .i_int_serial_data     (                 ),
      .i_serial_data         ( from_pc         ) // from_pc UART signal
     );
-
+*/
 reg [3:0] count ;
 reg [15:0] shift_reg1 ;
 reg [19:0] shift_reg2 ;
