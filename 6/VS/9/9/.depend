@@ -1,0 +1,6 @@
+hamster_cli.o: src/hamster_cli.c src/../include/hamsterrest.h \
+ src/../include/hamsterlib.h
+hamster_client.o: src/hamster_client.c include/hamsterrest.h \
+ include/hamsterlib.h include/curl/curl.h include/curl/curlver.h \
+ include/curl/system.h include/curl/easy.h include/curl/multi.h \
+ include/curl/curl.h include/curl/typecheck-gcc.h
