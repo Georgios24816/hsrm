@@ -1,4 +1,6 @@
 #include <wiringPi.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int PinEnable = 21; //5
 int PinIn1 = 6; //6
@@ -6,14 +8,14 @@ int PinIn2 = 26;//12
 
 void motorDelay()
 {
-	delay(80);
+	delay(1000);
 }
 
 void motorSet(int enable, int in1, int in2)
 {
-	digitalWrite(enable);
-	digitalWrite(in1);
-	digitalWrite(in2);
+	digitalWrite(PinEnable, enable);
+	digitalWrite(PinIn1, in1);
+	digitalWrite(PinIn2, in2);
 }
 
 void motorStepBackward()
@@ -102,9 +104,52 @@ int main()
 	pinMode(PinIn1, OUTPUT);
 	pinMode(PinIn2, OUTPUT);
 	
-	motorThread();
+	//motorThread();
+	pinMode(21, OUTPUT);
+	pinMode(23, OUTPUT);
+	pinMode(24, OUTPUT);
+	pinMode(25, OUTPUT);
 	
-	while (1);
-	
+	/*
+	while (1)
+	{
+		digitalWrite(21, HIGH);
+		digitalWrite(23, LOW);
+		digitalWrite(24, HIGH);
+		digitalWrite(25, HIGH);
+		delay(100);
+	}
+	*/
+
+	motorZero();
+
+	while (1)
+	{
+		/*
+		for (int i = 0; i < 5; i++)
+		{
+			printf("%d\n", i);
+			motorDo(i);
+			motorDelay();
+		}*/
+
+		for (int i = 0; i < 100; i++)
+		{
+		motorSet(1, 1, 0);
+		delay(50);
+		motorSet(1, 0, 1);
+		delay(50);
+		/*
+		motorSet(0, 0, 0);
+		delay(10);
+		*/
+		}
+
+		motorZero();
+		int a;
+		printf("--> : ");
+		scanf("%d", &a);
+	}
+
 	return 0;
 }
